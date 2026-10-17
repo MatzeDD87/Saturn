@@ -168,5 +168,21 @@ function fmtMsg(t){
 
 const defaultStock = d => d.stock;
 
+/* ═══ GESCRAPTE ONLINE-PREISE (data/prices.json) ═══ */
+const SCRAPED_MAX_AGE_H = 36;
+// Liefert den gespeicherten Preis nur, wenn er erfolgreich ermittelt wurde und nicht zu alt ist
+function freshScraped(entry, now = Date.now(), maxAgeH = SCRAPED_MAX_AGE_H){
+  if(!entry || !Number.isFinite(entry.price) || !entry.checkedAt) return null;
+  const age = now - Date.parse(entry.checkedAt);
+  if(!(age >= 0) || age > maxAgeH * 3600e3) return null;
+  return entry;
+}
+// Nur http(s)-Links aus externen Daten übernehmen
+const safeUrl = u => /^https?:\/\//i.test(String(u || '')) ? String(u) : null;
+const priceDiffText = (price, ref) => {
+  const diff = Math.round(price - ref);
+  return diff === 0 ? null : `${diff > 0 ? '+' : '−'}${fmt(Math.abs(diff))} ggü. Marktpreis ${fmt(ref)}`;
+};
+
 globalThis.MMSLogic = { STORE, DEVICES, DB, BRANDS, BUDGET, S_LABEL, PRICE_PROMPT,
-  esc, fmt, weights, scoreDevice, recommend, parsePrice, priceNum, fmtMsg };
+  esc, fmt, weights, scoreDevice, recommend, parsePrice, priceNum, fmtMsg, freshScraped, safeUrl, priceDiffText, SCRAPED_MAX_AGE_H };

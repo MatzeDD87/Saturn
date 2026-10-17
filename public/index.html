@@ -639,26 +639,57 @@ function renderCard(d, ctx, kind, m){
 }
 
 
-async function liveP(id, ctx){
+// Gescrapte Preise einmal laden und 5 Minuten zwischenspeichern
+let scrapedCache = null, scrapedAt = 0;
+async function scrapedPrices(){
+  if(!location.protocol.startsWith('http')) return null;
+  if(!scrapedCache || Date.now() - scrapedAt > 5 * 60e3){
+    scrapedAt = Date.now();
+    scrapedCache = fetch('api/prices', {cache:'no-store'}).then(r => r.ok ? r.json() : null).catch(() => null);
+  }
+  return scrapedCache;
+}
+
+function diffBadge(price, ref){
+  if(!Number.isFinite(price)) return '';
+  const t = priceDiffText(price, ref);
+  return t ? `<span class="lp-diff ne">${t}</span>` : `<span class="lp-diff eq">= identisch mit Marktpreis</span>`;
+}
+
+async function liveP(id, ctx, forceAI = false){
   const d = DB[id], uid = ctx + '_' + id, b = $('lpB_' + uid), out = $('lpR_' + uid);
   if(!b || !out) return;
   b.disabled = true;
   b.innerHTML = '<span class="sp"></span> Prüfe …';
   out.innerHTML = '';
+
+  if(!forceAI){
+    const data = await scrapedPrices();
+    const e = freshScraped(data?.items?.[id]);
+    if(e){
+      const when = new Date(e.checkedAt).toLocaleString('de-DE', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'});
+      const url = safeUrl(e.url);
+      out.innerHTML = `<div class="lp-ok"><div class="lp-l">● Online-Preis ${esc(data.source || 'saturn.de')}</div>
+        <div class="lp-p">${fmt(e.price)}</div>
+        <div class="lp-s">Stand: ${esc(when)} Uhr${e.availability ? ' · ' + esc(e.availability) : ''}${url ? ` · <a href="${esc(url)}" target="_blank" rel="noopener" style="color:var(--o2)">Produktseite</a>` : ''}</div>
+        ${diffBadge(e.price, d.pNum)}</div>`;
+      b.innerHTML = '🔴 KI-Live-Suche';
+      b.onclick = () => liveP(id, ctx, true);
+      b.disabled = false;
+      return;
+    }
+  }
+
   try{
     const p = parsePrice(await AI.price(d.n));
     if(!p) throw new Error('not-found');
-    const live = priceNum(p.preis), diff = Math.round(live - d.pNum);
-    const diffHtml = isNaN(live) ? '' : diff === 0
-      ? `<span class="lp-diff eq">= identisch mit Marktpreis</span>`
-      : `<span class="lp-diff ne">${diff > 0 ? '+' : '−'}${fmt(Math.abs(diff))} ggü. Marktpreis ${fmt(d.pNum)}</span>`;
-    out.innerHTML = `<div class="lp-ok"><div class="lp-l">● Live-Preis online</div><div class="lp-p">${esc(p.preis)}</div>
-      <div class="lp-s">Quelle: ${esc(p.quelle || 'Online')}${p.hinweis ? ' · ' + esc(p.hinweis) : ''}</div>${diffHtml}</div>`;
+    out.innerHTML = `<div class="lp-ok"><div class="lp-l">● Live-Preis online (KI-Suche)</div><div class="lp-p">${esc(p.preis)}</div>
+      <div class="lp-s">Quelle: ${esc(p.quelle || 'Online')}${p.hinweis ? ' · ' + esc(p.hinweis) : ''}</div>${diffBadge(priceNum(p.preis), d.pNum)}</div>`;
     b.innerHTML = '✓ Preis aktuell';
     b.disabled = false;
   }catch(e){
     const q = encodeURIComponent(d.n);
-    const why = e.message === 'no-ai' ? 'KI nicht verbunden (⚙️ oben rechts).' : e.message === 'not-found' ? 'Kein eindeutiger Online-Preis gefunden.' : 'Live-Abfrage fehlgeschlagen.';
+    const why = e.message === 'no-ai' ? (forceAI ? 'KI nicht verbunden (⚙️ oben rechts).' : 'Kein aktueller Scraper-Preis und KI nicht verbunden (⚙️ oben rechts).') : e.message === 'not-found' ? 'Kein eindeutiger Online-Preis gefunden.' : 'Live-Abfrage fehlgeschlagen.';
     out.innerHTML = `<div class="lp-e">${why}<br>
       <a href="https://www.saturn.de/de/search.html?query=${q}" target="_blank" rel="noopener">→ saturn.de</a>
       <a href="https://www.mediamarkt.de/de/search.html?query=${q}" target="_blank" rel="noopener">→ mediamarkt.de</a></div>`;

@@ -162,3 +162,25 @@ describe('Ausgabe-Escaping', () => {
     assert.ok(out.includes('<br>• Punkt'));
   });
 });
+
+describe('Gescrapte Preise', () => {
+  const now = Date.parse('2026-10-17T12:00:00Z');
+  test('freshScraped akzeptiert nur erfolgreiche, höchstens 36 h alte Einträge', () => {
+    assert.ok(L.freshScraped({ price: 899, checkedAt: '2026-10-17T00:00:00Z' }, now));
+    assert.equal(L.freshScraped({ price: 899, checkedAt: '2026-10-15T23:00:00Z' }, now), null);
+    assert.equal(L.freshScraped({ ok: false, error: 'x' }, now), null);
+    assert.equal(L.freshScraped({ price: 899, checkedAt: 'kaputt' }, now), null);
+    assert.equal(L.freshScraped({ price: 899, checkedAt: '2026-10-18T00:00:00Z' }, now), null);
+    assert.equal(L.freshScraped(undefined, now), null);
+  });
+  test('safeUrl lässt nur http(s)-Links durch', () => {
+    assert.equal(L.safeUrl('https://www.saturn.de/de/product/_x.html'), 'https://www.saturn.de/de/product/_x.html');
+    assert.equal(L.safeUrl('javascript:alert(1)'), null);
+    assert.equal(L.safeUrl(undefined), null);
+  });
+  test('priceDiffText beschreibt die Abweichung zum Marktpreis', () => {
+    assert.equal(L.priceDiffText(899, 899), null);
+    assert.equal(L.priceDiffText(849, 899), `−${L.fmt(50)} ggü. Marktpreis ${L.fmt(899)}`);
+    assert.equal(L.priceDiffText(949.4, 899), `+${L.fmt(50)} ggü. Marktpreis ${L.fmt(899)}`);
+  });
+});

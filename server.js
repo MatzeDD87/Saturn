@@ -63,6 +63,15 @@ app.get('/api/health', (req, res) => {
   res.json({ ok: true, ai: Boolean(GEMINI_API_KEY), model: GEMINI_MODEL });
 });
 
+// Vom Scraper (npm run scrape) erzeugte Online-Preise
+const PRICES_FILE = process.env.PRICES_FILE || path.join(__dirname, 'data', 'prices.json');
+app.get('/api/prices', (req, res) => {
+  fs.readFile(PRICES_FILE, 'utf8', (err, raw) => {
+    if (err) return res.json({ updatedAt: null, items: {} });
+    try { res.json(JSON.parse(raw)); } catch { res.status(500).json({ error: 'prices.json ist beschädigt' }); }
+  });
+});
+
 app.post('/api/chat', rateLimit, async (req, res) => {
   const { system, messages } = req.body || {};
   const valid = isText(system, 12_000) && Array.isArray(messages) && messages.length > 0 && messages.length <= 30 &&

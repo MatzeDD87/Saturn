@@ -1,6 +1,9 @@
 import { test, describe, before, after, beforeEach, mock } from 'node:test';
 import assert from 'node:assert/strict';
 import axios from 'axios';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 
 const KEY = 'test-key-123';
 
@@ -19,13 +22,19 @@ const post = (url, path, body, ip = `10.0.0.${++ipCounter}`) =>
 const geminiReply = text => ({ data: { candidates: [{ content: { parts: [{ text }] } }] } });
 
 describe('Server mit API-Key', () => {
-  let srv, axiosPost;
+  let srv, axiosPost, pricesFile;
   before(async () => {
     process.env.GEMINI_API_KEY = KEY;
     process.env.TRUST_PROXY = '1';
+    pricesFile = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'prices-')), 'prices.json');
+    process.env.PRICES_FILE = pricesFile;
     srv = await start('withkey');
   });
-  after(() => { srv.server.close(); delete process.env.GEMINI_API_KEY; delete process.env.TRUST_PROXY; });
+  after(() => {
+    srv.server.close();
+    fs.rmSync(path.dirname(pricesFile), { recursive: true, force: true });
+    for (const k of ['GEMINI_API_KEY', 'TRUST_PROXY', 'PRICES_FILE']) delete process.env[k];
+  });
   beforeEach(() => {
     axiosPost?.mock.restore();
     axiosPost = mock.method(axios, 'post', async () => geminiReply('Hallo aus dem Test'));
@@ -38,10 +47,23 @@ describe('Server mit API-Key', () => {
   });
 
   test('liefert die Oberfläche und logic.js aus', async () => {
-    assert.equal((await fetch(srv.url + '/')).status, 200);
+    const page = await fetch(srv.url + '/');
+    assert.equal(page.status, 200);
+    const html = await page.text();
+    assert.ok(html.length < 200_000, `index.html ist unerwartet groß (${html.length} Zeichen)`);
+    assert.ok(html.includes('<script src="logic.js"></script>'));
+    assert.ok(html.trimEnd().endsWith('</html>'));
     const r = await fetch(srv.url + '/logic.js');
     assert.equal(r.status, 200);
     assert.match(r.headers.get('content-type'), /javascript/);
+  });
+
+  test('GET /api/prices liefert leere Liste ohne Datei und den Inhalt mit Datei', async () => {
+    assert.deepEqual(await (await fetch(srv.url + '/api/prices')).json(), { updatedAt: null, items: {} });
+    fs.writeFileSync(pricesFile, JSON.stringify({ updatedAt: 'x', items: { s25: { price: 849 } } }));
+    assert.equal((await (await fetch(srv.url + '/api/prices')).json()).items.s25.price, 849);
+    fs.writeFileSync(pricesFile, '{kaputt');
+    assert.equal((await fetch(srv.url + '/api/prices')).status, 500);
   });
 
   test('POST /api/chat leitet an Gemini weiter und gibt den Text zurück', async () => {

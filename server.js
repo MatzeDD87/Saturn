@@ -10,7 +10,12 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
+const RATE_WINDOW_MS = 60_000;
+const RATE_MAX = 30;
+
 const app = express();
+// Hinter einem Reverse-Proxy (nginx, Render, …) TRUST_PROXY setzen, sonst teilen sich alle Clients die Proxy-IP
+if (process.env.TRUST_PROXY) app.set('trust proxy', /^\d+$/.test(process.env.TRUST_PROXY) ? Number(process.env.TRUST_PROXY) : process.env.TRUST_PROXY);
 app.use(express.json({ limit: '64kb' }));
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -19,12 +24,17 @@ const hits = new Map();
 function rateLimit(req, res, next) {
   const now = Date.now();
   const entry = hits.get(req.ip) || { n: 0, t: now };
-  if (now - entry.t > 60_000) { entry.n = 0; entry.t = now; }
+  if (now - entry.t > RATE_WINDOW_MS) { entry.n = 0; entry.t = now; }
   entry.n++;
   hits.set(req.ip, entry);
-  if (entry.n > 30) return res.status(429).json({ error: 'Zu viele Anfragen – bitte kurz warten.' });
+  if (entry.n > RATE_MAX) return res.status(429).json({ error: 'Zu viele Anfragen – bitte kurz warten.' });
   next();
 }
+// Abgelaufene Einträge regelmäßig entfernen, damit die Map nicht unbegrenzt wächst
+setInterval(() => {
+  const now = Date.now();
+  for (const [ip, entry] of hits) if (now - entry.t > RATE_WINDOW_MS) hits.delete(ip);
+}, RATE_WINDOW_MS).unref();
 
 async function gemini(body) {
   if (!GEMINI_API_KEY) throw Object.assign(new Error('GEMINI_API_KEY fehlt auf dem Server'), { status: 503 });

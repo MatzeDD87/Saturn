@@ -1,19 +1,26 @@
 import 'dotenv/config';
 import express from 'express';
 import axios from 'axios';
+import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import vm from 'node:vm';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = process.env.PORT || 3000;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
+
+// Gemeinsame Logik mit dem Frontend (u. a. der Preis-Prompt) aus public/logic.js laden
+const logicCtx = {};
+vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'public', 'logic.js'), 'utf8'), logicCtx);
+const { PRICE_PROMPT } = logicCtx.MMSLogic;
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
 const RATE_WINDOW_MS = 60_000;
 const RATE_MAX = 30;
 
-const app = express();
+export const app = express();
 // Hinter einem Reverse-Proxy (nginx, Render, …) TRUST_PROXY setzen, sonst teilen sich alle Clients die Proxy-IP
 if (process.env.TRUST_PROXY) app.set('trust proxy', /^\d+$/.test(process.env.TRUST_PROXY) ? Number(process.env.TRUST_PROXY) : process.env.TRUST_PROXY);
 app.use(express.json({ limit: '64kb' }));
@@ -78,10 +85,7 @@ app.post('/api/price', rateLimit, async (req, res) => {
   if (!isText(name, 120)) return res.status(400).json({ error: 'Ungültiger Gerätename' });
   try {
     const text = await gemini({
-      contents: [{ role: 'user', parts: [{ text:
-        `Aktueller Preis für "${name}" bei Saturn oder MediaMarkt Deutschland. Antworte NUR als reines JSON: ` +
-        `{"preis":"XXX,XX €","quelle":"saturn.de / mediamarkt.de","hinweis":"Kurzer Verfügbarkeitshinweis","gefunden":true}. ` +
-        `Wenn du keinen Preis findest: {"gefunden":false}` }] }],
+      contents: [{ role: 'user', parts: [{ text: PRICE_PROMPT(name) }] }],
       tools: [{ google_search: {} }],
       generationConfig: { temperature: 0.1, maxOutputTokens: 400, thinkingConfig: { thinkingBudget: 0 } }
     });
@@ -91,7 +95,10 @@ app.post('/api/price', rateLimit, async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Smartphone-Berater läuft auf http://localhost:${PORT}`);
-  if (!GEMINI_API_KEY) console.warn('Hinweis: GEMINI_API_KEY nicht gesetzt – KI-Funktionen sind deaktiviert.');
-});
+// Nur beim direkten Start lauschen – Tests importieren `app` ohne Port
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  app.listen(PORT, () => {
+    console.log(`Smartphone-Berater läuft auf http://localhost:${PORT}`);
+    if (!GEMINI_API_KEY) console.warn('Hinweis: GEMINI_API_KEY nicht gesetzt – KI-Funktionen sind deaktiviert.');
+  });
+}

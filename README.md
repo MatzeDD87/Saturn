@@ -16,6 +16,16 @@ Der Gemini-Key bleibt auf dem Server (`/api/chat`, `/api/price`). Ohne Server l�
 
 ## Pflege
 
-- Geräte, Preise, Gänge, Zubehör: Array `DEVICES` in `public/index.html`
-- Markt-Name / Service-Preis: Objekt `STORE`
+- Geräte, Preise, Gänge, Zubehör: Array `DEVICES` in `public/logic.js`
+- Markt-Name / Service-Preis: Objekt `STORE` in `public/logic.js`
 - Bestand kann im Lager-Tab pro Gerät korrigiert werden (wird lokal im Browser gespeichert)
+
+## Tests
+
+```bash
+npm test
+```
+
+Prüft Gerätedaten, Empfehlungslogik (inkl. aller Antwortkombinationen), Preis-Parser,
+HTML-Escaping und die Server-API (Gemini wird dabei simuliert, es entstehen keine Kosten).
+Nach Änderungen an `DEVICES` zeigen die Tests sofort, ob sich Empfehlungen verschoben haben.

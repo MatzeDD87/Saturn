@@ -1,0 +1,87 @@
+import 'dotenv/config';
+import express from 'express';
+import axios from 'axios';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const PORT = process.env.PORT || 3000;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
+
+const app = express();
+app.use(express.json({ limit: '64kb' }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Einfaches Rate-Limit pro IP, damit der Proxy nicht missbraucht wird
+const hits = new Map();
+function rateLimit(req, res, next) {
+  const now = Date.now();
+  const entry = hits.get(req.ip) || { n: 0, t: now };
+  if (now - entry.t > 60_000) { entry.n = 0; entry.t = now; }
+  entry.n++;
+  hits.set(req.ip, entry);
+  if (entry.n > 30) return res.status(429).json({ error: 'Zu viele Anfragen – bitte kurz warten.' });
+  next();
+}
+
+async function gemini(body) {
+  if (!GEMINI_API_KEY) throw Object.assign(new Error('GEMINI_API_KEY fehlt auf dem Server'), { status: 503 });
+  try {
+    const { data } = await axios.post(GEMINI_URL, body, {
+      headers: { 'Content-Type': 'application/json', 'x-goog-api-key': GEMINI_API_KEY },
+      timeout: 30_000
+    });
+    return (data.candidates?.[0]?.content?.parts || []).map(p => p.text || '').join('');
+  } catch (e) {
+    const msg = e.response?.data?.error?.message || e.message;
+    throw Object.assign(new Error(msg), { status: 502 });
+  }
+}
+
+const isText = (v, max) => typeof v === 'string' && v.length > 0 && v.length <= max;
+
+app.get('/api/health', (req, res) => {
+  res.json({ ok: true, ai: Boolean(GEMINI_API_KEY), model: GEMINI_MODEL });
+});
+
+app.post('/api/chat', rateLimit, async (req, res) => {
+  const { system, messages } = req.body || {};
+  const valid = isText(system, 12_000) && Array.isArray(messages) && messages.length > 0 && messages.length <= 30 &&
+    messages.every(m => (m.role === 'user' || m.role === 'model') && isText(m.parts?.[0]?.text, 4000));
+  if (!valid) return res.status(400).json({ error: 'Ungültige Anfrage' });
+  try {
+    const text = await gemini({
+      systemInstruction: { parts: [{ text: system }] },
+      contents: messages.map(m => ({ role: m.role, parts: [{ text: m.parts[0].text }] })),
+      generationConfig: { temperature: 0.6, maxOutputTokens: 700, thinkingConfig: { thinkingBudget: 0 } }
+    });
+    res.json({ text });
+  } catch (e) {
+    res.status(e.status || 500).json({ error: e.message });
+  }
+});
+
+app.post('/api/price', rateLimit, async (req, res) => {
+  const { name } = req.body || {};
+  if (!isText(name, 120)) return res.status(400).json({ error: 'Ungültiger Gerätename' });
+  try {
+    const text = await gemini({
+      contents: [{ role: 'user', parts: [{ text:
+        `Aktueller Preis für "${name}" bei Saturn oder MediaMarkt Deutschland. Antworte NUR als reines JSON: ` +
+        `{"preis":"XXX,XX €","quelle":"saturn.de / mediamarkt.de","hinweis":"Kurzer Verfügbarkeitshinweis","gefunden":true}. ` +
+        `Wenn du keinen Preis findest: {"gefunden":false}` }] }],
+      tools: [{ google_search: {} }],
+      generationConfig: { temperature: 0.1, maxOutputTokens: 400, thinkingConfig: { thinkingBudget: 0 } }
+    });
+    res.json({ text });
+  } catch (e) {
+    res.status(e.status || 500).json({ error: e.message });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Smartphone-Berater läuft auf http://localhost:${PORT}`);
+  if (!GEMINI_API_KEY) console.warn('Hinweis: GEMINI_API_KEY nicht gesetzt – KI-Funktionen sind deaktiviert.');
+});

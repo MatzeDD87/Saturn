@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#07070b">
+<title>MMS AI-Pilot PRO · Dresden</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{
+  --o:#F06400;--o2:#FF8C2A;--r:#DF0000;
+  --ok:#22D67A;--warn:#FFC531;--bad:#FF5A5A;
+  --bg:#07070b;--surface:rgba(18,18,26,.92);--surface2:#101018;
+  --line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);
+  --text:#f5f5f7;--muted:rgba(245,245,247,.66);--dim:rgba(245,245,247,.44);
+  --radius:20px;--mono:'JetBrains Mono',ui-monospace,monospace;
+}
+html{background:var(--bg)}
+body{font-family:'Outfit',system-ui,sans-serif;color:var(--text);background:var(--bg);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 88% 6%,rgba(240,100,0,.16),transparent 42%),
+    radial-gradient(circle at 10% 28%,rgba(223,0,0,.11),transparent 45%),
+    radial-gradient(circle at 50% 100%,rgba(240,100,0,.07),transparent 55%);
+}
+button{font-family:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--o2);outline-offset:2px}
+.saturn-orb{position:fixed;top:-70px;right:-90px;width:300px;height:300px;z-index:0;opacity:.08;pointer-events:none;animation:orbit 40s linear infinite}
+@keyframes orbit{to{transform:rotate(360deg)}}
+
+.app{max-width:480px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;position:relative;z-index:1}
+
+/* ═══ HEADER ═══ */
+.hdr{
+  margin:calc(10px + env(safe-area-inset-top)) 12px 0;padding:12px 14px;
+  background:linear-gradient(135deg,rgba(16,16,24,.92),rgba(24,13,8,.88));
+  border:1px solid rgba(240,100,0,.2);border-radius:20px;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  box-shadow:0 10px 32px rgba(0,0,0,.45);position:sticky;top:8px;z-index:50;
+}
+.hdr-l{display:flex;align-items:center;gap:11px;min-width:0;flex:1}
+.hdr-l>div:last-child{min-width:0}
+.logo{width:40px;height:40px;border-radius:12px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;flex-shrink:0;box-shadow:0 4px 18px rgba(240,100,0,.25);border:1px solid rgba(255,255,255,.1)}
+.logo>div{display:flex;align-items:center;justify-content:center}
+.lo-r{background:linear-gradient(180deg,#EE0000,#B80000)}
+.lo-s{background:linear-gradient(180deg,#1a1a1f,#060609)}
+.logo svg{width:17px;height:17px}
+.hdr-t1{font-size:13px;font-weight:900;letter-spacing:.4px;white-space:nowrap}
+.hdr-t2{font-size:10px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--o2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ai-pill{
+  display:flex;align-items:center;gap:7px;padding:8px 11px;border-radius:12px;flex-shrink:0;
+  background:rgba(255,255,255,.04);border:1px solid var(--line);font-size:10.5px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;
+}
+.ai-pill:hover{border-color:var(--line2)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--dim)}
+.ai-pill[data-s="server"] .dot,.ai-pill[data-s="key"] .dot{background:var(--ok);box-shadow:0 0 10px var(--ok);animation:blink 2.2s infinite}
+.ai-pill[data-s="server"],.ai-pill[data-s="key"]{color:var(--ok)}
+.ai-pill[data-s="none"]{color:var(--warn)}
+.ai-pill[data-s="none"] .dot{background:var(--warn)}
+@keyframes blink{50%{opacity:.35}}
+
+/* ═══ HERO ═══ */
+.hero{padding:24px 20px 4px}
+.hero h1{font-size:34px;font-weight:900;letter-spacing:-1.2px;line-height:1.02;margin-bottom:9px}
+.hero h1 .o{background:linear-gradient(135deg,var(--o),var(--o2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:14px;color:var(--muted);line-height:1.5;font-weight:500}
+
+/* ═══ PROGRESS ═══ */
+.prg{padding:16px 20px 14px}
+.prg-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+.prg-lbl{font-size:11px;font-weight:800;color:var(--dim);letter-spacing:2px;text-transform:uppercase}
+.prg-n{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--o2)}
+.prg-bar{height:5px;background:rgba(255,255,255,.07);border-radius:5px;overflow:hidden}
+.prg-fill{height:100%;border-radius:5px;background:linear-gradient(90deg,var(--r),var(--o),var(--o2));box-shadow:0 0 16px rgba(240,100,0,.6);transition:width .45s cubic-bezier(.2,.8,.2,1)}
+
+.cnt{flex:1;padding:4px 12px calc(130px + env(safe-area-inset-bottom))}
+
+/* ═══ GENERIC ═══ */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 12px 36px rgba(0,0,0,.32)}
+.anim{animation:up .35s ease both}
+@keyframes up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.row-btns{display:flex;justify-content:space-between;gap:8px;margin-bottom:10px}
+.ghost{
+  background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--muted);
+  font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;
+  padding:10px 13px;border-radius:12px;display:inline-flex;align-items:center;gap:6px;
+}
+.ghost:hover{color:var(--text);border-color:var(--line2)}
+.x-btn{background:rgba(255,255,255,.06);border:1px solid var(--line);color:#ddd;width:38px;height:38px;border-radius:50%;font-size:15px;flex-shrink:0}
+
+/* ═══ QUESTION ═══ */
+.qc{padding:20px;margin-bottom:12px;background:linear-gradient(165deg,rgba(24,16,12,.92),rgba(12,12,18,.94));border-color:rgba(240,100,0,.18)}
+.qc-top{display:flex;align-items:center;gap:14px}
+.qc-icon{width:50px;height:50px;border-radius:15px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:24px;background:linear-gradient(145deg,rgba(240,100,0,.2),rgba(240,100,0,.04));border:1px solid rgba(240,100,0,.28)}
+.qc h2{font-size:21px;font-weight:800;letter-spacing:-.4px;line-height:1.18}
+.qc p{font-size:13px;color:var(--dim);font-weight:500;margin-top:3px}
+.opts{display:flex;flex-direction:column;gap:9px}
+.opt{
+  width:100%;text-align:left;background:var(--surface);border:1px solid var(--line);border-left:3px solid rgba(240,100,0,.45);
+  border-radius:18px;padding:14px 15px;display:flex;align-items:center;gap:14px;transition:transform .2s,border-color .2s,background .2s;
+}
+.opt:hover,.opt:active{border-color:rgba(240,100,0,.4);border-left-color:var(--o);transform:translateX(3px);background:rgba(26,22,30,.96)}
+.opt.sel{border-color:var(--o);background:rgba(240,100,0,.1)}
+.opt-i{width:46px;height:46px;border-radius:13px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:22px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06)}
+.opt-t{font-size:16px;font-weight:700}
+.opt-d{font-size:12.5px;color:var(--dim);margin-top:2px;font-weight:500}
+.opt-a{margin-left:auto;color:rgba(255,255,255,.28);font-size:22px;font-weight:700}
+
+/* ═══ RESULT ═══ */
+.banner{border-radius:18px;padding:14px 16px;display:flex;align-items:center;gap:12px;margin-bottom:12px;border:1px solid}
+.banner.ok{background:linear-gradient(135deg,rgba(34,214,122,.13),rgba(34,214,122,.03));border-color:rgba(34,214,122,.28)}
+.banner.warn{background:linear-gradient(135deg,rgba(255,197,49,.13),rgba(255,197,49,.03));border-color:rgba(255,197,49,.3)}
+.banner-i{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:900;flex-shrink:0;color:#000}
+.banner.ok .banner-i{background:var(--ok)}
+.banner.warn .banner-i{background:var(--warn)}
+.banner h2{font-size:16px;font-weight:800}
+.banner p{font-size:12.5px;color:var(--muted);margin-top:1px}
+.summary{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.sum-chip{font-size:11.5px;font-weight:700;padding:6px 10px;border-radius:9px;background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--muted)}
+
+.pc{padding:18px;margin-bottom:12px;position:relative;overflow:hidden}
+.pc.top{border-color:rgba(240,100,0,.32);border-left:3.5px solid var(--o);background:linear-gradient(165deg,rgba(30,14,8,.92),rgba(12,12,20,.96))}
+.pc-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:8px;flex-wrap:wrap}
+.badge{font-size:10px;font-weight:800;padding:6px 11px;border-radius:8px;text-transform:uppercase;letter-spacing:1.2px}
+.badge.t{background:linear-gradient(135deg,var(--r),var(--o));color:#fff}
+.badge.a{background:rgba(255,255,255,.06);color:var(--muted);border:1px solid var(--line)}
+.stk{font-size:11px;font-weight:700;padding:5px 9px;border-radius:7px;display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.stk.ok{background:rgba(34,214,122,.1);color:var(--ok);border:1px solid rgba(34,214,122,.26)}
+.stk.low{background:rgba(255,197,49,.1);color:var(--warn);border:1px solid rgba(255,197,49,.26)}
+.stk.out{background:rgba(255,90,90,.1);color:var(--bad);border:1px solid rgba(255,90,90,.26)}
+.ph-row{display:flex;gap:16px;align-items:center}
+.ph-vis{width:78px;height:106px;border-radius:16px;flex-shrink:0;background:linear-gradient(180deg,rgba(28,28,40,.9),rgba(8,8,12,.96));border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;padding:6px}
+.ph-vis svg,.inv-vis svg{width:100%;height:100%}
+.ph-info{flex:1;min-width:0}
+.ph-brand{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.6px;color:var(--o2);margin-bottom:2px}
+.ph-name{font-size:19px;font-weight:800;margin-bottom:6px;line-height:1.15}
+.ph-price{font-family:var(--mono);font-size:23px;font-weight:700;background:linear-gradient(135deg,#fff 40%,var(--o2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.ph-loc{font-size:12px;color:var(--dim);font-family:var(--mono);margin-top:3px}
+.match{display:flex;align-items:center;gap:10px;margin-top:14px}
+.match-bar{flex:1;height:6px;border-radius:6px;background:rgba(255,255,255,.07);overflow:hidden}
+.match-bar>i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--o),var(--o2))}
+.match-n{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--o2);min-width:70px;text-align:right}
+.why{display:flex;flex-direction:column;gap:5px;margin-top:12px}
+.why div{font-size:13px;color:var(--muted);display:flex;gap:8px}
+.why .pos::before{content:'✓';color:var(--ok);font-weight:900}
+.why .neg::before{content:'!';color:var(--warn);font-weight:900;width:9px;text-align:center}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 12px}
+.tag{background:rgba(240,100,0,.08);border:1px solid rgba(240,100,0,.18);padding:6px 10px;border-radius:8px;font-size:12px;color:rgba(255,255,255,.82);font-weight:600}
+.ph-desc{font-size:13.5px;color:var(--muted);line-height:1.55}
+.addon{margin-top:14px;padding:12px 14px;border-radius:13px;background:rgba(255,255,255,.025);border:1px dashed rgba(255,255,255,.14);font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:6px;line-height:1.45}
+.addon-t{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:1.4px;color:var(--o2)}
+.addon b{color:var(--text)}
+.btn-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.act{padding:13px 10px;border-radius:13px;font-size:11.5px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:7px;transition:background .2s;border:1px solid}
+.act:disabled{opacity:.7;cursor:wait}
+.act.red{background:rgba(223,0,0,.1);border-color:rgba(223,0,0,.38);color:#ff6b6b}
+.act.red:hover{background:rgba(223,0,0,.18)}
+.act.org{background:rgba(240,100,0,.1);border-color:rgba(240,100,0,.32);color:var(--o2)}
+.act.org:hover{background:rgba(240,100,0,.18)}
+.act.wide{grid-column:1/-1}
+.cmp-btn{width:100%;padding:15px;margin:0 0 12px;background:linear-gradient(135deg,rgba(240,100,0,.17),rgba(223,0,0,.12));border:1px solid rgba(240,100,0,.38);border-radius:15px;font-size:12.5px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:8px;line-height:1.3}
+.cmp-btn:hover{border-color:var(--o2)}
+.sp{display:inline-block;width:13px;height:13px;border:2px solid rgba(255,255,255,.2);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.lp-ok{margin-top:12px;padding:13px;border-radius:13px;background:rgba(34,214,122,.06);border:1px solid rgba(34,214,122,.24)}
+.lp-l{font-size:10px;color:var(--ok);font-weight:800;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px}
+.lp-p{font-family:var(--mono);font-size:22px;font-weight:700}
+.lp-s{font-size:12px;color:var(--dim);margin-top:3px;line-height:1.4}
+.lp-diff{display:inline-block;margin-top:6px;font-size:11.5px;font-weight:800;padding:4px 8px;border-radius:7px}
+.lp-diff.eq{background:rgba(34,214,122,.12);color:var(--ok)}
+.lp-diff.ne{background:rgba(255,197,49,.12);color:var(--warn)}
+.lp-e{margin-top:12px;padding:12px;border-radius:13px;background:rgba(223,0,0,.07);border:1px solid rgba(223,0,0,.22);font-size:13px;color:#ffb3b3;line-height:1.5}
+.lp-e a{color:var(--o2);font-weight:700;text-decoration:none;margin-right:12px}
+.wide-btn{width:100%;padding:15px;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:15px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}
+.wide-btn:hover{color:var(--text)}
+
+/* ═══ LAGER ═══ */
+.inv-bar{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+.inv-search{width:100%;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:13px 16px;color:var(--text);font-family:inherit;font-size:16px;outline:none}
+.inv-search:focus{border-color:var(--o)}
+.inv-row{display:flex;gap:8px;align-items:center}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;flex:1;scrollbar-width:none}
+.chip{background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--muted);padding:8px 13px;border-radius:10px;font-size:12.5px;font-weight:700;white-space:nowrap}
+.chip.on{background:rgba(240,100,0,.18);border-color:var(--o);color:#fff}
+.sel{background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:12px;padding:10px 12px;font-family:inherit;font-size:13px;font-weight:600;outline:none;width:100%}
+.inv-meta{display:flex;justify-content:space-between;font-size:12px;color:var(--dim);font-weight:600;margin:2px 4px 10px}
+.inv-item{display:flex;align-items:center;gap:12px;padding:12px;margin-bottom:9px;transition:transform .2s,border-color .2s}
+.inv-item:hover{border-color:rgba(240,100,0,.36)}
+.inv-main{display:flex;align-items:center;gap:13px;flex:1;min-width:0;background:none;border:none;text-align:left;padding:0}
+.inv-vis{width:52px;height:70px;border-radius:11px;background:rgba(0,0,0,.5);padding:4px;flex-shrink:0;border:1px solid rgba(255,255,255,.06)}
+.inv-mid{flex:1;min-width:0}
+.inv-name{font-size:15px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.inv-sub{font-size:12px;color:var(--dim);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.inv-loc{font-family:var(--mono);font-size:11px;color:var(--o2);margin-top:5px}
+.inv-pr{font-family:var(--mono);font-size:15px;font-weight:700;margin-top:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cmp-tog{width:40px;height:40px;border-radius:12px;flex-shrink:0;background:rgba(255,255,255,.04);border:1px solid var(--line);font-size:16px;font-weight:900;color:var(--dim)}
+.cmp-tog.on{background:var(--o);border-color:var(--o);color:#fff}
+.empty{padding:28px 20px;text-align:center;color:var(--muted);font-size:14px}
+
+.tray{
+  position:fixed;left:12px;right:12px;bottom:calc(88px + env(safe-area-inset-bottom));max-width:456px;margin:0 auto;z-index:90;
+  display:none;align-items:center;gap:10px;padding:10px 10px 10px 16px;border-radius:16px;
+  background:linear-gradient(135deg,#2a1406,#160b06);border:1px solid rgba(240,100,0,.45);box-shadow:0 12px 40px rgba(0,0,0,.6);
+}
+.tray.vis{display:flex}
+.tray span{flex:1;font-size:13px;font-weight:700}
+.tray .go{background:var(--o);border:none;color:#fff;font-weight:800;font-size:12px;letter-spacing:.8px;text-transform:uppercase;padding:11px 14px;border-radius:11px}
+.tray .go:disabled{opacity:.45;cursor:default}
+
+/* ═══ MODAL ═══ */
+.mdl-ov{position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);z-index:300;display:none;align-items:flex-end;justify-content:center;padding:10px}
+.mdl-ov.vis{display:flex}
+.mdl{background:#0d0d14;border:1px solid rgba(240,100,0,.26);border-radius:24px;width:100%;max-width:460px;max-height:88vh;overflow-y:auto;padding:18px;animation:up .3s ease}
+.mdl-h{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.mdl-h h3{font-size:17px;font-weight:800}
+.mdl .pc{box-shadow:none}
+.stock-ed{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 14px;margin-bottom:12px}
+.stock-ed b{font-size:13px}
+.stock-ed small{display:block;font-size:11.5px;color:var(--dim);font-weight:500;margin-top:2px}
+.stepper{display:flex;align-items:center;gap:6px}
+.stepper button{width:38px;height:38px;border-radius:11px;background:rgba(255,255,255,.05);border:1px solid var(--line2);font-size:18px;font-weight:800}
+.stepper output{font-family:var(--mono);font-size:17px;font-weight:700;min-width:34px;text-align:center}
+.cmp-wrap{overflow-x:auto;margin:0 -4px}
+.cmp-tbl{width:100%;border-collapse:collapse;font-size:12.5px;table-layout:fixed;min-width:320px}
+.cmp-tbl th,.cmp-tbl td{padding:10px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.4;word-wrap:break-word}
+.cmp-tbl th:first-child,.cmp-tbl td:first-child{width:25%;color:var(--dim);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.3px;hyphens:auto;-webkit-hyphens:auto;word-wrap:normal}
+.cmp-tbl thead th{font-size:13.5px;font-weight:800;color:var(--o2);text-transform:none;letter-spacing:0}
+.cmp-tbl .best{color:var(--ok);font-weight:800}
+.bar{height:6px;border-radius:6px;background:rgba(255,255,255,.07);margin-top:5px;overflow:hidden}
+.bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--o),var(--o2))}
+.cmp-note{font-size:11.5px;color:var(--dim);margin-top:10px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--dim)}
+.field input{background:rgba(0,0,0,.5);border:1px solid var(--line2);border-radius:12px;padding:12px 14px;color:var(--text);font-family:var(--mono);font-size:14px;outline:none}
+.field input:focus{border-color:var(--o)}
+.info{font-size:13px;color:var(--muted);line-height:1.55;padding:12px 14px;margin-bottom:14px}
+.info code{font-family:var(--mono);font-size:12px;color:var(--o2)}
+
+/* ═══ NAV ═══ */
+.nav{
+  background:rgba(9,9,15,.95);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid var(--line);
+  display:flex;justify-content:space-around;padding:6px 8px;
+  position:fixed;bottom:calc(10px + env(safe-area-inset-bottom));left:12px;right:12px;max-width:456px;margin:0 auto;
+  border-radius:22px;box-shadow:0 16px 50px rgba(0,0,0,.85);z-index:100;
+}
+.nb{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:none;font-weight:800;letter-spacing:1px;padding:9px 6px;border-radius:16px;transition:all .25s;font-size:10px;color:#6c6c76;text-transform:uppercase;position:relative}
+.nb svg{width:22px;height:22px;fill:currentColor}
+.nb.on{color:var(--o2);background:rgba(240,100,0,.13)}
+.nb .cnt-b{position:absolute;top:4px;right:calc(50% - 22px);font-family:var(--mono);font-size:9.5px;background:var(--o);color:#fff;border-radius:8px;padding:1px 5px;letter-spacing:0}
+
+/* ═══ CHAT ═══ */
+.co{position:fixed;inset:0;background:rgba(5,5,9,.985);z-index:200;display:none;flex-direction:column}
+.co.vis{display:flex}
+.co-inner{max-width:480px;width:100%;margin:0 auto;display:flex;flex-direction:column;height:100%}
+.co-h{padding:calc(14px + env(safe-area-inset-top)) 16px 14px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
+.co-av{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--o),#B84400);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.co-av svg{width:21px;height:21px;fill:#fff}
+.co-nm{font-size:16px;font-weight:800}
+.co-st{font-size:11.5px;color:var(--dim);font-weight:600}
+.co-acts{margin-left:auto;display:flex;gap:8px}
+.co-ms{flex:1;overflow-y:auto;padding:18px 16px;display:flex;flex-direction:column;gap:12px}
+.cm{max-width:86%;padding:12px 15px;border-radius:18px;font-size:14.5px;line-height:1.55;font-weight:500;animation:up .25s ease}
+.cm.b{background:rgba(22,22,34,.95);border:1px solid var(--line);border-bottom-left-radius:5px;align-self:flex-start}
+.cm.u{background:linear-gradient(135deg,var(--o),#C84B00);color:#fff;border-bottom-right-radius:5px;align-self:flex-end;font-weight:600}
+.cm.err{border-color:rgba(255,90,90,.35);color:#ffc2c2}
+.typing{display:inline-flex;gap:4px}
+.typing i{width:7px;height:7px;border-radius:50%;background:var(--dim);animation:blink 1s infinite}
+.typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}
+.co-qk{display:flex;gap:6px;flex-wrap:wrap;padding:0 16px 10px}
+.qk{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:11px;padding:9px 12px;color:var(--muted);font-size:12.5px;font-weight:600}
+.qk:hover{border-color:var(--o);color:var(--o2)}
+.co-in{display:flex;padding:12px 14px calc(12px + env(safe-area-inset-bottom));gap:8px;border-top:1px solid var(--line)}
+.ci{flex:1;background:rgba(0,0,0,.55);border:1px solid var(--line);border-radius:14px;padding:0 15px;color:var(--text);outline:none;font-family:inherit;font-size:16px;height:48px;min-width:0}
+.ci:focus{border-color:var(--o)}
+.cs{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--o),#C84B00);border:none;color:#fff;font-size:18px;flex-shrink:0}
+.cs:disabled{opacity:.5}
+::-webkit-scrollbar{width:0;height:0}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<svg class="saturn-orb" viewBox="0 0 200 200" aria-hidden="true">
+  <circle cx="100" cy="100" r="45" fill="rgba(240,100,0,.3)"/>
+  <ellipse cx="100" cy="100" rx="85" ry="20" fill="none" stroke="rgba(240,100,0,.24)" stroke-width="3" transform="rotate(-25 100 100)"/>
+</svg>
+
+<div class="app">
+  <header class="hdr">
+    <div class="hdr-l">
+      <div class="logo" aria-hidden="true">
+        <div class="lo-r"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-2.5 14.5L5 12l1.4-1.4L9.5 13.7l8.1-8.1L19 7l-9.5 9.5z"/></svg></div>
+        <div class="lo-s"><svg viewBox="0 0 24 24" fill="#F06400"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div>
+      </div>
+      <div>
+        <div class="hdr-t1">MEDIAMARKT SATURN</div>
+        <div class="hdr-t2" id="storeLbl"></div>
+      </div>
+    </div>
+    <button class="ai-pill" id="aiPill" data-s="none" onclick="openSettings()" title="KI-Einstellungen">
+      <span class="dot"></span><span id="aiPillTxt">KI …</span>
+    </button>
+  </header>
+
+  <section class="hero">
+    <h1><span id="hT1">Smartphone</span><br><span class="o" id="hT2">Berater PRO</span></h1>
+    <p id="hSub"></p>
+  </section>
+
+  <div class="prg" id="prgBox">
+    <div class="prg-top"><span class="prg-lbl" id="pL">Schritt 1</span><span class="prg-n" id="pN">0%</span></div>
+    <div class="prg-bar"><div class="prg-fill" id="pF" style="width:0%"></div></div>
+  </div>
+
+  <main class="cnt" id="cnt"></main>
+</div>
+
+<div class="tray" id="tray">
+  <span id="trayTxt"></span>
+  <button class="ghost" onclick="clearCompare()">Leeren</button>
+  <button class="go" id="trayGo" onclick="openCompare(INV.cmp)">Vergleichen</button>
+</div>
+
+<nav class="nav">
+  <button class="nb on" id="nav-home" onclick="switchTab('home')">
+    <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Berater
+  </button>
+  <button class="nb" id="nav-chat" onclick="switchTab('chat')">
+    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>AI-Pilot
+  </button>
+  <button class="nb" id="nav-lager" onclick="switchTab('lager')">
+    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1 0-2 1-2 2v3c0 1 1 2 2 2h16c1 0 2-1 2-2V4c0-1-1-2-2-2zM4 10v10c0 1 1 2 2 2h12c1 0 2-1 2-2V10H4zm6 8H8v-6h2v6zm4 0h-2v-6h2v6zm4 0h-2v-6h2v6z"/></svg>Lager<span class="cnt-b" id="navCnt"></span>
+  </button>
+</nav>
+
+<div class="mdl-ov" id="mdlOv" onclick="if(event.target===this)closeModal()">
+  <div class="mdl" id="mdlCnt" role="dialog" aria-modal="true"></div>
+</div>
+
+<div class="co" id="chatOv">
+  <div class="co-inner">
+    <div class="co-h">
+      <div class="co-av"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div>
+      <div>
+        <div class="co-nm">GSM &amp; Tarif AI-Berater</div>
+        <div class="co-st" id="chatSt"></div>
+      </div>
+      <div class="co-acts">
+        <button class="x-btn" onclick="resetChat()" title="Chat neu starten">↺</button>
+        <button class="x-btn" onclick="switchTab(LAST_TAB)" title="Schließen">✕</button>
+      </div>
+    </div>
+    <div class="co-ms" id="chM"></div>
+    <div class="co-qk" id="chQ"></div>
+    <form class="co-in" onsubmit="event.preventDefault();sendMsg()">
+      <input class="ci" id="chI" placeholder="Frage zu Gerät, Bestand oder Tarif …" autocomplete="off" maxlength="1500">
+      <button class="cs" id="chS" type="submit" aria-label="Senden">➤</button>
+    </form>
+  </div>
+</div>
+
+<script>
+/* ═══ MARKT-KONFIGURATION ═══ */
+const STORE = { name:'Altmarkt-Galerie', city:'Dresden', service:'Startklar-Service', servicePrice:29 };
+
+/* ═══ GERÄTE-DATENBANK ═══
+   s = Berater-Einschätzung 0–10 (Basis für das Matching)
+   cam: Hauptkamera · night: Nacht · zoom: Tele · video: Video · bat: Ausdauer
+   charge: Ladetempo · perf: Leistung · value: Preis-Leistung · simple: einfache Bedienung */
+const DEVICES = [
+  { id:'s25u', brand:'Samsung', n:'Samsung Galaxy S25 Ultra', pNum:1449, stock:6, loc:'Gang 2 · Tisch S1', os:'android', size:6.9,
+    display:'6,9" QHD+ Dynamic AMOLED 2X (120Hz)', chip:'Snapdragon 8 Elite for Galaxy',
+    cam:'200 MP Haupt + 50 MP Ultraweit + 50 MP 5x Periskop', bat:'5.000 mAh · 45W Fast-Charge',
+    acc:'Samsung 45W Power Adapter + Clear Magnet Case + Kalibrierung',
+    h:['📸 200 MP Quad','🌙 Nightography AI','🖊️ S Pen inkl.','🔋 5.000 mAh'],
+    d:'Die absolute Referenz für Zoom- & Nachtfotografie mit entspiegeltem Gorilla Armor Glas und integriertem S Pen.',
+    s:{cam:10,night:10,zoom:10,video:9,bat:8,charge:7,perf:10,value:5,simple:5} },
+  { id:'s25', brand:'Samsung', n:'Samsung Galaxy S25', pNum:899, stock:9, loc:'Gang 2 · Tisch S1', os:'android', size:6.2,
+    display:'6,2" FHD+ Dynamic AMOLED 2X (120Hz)', chip:'Snapdragon 8 Elite',
+    cam:'50 MP Triple-Kamera mit 3x optischem Tele', bat:'4.000 mAh · 25W + Qi2',
+    acc:'Samsung 25W Adapter + Silicone Case + Panzerglas',
+    h:['📸 50 MP Triple','🤖 Galaxy AI','⚡ SD 8 Elite','🪶 162g Kompakt'],
+    d:'Maximale Flaggschiff-Performance und volle Galaxy AI im handlichen Kompaktformat.',
+    s:{cam:8,night:8,zoom:7,video:8,bat:6,charge:5,perf:9,value:7,simple:7} },
+  { id:'a56', brand:'Samsung', n:'Samsung Galaxy A56', pNum:479, stock:14, loc:'Gang 2 · Regal A3', os:'android', size:6.7,
+    display:'6,7" FHD+ Super AMOLED (120Hz)', chip:'Exynos 1580 Octa-Core',
+    cam:'50 MP Hauptsensor mit OIS + 12 MP Ultraweit', bat:'5.000 mAh · 45W Schnellladen',
+    acc:'45W Schnellladegerät + Samsung Wallet Case',
+    h:['📸 50 MP OIS','💧 IP67 Schutz','⚡ 45W Laden','🔄 6J Updates'],
+    d:'Der Mittelklasse-Bestseller in Dresden: Metallrahmen, 45W-Schnellladen und starke Ausdauer.',
+    s:{cam:7,night:6,zoom:4,video:6,bat:8,charge:7,perf:6,value:9,simple:8} },
+  { id:'p10p', brand:'Google', n:'Google Pixel 10 Pro', pNum:1099, stock:4, loc:'Gang 3 · Tisch G1', os:'android', size:6.3,
+    display:'6,3" Super Actua LTPO OLED (1-120Hz)', chip:'Google Tensor G5 + Titan M2',
+    cam:'50 MP Haupt + 48 MP Ultraweit + 48 MP 5x Tele', bat:'4.850 mAh · 37W Fast-Charge',
+    acc:'Google 45W USB-C Charger + Pixel Snap Case',
+    h:['📸 50 MP Pro-Triple','🌙 Night Sight 3.0','🤖 Gemini Nano','🔄 7J Updates'],
+    d:'Googles KI-Meisterstück mit der natürlichsten Porträt- und Nachtkamera auf dem Markt.',
+    s:{cam:10,night:10,zoom:9,video:8,bat:7,charge:6,perf:8,value:6,simple:8} },
+  { id:'p9a', brand:'Google', n:'Google Pixel 9a', pNum:499, stock:8, loc:'Gang 3 · Tisch G1', os:'android', size:6.3,
+    display:'6,3" Actua OLED Display (120Hz)', chip:'Google Tensor G4',
+    cam:'48 MP Dual-Pixel OIS + 13 MP Ultraweitwinkel', bat:'5.100 mAh · Adaptive Battery',
+    acc:'30W USB-C Netzteil + Stoßfestes Clear Case',
+    h:['📸 Beste Cam <500€','🌙 Night Sight','🔋 5.100 mAh','🔄 7J Updates'],
+    d:'Unschlagbare Punktlandung unter 500 €: Gleiche Foto-Intelligenz wie die großen Pixel-Brüder.',
+    s:{cam:8,night:8,zoom:3,video:6,bat:8,charge:4,perf:6,value:9,simple:9} },
+  { id:'ip17pm', brand:'Apple', n:'iPhone 17 Pro Max', pNum:1449, stock:3, loc:'Gang 1 · Apple Shop', os:'ios', size:6.9,
+    display:'6,9" Super Retina XDR ProMotion (120Hz)', chip:'Apple A19 Pro (3nm)',
+    cam:'48 MP Fusion Triple-System + 5x Tetraprisma', bat:'4.750 mAh · MagSafe 25W',
+    acc:'Apple 30W USB-C Power Adapter + MagSafe Clear Case',
+    h:['🎬 4K120 / ProRes','📸 3x 48 MP Pro','⚡ A19 Pro Chip','🔋 Rekord-Akku'],
+    d:'Die unangefochtene Nummer 1 für Video-Creator, iOS-Enthusiasten und maximale Wertstabilität.',
+    s:{cam:10,night:9,zoom:9,video:10,bat:9,charge:5,perf:10,value:5,simple:9} },
+  { id:'ip17', brand:'Apple', n:'iPhone 17', pNum:949, stock:7, loc:'Gang 1 · Apple Shop', os:'ios', size:6.1,
+    display:'6,1" Super Retina XDR (120Hz ProMotion)', chip:'Apple A19 Bionic',
+    cam:'48 MP Fusion Kamera mit 2x Tele-Qualität', bat:'Ganztages-Akku · MagSafe',
+    acc:'20W/30W Apple USB-C Adapter + Silikon Case',
+    h:['📱 Endlich 120Hz','📸 48 MP Fusion','⚡ A19 Chip','🍎 Apple Intelligence'],
+    d:'Endlich mit flüssigem 120Hz ProMotion-Display – das rundeste Standard-iPhone seit Jahren.',
+    s:{cam:8,night:7,zoom:5,video:9,bat:7,charge:5,perf:9,value:7,simple:10} },
+  { id:'px7p', brand:'Xiaomi', n:'Xiaomi POCO X7 Pro', pNum:299, stock:11, loc:'Gang 4 · Regal X2', os:'android', size:6.67,
+    display:'6,67" 1.5K CrystalRes AMOLED (120Hz)', chip:'MediaTek Dimensity 8400-Ultra',
+    cam:'50 MP Sony OIS Kamera + 8 MP Ultraweit', bat:'6.000 mAh · 90W HyperCharge',
+    acc:'Xiaomi 90W HyperCharge Adapter + Panzerglas',
+    h:['🔋 6.000 mAh Akku','⚡ 90W Turbo-Charge','💪 Dimensity 8400','📱 120Hz AMOLED'],
+    d:'Preis-Leistungs-Kracher unter 300 €: Riesiger 6.000-mAh-Akku und Flaggschiff-Tempo.',
+    s:{cam:6,night:5,zoom:3,video:6,bat:10,charge:10,perf:8,value:10,simple:6} },
+  { id:'rn15', brand:'Xiaomi', n:'Xiaomi Redmi Note 15', pNum:189, stock:15, loc:'Gang 4 · Regal X1', os:'android', size:6.67,
+    display:'6,67" FHD+ AMOLED Display (120Hz)', chip:'Snapdragon 6 Gen Serie',
+    cam:'108 MP hochauflösende Hauptkamera', bat:'5.100 mAh · 33W Fast-Charge',
+    acc:'33W Schnelllader + Klapphülle Schwarz',
+    h:['📱 120Hz AMOLED','🔋 5.100 mAh','📸 108 MP Sensor','💰 Unter 200 €'],
+    d:'Brillantes AMOLED-Display und großer Akku für kleines Budget.',
+    s:{cam:6,night:5,zoom:3,video:5,bat:8,charge:6,perf:5,value:9,simple:7} },
+  { id:'e50n', brand:'Motorola', n:'Motorola Edge 50 Neo', pNum:399, stock:5, loc:'Gang 4 · Regal M1', os:'android', size:6.4,
+    display:'6,4" pOLED LTPO (120Hz, 3000 Nits)', chip:'Dimensity 7300',
+    cam:'50 MP Sony Lytia OIS + 10 MP 3x Tele', bat:'4.310 mAh · 68W TurboPower',
+    acc:'68W Netzteil (im Karton!) + Schutzfolie',
+    h:['🔋 Sparsames LTPO','⚡ 68W + Wireless','📸 Echter 3x Zoom','🎨 Pantone-Design'],
+    d:'Kompakt, wasserdicht nach IP68, griffiges Vegan-Leder und echtes Teleobjektiv.',
+    s:{cam:7,night:6,zoom:6,video:6,bat:6,charge:8,perf:6,value:8,simple:7} },
+  { id:'me15', brand:'Motorola', n:'Motorola Moto E15', pNum:79, stock:12, loc:'Gang 4 · Einsteiger-Wand', os:'android', size:6.67,
+    display:'6,67" HD+ IPS LCD (90Hz)', chip:'Helio G81 Extreme',
+    cam:'32 MP KI-Kamera', bat:'5.200 mAh · 18W Laden',
+    acc:'18W USB-C Netzteil + Buchhülle',
+    h:['💰 Nur 79 €','🔋 5.200 mAh','📱 90Hz Großdisplay','🔊 Stereo-Speaker'],
+    d:'Solides Einsteigergerät für WhatsApp, Telefonie, Online-Banking und den Alltag.',
+    s:{cam:3,night:2,zoom:1,video:2,bat:8,charge:3,perf:2,value:8,simple:9} },
+  { id:'hm8p', brand:'Honor', n:'Honor Magic 8 Pro', pNum:899, stock:2, loc:'Gang 3 · Tisch H1', os:'android', size:6.8,
+    display:'6,8" LTPO Quad-Curved OLED (120Hz)', chip:'Snapdragon 8 Elite',
+    cam:'200 MP Periskop-Tele + 50 MP Falcon-Cam', bat:'5.850 mAh Silizium-Carbon · 100W',
+    acc:'Honor 100W SuperCharge Adapter + Schutzglas',
+    h:['📸 200 MP Tele','🔋 5.850 mAh Si-C','⚡ 100W Laden','👁️ Augen-Schutz PWM'],
+    d:'Hightech-Geheimtipp mit riesigem Silizium-Carbon-Akku und extrem schneller Auslösung.',
+    s:{cam:9,night:9,zoom:10,video:8,bat:10,charge:10,perf:10,value:7,simple:6} }
+];
+const DB = Object.fromEntries(DEVICES.map(d => [d.id, d]));
+const BRANDS = ['Alle', ...new Set(DEVICES.map(d => d.brand))];
+
+/* ═══ HELFER ═══ */
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt = n => n.toLocaleString('de-DE') + ' €';
+const LS = {
+  get(k, f){ try{ const v = localStorage.getItem(k); return v == null ? f : JSON.parse(v); }catch{ return f; } },
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch{} },
+  del(k){ try{ localStorage.removeItem(k); }catch{} }
+};
+
+/* Bestand: Korrekturen der Mitarbeiter werden lokal gespeichert */
+let stockOv = LS.get('mms_stock_v5', {});
+const stockOf = d => stockOv[d.id] ?? d.stock;
+function setStock(id, val){
+  stockOv[id] = Math.max(0, Math.min(999, val));
+  LS.set('mms_stock_v5', stockOv);
+}
+function stockBadge(d){
+  const c = stockOf(d);
+  if(c === 0) return `<span class="stk out">✕ Nicht vorrätig</span>`;
+  if(c < 5) return `<span class="stk low">⚡ Nur noch ${c}x</span>`;
+  return `<span class="stk ok">● ${c}x abholbereit</span>`;
+}
+
+/* ═══ SVG-ILLUSTRATIONEN ═══ */
+const SVGS = {
+  s25u:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="7" fill="#36363c" stroke="#666" stroke-width=".6"/><rect x="8" y="8" width="56" height="118" rx="4" fill="#0b0b14"/><circle cx="22" cy="24" r="5.5" fill="#181822" stroke="#777" stroke-width=".8"/><circle cx="22" cy="38" r="5.5" fill="#181822" stroke="#777" stroke-width=".8"/><circle cx="22" cy="52" r="5.5" fill="#181822" stroke="#777" stroke-width=".8"/><circle cx="34" cy="31" r="3.5" fill="#181822" stroke="#d4af37" stroke-width=".6"/><rect x="52" y="95" width="3" height="25" rx="1.5" fill="#F06400"/></svg>',
+  s25:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="13" fill="#aebcd0"/><rect x="8" y="9" width="56" height="116" rx="8" fill="#0d0d18"/><circle cx="22" cy="24" r="5" fill="#1b2230" stroke="#cdd8e8" stroke-width=".8"/><circle cx="22" cy="37" r="5" fill="#1b2230" stroke="#cdd8e8" stroke-width=".8"/><circle cx="22" cy="50" r="5" fill="#1b2230" stroke="#cdd8e8" stroke-width=".8"/></svg>',
+  a56:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="13" fill="#1c223a" stroke="#3b4675" stroke-width=".8"/><rect x="8" y="9" width="56" height="116" rx="8" fill="#080a14"/><rect x="15" y="16" width="14" height="38" rx="7" fill="#121629" stroke="#445288" stroke-width=".6"/><circle cx="22" cy="23" r="4.5" fill="#090c18"/><circle cx="22" cy="35" r="4.5" fill="#090c18"/><circle cx="22" cy="46" r="3.5" fill="#090c18"/></svg>',
+  p10p:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="14" fill="#dcd6cc"/><rect x="8" y="9" width="56" height="116" rx="9" fill="#101016"/><rect x="10" y="20" width="52" height="16" rx="8" fill="#c5beb3" stroke="#888" stroke-width=".6"/><circle cx="22" cy="28" r="4.8" fill="#222"/><circle cx="35" cy="28" r="4.8" fill="#222"/><circle cx="48" cy="28" r="4" fill="#222"/></svg>',
+  p9a:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="14" fill="#2f5236"/><rect x="8" y="9" width="56" height="116" rx="9" fill="#0a120c"/><rect x="14" y="20" width="32" height="14" rx="7" fill="#1e3823"/><circle cx="23" cy="27" r="4.5" fill="#0a120c"/><circle cx="36" cy="27" r="4.5" fill="#0a120c"/></svg>',
+  ip17pm:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="12" fill="#46444a" stroke="#888" stroke-width=".6"/><rect x="8" y="8" width="56" height="118" rx="8" fill="#09090f"/><rect x="12" y="14" width="28" height="28" rx="8" fill="#2c2a30" stroke="#666" stroke-width=".5"/><circle cx="20" cy="22" r="5" fill="#14141d" stroke="#777" stroke-width=".6"/><circle cx="20" cy="34" r="5" fill="#14141d" stroke="#777" stroke-width=".6"/><circle cx="32" cy="28" r="5" fill="#14141d" stroke="#777" stroke-width=".6"/></svg>',
+  ip17:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="13" fill="#4673a8"/><rect x="8" y="9" width="56" height="116" rx="8" fill="#080b12"/><rect x="14" y="15" width="16" height="28" rx="8" fill="#315682"/><circle cx="22" cy="22" r="5" fill="#101a29"/><circle cx="22" cy="35" r="5" fill="#101a29"/></svg>',
+  px7p:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="11" fill="#181818" stroke="#F06400" stroke-width=".9"/><rect x="8" y="9" width="56" height="116" rx="6" fill="#0a0a08"/><rect x="12" y="15" width="48" height="28" rx="8" fill="#141414" stroke="#d4af37" stroke-width=".6"/><circle cx="24" cy="29" r="6" fill="#080808" stroke="#d4af37" stroke-width=".6"/><circle cx="40" cy="29" r="5" fill="#080808"/></svg>',
+  e50n:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="13" fill="#9e3d2e"/><rect x="8" y="9" width="56" height="116" rx="8" fill="#120807"/><rect x="13" y="15" width="24" height="26" rx="7" fill="#7d2e22"/><circle cx="21" cy="24" r="4.5" fill="#1a0907"/><circle cx="30" cy="24" r="4.5" fill="#1a0907"/></svg>',
+  me15:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="13" fill="#2d5a3f"/><rect x="8" y="10" width="56" height="114" rx="7" fill="#071009"/><circle cx="22" cy="24" r="5" fill="#173824"/><circle cx="22" cy="37" r="4" fill="#173824"/></svg>',
+  rn15:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="11" fill="#1f4268"/><rect x="8" y="9" width="56" height="116" rx="7" fill="#070c16"/><rect x="14" y="15" width="22" height="30" rx="8" fill="#152e4a"/><circle cx="25" cy="23" r="5" fill="#060a12"/><circle cx="25" cy="36" r="4.5" fill="#060a12"/></svg>',
+  hm8p:'<svg viewBox="0 0 72 134"><rect x="4" y="1" width="64" height="132" rx="13" fill="#1e1e42"/><rect x="8" y="9" width="56" height="116" rx="8" fill="#080814"/><circle cx="36" cy="32" r="15" fill="#141430" stroke="#5555aa" stroke-width=".7"/><circle cx="30" cy="28" r="4.5" fill="#060610"/><circle cx="42" cy="28" r="4.5" fill="#060610"/><circle cx="36" cy="38" r="4.5" fill="#060610"/></svg>'
+};
+const SVG = id => SVGS[id] || SVGS.s25;
+
+/* ═══ KI-ANBINDUNG (Server-Proxy bevorzugt, sonst eigener Key) ═══ */
+const PRICE_PROMPT = n => `Aktueller Preis für "${n}" bei Saturn oder MediaMarkt Deutschland. Antworte NUR als reines JSON: {"preis":"XXX,XX €","quelle":"saturn.de / mediamarkt.de","hinweis":"Kurzer Verfügbarkeitshinweis","gefunden":true}. Wenn du keinen Preis findest: {"gefunden":false}`;
+
+const AI = {
+  mode:'none',          // 'server' | 'key' | 'none'
+  key: LS.get('mms_gemini_key_v5', ''),
+  model:'gemini-2.5-flash',
+  async init(){
+    this.mode = 'none';
+    if(location.protocol.startsWith('http')){
+      try{
+        const r = await fetch('api/health', {cache:'no-store'});
+        if(r.ok){ const j = await r.json(); if(j.ai){ this.mode = 'server'; } }
+      }catch{}
+    }
+    if(this.mode === 'none' && this.key) this.mode = 'key';
+    renderAiStatus();
+  },
+  async post(url, body){
+    const r = await fetch(url, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)});
+    const j = await r.json().catch(() => ({}));
+    if(!r.ok) throw new Error(j.error || 'HTTP ' + r.status);
+    return j.text || '';
+  },
+  async direct(body){
+    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${this.model}:generateContent`, {
+      method:'POST', headers:{'Content-Type':'application/json','x-goog-api-key':this.key}, body:JSON.stringify(body)
+    });
+    const j = await r.json().catch(() => ({}));
+    if(!r.ok) throw new Error(j.error?.message || 'HTTP ' + r.status);
+    return (j.candidates?.[0]?.content?.parts || []).map(p => p.text || '').join('');
+  },
+  chat(system, messages){
+    if(this.mode === 'server') return this.post('api/chat', {system, messages});
+    if(this.mode === 'key') return this.direct({
+      systemInstruction:{parts:[{text:system}]}, contents:messages,
+      generationConfig:{temperature:.6, maxOutputTokens:700, thinkingConfig:{thinkingBudget:0}}
+    });
+    return Promise.reject(new Error('no-ai'));
+  },
+  price(name){
+    if(this.mode === 'server') return this.post('api/price', {name});
+    if(this.mode === 'key') return this.direct({
+      contents:[{role:'user', parts:[{text:PRICE_PROMPT(name)}]}], tools:[{google_search:{}}],
+      generationConfig:{temperature:.1, maxOutputTokens:400, thinkingConfig:{thinkingBudget:0}}
+    });
+    return Promise.reject(new Error('no-ai'));
+  }
+};
+
+function renderAiStatus(){
+  const pill = $('aiPill');
+  pill.dataset.s = AI.mode;
+  $('aiPillTxt').textContent = AI.mode === 'none' ? 'KI offline ⚙️' : 'Gemini live ⚙️';
+  $('chatSt').textContent = STORE.name + ' ' + STORE.city + ' · ' +
+    (AI.mode === 'server' ? 'Live über Markt-Server' : AI.mode === 'key' ? 'Live (eigener Key)' : 'KI nicht verbunden');
+}
+
+/* ═══ TABS ═══ */
+let TAB = 'home', LAST_TAB = 'home';
+const HERO = {
+  home:['Smartphone','Berater PRO','In wenigen Schritten zum perfekten Gerät – mit Match-Score, Gang-Platzierung, Zubehör & Live-Preischeck.'],
+  lager:['Markt-Bestand', STORE.name, `Alle ${DEVICES.length} Fokus-Modelle mit Gang-Platzierung, Live-Bestand & Direktvergleich.`]
+};
+function setHero(t){ const [a,b,c] = HERO[t]; $('hT1').textContent = a; $('hT2').textContent = b; $('hSub').textContent = c; }
+
+function switchTab(tab){
+  document.querySelectorAll('.nb').forEach(b => b.classList.remove('on'));
+  $('nav-' + tab).classList.add('on');
+  if(tab === 'chat'){
+    $('chatOv').classList.add('vis');
+    setTimeout(() => $('chI').focus(), 80);
+    return;
+  }
+  $('chatOv').classList.remove('vis');
+  TAB = LAST_TAB = tab;
+  setHero(tab);
+  $('prgBox').style.display = tab === 'home' ? '' : 'none';
+  if(tab === 'lager') renderLager(); else renderQuiz();
+  updateTray();
+  window.scrollTo({top:0});
+}
+
+/* ═══ BERATUNGS-FLOW ═══ */
+const STEPS = [
+  { key:'prio', icon:'🎯', q:'Was ist dem Kunden am wichtigsten?', sub:'Haupt-Priorität für die Beratung', opts:[
+    {v:'kamera',   e:'📸', t:'Beste Kamera & Fotos',   d:'Nachtaufnahmen, Zoom, Urlaub & Video'},
+    {v:'akku',     e:'🔋', t:'Maximale Akkulaufzeit',  d:'2 Tage Laufzeit oder extremes Turbo-Laden'},
+    {v:'preis',    e:'💰', t:'Preis-Leistungs-Sieger', d:'Bestes Gesamtpaket für das gesetzte Budget'},
+    {v:'leistung', e:'🎮', t:'Leistung & Gaming',      d:'Flaggschiff-Chip, flüssig für viele Jahre'},
+    {v:'einfach',  e:'🤝', t:'Einfach & zuverlässig',  d:'Leichte Bedienung, z. B. für Eltern & Großeltern'}
+  ]},
+  { key:'kamera', when:a => a.prio === 'kamera', icon:'📸', q:'Worauf liegt der Fokus bei Aufnahmen?', sub:'Jeder Kamerasensor hat eigene Stärken', opts:[
+    {v:'nacht',    e:'🌙', t:'Nacht & Zoom',          d:'Konzert, Dämmerung & weite Entfernungen'},
+    {v:'video',    e:'🎬', t:'Video & Social Media',  d:'Reels, TikTok, YouTube & Stabilisierung'},
+    {v:'allround', e:'🏖️', t:'Kompakter Allrounder',  d:'Schnappschüsse, Familie & handliches Format'}
+  ]},
+  { key:'akku', when:a => a.prio === 'akku', icon:'🔋', q:'Wie sieht das Nutzungsverhalten aus?', sub:'Bestimmt Akkugröße und Ladetechnik', opts:[
+    {v:'ausdauer', e:'🔥', t:'Power-User & Gaming',      d:'Maximaler Akku & hohe Helligkeit'},
+    {v:'alltag',   e:'📱', t:'Alltag & Zuverlässigkeit', d:'1,5 bis 2 Tage Ruhe + lange Updates'},
+    {v:'laden',    e:'⚡', t:'Maximales Schnellladen',   d:'In 30–40 Minuten wieder auf 100 %'}
+  ]},
+  { key:'budget', icon:'💶', q:'Welches Budget ist eingeplant?', sub:'Preisrahmen für das Gerät', opts:[
+    {v:'u200', e:'🏷️', t:'Einsteiger',           d:'bis 200 €'},
+    {v:'m500', e:'⚖️', t:'Preis-Leistung',       d:'200 – 500 €'},
+    {v:'o950', e:'💡', t:'Obere Mittelklasse',   d:'500 – 950 €'},
+    {v:'p',    e:'💎', t:'High-End / Flaggschiff', d:'ab 900 € – kompromisslos'},
+    {v:'egal', e:'🔓', t:'Budget offen',          d:'Das beste Gerät zählt'}
+  ]},
+  { key:'os', icon:'🧭', q:'Welches Betriebssystem?', sub:'Wichtig für Datenübernahme & Ökosystem', opts:[
+    {v:'ios',     e:'🍎', t:'iPhone / iOS', d:'Apple-Ökosystem mit Watch, AirPods & Mac'},
+    {v:'android', e:'🤖', t:'Android',      d:'Samsung, Google, Xiaomi, Motorola, Honor'},
+    {v:'egal',    e:'🔄', t:'Egal',         d:'Offen für beide Welten'}
+  ]},
+  { key:'size', icon:'📏', q:'Welche Größe passt zum Kunden?', sub:'Letzter Schritt', opts:[
+    {v:'kompakt', e:'🤏', t:'Kompakt', d:'bis 6,4" – passt in jede Hosentasche'},
+    {v:'gross',   e:'📺', t:'Groß',    d:'ab 6,7" – Streaming, Gaming & Lesen'},
+    {v:'egal',    e:'👌', t:'Egal',    d:'Keine Präferenz'}
+  ]}
+];
+const BUDGET = { u200:[0,200], m500:[200,500], o950:[500,950], p:[900,Infinity], egal:[0,Infinity] };
+const S_LABEL = { cam:'Starke Hauptkamera', night:'Top bei Nacht', zoom:'Starker Zoom', video:'Video-Referenz', bat:'Großer Akku',
+  charge:'Sehr schnelles Laden', perf:'Flaggschiff-Leistung', value:'Top Preis-Leistung', simple:'Einfache Bedienung' };
+
+let QZ = { answers:{}, pos:0, done:false };
+const activeSteps = () => STEPS.filter(s => !s.when || s.when(QZ.answers));
+
+function upP(){
+  const steps = activeSteps(), total = steps.length;
+  const p = QZ.done ? 100 : Math.round(QZ.pos / total * 100);
+  $('pF').style.width = p + '%';
+  $('pL').textContent = QZ.done ? 'Beratungs-Ergebnis' : `Schritt ${QZ.pos + 1} von ${total}`;
+  $('pN').textContent = p + '%';
+}
+
+function startQuiz(){ QZ = { answers:{}, pos:0, done:false }; renderQuiz(); window.scrollTo({top:0}); }
+
+function renderQuiz(){
+  if(QZ.done) return showResult();
+  const step = activeSteps()[QZ.pos];
+  upP();
+  let h = '';
+  if(QZ.pos > 0) h += `<div class="row-btns"><button class="ghost" onclick="goBack()">← Zurück</button><button class="ghost" onclick="startQuiz()">↺ Neustart</button></div>`;
+  h += `<div class="card qc anim"><div class="qc-top"><div class="qc-icon">${step.icon}</div><div><h2>${esc(step.q)}</h2><p>${esc(step.sub)}</p></div></div></div><div class="opts">`;
+  step.opts.forEach(o => {
+    const sel = QZ.answers[step.key] === o.v ? ' sel' : '';
+    h += `<button class="opt anim${sel}" onclick="answer('${step.key}','${o.v}')">
+      <div class="opt-i">${o.e}</div><div><div class="opt-t">${esc(o.t)}</div><div class="opt-d">${esc(o.d)}</div></div><span class="opt-a">›</span></button>`;
+  });
+  $('cnt').innerHTML = h + '</div>';
+}
+
+function answer(key, v){
+  QZ.answers[key] = v;
+  // Unterfragen aufräumen, wenn sich die Priorität geändert hat
+  if(key === 'prio'){ if(v !== 'kamera') delete QZ.answers.kamera; if(v !== 'akku') delete QZ.answers.akku; }
+  const steps = activeSteps();
+  if(QZ.pos + 1 >= steps.length) QZ.done = true; else QZ.pos++;
+  renderQuiz();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function goBack(){
+  if(QZ.done){ QZ.done = false; }
+  else if(QZ.pos > 0){ QZ.pos--; }
+  renderQuiz();
+}
+
+/* ═══ MATCHING ═══ */
+function weights(a){
+  switch(a.prio){
+    case 'kamera': return ({ nacht:{night:3,zoom:2,cam:2}, video:{video:3,cam:2,perf:1}, allround:{cam:2.5,simple:1,value:1.5} })[a.kamera];
+    case 'akku':   return ({ ausdauer:{bat:3,perf:1,value:1}, alltag:{bat:2.5,simple:1.5,value:1}, laden:{charge:3,bat:1.5} })[a.akku];
+    case 'preis':  return {value:3,cam:1,bat:1,perf:1};
+    case 'leistung': return {perf:3,charge:1,bat:1,video:.5};
+    default:       return {simple:3,bat:1.5,value:1.5};
+  }
+}
+
+function scoreDevice(d, a){
+  const w = weights(a);
+  let sum = 0, tw = 0;
+  for(const k in w){ sum += w[k] * d.s[k]; tw += w[k]; }
+  let sc = sum / tw;
+  const pos = [], neg = [];
+  Object.keys(w).sort((x, y) => w[y] - w[x]).forEach(k => { if(d.s[k] >= 8 && pos.length < 2) pos.push(S_LABEL[k]); });
+
+  const [lo, hi] = BUDGET[a.budget] || BUDGET.egal;
+  if(d.pNum > hi){ sc -= 2 + (d.pNum - hi) / hi * 8; neg.push(`${fmt(d.pNum - hi)} über Budget`); }
+  else if(d.pNum < lo){ sc -= 1.2; }
+  else if(a.budget !== 'egal'){ pos.push('Passt ins Budget'); }
+
+  if(a.os === 'ios' && d.os !== 'ios'){ sc -= 4; neg.push('Android statt iOS'); }
+  if(a.os === 'android' && d.os === 'ios'){ sc -= 4; neg.push('iOS statt Android'); }
+
+  if(a.size === 'kompakt'){ if(d.size <= 6.4){ sc += .8; pos.push('Kompaktes Format'); } else { sc -= 1; neg.push(`Groß (${String(d.size).replace('.', ',')}")`); } }
+  if(a.size === 'gross'){ if(d.size >= 6.7){ sc += .8; pos.push('Großes Display'); } else sc -= .6; }
+
+  const st = stockOf(d);
+  if(st === 0){ sc -= 2.5; neg.push('Aktuell nicht vorrätig'); }
+  else if(st < 3) neg.push(`Nur noch ${st}x im Markt`);
+
+  return { d, sc, match: Math.max(1, Math.min(99, Math.round(sc * 10))), pos, neg };
+}
+
+function recommend(a){ return DEVICES.map(d => scoreDevice(d, a)).sort((x, y) => y.sc - x.sc); }
+
+function answerLabels(a){
+  return activeSteps().map(s => { const o = s.opts.find(o => o.v === a[s.key]); return o ? `${o.e} ${o.t}` : null; }).filter(Boolean);
+}
+
+let LAST_RESULT = [];
+function showResult(){
+  upP();
+  const r = recommend(QZ.answers);
+  const top = r[0], alts = r.slice(1, 3);
+  LAST_RESULT = r.slice(0, 3).map(x => x.d.id);
+  const compromise = top.neg.some(n => !n.startsWith('Nur noch'));
+  const allStock = r.slice(0, 3).every(x => stockOf(x.d) > 0);
+  $('cnt').innerHTML = `
+    <div class="row-btns"><button class="ghost" onclick="goBack()">← Antwort ändern</button><button class="ghost" onclick="startQuiz()">↺ Neue Beratung</button></div>
+    <div class="anim">
+      <div class="banner ${compromise ? 'warn' : 'ok'}">
+        <div class="banner-i">${compromise ? '!' : '✓'}</div>
+        <div>
+          <h2>${compromise ? 'Bestes Match – mit Kompromiss' : 'Perfektes Match gefunden'}</h2>
+          <p>${compromise ? esc(top.neg.join(' · ')) : allStock ? `Alle Empfehlungen heute in der ${esc(STORE.name)} vorrätig` : 'Bestand der Alternativen beachten'}</p>
+        </div>
+      </div>
+      <div class="summary">${answerLabels(QZ.answers).map(l => `<span class="sum-chip">${esc(l)}</span>`).join('')}</div>
+      ${renderCard(top.d, 'r', 'top', top)}
+      <button class="cmp-btn" onclick="openCompare(LAST_RESULT)">⚡ Top 3 im Direktvergleich</button>
+      ${alts.map(x => renderCard(x.d, 'r', 'alt', x)).join('')}
+      <button class="wide-btn" onclick="askAboutResult()">💬 Empfehlung mit KI begründen lassen</button>
+      <div style="height:8px"></div>
+      <button class="wide-btn" onclick="startQuiz()">🔄 Komplette Beratung neu starten</button>
+    </div>`;
+}
+
+/* ═══ GERÄTEKARTE ═══ */
+function renderCard(d, ctx, kind, m){
+  const isTop = kind === 'top';
+  const badge = kind === 'top' ? '⭐ Top-Empfehlung' : kind === 'alt' ? '💡 Starke Alternative' : '📱 Datenblatt';
+  const uid = ctx + '_' + d.id;
+  return `
+  <article class="card pc ${isTop ? 'top' : ''}">
+    <div class="pc-head"><span class="badge ${isTop ? 't' : 'a'}">${badge}</span>${stockBadge(d)}</div>
+    <div class="ph-row">
+      <div class="ph-vis">${SVG(d.id)}</div>
+      <div class="ph-info">
+        <div class="ph-brand">${esc(d.brand)}</div>
+        <div class="ph-name">${esc(d.n)}</div>
+        <div class="ph-price">${fmt(d.pNum)}</div>
+        <div class="ph-loc">📍 ${esc(d.loc)}</div>
+      </div>
+    </div>
+    ${m ? `
+      <div class="match"><div class="match-bar"><i style="width:${m.match}%"></i></div><div class="match-n">${m.match}% Match</div></div>
+      <div class="why">${m.pos.map(t => `<div class="pos">${esc(t)}</div>`).join('')}${m.neg.map(t => `<div class="neg">${esc(t)}</div>`).join('')}</div>` : ''}
+    <div class="tags">${d.h.map(t => `<span class="tag">${esc(t)}</span>`).join('')}</div>
+    <div class="ph-desc">${esc(d.d)}</div>
+    <div class="addon">
+      <div class="addon-t">🔌 Empfohlenes Zubehör &amp; Service</div>
+      <div>• <b>Zubehör:</b> ${esc(d.acc)}</div>
+      <div>• <b>Service-Tipp:</b> ${esc(STORE.service)} (${STORE.servicePrice} €) + kalibrierte Schutzfolie</div>
+    </div>
+    <div class="btn-row">
+      <button class="act red" id="lpB_${uid}" onclick="liveP('${d.id}','${ctx}')">🔴 Live-Preis</button>
+      <button class="act org" onclick="askAboutPhone('${d.id}')">💬 KI fragen</button>
+    </div>
+    <div id="lpR_${uid}"></div>
+  </article>`;
+}
+
+/* ═══ LIVE-PREISCHECK ═══ */
+function parsePrice(t){
+  try{
+    const m = t.match(/\{[\s\S]*\}/);
+    if(m){ const j = JSON.parse(m[0]); if(j.gefunden !== false && j.preis) return j; if(j.gefunden === false) return null; }
+  }catch{}
+  const m = t.match(/\d{1,2}\.\d{3}(,\d{2})?\s*€|\d{2,4}(,\d{2})?\s*€/);
+  return m ? { preis:m[0], quelle:'Live-Suche', hinweis:'' } : null;
+}
+const priceNum = s => parseFloat(String(s).replace(/[^\d,]/g, '').replace(',', '.'));
+
+async function liveP(id, ctx){
+  const d = DB[id], uid = ctx + '_' + id, b = $('lpB_' + uid), out = $('lpR_' + uid);
+  if(!b || !out) return;
+  b.disabled = true;
+  b.innerHTML = '<span class="sp"></span> Prüfe …';
+  out.innerHTML = '';
+  try{
+    const p = parsePrice(await AI.price(d.n));
+    if(!p) throw new Error('not-found');
+    const live = priceNum(p.preis), diff = Math.round(live - d.pNum);
+    const diffHtml = isNaN(live) ? '' : diff === 0
+      ? `<span class="lp-diff eq">= identisch mit Marktpreis</span>`
+      : `<span class="lp-diff ne">${diff > 0 ? '+' : '−'}${fmt(Math.abs(diff))} ggü. Marktpreis ${fmt(d.pNum)}</span>`;
+    out.innerHTML = `<div class="lp-ok"><div class="lp-l">● Live-Preis online</div><div class="lp-p">${esc(p.preis)}</div>
+      <div class="lp-s">Quelle: ${esc(p.quelle || 'Online')}${p.hinweis ? ' · ' + esc(p.hinweis) : ''}</div>${diffHtml}</div>`;
+    b.innerHTML = '✓ Preis aktuell';
+    b.disabled = false;
+  }catch(e){
+    const q = encodeURIComponent(d.n);
+    const why = e.message === 'no-ai' ? 'KI nicht verbunden (⚙️ oben rechts).' : e.message === 'not-found' ? 'Kein eindeutiger Online-Preis gefunden.' : 'Live-Abfrage fehlgeschlagen.';
+    out.innerHTML = `<div class="lp-e">${why}<br>
+      <a href="https://www.saturn.de/de/search.html?query=${q}" target="_blank" rel="noopener">→ saturn.de</a>
+      <a href="https://www.mediamarkt.de/de/search.html?query=${q}" target="_blank" rel="noopener">→ mediamarkt.de</a></div>`;
+    b.disabled = false;
+    b.innerHTML = '🔴 Erneut prüfen';
+  }
+}
+
+/* ═══ LAGER ═══ */
+const INV = { brand:'Alle', q:'', sort:'name', cmp:[] };
+
+function renderLager(){
+  $('cnt').innerHTML = `
+    <div class="inv-bar">
+      <input class="inv-search" id="invQ" type="search" placeholder="🔍 Modell, Feature oder Gang suchen …" value="${esc(INV.q)}" oninput="INV.q=this.value;renderInvList()">
+      <div class="chips" id="invChips"></div>
+      <div class="inv-row">
+        <select class="sel" onchange="INV.sort=this.value;renderInvList()" aria-label="Sortierung">
+          ${[['name','Sortierung: Name'],['pAsc','Preis aufsteigend'],['pDesc','Preis absteigend'],['stock','Bestand: niedrig zuerst'],['loc','Nach Gang']]
+            .map(([v,l]) => `<option value="${v}" ${INV.sort===v?'selected':''}>${l}</option>`).join('')}
+        </select>
+      </div>
+    </div>
+    <div class="inv-meta" id="invMeta"></div>
+    <div id="invList"></div>`;
+  renderInvList();
+}
+
+function renderInvList(){
+  $('invChips').innerHTML = BRANDS.map(b => `<button class="chip ${INV.brand===b?'on':''}" onclick="INV.brand='${b}';renderInvList()">${esc(b)}</button>`).join('');
+  const q = INV.q.trim().toLowerCase();
+  const items = DEVICES.filter(d => {
+    if(INV.brand !== 'Alle' && d.brand !== INV.brand) return false;
+    if(!q) return true;
+    return [d.n, d.loc, d.chip, d.display, d.cam, d.bat, ...d.h].join(' ').toLowerCase().includes(q);
+  });
+  const sorters = {
+    name:(a,b) => a.n.localeCompare(b.n), pAsc:(a,b) => a.pNum - b.pNum, pDesc:(a,b) => b.pNum - a.pNum,
+    stock:(a,b) => stockOf(a) - stockOf(b), loc:(a,b) => a.loc.localeCompare(b.loc, 'de', {numeric:true})
+  };
+  items.sort(sorters[INV.sort]);
+  const units = items.reduce((s, d) => s + stockOf(d), 0);
+  $('invMeta').innerHTML = `<span>${items.length} Modelle</span><span>${units} Geräte im Markt</span>`;
+  $('invList').innerHTML = items.length ? items.map(d => {
+    const on = INV.cmp.includes(d.id);
+    return `<div class="card inv-item">
+      <button class="inv-main" onclick="openDetail('${d.id}')">
+        <div class="inv-vis">${SVG(d.id)}</div>
+        <div class="inv-mid">
+          <div class="inv-name">${esc(d.n)}</div>
+          <div class="inv-sub">${esc(d.display)}</div>
+          <div class="inv-loc">📍 ${esc(d.loc)}</div>
+          <div class="inv-pr">${fmt(d.pNum)} ${stockBadge(d)}</div>
+        </div>
+      </button>
+      <button class="cmp-tog ${on?'on':''}" onclick="toggleCompare('${d.id}')" title="Zum Vergleich" aria-pressed="${on}">${on ? '✓' : '+'}</button>
+    </div>`;
+  }).join('') : `<div class="card empty">Kein Gerät für diese Suche gefunden.</div>`;
+}
+
+function toggleCompare(id){
+  const i = INV.cmp.indexOf(id);
+  if(i >= 0) INV.cmp.splice(i, 1);
+  else { if(INV.cmp.length >= 3) INV.cmp.shift(); INV.cmp.push(id); }
+  if(TAB === 'lager') renderInvList();
+  updateTray();
+}
+function clearCompare(){ INV.cmp = []; if(TAB === 'lager') renderInvList(); updateTray(); }
+function updateTray(){
+  const n = INV.cmp.length;
+  $('tray').classList.toggle('vis', TAB === 'lager' && n > 0);
+  $('trayTxt').textContent = n === 1 ? '1 Gerät gewählt – noch eins wählen' : `${n} Geräte im Vergleich`;
+  $('trayGo').disabled = n < 2;
+}
+
+/* ═══ MODALS ═══ */
+function openModal(html){ $('mdlCnt').innerHTML = html; $('mdlOv').classList.add('vis'); $('mdlCnt').scrollTop = 0; }
+function closeModal(){ $('mdlOv').classList.remove('vis'); }
+
+function openCompare(ids){
+  const ds = ids.map(id => DB[id]).filter(Boolean);
+  if(ds.length < 2) return;
+  const minP = Math.min(...ds.map(d => d.pNum)), maxSt = Math.max(...ds.map(stockOf));
+  const row = (label, f) => `<tr><td>${label}</td>${ds.map(d => `<td>${f(d)}</td>`).join('')}</tr>`;
+  const scoreRow = (label, k) => {
+    const best = Math.max(...ds.map(d => d.s[k]));
+    return row(label, d => `<span class="${d.s[k] === best ? 'best' : ''}">${d.s[k]}/10</span><div class="bar"><i style="width:${d.s[k]*10}%"></i></div>`);
+  };
+  openModal(`
+    <div class="mdl-h"><h3>⚡ Direktvergleich</h3><button class="x-btn" onclick="closeModal()">✕</button></div>
+    <div class="cmp-wrap"><table class="cmp-tbl">
+      <thead><tr><th></th>${ds.map(d => `<th>${esc(d.n)}</th>`).join('')}</tr></thead>
+      <tbody>
+        ${row('Preis', d => `<span class="${d.pNum === minP ? 'best' : ''}">${fmt(d.pNum)}</span>`)}
+        ${row('Bestand', d => `<span class="${stockOf(d) === maxSt ? 'best' : ''}">${stockOf(d)} Stück</span>`)}
+        ${row('Standort', d => esc(d.loc))}
+        ${row('Display', d => esc(d.display))}
+        ${row('Chip', d => esc(d.chip))}
+        ${row('Kamera', d => esc(d.cam))}
+        ${row('Akku', d => esc(d.bat))}
+        ${scoreRow('Kamera', 'cam')}
+        ${scoreRow('Nacht', 'night')}
+        ${scoreRow('Zoom', 'zoom')}
+        ${scoreRow('Video', 'video')}
+        ${scoreRow('Ausdauer', 'bat')}
+        ${scoreRow('Laden', 'charge')}
+        ${scoreRow('Leistung', 'perf')}
+        ${scoreRow('Preis/Leist.', 'value')}
+        ${row('Zubehör', d => esc(d.acc))}
+      </tbody>
+    </table></div>
+    <p class="cmp-note">Balken = interne Berater-Einschätzung (0–10). Grün = bester Wert im Vergleich.</p>
+    <div class="btn-row"><button class="act org wide" onclick="askCompare(${esc(JSON.stringify(ds.map(d => d.id)))})">💬 KI-Verkaufsargumente für diesen Vergleich</button></div>`);
+}
+
+function openDetail(id){
+  const d = DB[id];
+  if(!d) return;
+  const inCmp = INV.cmp.includes(id);
+  openModal(`
+    <div class="mdl-h"><h3>📱 Datenblatt &amp; Bestand</h3><button class="x-btn" onclick="closeModal()">✕</button></div>
+    <div class="card stock-ed">
+      <div><b>Bestand korrigieren</b><small>Wird auf diesem Gerät gespeichert</small></div>
+      <div class="stepper">
+        <button onclick="bumpStock('${id}',-1)" aria-label="Weniger">−</button>
+        <output id="stOut">${stockOf(d)}</output>
+        <button onclick="bumpStock('${id}',1)" aria-label="Mehr">+</button>
+      </div>
+    </div>
+    ${renderCard(d, 'm', 'detail')}
+    <div class="btn-row" style="margin-top:0">
+      <button class="act org wide" onclick="toggleCompare('${id}');openDetail('${id}')">${inCmp ? '✓ Im Vergleich – entfernen' : '+ Zum Vergleich hinzufügen'}</button>
+    </div>`);
+}
+
+function bumpStock(id, delta){
+  setStock(id, stockOf(DB[id]) + delta);
+  $('stOut').textContent = stockOf(DB[id]);
+  const head = $('mdlCnt').querySelector('.pc-head .stk');
+  if(head) head.outerHTML = stockBadge(DB[id]);
+  if(TAB === 'lager') renderInvList();
+  updateNavCount();
+}
+
+function openSettings(){
+  const status = AI.mode === 'server' ? '🟢 Verbunden über den Markt-Server (Key liegt sicher in der Server-.env).'
+    : AI.mode === 'key' ? '🟢 Verbunden mit eigenem Key aus diesem Browser.'
+    : '🟡 Keine KI-Verbindung. Server mit <code>GEMINI_API_KEY</code> starten oder unten einen eigenen Key hinterlegen.';
+  openModal(`
+    <div class="mdl-h"><h3>⚙️ KI &amp; Einstellungen</h3><button class="x-btn" onclick="closeModal()">✕</button></div>
+    <div class="card info">${status}</div>
+    <div class="field">
+      <label for="keyIn">Eigener Gemini API-Key (optional)</label>
+      <input id="keyIn" type="password" autocomplete="off" placeholder="AIza…" value="${esc(AI.key)}">
+    </div>
+    <div class="btn-row" style="margin-top:0">
+      <button class="act org" onclick="saveKey()">💾 Speichern</button>
+      <button class="act red" onclick="saveKey(true)">🗑️ Key entfernen</button>
+      <button class="act org wide" onclick="resetStock()">↺ Bestand auf Standard zurücksetzen</button>
+    </div>
+    <p class="cmp-note">Der Key wird nur im Browser dieses Geräts gespeichert. Der Server-Proxy hat Vorrang.</p>`);
+}
+async function saveKey(remove){
+  AI.key = remove ? '' : $('keyIn').value.trim();
+  if(AI.key) LS.set('mms_gemini_key_v5', AI.key); else LS.del('mms_gemini_key_v5');
+  await AI.init();
+  openSettings();
+}
+function resetStock(){
+  stockOv = {}; LS.del('mms_stock_v5');
+  updateNavCount();
+  if(TAB === 'lager') renderInvList(); else renderQuiz();
+  closeModal();
+}
+
+/* ═══ AI-PILOT CHAT ═══ */
+const QUICK = [
+  ['📸 Kamera-Referenz', 'Welches Handy hat die beste Kamera 2026?'],
+  ['💰 Bestes unter 350 €', 'Preis-Leistungs-Sieger bis 350 €?'],
+  ['⚡ Ultra vs. Pro Max', 'Galaxy S25 Ultra vs. iPhone 17 Pro Max?'],
+  ['🛡️ Startklar-Service', `Was beinhaltet der ${STORE.service}?`],
+  ['📦 Wenig Bestand', 'Welche Geräte sind fast ausverkauft und was empfehle ich stattdessen?']
+];
+function systemPrompt(){
+  return `Du bist der digitale Fachberater (GSM, Tarif & Service) im MediaMarktSaturn ${STORE.city} ${STORE.name}.
+Du unterstützt Verkäufer und Kunden am Regal. Antworte auf Deutsch, per Du, freundlich, verkaufsstark und präzise in maximal 4 kurzen Sätzen oder einer kurzen Liste.
+Empfiehl bevorzugt Geräte aus unserem Sortiment und nenne dabei Preis und Gang. Erfinde keine Bestände oder Preise.
+UNSER MARKT-SORTIMENT (Preis, Gang, aktueller Bestand):
+${DEVICES.map(x => `- ${x.n}: ${fmt(x.pNum)}, ${x.loc}, Bestand ${stockOf(x)}x, ${x.display}, ${x.chip}, Kamera: ${x.cam}, Akku: ${x.bat}, Zubehör: ${x.acc}`).join('\n')}
+Weise bei Gelegenheit dezent auf passendes Zubehör (Netzteil, Panzerglas, Hülle) oder den ${STORE.service} (${STORE.servicePrice} €: Einrichtung, Datenübernahme, Schutzfolie) hin.`;
+}
+
+let chatHist = [], typing = false;
+const WELCOME = `Hallo! 👋 Ich bin dein digitaler Fachberater für die ${STORE.name}. Kamera-Duell, Akku-Gigant, passendes Netzteil oder Vertragsverlängerung – was suchen wir heute?`;
+
+function resetChat(){
+  chatHist = [];
+  $('chM').innerHTML = '';
+  addM(WELCOME, 'b');
+  $('chQ').innerHTML = QUICK.map(([l, q], i) => `<button class="qk" onclick="sendQ(QUICK[${i}][1])">${esc(l)}</button>`).join('');
+  $('chQ').style.display = '';
+}
+
+function fmtMsg(t){
+  return esc(t)
+    .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+    .replace(/^\s*[\*\-]\s+/gm, '• ')
+    .replace(/\n/g, '<br>');
+}
+function addM(t, who, extra = ''){
+  const c = $('chM'), m = document.createElement('div');
+  m.className = 'cm ' + who + (extra ? ' ' + extra : '');
+  m.innerHTML = fmtMsg(t);
+  c.appendChild(m);
+  c.scrollTop = c.scrollHeight;
+  return m;
+}
+
+function sendQ(t){ switchTab('chat'); $('chI').value = t; sendMsg(); }
+function askAboutPhone(id){ closeModal(); sendQ(`Was sind die wichtigsten Verkaufsargumente und das passende Zubehör für das ${DB[id].n}?`); }
+function askCompare(ids){ closeModal(); sendQ(`Vergleiche für ein Verkaufsgespräch: ${ids.map(i => DB[i].n).join(' vs. ')}. Für wen eignet sich welches Gerät?`); }
+function askAboutResult(){
+  const names = LAST_RESULT.map(i => DB[i].n);
+  sendQ(`Kundenprofil: ${answerLabels(QZ.answers).join(', ')}. Meine Empfehlung: ${names[0]} (Alternativen: ${names.slice(1).join(', ')}). Gib mir 3 starke Argumente für das Kundengespräch.`);
+}
+
+async function sendMsg(){
+  const i = $('chI'), b = $('chS'), t = i.value.trim();
+  if(!t || typing) return;
+  $('chQ').style.display = 'none';
+  addM(t, 'u');
+  i.value = '';
+  typing = true; b.disabled = true;
+  chatHist.push({role:'user', parts:[{text:t}]});
+  const loader = document.createElement('div');
+  loader.className = 'cm b';
+  loader.innerHTML = '<span class="typing"><i></i><i></i><i></i></span>';
+  $('chM').appendChild(loader);
+  $('chM').scrollTop = $('chM').scrollHeight;
+  try{
+    const re = (await AI.chat(systemPrompt(), chatHist.slice(-20))).trim();
+    loader.remove();
+    if(!re) throw new Error('empty');
+    chatHist.push({role:'model', parts:[{text:re}]});
+    addM(re, 'b');
+  }catch(e){
+    loader.remove();
+    chatHist.pop();
+    addM(e.message === 'no-ai'
+      ? 'Die KI ist noch nicht verbunden. Tippe oben rechts auf **⚙️**, um einen Key zu hinterlegen – im **Lager-Tab** findest du bis dahin Gang, Bestand und den Direktvergleich.'
+      : `Verbindungsfehler zur KI (${e.message}). Bitte gleich nochmal versuchen oder die Einstellungen unter **⚙️** prüfen.`, 'b', 'err');
+  }
+  typing = false; b.disabled = false;
+}
+
+/* ═══ START ═══ */
+function updateNavCount(){ $('navCnt').textContent = DEVICES.length; }
+document.addEventListener('keydown', e => {
+  if(e.key !== 'Escape') return;
+  if($('mdlOv').classList.contains('vis')) closeModal();
+  else if($('chatOv').classList.contains('vis')) switchTab(LAST_TAB);
+});
+$('storeLbl').textContent = `${STORE.city} · ${STORE.name}`;
+updateNavCount();
+resetChat();
+switchTab('home');
+AI.init();
+</script>
+</body>
+</html>

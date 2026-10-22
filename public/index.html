@@ -1,47 +1,11 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saturn AI-Pilot PRO · Dresden</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header class="hdr">
-  <div class="brand"><span class="logo" aria-hidden="true">S</span>
-    <div><h1>AI-Pilot <em>PRO</em></h1><p>Saturn Altmarkt-Galerie Dresden</p></div></div>
-</header>
-
-<main id="main">
-  <section id="quiz" aria-live="polite"></section>
-  <section id="result" hidden aria-live="polite"></section>
-</main>
-
-<div id="chat" class="chat" role="dialog" aria-modal="true" aria-labelledby="chatTitle" hidden>
-  <div class="chat-head"><h2 id="chatTitle">KI-Berater</h2>
-    <button type="button" class="icon-btn" id="chatClose" aria-label="Chat schließen">✕</button></div>
-  <div id="chatMsgs" class="chat-msgs" aria-live="polite"></div>
-  <div id="chatQuick" class="chat-quick">
-    <button type="button" class="chip">Welches Handy hat die beste Kamera?</button>
-    <button type="button" class="chip">Gutes Handy bis 400 €?</button>
-    <button type="button" class="chip">iPhone oder Android?</button>
-  </div>
-  <form id="chatForm" class="chat-form">
-    <label for="chatInput" class="sr">Deine Frage</label>
-    <input id="chatInput" maxlength="1000" autocomplete="off" placeholder="Frag mich etwas…">
-    <button type="submit" id="chatSend" aria-label="Senden">➤</button>
-  </form>
-</div>
-
-<nav class="nav" aria-label="Hauptnavigation">
-  <button type="button" id="navHome" class="nb on" aria-current="page"><span aria-hidden="true">🏠</span>Berater</button>
-  <button type="button" id="navAll" class="nb"><span aria-hidden="true">📱</span>Alle Geräte</button>
-  <button type="button" id="navChat" class="nb"><span aria-hidden="true">💬</span>KI-Chat</button>
-</nav>
-
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#df0000">
+<meta name="description" content="Dein Smartphone-Berater: Wünsche auswählen, passende Geräte entdecken, vergleichen und mit dem KI-Berater sprechen. Persönlicher Konzeptentwurf von Matthias.">
+<title>Dein Smartphone. Dein Match. · Smartphone-Berater</title>
+<link rel="stylesheet" href="styles.css"></head><body>
+<header><div class="brand"><span class="brand-mark" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.2 18h3.6"/></svg></span><div>Smartphone <span class="accent-text">Berater</span><small>DRESDEN</small></div></div><nav class="desktop-nav" aria-label="Hauptnavigation"></nav><span class="demo" id="mode">Konzept · Demo</span></header>
+<main id="main"></main><nav class="bottom-nav" aria-label="Mobile Navigation"></nav><div id="tray"></div><div id="toast" class="toast hidden" role="status"></div>
+<dialog class="modal" id="comparison" aria-labelledby="compare-title"><div class="modal-head"><h2 id="compare-title">Direkt vergleichen</h2><button class="close" aria-label="Vergleich schließen" onclick="this.closest('dialog').close()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" focusable="false"><path d="M5.5 5.5 18.5 18.5M18.5 5.5 5.5 18.5"/></svg></button></div><div id="comparison-content"></div></dialog>
 <script src="data/phones.js"></script>
 <script src="app.js"></script>
-</body>
-</html>
+</body></html>

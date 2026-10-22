@@ -8,7 +8,7 @@ const KEY = process.env.GEMINI_API_KEY;
 const MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
 const GU = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
-const SYSTEM = 'Du bist Smartphone-Berater im Saturn Altmarkt-Galerie Dresden. Deutsch, per Du, kompetent. Max 3-4 Sätze.\n' +
+const SYSTEM = 'Du bist Smartphone-Berater im Saturn Altmarkt-Galerie Dresden. Deutsch, per Du, kompetent. Max 3-4 Sätze. Preise sind Richtpreise ohne Gewähr, keine Lagerbestände erfinden.\n' +
   'SORTIMENT: Galaxy S25 Ultra 1.449€, S25 899€, iPhone 17 Pro Max 1.449€, iPhone 17 949€, Pixel 10 Pro 1.099€, Honor Magic 8 Pro 899€, Galaxy A56 479€, Pixel 9a 499€, POCO X7 Pro 299€, Edge 50 Neo 399€, Moto E15 79€, Redmi Note 15 189€';
 
 app.disable('x-powered-by');
@@ -25,6 +25,8 @@ async function gemini(body) {
   const d = await r.json();
   return (d.candidates?.[0]?.content?.parts || []).map(p => p.text || '').join('');
 }
+
+app.get('/api/status', (req, res) => res.json({ ai: !!KEY }));
 
 app.post('/api/chat', async (req, res) => {
   const hist = req.body?.history;

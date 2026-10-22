@@ -31,3 +31,9 @@ public/data/phones.js  Produktdaten + Handy-Grafik (SVG)
 ## Geräte ändern
 
 Einfach in `public/data/phones.js` einen Eintrag ergänzen/anpassen (`price`, `os`, `budget`, `use`, `features`). Die Sortimentsliste für den Chat steht in `server.js` (`SYSTEM`).
+
+## Version 5 – Zusammenführung (ChatGPT- + Gemini-Version)
+- UX, Beratung in 3 Schritten, Katalog mit Filtern, Merkliste (localStorage), Vergleich (bis 3 Geräte), Händlerlinks Saturn/MediaMarkt und lokale Hilfe aus der Version vom 14.10.2026.
+- Backend (Express, Gemini-Proxy mit Rate-Limit & Validierung), KI-Chat und Live-Preis-Schätzung aus v4.
+- `GET /api/status` meldet, ob ein Schlüssel gesetzt ist. Ohne `GEMINI_API_KEY` läuft die App vollständig mit lokaler Hilfe.
+- Komplett neues Design: Design-Tokens, Mobile-First, SVG-Icons und Geräte-Illustrationen, neutrale Wortmarke „Smartphone Berater“.

@@ -1,16 +1,9 @@
 {
-  "name": "saturn-backend",
-  "version": "1.0.0",
+  "name": "saturn-ai-pilot",
+  "version": "4.0.0",
+  "description": "Smartphone-Berater für Saturn Dresden",
   "type": "module",
-  "scripts": {
-    "dev": "node server.js",
-    "scrape": "node scraper.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "puppeteer": "^21.6.0",
-    "axios": "^1.6.2",
-    "dotenv": "^16.3.1"
-  }
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "dotenv": "^16.4.5", "express": "^4.19.2", "express-rate-limit": "^7.4.0" }
 }

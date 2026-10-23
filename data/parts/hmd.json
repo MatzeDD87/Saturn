@@ -1,0 +1,84 @@
+[
+  {
+    "id": "hmd-arc",
+    "brand": "HMD",
+    "name": "HMD Arc",
+    "release": "2025-02",
+    "uvp": 99,
+    "uvp_by_storage": {
+      "64": 99
+    },
+    "os": "Android",
+    "os_launch": "Android 14 (Go Edition)",
+    "updates_years": 2,
+    "updates_note": "2 Jahre Sicherheitsupdates (Quartalsweise)",
+    "display": {
+      "size_in": 6.52,
+      "type": "IPS LCD, HD+",
+      "resolution": "1600 x 720",
+      "hz": 60,
+      "peak_nits": null
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Unisoc 9863A",
+    "ram_gb": [
+      4
+    ],
+    "storage_gb": [
+      64
+    ],
+    "camera": {
+      "main_mp": 13,
+      "ultrawide_mp": null,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 5,
+      "summary": "13-MP-Hauptkamera, 5-MP-Selfie – für Alltagsfotos"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 10,
+      "wireless_w": 0,
+      "note": "10 W Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP54",
+    "weight_g": 185.4,
+    "dimensions_mm": "166.4 x 76.9 x 8.95",
+    "five_g": false,
+    "esim": "Dual-Nano-SIM",
+    "colors": [
+      {
+        "name": "Shadow Black",
+        "hex": "#222326"
+      }
+    ],
+    "highlights": [
+      "Unter 100 €",
+      "Reparierbar (Gen 2)",
+      "5000-mAh-Akku"
+    ],
+    "pitch": "Einfaches, robustes Einsteiger-Handy mit großem Akku – ideal als Zweit-, Kinder- oder Senioren-Handy.",
+    "tags": [
+      "senior",
+      "value",
+      "battery"
+    ],
+    "images": [
+      "img/phones/hmd-arc-1.webp",
+      "img/phones/hmd-arc-2.webp"
+    ],
+    "image_colors": [
+      "Shadow Black",
+      "Shadow Black"
+    ],
+    "uncertain": [
+      "uvp",
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://www.hmd.com/en_int/hmd-arc/specs",
+      "https://www.hmd.com/de_de/hmd-arc"
+    ]
+  }
+]

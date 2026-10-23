@@ -1,0 +1,288 @@
+[
+  {
+    "id": "honor-magic8-pro",
+    "brand": "Honor",
+    "name": "Magic8 Pro",
+    "release": "2026-01",
+    "uvp": 1299.9,
+    "uvp_by_storage": {
+      "512": 1299.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (MagicOS 10)",
+    "updates_years": 7,
+    "updates_note": "Bis zu 7 Jahre Updates lt. Honor (Umfang bitte prüfen)",
+    "display": {
+      "size_in": 6.71,
+      "type": "LTPO OLED, 1–120 Hz",
+      "resolution": "2808 x 1256",
+      "hz": 120,
+      "peak_nits": null
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 200,
+      "tele_zoom": "3,7x optisch (Periskop)",
+      "front_mp": 50,
+      "summary": "50 MP Haupt + 50-MP-Ultraweitwinkel + 200-MP-Periskop-Tele, 50-MP-Selfie"
+    },
+    "battery_mah": 6270,
+    "charging": {
+      "wired_w": 100,
+      "wireless_w": 80,
+      "note": "100 W Kabel, kabelloses Laden (bis 80 W lt. Hersteller)"
+    },
+    "ip": "IP68/IP69K",
+    "weight_g": 213,
+    "dimensions_mm": "161.15 x 75.0 x 8.4",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e9dcc7"
+      },
+      {
+        "name": "Türkis",
+        "hex": "#bcd6dd"
+      }
+    ],
+    "highlights": [
+      "200-MP-Periskop-Tele",
+      "6270 mAh, 100 W Kabel",
+      "IP68/IP69K"
+    ],
+    "pitch": "Honors Flaggschiff: 200-MP-Tele, großer Akku und Top-Chip zum Kampfpreis gegenüber Ultra-Modellen.",
+    "tags": [
+      "camera",
+      "battery",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/honor-magic8-pro-1.webp",
+      "img/phones/honor-magic8-pro-2.webp",
+      "img/phones/honor-magic8-pro-3.webp"
+    ],
+    "image_colors": [
+      "Schwarz",
+      "Gold",
+      "Türkis"
+    ],
+    "uncertain": [
+      "camera",
+      "wireless_w",
+      "display.peak_nits",
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.honor.com/de/phones/honor-magic8-pro/",
+      "https://www.nextpit.de/handys/honor-magic8-pro"
+    ]
+  },
+  {
+    "id": "honor-600-pro",
+    "brand": "Honor",
+    "name": "Honor 600 Pro",
+    "release": "2026-05",
+    "uvp": 999.9,
+    "uvp_by_storage": {
+      "512": 999.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (MagicOS 10)",
+    "updates_years": null,
+    "updates_note": "Update-Zusage lt. Hersteller (Dauer bitte im Markt erfragen)",
+    "display": {
+      "size_in": 6.57,
+      "type": "AMOLED, 120 Hz",
+      "resolution": "2728 x 1264",
+      "hz": 120,
+      "peak_nits": 8000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 12,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch (Periskop)",
+      "front_mp": 50,
+      "summary": "200 MP Haupt + 50-MP-Periskop-Tele 3,5x + 12-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6400,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 50,
+      "note": "80 W Kabel, 50 W kabellos, 27 W Reverse"
+    },
+    "ip": "IP68/IP69/IP69K",
+    "weight_g": 195,
+    "dimensions_mm": "156.0 x 74.7 x 7.8",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Orange",
+        "hex": "#e8873a"
+      },
+      {
+        "name": "Schwarz",
+        "hex": "#2a2a2c"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#efece6"
+      }
+    ],
+    "highlights": [
+      "200 MP + 3,5x-Periskop",
+      "8000-Nits-Display",
+      "Kabellos 50 W"
+    ],
+    "pitch": "Schlankes Oberklasse-Modell mit 200-MP-Kamera, Periskop-Tele und sehr hellem Display.",
+    "tags": [
+      "camera",
+      "everyday",
+      "battery"
+    ],
+    "images": [
+      "img/phones/honor-600-pro-1.webp",
+      "img/phones/honor-600-pro-2.webp",
+      "img/phones/honor-600-pro-3.webp"
+    ],
+    "image_colors": [
+      "Orange",
+      "Schwarz",
+      "Weiß"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.honor.com/de/phones/honor-600-pro/",
+      "https://www.nextpit.de/handys/honor-600-pro"
+    ]
+  },
+  {
+    "id": "honor-magic-v6",
+    "brand": "Honor",
+    "name": "Magic V6",
+    "release": "2026-07",
+    "uvp": 2299.9,
+    "uvp_by_storage": {
+      "512": 2299.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (MagicOS 10)",
+    "updates_years": null,
+    "updates_note": "Update-Zusage lt. Hersteller (Dauer bitte im Markt erfragen)",
+    "display": {
+      "size_in": 7.95,
+      "type": "Faltbares OLED innen, 1–120 Hz; außen 6,52 Zoll (bis 6000 Nits)",
+      "resolution": null,
+      "hz": 120,
+      "peak_nits": 5000
+    },
+    "foldable": true,
+    "cover_display_in": 6.52,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5",
+    "ram_gb": [
+      16
+    ],
+    "storage_gb": [
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 64,
+      "tele_zoom": "Periskop-Tele (OIS)",
+      "front_mp": null,
+      "summary": "50 MP Haupt + 64-MP-Periskop-Tele + 50-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6660,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 66,
+      "note": "80 W Kabel, 66 W kabellos, Reverse Wireless"
+    },
+    "ip": "IP68/IP69",
+    "weight_g": 219,
+    "dimensions_mm": "gefaltet 8,75 mm / offen 4,0 mm dick",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Rot",
+        "hex": "#9c2a24"
+      },
+      {
+        "name": "Schwarz",
+        "hex": "#1d1d1f"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#eeeeee"
+      },
+      {
+        "name": "Gold",
+        "hex": "#d9c7a2"
+      }
+    ],
+    "highlights": [
+      "Erstes Foldable mit IP68 + IP69",
+      "6660 mAh – größter Foldable-Akku",
+      "Nur 8,75 mm gefaltet"
+    ],
+    "pitch": "Ultradünnes Foldable mit Tablet-Display, riesigem Akku und Wasserschutz IP68/IP69 – für Business und Multitasking.",
+    "tags": [
+      "business",
+      "battery",
+      "video"
+    ],
+    "images": [
+      "img/phones/honor-magic-v6-1.webp",
+      "img/phones/honor-magic-v6-2.webp",
+      "img/phones/honor-magic-v6-3.webp"
+    ],
+    "image_colors": [
+      "Rot",
+      "Schwarz",
+      "Weiß"
+    ],
+    "uncertain": [
+      "uvp_by_storage.1024",
+      "updates_years",
+      "camera.front_mp",
+      "display.resolution",
+      "dims"
+    ],
+    "sources": [
+      "https://www.honor.com/de/phones/honor-magic-v6/buy/",
+      "https://basic-tutorials.de/news/honor-magic-v6-deutschland-preis-specs/",
+      "https://www.connect.de/news/honor-magic-v6-ip68-69-schutzklasse-robustes-design-3211937.html"
+    ]
+  }
+]

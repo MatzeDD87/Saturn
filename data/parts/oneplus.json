@@ -1,0 +1,284 @@
+[
+  {
+    "id": "oneplus-15",
+    "brand": "OnePlus",
+    "name": "OnePlus 15",
+    "release": "2025-11",
+    "uvp": 949,
+    "uvp_by_storage": {
+      "256": 949,
+      "512": 1099
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (OxygenOS 16)",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.78,
+      "type": "LTPO AMOLED, 1–120 Hz, bis 165 Hz in Spielen",
+      "resolution": "2772 x 1272",
+      "hz": 165,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch (Periskop)",
+      "front_mp": 32,
+      "summary": "Drei 50-MP-Kameras: Sony IMX906 (OIS), 3,5x-Periskop-Tele, 116°-Ultraweitwinkel; 8K-Video"
+    },
+    "battery_mah": 7300,
+    "charging": {
+      "wired_w": 120,
+      "wireless_w": 50,
+      "note": "120 W SUPERVOOC Kabel (100 % in ca. 39 Min.), 50 W AIRVOOC kabellos"
+    },
+    "ip": "IP68/IP69K",
+    "weight_g": 215,
+    "dimensions_mm": "161.4 x 76.7 x 8.2",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Infinite Black",
+        "hex": "#1b1b1d"
+      },
+      {
+        "name": "Sand Storm",
+        "hex": "#cdbfa6"
+      },
+      {
+        "name": "Ultra Violet",
+        "hex": "#b8a6d6"
+      }
+    ],
+    "highlights": [
+      "Riesiger 7300-mAh-Akku",
+      "120 W Kabel + 50 W kabellos",
+      "165-Hz-Gaming-Display"
+    ],
+    "pitch": "Ausdauer- und Gaming-Flaggschiff: 7300 mAh, extrem schnelles Laden und Snapdragon 8 Elite Gen 5 – zu einem fairen Preis.",
+    "tags": [
+      "gaming",
+      "battery",
+      "camera",
+      "business"
+    ],
+    "images": [
+      "img/phones/oneplus-15-1.webp",
+      "img/phones/oneplus-15-2.webp",
+      "img/phones/oneplus-15-3.webp"
+    ],
+    "image_colors": [
+      "Infinite Black",
+      "Sand Storm",
+      "Ultra Violet"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "updates_years",
+      "display.peak_nits",
+      "esim"
+    ],
+    "sources": [
+      "https://www.oneplus.com/de/15/specs",
+      "https://www.oneplus.com/de/15",
+      "https://handyswap.com/de-de/products/oneplus-15-256gb-black/"
+    ]
+  },
+  {
+    "id": "oneplus-15r",
+    "brand": "OnePlus",
+    "name": "OnePlus 15R",
+    "release": "2025-12",
+    "uvp": 699,
+    "uvp_by_storage": {
+      "256": 699,
+      "512": 799
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (OxygenOS 16)",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.83,
+      "type": "AMOLED, bis 165 Hz",
+      "resolution": "2800 x 1272",
+      "hz": 165,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Gen 5",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 32,
+      "summary": "50 MP Sony IMX906 (OIS) + 8-MP-Ultraweitwinkel, 4K/120 fps"
+    },
+    "battery_mah": 7400,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 0,
+      "note": "80 W SUPERVOOC Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP68/IP69K",
+    "weight_g": 214,
+    "dimensions_mm": "163.4 x 77.0 x 8.3",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Charcoal Black",
+        "hex": "#2a2b2d"
+      },
+      {
+        "name": "Mint Breeze",
+        "hex": "#bfe0c4"
+      }
+    ],
+    "highlights": [
+      "7400 mAh – größter OnePlus-Akku",
+      "Snapdragon 8 Gen 5",
+      "IP68/IP69K-Schutz"
+    ],
+    "pitch": "Performance-Tipp unter 700 €: Top-Chip, 165-Hz-Display und ein 7400-mAh-Akku für zwei Tage.",
+    "tags": [
+      "gaming",
+      "battery",
+      "value"
+    ],
+    "images": [
+      "img/phones/oneplus-15r-1.webp",
+      "img/phones/oneplus-15r-2.webp"
+    ],
+    "image_colors": [
+      "Charcoal Black",
+      "Mint Breeze"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "updates_years",
+      "esim"
+    ],
+    "sources": [
+      "https://www.oneplus.com/de/15r/specs",
+      "https://www.oneplus.com/de/15r",
+      "https://www.nextpit.de/handys/oneplus-15r"
+    ]
+  },
+  {
+    "id": "oneplus-nord-5",
+    "brand": "OnePlus",
+    "name": "OnePlus Nord 5",
+    "release": "2025-07",
+    "uvp": 449,
+    "uvp_by_storage": {
+      "256": 449,
+      "512": 549
+    },
+    "os": "Android",
+    "os_launch": "Android 15 (OxygenOS 15)",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.83,
+      "type": "AMOLED, bis 144 Hz, HDR10+",
+      "resolution": "2800 x 1272",
+      "hz": 144,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8s Gen 3",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 50,
+      "summary": "50 MP Sony LYT-700 (OIS) + 8-MP-Ultraweitwinkel; 50-MP-Selfie mit Autofokus & 4K"
+    },
+    "battery_mah": 5200,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 0,
+      "note": "80 W SUPERVOOC Kabel, 5 W Reverse kabelgebunden"
+    },
+    "ip": "IP65",
+    "weight_g": 211,
+    "dimensions_mm": "163.41 x 77.04 x 8.1",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Phantom Grey",
+        "hex": "#2b2c30"
+      },
+      {
+        "name": "Dry Ice",
+        "hex": "#bcd3e6"
+      },
+      {
+        "name": "Marble Sands",
+        "hex": "#e7e3dc"
+      }
+    ],
+    "highlights": [
+      "50-MP-Selfie mit Autofokus",
+      "144-Hz-Display",
+      "80-W-Schnellladen"
+    ],
+    "pitch": "Flotte Mittelklasse mit Gaming-Display, starker Selfie-Kamera und 80-W-Laden.",
+    "tags": [
+      "value",
+      "gaming",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/oneplus-nord-5-1.webp",
+      "img/phones/oneplus-nord-5-2.webp",
+      "img/phones/oneplus-nord-5-3.webp"
+    ],
+    "image_colors": [
+      "Phantom Grey",
+      "Dry Ice",
+      "Marble Sands"
+    ],
+    "uncertain": [],
+    "sources": [
+      "https://www.oneplus.com/de/nord-5/specs",
+      "https://appdated.de/154673/oneplus-nord-5-startschuss-fur-deutschland-am-8-juli/",
+      "https://wannkaufen.de/smartphones/oneplus-nord-5/"
+    ]
+  }
+]

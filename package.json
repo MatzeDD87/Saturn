@@ -1,9 +1,9 @@
 {
   "name": "saturn-ai-pilot",
-  "version": "4.0.0",
+  "version": "6.0.0",
   "description": "Smartphone-Berater für Saturn Dresden",
   "type": "module",
-  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js", "build:data": "node scripts/build-data.mjs" },
   "engines": { "node": ">=18" },
   "dependencies": { "dotenv": "^16.4.5", "express": "^4.19.2", "express-rate-limit": "^7.4.0" }
 }

@@ -1,0 +1,1030 @@
+[
+  {
+    "brand": "Samsung",
+    "release": "2026-03",
+    "os": "Android",
+    "os_launch": "Android 16 (One UI 8.5)",
+    "updates_years": 7,
+    "updates_note": "7 Jahre OS- und Sicherheitsupdates (ab globalem Marktstart)",
+    "foldable": false,
+    "cover_display_in": null,
+    "ip": "IP68",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Cobalt Violet",
+        "hex": "#5b4a8a"
+      },
+      {
+        "name": "White",
+        "hex": "#eeeeec"
+      },
+      {
+        "name": "Black",
+        "hex": "#2a2a2c"
+      },
+      {
+        "name": "Sky Blue",
+        "hex": "#a9c4e0"
+      },
+      {
+        "name": "Pink Gold (online exklusiv)",
+        "hex": "#e6c3b4"
+      },
+      {
+        "name": "Silver Shadow (online exklusiv)",
+        "hex": "#b8b9bd"
+      }
+    ],
+    "id": "samsung-galaxy-s26",
+    "name": "Galaxy S26",
+    "uvp": 999,
+    "uvp_by_storage": {
+      "256": 999,
+      "512": 1199
+    },
+    "display": {
+      "size_in": 6.3,
+      "type": "Dynamic LTPO AMOLED 2X",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": 2600
+    },
+    "chip": "Samsung Exynos 2600",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": 10,
+      "tele_zoom": "3x optisch",
+      "front_mp": 12,
+      "summary": "50-MP-Triple-Kamera mit 3x Tele"
+    },
+    "battery_mah": 4300,
+    "charging": {
+      "wired_w": 25,
+      "wireless_w": 15,
+      "note": "Qi / Qi2 Ready, Wireless PowerShare"
+    },
+    "weight_g": 167,
+    "dimensions_mm": "149.6 x 71.7 x 7.2",
+    "highlights": [
+      "Kompaktes 6,3-Zoll-Display",
+      "Exynos 2600 im 2-nm-Verfahren",
+      "7 Jahre Updates"
+    ],
+    "pitch": "Wenn du ein kompaktes Top-Smartphone mit starker Kamera und 7 Jahren Updates suchst, ist das S26 eine sichere Wahl.",
+    "tags": [
+      "compact",
+      "everyday",
+      "camera",
+      "business"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-s26-1.webp",
+      "img/phones/samsung-galaxy-s26-2.webp"
+    ],
+    "image_colors": [
+      "Cobalt Violet",
+      "White"
+    ],
+    "uncertain": [
+      "esim",
+      "peak_nits",
+      "colors.hex"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/samsung-galaxy-s26-serie-das-bisher-intuitivste-galaxy-ai-smartphone",
+      "https://www.inside-digital.de/news/samsung-galaxy-s26-reihe-ist-offiziell-neue-features-und-preis-im-ueberblick",
+      "https://www.computerbase.de/artikel/smartphones/samsung-galaxy-s26-plus-ultra-hands-on.96146/",
+      "https://www.gsmarena.com/samsung_galaxy_s26_5g-14456.php",
+      "https://www.samsung.com/de/smartphones/galaxy-s26/"
+    ]
+  },
+  {
+    "brand": "Samsung",
+    "release": "2026-03",
+    "os": "Android",
+    "os_launch": "Android 16 (One UI 8.5)",
+    "updates_years": 7,
+    "updates_note": "7 Jahre OS- und Sicherheitsupdates (ab globalem Marktstart)",
+    "foldable": false,
+    "cover_display_in": null,
+    "ip": "IP68",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Cobalt Violet",
+        "hex": "#5b4a8a"
+      },
+      {
+        "name": "White",
+        "hex": "#eeeeec"
+      },
+      {
+        "name": "Black",
+        "hex": "#2a2a2c"
+      },
+      {
+        "name": "Sky Blue",
+        "hex": "#a9c4e0"
+      },
+      {
+        "name": "Pink Gold (online exklusiv)",
+        "hex": "#e6c3b4"
+      },
+      {
+        "name": "Silver Shadow (online exklusiv)",
+        "hex": "#b8b9bd"
+      }
+    ],
+    "id": "samsung-galaxy-s26-plus",
+    "name": "Galaxy S26+",
+    "uvp": 1249,
+    "uvp_by_storage": {
+      "256": 1249,
+      "512": 1449
+    },
+    "display": {
+      "size_in": 6.7,
+      "type": "Dynamic LTPO AMOLED 2X",
+      "resolution": "3120 x 1440",
+      "hz": 120,
+      "peak_nits": 2600
+    },
+    "chip": "Samsung Exynos 2600",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": 10,
+      "tele_zoom": "3x optisch",
+      "front_mp": 12,
+      "summary": "50-MP-Triple-Kamera mit 3x Tele"
+    },
+    "battery_mah": 4900,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": 20,
+      "note": "Qi2.2-kompatibel, Wireless PowerShare"
+    },
+    "weight_g": 190,
+    "dimensions_mm": "158.4 x 75.8 x 7.3",
+    "highlights": [
+      "Großes 6,7-Zoll-QHD+-Display",
+      "4.900 mAh Akku, 45 W Laden",
+      "7 Jahre Updates"
+    ],
+    "pitch": "Du willst ein großes, scharfes Display und lange Akkulaufzeit ohne Ultra-Preis? Dann passt das S26+ gut zu dir.",
+    "tags": [
+      "everyday",
+      "battery",
+      "video",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-s26-plus-1.webp",
+      "img/phones/samsung-galaxy-s26-plus-2.webp"
+    ],
+    "image_colors": [
+      "Cobalt Violet",
+      "Black"
+    ],
+    "uncertain": [
+      "esim",
+      "peak_nits",
+      "colors.hex"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/samsung-galaxy-s26-serie-das-bisher-intuitivste-galaxy-ai-smartphone",
+      "https://www.inside-digital.de/news/samsung-galaxy-s26-reihe-ist-offiziell-neue-features-und-preis-im-ueberblick",
+      "https://www.computerbase.de/artikel/smartphones/samsung-galaxy-s26-plus-ultra-hands-on.96146/",
+      "https://www.gsmarena.com/samsung_galaxy_s26+_5g-14457.php",
+      "https://www.samsung.com/de/smartphones/galaxy-s26/"
+    ]
+  },
+  {
+    "brand": "Samsung",
+    "release": "2026-03",
+    "os": "Android",
+    "os_launch": "Android 16 (One UI 8.5)",
+    "updates_years": 7,
+    "updates_note": "7 Jahre OS- und Sicherheitsupdates (ab globalem Marktstart)",
+    "foldable": false,
+    "cover_display_in": null,
+    "ip": "IP68",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Cobalt Violet",
+        "hex": "#5b4a8a"
+      },
+      {
+        "name": "White",
+        "hex": "#eeeeec"
+      },
+      {
+        "name": "Black",
+        "hex": "#2a2a2c"
+      },
+      {
+        "name": "Sky Blue",
+        "hex": "#a9c4e0"
+      },
+      {
+        "name": "Pink Gold (online exklusiv)",
+        "hex": "#e6c3b4"
+      },
+      {
+        "name": "Silver Shadow (online exklusiv)",
+        "hex": "#b8b9bd"
+      }
+    ],
+    "id": "samsung-galaxy-s26-ultra",
+    "name": "Galaxy S26 Ultra",
+    "uvp": 1449,
+    "uvp_by_storage": {
+      "256": 1449,
+      "512": 1649,
+      "1024": 1949
+    },
+    "display": {
+      "size_in": 6.9,
+      "type": "Dynamic LTPO AMOLED 2X",
+      "resolution": "3120 x 1440",
+      "hz": 120,
+      "peak_nits": 2600
+    },
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5 for Galaxy",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 50,
+      "tele_mp": 50,
+      "tele_zoom": "3x und 5x optisch",
+      "front_mp": 12,
+      "summary": "200-MP-Quad-Kamera mit 3x und 5x Tele"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 60,
+      "wireless_w": 25,
+      "note": "60 W kabelgebunden (75 % in 30 Min.), Qi2.2, Wireless PowerShare"
+    },
+    "weight_g": 214,
+    "dimensions_mm": "163.6 x 78.1 x 7.9",
+    "highlights": [
+      "200-MP-Kamera mit 5x Periskop",
+      "Privacy Display gegen Mitleser",
+      "S Pen integriert, 60 W Laden"
+    ],
+    "pitch": "Für dich, wenn du das Maximum willst: 200-MP-Kamera mit 5x Zoom, S Pen und Privacy Display für unterwegs.",
+    "tags": [
+      "camera",
+      "video",
+      "business",
+      "gaming",
+      "battery"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-s26-ultra-1.webp",
+      "img/phones/samsung-galaxy-s26-ultra-2.webp"
+    ],
+    "image_colors": [
+      "Cobalt Violet",
+      "Cobalt Violet"
+    ],
+    "uncertain": [
+      "esim",
+      "peak_nits",
+      "charging.wireless_w",
+      "colors.hex"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/samsung-galaxy-s26-serie-das-bisher-intuitivste-galaxy-ai-smartphone",
+      "https://www.inside-digital.de/news/samsung-galaxy-s26-reihe-ist-offiziell-neue-features-und-preis-im-ueberblick",
+      "https://www.computerbase.de/artikel/smartphones/samsung-galaxy-s26-plus-ultra-hands-on.96146/",
+      "https://www.gsmarena.com/samsung_galaxy_s26_ultra-14320.php",
+      "https://www.netzwelt.de/news/259089-samsung-verteuert-galaxy-s26-ultra-180-euro-gilt-deutschland.html"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s26-fe",
+    "brand": "Samsung",
+    "name": "Galaxy S26 FE",
+    "release": "2026-09",
+    "uvp": 799,
+    "uvp_by_storage": {
+      "128": 799,
+      "256": 899,
+      "512": 1099
+    },
+    "os": "Android",
+    "os_launch": "Android 17 (One UI 9)",
+    "updates_years": 7,
+    "updates_note": "7 Android-Generationen und 7 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.7,
+      "type": "Dynamic AMOLED 2X",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": 1900
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Samsung Exynos 2500",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128,
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": 8,
+      "tele_zoom": "3x optisch",
+      "front_mp": 12,
+      "summary": "50-MP-Triple-Kamera mit 3x-Tele und OIS"
+    },
+    "battery_mah": 4900,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": 15,
+      "note": "Qi-kompatibel, Wireless PowerShare"
+    },
+    "ip": "IP68",
+    "weight_g": 193,
+    "dimensions_mm": "161.6 x 76.9 x 7.4",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Blueberry",
+        "hex": "#3d4f7c"
+      },
+      {
+        "name": "Graphite",
+        "hex": "#3a3b3d"
+      },
+      {
+        "name": "Pistachio",
+        "hex": "#bfe0d0"
+      }
+    ],
+    "highlights": [
+      "7 Jahre Updates",
+      "4.900-mAh-Akku, 45 W",
+      "3x-Telezoom, IP68"
+    ],
+    "pitch": "Wenn du Flaggschiff-Funktionen und lange Updates willst, aber nicht Ultra-Preise zahlen möchtest, ist das S26 FE ein solider Allrounder.",
+    "tags": [
+      "everyday",
+      "value",
+      "battery",
+      "camera"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-s26-fe-1.webp",
+      "img/phones/samsung-galaxy-s26-fe-2.webp",
+      "img/phones/samsung-galaxy-s26-fe-3.webp"
+    ],
+    "image_colors": [
+      "Pistachio",
+      "Graphite",
+      "Blueberry"
+    ],
+    "uncertain": [
+      "esim",
+      "colors.hex",
+      "display.resolution"
+    ],
+    "sources": [
+      "https://news.samsung.com/global/samsung-galaxy-s26-fe-delivering-the-latest-flagship-experience-focused-on-what-matters-most",
+      "https://news.samsung.com/de/fokus-auf-das-wesentliche-samsung-prasentiert-das-galaxy-s26-fe",
+      "https://www.smartzone.de/samsung-galaxy-s26-fe/"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-z-fold8-ultra",
+    "brand": "Samsung",
+    "name": "Galaxy Z Fold8 Ultra",
+    "release": "2026-08",
+    "uvp": 2199,
+    "uvp_by_storage": {
+      "256": 2199,
+      "512": 2399,
+      "1024": 2799
+    },
+    "os": "Android",
+    "os_launch": "Android 17 (One UI 9)",
+    "updates_years": 7,
+    "updates_note": "7 Android-Generationen und 7 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 8.0,
+      "type": "Dynamic AMOLED 2X (faltbar)",
+      "resolution": "2504 x 2256",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": true,
+    "cover_display_in": 6.5,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5 for Galaxy",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 50,
+      "tele_mp": 10,
+      "tele_zoom": "3x optisch",
+      "front_mp": 10,
+      "summary": "200-MP-Triple-Kamera mit 3x-Tele und 8K-Video"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": 20,
+      "note": "Wireless PowerShare"
+    },
+    "ip": "IP48",
+    "weight_g": 215,
+    "dimensions_mm": "158.4 x 72.8 x 8.9 (gefaltet), 4.1 mm aufgeklappt",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM (Dual-eSIM möglich)",
+    "colors": [
+      {
+        "name": "Graphite",
+        "hex": "#3b3c3f"
+      },
+      {
+        "name": "Cream",
+        "hex": "#e9e2d3"
+      },
+      {
+        "name": "Violet Shadow",
+        "hex": "#3e2a3f"
+      },
+      {
+        "name": "Green Shadow (online exklusiv)",
+        "hex": "#34433a"
+      }
+    ],
+    "highlights": [
+      "8-Zoll-Innendisplay, 6,5\" außen",
+      "200-MP-Kamera, 3x Tele",
+      "Nur 215 g, 4,1 mm offen"
+    ],
+    "pitch": "Für dich, wenn Smartphone und Tablet in einem Gerät stecken sollen: großes 8-Zoll-Display, starke Kamera und Snapdragon-Power.",
+    "tags": [
+      "business",
+      "camera",
+      "video",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-z-fold8-ultra-1.webp",
+      "img/phones/samsung-galaxy-z-fold8-ultra-2.webp",
+      "img/phones/samsung-galaxy-z-fold8-ultra-3.webp"
+    ],
+    "image_colors": [
+      "Violet Shadow",
+      "Cream",
+      "Violet Shadow"
+    ],
+    "uncertain": [
+      "uvp_by_storage",
+      "updates_years",
+      "display.peak_nits",
+      "charging.wireless_w",
+      "colors.hex"
+    ],
+    "sources": [
+      "https://news.samsung.com/global/samsung-galaxy-z-fold8-ultra-fold8-and-flip8foldables-perfected-for-every-way-of-living",
+      "https://news.samsung.com/de/samsung-galaxy-z-fold8-ultra-fold8-und-flip8-fur-jeden-lifestyle-ein-faltbares-gerat",
+      "https://news.samsung.com/de/weltweiter-verkaufsstart-galaxy-z-fold8-ultra-galaxy-z-fold8-galaxy-z-flip8-galaxy-watch-ultra2-und-galaxy-watch9-ab-sofort-offiziell-erhaeltlich",
+      "https://news.samsung.com/global/galaxy-unpacked-july-2026-a-first-look-at-galaxy-z-fold8-ultra-galaxy-z-fold8-and-galaxy-z-flip8",
+      "https://www.droid-life.com/2026/07/06/price-increases-are-coming-for-samsungs-galaxy-z-fold-8-foldables/",
+      "https://sammyguru.com/galaxy-z-fold-8-fold-8-ultra-flip-8-software-updates/"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-z-flip8",
+    "brand": "Samsung",
+    "name": "Galaxy Z Flip8",
+    "release": "2026-08",
+    "uvp": 1299,
+    "uvp_by_storage": {
+      "256": 1299,
+      "512": 1499
+    },
+    "os": "Android",
+    "os_launch": "Android 17 (One UI 9)",
+    "updates_years": 7,
+    "updates_note": "7 Android-Generationen und 7 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.9,
+      "type": "Dynamic AMOLED 2X (faltbar)",
+      "resolution": "2520 x 1080",
+      "hz": 120,
+      "peak_nits": 2600
+    },
+    "foldable": true,
+    "cover_display_in": 4.1,
+    "chip": "Samsung Exynos 2600",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 10,
+      "summary": "50-MP-Dualkamera, Selfies über das Außendisplay"
+    },
+    "battery_mah": 4300,
+    "charging": {
+      "wired_w": 25,
+      "wireless_w": 15,
+      "note": "Wireless PowerShare"
+    },
+    "ip": "IP48",
+    "weight_g": 180,
+    "dimensions_mm": "85.7 x 75.4 x 13.1 (gefaltet), 6.1 mm aufgeklappt",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM (Dual-eSIM möglich)",
+    "colors": [
+      {
+        "name": "Graphite",
+        "hex": "#3b3c3f"
+      },
+      {
+        "name": "Cream",
+        "hex": "#ece4d4"
+      },
+      {
+        "name": "Pink",
+        "hex": "#e9a9c4"
+      },
+      {
+        "name": "Mint (online exklusiv)",
+        "hex": "#bfe3d3"
+      }
+    ],
+    "highlights": [
+      "4,1-Zoll-FlexWindow außen",
+      "Kompakt gefaltet, nur 180 g",
+      "50-MP-Kamera, Selfies mit Hauptkamera"
+    ],
+    "pitch": "Wenn du ein großes Display willst, das zusammengeklappt in jede Tasche passt, ist das Flip8 ein stylischer Begleiter für Selfies und Social Media.",
+    "tags": [
+      "compact",
+      "everyday",
+      "camera"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-z-flip8-1.webp",
+      "img/phones/samsung-galaxy-z-flip8-2.webp",
+      "img/phones/samsung-galaxy-z-flip8-3.webp"
+    ],
+    "image_colors": [
+      "Pink",
+      "Graphite",
+      "Pink"
+    ],
+    "uncertain": [
+      "uvp_by_storage",
+      "updates_years",
+      "display.peak_nits",
+      "colors.hex"
+    ],
+    "sources": [
+      "https://news.samsung.com/global/samsung-galaxy-z-fold8-ultra-fold8-and-flip8foldables-perfected-for-every-way-of-living",
+      "https://news.samsung.com/de/samsung-galaxy-z-fold8-ultra-fold8-und-flip8-fur-jeden-lifestyle-ein-faltbares-gerat",
+      "https://news.samsung.com/de/weltweiter-verkaufsstart-galaxy-z-fold8-ultra-galaxy-z-fold8-galaxy-z-flip8-galaxy-watch-ultra2-und-galaxy-watch9-ab-sofort-offiziell-erhaeltlich",
+      "https://news.samsung.com/global/galaxy-unpacked-july-2026-a-first-look-at-galaxy-z-fold8-ultra-galaxy-z-fold8-and-galaxy-z-flip8",
+      "https://www.droid-life.com/2026/07/06/price-increases-are-coming-for-samsungs-galaxy-z-fold-8-foldables/",
+      "https://www.phonearena.com/reviews/samsung-galaxy-flip-8-review_id8020"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a57",
+    "brand": "Samsung",
+    "name": "Galaxy A57",
+    "release": "2026-04",
+    "uvp": 529,
+    "uvp_by_storage": {
+      "128": 529,
+      "256": 589
+    },
+    "os": "Android",
+    "os_launch": "Android 16 / One UI 8.5",
+    "updates_years": 6,
+    "updates_note": "6 Jahre Betriebssystem- und Sicherheitsupdates",
+    "display": {
+      "size_in": 6.7,
+      "type": "Super AMOLED+",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": 1900
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Samsung Exynos 1680",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 12,
+      "summary": "50-MP-Hauptkamera mit OIS, 12-MP-Ultraweitwinkel, Makro"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": null,
+      "note": "kein kabelloses Laden"
+    },
+    "ip": "IP68",
+    "weight_g": 179,
+    "dimensions_mm": "161.5 x 76.8 x 6.9",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Awesome Navy",
+        "hex": "#2b3550"
+      },
+      {
+        "name": "Awesome Gray",
+        "hex": "#8a8d91"
+      },
+      {
+        "name": "Awesome Icyblue",
+        "hex": "#bcd3e6"
+      },
+      {
+        "name": "Awesome Lilac",
+        "hex": "#c9b8dc"
+      }
+    ],
+    "highlights": [
+      "Nur 6,9 mm dünn und 179 g leicht",
+      "IP68 und 6 Jahre Updates",
+      "45-W-Schnellladen"
+    ],
+    "pitch": "Die schicke Mittelklasse von Samsung: dünn, wasserdicht und lange mit Updates versorgt – ideal, wenn es kein Flaggschiff sein muss.",
+    "tags": [
+      "everyday",
+      "value",
+      "camera",
+      "battery"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-a57-1.webp",
+      "img/phones/samsung-galaxy-a57-2.webp",
+      "img/phones/samsung-galaxy-a57-3.webp"
+    ],
+    "uncertain": [
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/samsung-galaxy-a57-5g-und-samsung-galaxy-a37-5g-sind-ab-sofort-im-handel-erhaltlich",
+      "https://www.gsmarena.com/samsung_galaxy_a57_5g-14379.php"
+    ],
+    "image_colors": [
+      "Awesome Navy",
+      "Awesome Gray",
+      "Awesome Icyblue"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a37",
+    "brand": "Samsung",
+    "name": "Galaxy A37",
+    "release": "2026-04",
+    "uvp": 429,
+    "uvp_by_storage": {
+      "128": 429,
+      "256": 519
+    },
+    "os": "Android",
+    "os_launch": "Android 16 / One UI 8.5",
+    "updates_years": 6,
+    "updates_note": "6 Jahre Betriebssystem- und Sicherheitsupdates",
+    "display": {
+      "size_in": 6.7,
+      "type": "Super AMOLED",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": 1900
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Samsung Exynos 1480",
+    "ram_gb": [
+      6,
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 12,
+      "summary": "50-MP-Hauptkamera mit OIS, 8-MP-Ultraweitwinkel, Makro"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": null,
+      "note": "kein kabelloses Laden"
+    },
+    "ip": "IP68",
+    "weight_g": 196,
+    "dimensions_mm": "162.9 x 78.2 x 7.4",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Awesome Lavender",
+        "hex": "#c7b9e0"
+      },
+      {
+        "name": "Awesome Charcoal",
+        "hex": "#3a3b3d"
+      },
+      {
+        "name": "Awesome Graygreen",
+        "hex": "#9fa99a"
+      },
+      {
+        "name": "Awesome White",
+        "hex": "#eeeeea"
+      }
+    ],
+    "highlights": [
+      "IP68 wasserdicht",
+      "6 Jahre Updates",
+      "Großes 6,7\"-AMOLED mit 120 Hz"
+    ],
+    "pitch": "Solides Samsung-Handy für den Alltag mit großem Display, IP68 und langer Update-Garantie zum fairen Preis.",
+    "tags": [
+      "everyday",
+      "value",
+      "battery",
+      "senior"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-a37-1.webp",
+      "img/phones/samsung-galaxy-a37-2.webp",
+      "img/phones/samsung-galaxy-a37-3.webp"
+    ],
+    "uncertain": [
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/samsung-galaxy-a57-5g-und-samsung-galaxy-a37-5g-sind-ab-sofort-im-handel-erhaltlich",
+      "https://www.gsmarena.com/samsung_galaxy_a37_5g-14378.php"
+    ],
+    "image_colors": [
+      "Awesome Lavender",
+      "Awesome Charcoal",
+      "Awesome Graygreen"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a27",
+    "brand": "Samsung",
+    "name": "Galaxy A27",
+    "release": "2026-07",
+    "uvp": 349,
+    "uvp_by_storage": {
+      "128": 349,
+      "256": 439
+    },
+    "os": "Android",
+    "os_launch": "Android 16 / One UI 8.5",
+    "updates_years": 6,
+    "updates_note": "6 Jahre Betriebssystem- und Sicherheitsupdates",
+    "display": {
+      "size_in": 6.7,
+      "type": "Super AMOLED",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": null
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 6 Gen 3",
+    "ram_gb": [
+      6,
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 5,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 12,
+      "summary": "50-MP-Hauptkamera mit OIS, 5-MP-Ultraweitwinkel, Makro"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 25,
+      "wireless_w": null,
+      "note": "kein kabelloses Laden"
+    },
+    "ip": "IP64",
+    "weight_g": 200,
+    "dimensions_mm": "162.4 x 78.2 x 7.8",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#222326"
+      },
+      {
+        "name": "Blue",
+        "hex": "#5f7fa8"
+      },
+      {
+        "name": "Light Pink",
+        "hex": "#efcfd4"
+      }
+    ],
+    "highlights": [
+      "microSD-Slot bis 2 TB",
+      "6 Jahre Updates",
+      "120-Hz-AMOLED"
+    ],
+    "pitch": "Günstiges Samsung mit großem AMOLED-Display, erweiterbarem Speicher und 6 Jahren Updates.",
+    "tags": [
+      "value",
+      "everyday",
+      "battery",
+      "senior"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-a27-1.webp",
+      "img/phones/samsung-galaxy-a27-2.webp"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/das-neue-samsung-galaxy-a27-5g-vereint-ein-beeindruckendes-display-und-intelligente-funktionen",
+      "https://www.gsmarena.com/samsung_galaxy_a27_5g-14606.php",
+      "https://www.connect.de/news/samsung-galaxy-a27-5g-smartphone-ausstattung-preis-3212769.html"
+    ],
+    "image_colors": [
+      "Black",
+      "Blue"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a17",
+    "brand": "Samsung",
+    "name": "Galaxy A17 5G",
+    "release": "2025-08",
+    "uvp": 229,
+    "uvp_by_storage": {
+      "128": 229,
+      "256": 309
+    },
+    "os": "Android",
+    "os_launch": "Android 15 / One UI 7",
+    "updates_years": 6,
+    "updates_note": "6 Jahre Betriebssystem- und Sicherheitsupdates",
+    "display": {
+      "size_in": 6.7,
+      "type": "Super AMOLED",
+      "resolution": "2340 x 1080",
+      "hz": 90,
+      "peak_nits": 800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Samsung Exynos 1330",
+    "ram_gb": [
+      4,
+      6,
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 5,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 13,
+      "summary": "50-MP-Hauptkamera mit OIS, 5-MP-Ultraweitwinkel, Makro"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 25,
+      "wireless_w": null,
+      "note": "kein kabelloses Laden"
+    },
+    "ip": "IP54",
+    "weight_g": 192,
+    "dimensions_mm": "164.4 x 77.9 x 7.5",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1f2023"
+      },
+      {
+        "name": "Gray",
+        "hex": "#8d9094"
+      },
+      {
+        "name": "Blue",
+        "hex": "#4f6f9c"
+      }
+    ],
+    "highlights": [
+      "Einstiegspreis unter 250 €",
+      "6 Jahre Updates",
+      "microSD-Slot"
+    ],
+    "pitch": "Das preiswerte Samsung für Einsteiger: großes AMOLED, 5G und eine Update-Zusage, die in der Preisklasse selten ist.",
+    "tags": [
+      "value",
+      "everyday",
+      "senior"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-a17-1.webp",
+      "img/phones/samsung-galaxy-a17-2.webp"
+    ],
+    "uncertain": [
+      "ram_gb"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/smart-verlasslich-elegant-das-neue-samsung-galaxy-a17-5g",
+      "https://www.gsmarena.com/samsung_galaxy_a17_5g-14041.php"
+    ],
+    "image_colors": [
+      "Black",
+      "Gray"
+    ]
+  }
+]

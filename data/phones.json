@@ -1,0 +1,4844 @@
+[
+  {
+    "id": "iphone-duo",
+    "brand": "Apple",
+    "name": "iPhone Duo",
+    "release": "2026-10",
+    "uvp": 2299,
+    "uvp_by_storage": {
+      "256": 2299,
+      "512": 2549,
+      "1024": 3049,
+      "2048": 3799
+    },
+    "os": "iOS",
+    "os_launch": "iOS 27",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 7.6,
+      "type": "Faltbares LTPO OLED (ProMotion)",
+      "resolution": "2670 x 1878",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": true,
+    "cover_display_in": 5.4,
+    "chip": "Apple A20 Pro",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": null,
+      "tele_zoom": "2x in optischer Qualität (Sensor-Crop)",
+      "front_mp": 12,
+      "summary": "48-MP-Dual-Kamera (Haupt + Ultraweit), 12-MP-Frontkamera außen"
+    },
+    "battery_mah": 4883,
+    "charging": {
+      "wired_w": 40,
+      "wireless_w": 25,
+      "note": "50 % in ca. 20 Min. (60-W-Netzteil); MagSafe / Qi2 25 W; zwei Akkuzellen"
+    },
+    "ip": "IP68",
+    "weight_g": 254,
+    "dimensions_mm": "aufgeklappt 164.6 x 117.8 x 5.2 / zugeklappt 84.1 x 117.8 x 11.3",
+    "five_g": true,
+    "esim": "nur eSIM (Dual eSIM)",
+    "colors": [
+      {
+        "name": "Nachthimmel",
+        "hex": "#1f2433"
+      },
+      {
+        "name": "Sternenweiß",
+        "hex": "#ecebe6"
+      }
+    ],
+    "highlights": [
+      "Erstes faltbares iPhone",
+      "7,6\"-Innen- + 5,4\"-Außendisplay",
+      "Touch ID, Apple Pencil Support"
+    ],
+    "pitch": "Apples erstes Falt-iPhone: aufgeklappt fast ein iPad mini, zugeklappt kompakt. Ideal für Multitasking – aber teuer und ohne Tele.",
+    "tags": [
+      "business",
+      "video",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/iphone-duo-1.webp",
+      "img/phones/iphone-duo-2.webp"
+    ],
+    "image_colors": [
+      "Sternenweiß",
+      null
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah",
+      "ram_gb",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-duo/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-duo",
+      "https://www.gsmarena.com/apple_iphone_duo_fold-13804.php",
+      "https://www.gsmarena.com/iphone_18_pro_and_duo_pricing_overview-news-74546.php",
+      "https://www.vodafone.de/featured/article/apple-iphone-18-preis-244085"
+    ]
+  },
+  {
+    "id": "iphone-18-pro-max",
+    "brand": "Apple",
+    "name": "iPhone 18 Pro Max",
+    "release": "2026-09",
+    "uvp": 1599,
+    "uvp_by_storage": {
+      "256": 1599,
+      "512": 1849,
+      "1024": 2349,
+      "2048": 3099
+    },
+    "os": "iOS",
+    "os_launch": "iOS 27",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.9,
+      "type": "LTPO OLED (ProMotion)",
+      "resolution": "2868 x 1320",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A20 Pro",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "4x optisch (8x in optischer Qualität)",
+      "front_mp": 18,
+      "summary": "48-MP-Triple-Kamera mit variabler Blende und 4x Tele"
+    },
+    "battery_mah": 5391,
+    "charging": {
+      "wired_w": 50,
+      "wireless_w": 25,
+      "note": "50 % in ca. 15 Min. (60-W-Netzteil, gemessen bis ca. 52 W); MagSafe / Qi2 25 W"
+    },
+    "ip": "IP68",
+    "weight_g": 249,
+    "dimensions_mm": "163.4 x 78.0 x 8.75",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#2b2b2d"
+      },
+      {
+        "name": "Silber",
+        "hex": "#e3e4e6"
+      },
+      {
+        "name": "Polar",
+        "hex": "#b9cbe0"
+      },
+      {
+        "name": "Burgunder",
+        "hex": "#6b1f2e"
+      }
+    ],
+    "highlights": [
+      "Längste Akkulaufzeit aller iPhones",
+      "Großes 6,9\"-Display, 3000 Nits",
+      "A20 Pro, Tele mit 4x/8x"
+    ],
+    "pitch": "Für alle, die das Maximum wollen: größtes Display, längste Akkulaufzeit und die beste iPhone-Kamera – dafür groß und schwer.",
+    "tags": [
+      "camera",
+      "video",
+      "battery",
+      "gaming",
+      "business"
+    ],
+    "images": [
+      "img/phones/iphone-18-pro-max-1.webp",
+      "img/phones/iphone-18-pro-max-2.webp"
+    ],
+    "image_colors": [
+      "Burgunder",
+      "Schwarz"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-18-pro/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-18-pro",
+      "https://www.gsmarena.com/apple_iphone_18_pro_max-14716.php",
+      "https://www.gsmarena.com/iphone_18_pro_max_charging-news-74652.php",
+      "https://www.vodafone.de/featured/article/apple-iphone-18-preis-244085"
+    ]
+  },
+  {
+    "id": "iphone-18-pro",
+    "brand": "Apple",
+    "name": "iPhone 18 Pro",
+    "release": "2026-09",
+    "uvp": 1449,
+    "uvp_by_storage": {
+      "256": 1449,
+      "512": 1699,
+      "1024": 2199,
+      "2048": 2949
+    },
+    "os": "iOS",
+    "os_launch": "iOS 27",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.3,
+      "type": "LTPO OLED (ProMotion)",
+      "resolution": "2622 x 1206",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A20 Pro",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "4x optisch (8x in optischer Qualität)",
+      "front_mp": 18,
+      "summary": "48-MP-Triple-Kamera mit variabler Blende und 4x Tele"
+    },
+    "battery_mah": 4056,
+    "charging": {
+      "wired_w": 50,
+      "wireless_w": 25,
+      "note": "50 % in ca. 15 Min. (60-W-Netzteil); MagSafe / Qi2 25 W"
+    },
+    "ip": "IP68",
+    "weight_g": 211,
+    "dimensions_mm": "150.0 x 71.9 x 8.75",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#2b2b2d"
+      },
+      {
+        "name": "Silber",
+        "hex": "#e3e4e6"
+      },
+      {
+        "name": "Polar",
+        "hex": "#b9cbe0"
+      },
+      {
+        "name": "Burgunder",
+        "hex": "#6b1f2e"
+      }
+    ],
+    "highlights": [
+      "A20 Pro Chip (2 nm)",
+      "Hauptkamera mit variabler Blende",
+      "4x Tele, bis 2 TB Speicher"
+    ],
+    "pitch": "Das aktuelle Pro-Modell im handlichen 6,3-Zoll-Format: Top-Kamera mit variabler Blende, 4x Tele und sehr schnelles Laden.",
+    "tags": [
+      "camera",
+      "video",
+      "gaming",
+      "business"
+    ],
+    "images": [
+      "img/phones/iphone-18-pro-1.webp",
+      "img/phones/iphone-18-pro-2.webp"
+    ],
+    "image_colors": [
+      "Schwarz",
+      "Polar"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-18-pro/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-18-pro",
+      "https://www.gsmarena.com/apple_iphone_18_pro-14934.php",
+      "https://www.gsmarena.com/iphone_18_pro_max_charging-news-74652.php",
+      "https://www.vodafone.de/featured/article/apple-iphone-18-preis-244085"
+    ]
+  },
+  {
+    "id": "iphone-17-pro",
+    "brand": "Apple",
+    "name": "iPhone 17 Pro",
+    "release": "2025-09",
+    "uvp": 1299,
+    "uvp_by_storage": {
+      "256": 1299,
+      "512": 1549,
+      "1024": 1799
+    },
+    "os": "iOS",
+    "os_launch": "iOS 26",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.3,
+      "type": "LTPO OLED (ProMotion)",
+      "resolution": "2622 x 1206",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A19 Pro",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "4x optisch (8x in optischer Qualität)",
+      "front_mp": 18,
+      "summary": "48-MP-Triple-Kamera mit 4x Tele"
+    },
+    "battery_mah": 3998,
+    "charging": {
+      "wired_w": 40,
+      "wireless_w": 25,
+      "note": "50 % in 20 Min. (40-W-Netzteil); MagSafe / Qi2 25 W"
+    },
+    "ip": "IP68",
+    "weight_g": 206,
+    "dimensions_mm": "150.0 x 71.9 x 8.75",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Silber",
+        "hex": "#e3e3e1"
+      },
+      {
+        "name": "Cosmic Orange",
+        "hex": "#e0742f"
+      },
+      {
+        "name": "Tiefblau",
+        "hex": "#2f3f5f"
+      }
+    ],
+    "highlights": [
+      "Pro-Kamera mit 4x Tele",
+      "A19 Pro, Aluminium-Unibody",
+      "Im Handel oft deutlich reduziert"
+    ],
+    "pitch": "Vorjahres-Pro mit fast gleicher Kamera wie das 18 Pro – bei Apple ausgelaufen, im Handel als Restposten oft ein Preistipp.",
+    "tags": [
+      "camera",
+      "video",
+      "gaming",
+      "value"
+    ],
+    "images": [
+      "img/phones/iphone-17-pro-1.webp",
+      "img/phones/iphone-17-pro-2.webp"
+    ],
+    "image_colors": [
+      "Cosmic Orange",
+      "Tiefblau"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/apple_iphone_17_pro-14049.php",
+      "https://www.smartweb.de/iphone-17-pro",
+      "https://www.pcgameshardware.de/iPhone-Serie-Smartphone-216880/News/Neue-iPhone-17-Modelle-kosten-bis-zu-2449-Euro-1481769/",
+      "https://www.giga.de/tech/iphone-17-pro-ist-geschichte-apple-setzt-auf-die-neue-generation--01M25AV6PXPRXCAE71MKXEC9PK"
+    ]
+  },
+  {
+    "id": "iphone-air",
+    "brand": "Apple",
+    "name": "iPhone Air",
+    "release": "2025-09",
+    "uvp": 1199,
+    "uvp_by_storage": {
+      "256": 1199,
+      "512": 1449,
+      "1024": 1699
+    },
+    "uvp_current": {
+      "256": 1299,
+      "512": 1549,
+      "1024": 2049
+    },
+    "os": "iOS",
+    "os_launch": "iOS 26",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.5,
+      "type": "LTPO OLED (ProMotion)",
+      "resolution": "2736 x 1260",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A19 Pro",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": null,
+      "tele_mp": null,
+      "tele_zoom": "2x in optischer Qualität (Sensor-Crop)",
+      "front_mp": 18,
+      "summary": "Eine 48-MP-Fusion-Kamera mit 2x-Crop, 18-MP-Frontkamera"
+    },
+    "battery_mah": 3149,
+    "charging": {
+      "wired_w": 20,
+      "wireless_w": 20,
+      "note": "50 % in 30 Min. (20-W-Netzteil); MagSafe / Qi2 20 W"
+    },
+    "ip": "IP68",
+    "weight_g": 165,
+    "dimensions_mm": "156.2 x 74.7 x 5.64",
+    "five_g": true,
+    "esim": "nur eSIM (Dual eSIM)",
+    "colors": [
+      {
+        "name": "Space Schwarz",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Wolkenweiß",
+        "hex": "#f2f2ef"
+      },
+      {
+        "name": "Lichtgold",
+        "hex": "#e9dcc3"
+      },
+      {
+        "name": "Himmelblau",
+        "hex": "#cfdde9"
+      }
+    ],
+    "highlights": [
+      "Nur 5,64 mm dünn, 165 g",
+      "Titanrahmen, 120-Hz-Display",
+      "A19 Pro Chip"
+    ],
+    "pitch": "Das dünnste iPhone: extrem leicht und edel, mit großem 120-Hz-Display. Abstriche bei Akku und Kamera (nur eine Linse).",
+    "tags": [
+      "everyday",
+      "business"
+    ],
+    "images": [
+      "img/phones/iphone-air-1.webp",
+      "img/phones/iphone-air-2.webp"
+    ],
+    "image_colors": [
+      "Space Schwarz",
+      "Himmelblau"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-air/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-air",
+      "https://www.gsmarena.com/apple_iphone_17_air-13502.php",
+      "https://www.pcgameshardware.de/iPhone-Serie-Smartphone-216880/News/Neue-iPhone-17-Modelle-kosten-bis-zu-2449-Euro-1481769/"
+    ]
+  },
+  {
+    "id": "iphone-16",
+    "brand": "Apple",
+    "name": "iPhone 16",
+    "release": "2024-09",
+    "uvp": 949,
+    "uvp_by_storage": {
+      "128": 949,
+      "256": 1069,
+      "512": 1319
+    },
+    "uvp_current": {
+      "128": 999
+    },
+    "os": "iOS",
+    "os_launch": "iOS 18",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.1,
+      "type": "OLED",
+      "resolution": "2556 x 1179",
+      "hz": 60,
+      "peak_nits": 2000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A18",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128,
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 12,
+      "tele_mp": null,
+      "tele_zoom": "2x in optischer Qualität (Sensor-Crop)",
+      "front_mp": 12,
+      "summary": "48-MP-Dual-Kamera mit Kamerasteuerung-Taste"
+    },
+    "battery_mah": 3561,
+    "charging": {
+      "wired_w": 20,
+      "wireless_w": 25,
+      "note": "50 % in ca. 30 Min. (20-W-Netzteil); MagSafe / Qi2 25 W"
+    },
+    "ip": "IP68",
+    "weight_g": 170,
+    "dimensions_mm": "147.6 x 71.6 x 7.80",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#2c2c2e"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#f2f2f2"
+      },
+      {
+        "name": "Pink",
+        "hex": "#f4b8d0"
+      },
+      {
+        "name": "Blaugrün",
+        "hex": "#a8d1cb"
+      },
+      {
+        "name": "Ultramarin",
+        "hex": "#7d8ff0"
+      }
+    ],
+    "highlights": [
+      "Apple Intelligence mit A18",
+      "Dynamic Island, Kamerasteuerung",
+      "Handliche 6,1 Zoll, 170 g"
+    ],
+    "pitch": "Bewährtes Vorvorjahresmodell mit Dynamic Island und Apple Intelligence – handlich und solide, aber nur 60 Hz und 128 GB bei Apple.",
+    "tags": [
+      "everyday",
+      "compact",
+      "senior"
+    ],
+    "images": [
+      "img/phones/iphone-16-1.webp",
+      "img/phones/iphone-16-2.webp"
+    ],
+    "image_colors": [
+      "Ultramarin",
+      "Ultramarin"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-16/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-16",
+      "https://www.gsmarena.com/apple_iphone_16-13317.php"
+    ]
+  },
+  {
+    "id": "iphone-17",
+    "brand": "Apple",
+    "name": "iPhone 17",
+    "release": "2025-09",
+    "uvp": 949,
+    "uvp_by_storage": {
+      "256": 949,
+      "512": 1199
+    },
+    "uvp_current": {
+      "256": 1099,
+      "512": 1349
+    },
+    "os": "iOS",
+    "os_launch": "iOS 26",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.3,
+      "type": "LTPO OLED (ProMotion)",
+      "resolution": "2622 x 1206",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A19",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": null,
+      "tele_zoom": "2x in optischer Qualität (Sensor-Crop)",
+      "front_mp": 18,
+      "summary": "48-MP-Dual-Kamera (Haupt + Ultraweit), 18-MP-Center-Stage-Front"
+    },
+    "battery_mah": 3692,
+    "charging": {
+      "wired_w": 40,
+      "wireless_w": 25,
+      "note": "50 % in 20 Min. (40-W-Netzteil); MagSafe / Qi2 25 W"
+    },
+    "ip": "IP68",
+    "weight_g": 177,
+    "dimensions_mm": "149.6 x 71.5 x 7.95",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#232323"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#f5f5f5"
+      },
+      {
+        "name": "Nebelblau",
+        "hex": "#9db4cc"
+      },
+      {
+        "name": "Salbei",
+        "hex": "#a7b59c"
+      },
+      {
+        "name": "Lavendel",
+        "hex": "#d9cbe5"
+      }
+    ],
+    "highlights": [
+      "120 Hz ProMotion & Always-On",
+      "256 GB Basisspeicher",
+      "48-MP-Haupt- und Ultraweitwinkel"
+    ],
+    "pitch": "Das aktuelle Standard-iPhone mit 120-Hz-Display, 256 GB Speicher und guter Dual-Kamera – das rundeste Gesamtpaket.",
+    "tags": [
+      "everyday",
+      "camera",
+      "value"
+    ],
+    "images": [
+      "img/phones/iphone-17-1.webp",
+      "img/phones/iphone-17-2.webp"
+    ],
+    "image_colors": [
+      "Nebelblau",
+      "Salbei"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-17/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-17",
+      "https://www.gsmarena.com/apple_iphone_17-14050.php",
+      "https://www.vodafone.de/featured/article/apple-iphone-18-preis-244085",
+      "https://www.handyhase.de/magazin/iphone-preisentwicklung/"
+    ]
+  },
+  {
+    "id": "iphone-17e",
+    "brand": "Apple",
+    "name": "iPhone 17e",
+    "release": "2026-03",
+    "uvp": 699,
+    "uvp_by_storage": {
+      "256": 699,
+      "512": 949
+    },
+    "uvp_current": {
+      "256": 849,
+      "512": 1099
+    },
+    "os": "iOS",
+    "os_launch": "iOS 26",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.1,
+      "type": "OLED",
+      "resolution": "2532 x 1170",
+      "hz": 60,
+      "peak_nits": 1200
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A19",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": null,
+      "tele_mp": null,
+      "tele_zoom": "2x (Sensor-Crop)",
+      "front_mp": 12,
+      "summary": "Eine 48-MP-Fusion-Kamera mit 2x-Crop"
+    },
+    "battery_mah": 4005,
+    "charging": {
+      "wired_w": 20,
+      "wireless_w": 15,
+      "note": "50 % in 30 Min. (20-W-Netzteil); MagSafe / Qi2 15 W"
+    },
+    "ip": "IP68",
+    "weight_g": 170,
+    "dimensions_mm": "146.7 x 71.5 x 7.80",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#1f1f1f"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#f4f4f4"
+      },
+      {
+        "name": "Hellrosa",
+        "hex": "#f1d8d6"
+      }
+    ],
+    "highlights": [
+      "Günstigster Einstieg ins iPhone",
+      "A19 Chip, 256 GB Basisspeicher",
+      "Gute Akkulaufzeit, MagSafe"
+    ],
+    "pitch": "Der günstigste Weg zum aktuellen iPhone: schneller A19, viel Speicher und gute Laufzeit – dafür 60-Hz-Display und nur eine Kamera.",
+    "tags": [
+      "value",
+      "everyday",
+      "senior",
+      "battery"
+    ],
+    "images": [
+      "img/phones/iphone-17e-1.webp",
+      "img/phones/iphone-17e-2.webp"
+    ],
+    "image_colors": [
+      "Hellrosa",
+      "Hellrosa"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-17e/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-17e",
+      "https://www.gsmarena.com/apple_iphone_17e-14487.php",
+      "https://www.nextpit.de/handys/apple-iphone-17e",
+      "https://www.vodafone.de/featured/article/apple-iphone-18-preis-244085"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-z-fold8-ultra",
+    "brand": "Samsung",
+    "name": "Galaxy Z Fold8 Ultra",
+    "release": "2026-08",
+    "uvp": 2199,
+    "uvp_by_storage": {
+      "256": 2199,
+      "512": 2399,
+      "1024": 2799
+    },
+    "os": "Android",
+    "os_launch": "Android 17 (One UI 9)",
+    "updates_years": 7,
+    "updates_note": "7 Android-Generationen und 7 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 8,
+      "type": "Dynamic AMOLED 2X (faltbar)",
+      "resolution": "2504 x 2256",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": true,
+    "cover_display_in": 6.5,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5 for Galaxy",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 50,
+      "tele_mp": 10,
+      "tele_zoom": "3x optisch",
+      "front_mp": 10,
+      "summary": "200-MP-Triple-Kamera mit 3x-Tele und 8K-Video"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": 20,
+      "note": "Wireless PowerShare"
+    },
+    "ip": "IP48",
+    "weight_g": 215,
+    "dimensions_mm": "158.4 x 72.8 x 8.9 (gefaltet), 4.1 mm aufgeklappt",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM (Dual-eSIM möglich)",
+    "colors": [
+      {
+        "name": "Graphite",
+        "hex": "#3b3c3f"
+      },
+      {
+        "name": "Cream",
+        "hex": "#e9e2d3"
+      },
+      {
+        "name": "Violet Shadow",
+        "hex": "#3e2a3f"
+      },
+      {
+        "name": "Green Shadow (online exklusiv)",
+        "hex": "#34433a"
+      }
+    ],
+    "highlights": [
+      "8-Zoll-Innendisplay, 6,5\" außen",
+      "200-MP-Kamera, 3x Tele",
+      "Nur 215 g, 4,1 mm offen"
+    ],
+    "pitch": "Für dich, wenn Smartphone und Tablet in einem Gerät stecken sollen: großes 8-Zoll-Display, starke Kamera und Snapdragon-Power.",
+    "tags": [
+      "business",
+      "camera",
+      "video",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-z-fold8-ultra-1.webp",
+      "img/phones/samsung-galaxy-z-fold8-ultra-2.webp",
+      "img/phones/samsung-galaxy-z-fold8-ultra-3.webp"
+    ],
+    "image_colors": [
+      "Violet Shadow",
+      "Cream",
+      "Violet Shadow"
+    ],
+    "uncertain": [
+      "uvp_by_storage",
+      "updates_years",
+      "display.peak_nits",
+      "charging.wireless_w",
+      "colors.hex"
+    ],
+    "sources": [
+      "https://news.samsung.com/global/samsung-galaxy-z-fold8-ultra-fold8-and-flip8foldables-perfected-for-every-way-of-living",
+      "https://news.samsung.com/de/samsung-galaxy-z-fold8-ultra-fold8-und-flip8-fur-jeden-lifestyle-ein-faltbares-gerat",
+      "https://news.samsung.com/de/weltweiter-verkaufsstart-galaxy-z-fold8-ultra-galaxy-z-fold8-galaxy-z-flip8-galaxy-watch-ultra2-und-galaxy-watch9-ab-sofort-offiziell-erhaeltlich",
+      "https://news.samsung.com/global/galaxy-unpacked-july-2026-a-first-look-at-galaxy-z-fold8-ultra-galaxy-z-fold8-and-galaxy-z-flip8",
+      "https://www.droid-life.com/2026/07/06/price-increases-are-coming-for-samsungs-galaxy-z-fold-8-foldables/",
+      "https://sammyguru.com/galaxy-z-fold-8-fold-8-ultra-flip-8-software-updates/"
+    ]
+  },
+  {
+    "brand": "Samsung",
+    "release": "2026-03",
+    "os": "Android",
+    "os_launch": "Android 16 (One UI 8.5)",
+    "updates_years": 7,
+    "updates_note": "7 Jahre OS- und Sicherheitsupdates (ab globalem Marktstart)",
+    "foldable": false,
+    "cover_display_in": null,
+    "ip": "IP68",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Cobalt Violet",
+        "hex": "#5b4a8a"
+      },
+      {
+        "name": "White",
+        "hex": "#eeeeec"
+      },
+      {
+        "name": "Black",
+        "hex": "#2a2a2c"
+      },
+      {
+        "name": "Sky Blue",
+        "hex": "#a9c4e0"
+      },
+      {
+        "name": "Pink Gold (online exklusiv)",
+        "hex": "#e6c3b4"
+      },
+      {
+        "name": "Silver Shadow (online exklusiv)",
+        "hex": "#b8b9bd"
+      }
+    ],
+    "id": "samsung-galaxy-s26-ultra",
+    "name": "Galaxy S26 Ultra",
+    "uvp": 1449,
+    "uvp_by_storage": {
+      "256": 1449,
+      "512": 1649,
+      "1024": 1949
+    },
+    "display": {
+      "size_in": 6.9,
+      "type": "Dynamic LTPO AMOLED 2X",
+      "resolution": "3120 x 1440",
+      "hz": 120,
+      "peak_nits": 2600
+    },
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5 for Galaxy",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 50,
+      "tele_mp": 50,
+      "tele_zoom": "3x und 5x optisch",
+      "front_mp": 12,
+      "summary": "200-MP-Quad-Kamera mit 3x und 5x Tele"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 60,
+      "wireless_w": 25,
+      "note": "60 W kabelgebunden (75 % in 30 Min.), Qi2.2, Wireless PowerShare"
+    },
+    "weight_g": 214,
+    "dimensions_mm": "163.6 x 78.1 x 7.9",
+    "highlights": [
+      "200-MP-Kamera mit 5x Periskop",
+      "Privacy Display gegen Mitleser",
+      "S Pen integriert, 60 W Laden"
+    ],
+    "pitch": "Für dich, wenn du das Maximum willst: 200-MP-Kamera mit 5x Zoom, S Pen und Privacy Display für unterwegs.",
+    "tags": [
+      "camera",
+      "video",
+      "business",
+      "gaming",
+      "battery"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-s26-ultra-1.webp",
+      "img/phones/samsung-galaxy-s26-ultra-2.webp"
+    ],
+    "image_colors": [
+      "Cobalt Violet",
+      "Cobalt Violet"
+    ],
+    "uncertain": [
+      "esim",
+      "peak_nits",
+      "charging.wireless_w",
+      "colors.hex"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/samsung-galaxy-s26-serie-das-bisher-intuitivste-galaxy-ai-smartphone",
+      "https://www.inside-digital.de/news/samsung-galaxy-s26-reihe-ist-offiziell-neue-features-und-preis-im-ueberblick",
+      "https://www.computerbase.de/artikel/smartphones/samsung-galaxy-s26-plus-ultra-hands-on.96146/",
+      "https://www.gsmarena.com/samsung_galaxy_s26_ultra-14320.php",
+      "https://www.netzwelt.de/news/259089-samsung-verteuert-galaxy-s26-ultra-180-euro-gilt-deutschland.html"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-z-flip8",
+    "brand": "Samsung",
+    "name": "Galaxy Z Flip8",
+    "release": "2026-08",
+    "uvp": 1299,
+    "uvp_by_storage": {
+      "256": 1299,
+      "512": 1499
+    },
+    "os": "Android",
+    "os_launch": "Android 17 (One UI 9)",
+    "updates_years": 7,
+    "updates_note": "7 Android-Generationen und 7 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.9,
+      "type": "Dynamic AMOLED 2X (faltbar)",
+      "resolution": "2520 x 1080",
+      "hz": 120,
+      "peak_nits": 2600
+    },
+    "foldable": true,
+    "cover_display_in": 4.1,
+    "chip": "Samsung Exynos 2600",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 10,
+      "summary": "50-MP-Dualkamera, Selfies über das Außendisplay"
+    },
+    "battery_mah": 4300,
+    "charging": {
+      "wired_w": 25,
+      "wireless_w": 15,
+      "note": "Wireless PowerShare"
+    },
+    "ip": "IP48",
+    "weight_g": 180,
+    "dimensions_mm": "85.7 x 75.4 x 13.1 (gefaltet), 6.1 mm aufgeklappt",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM (Dual-eSIM möglich)",
+    "colors": [
+      {
+        "name": "Graphite",
+        "hex": "#3b3c3f"
+      },
+      {
+        "name": "Cream",
+        "hex": "#ece4d4"
+      },
+      {
+        "name": "Pink",
+        "hex": "#e9a9c4"
+      },
+      {
+        "name": "Mint (online exklusiv)",
+        "hex": "#bfe3d3"
+      }
+    ],
+    "highlights": [
+      "4,1-Zoll-FlexWindow außen",
+      "Kompakt gefaltet, nur 180 g",
+      "50-MP-Kamera, Selfies mit Hauptkamera"
+    ],
+    "pitch": "Wenn du ein großes Display willst, das zusammengeklappt in jede Tasche passt, ist das Flip8 ein stylischer Begleiter für Selfies und Social Media.",
+    "tags": [
+      "compact",
+      "everyday",
+      "camera"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-z-flip8-1.webp",
+      "img/phones/samsung-galaxy-z-flip8-2.webp",
+      "img/phones/samsung-galaxy-z-flip8-3.webp"
+    ],
+    "image_colors": [
+      "Pink",
+      "Graphite",
+      "Pink"
+    ],
+    "uncertain": [
+      "uvp_by_storage",
+      "updates_years",
+      "display.peak_nits",
+      "colors.hex"
+    ],
+    "sources": [
+      "https://news.samsung.com/global/samsung-galaxy-z-fold8-ultra-fold8-and-flip8foldables-perfected-for-every-way-of-living",
+      "https://news.samsung.com/de/samsung-galaxy-z-fold8-ultra-fold8-und-flip8-fur-jeden-lifestyle-ein-faltbares-gerat",
+      "https://news.samsung.com/de/weltweiter-verkaufsstart-galaxy-z-fold8-ultra-galaxy-z-fold8-galaxy-z-flip8-galaxy-watch-ultra2-und-galaxy-watch9-ab-sofort-offiziell-erhaeltlich",
+      "https://news.samsung.com/global/galaxy-unpacked-july-2026-a-first-look-at-galaxy-z-fold8-ultra-galaxy-z-fold8-and-galaxy-z-flip8",
+      "https://www.droid-life.com/2026/07/06/price-increases-are-coming-for-samsungs-galaxy-z-fold-8-foldables/",
+      "https://www.phonearena.com/reviews/samsung-galaxy-flip-8-review_id8020"
+    ]
+  },
+  {
+    "brand": "Samsung",
+    "release": "2026-03",
+    "os": "Android",
+    "os_launch": "Android 16 (One UI 8.5)",
+    "updates_years": 7,
+    "updates_note": "7 Jahre OS- und Sicherheitsupdates (ab globalem Marktstart)",
+    "foldable": false,
+    "cover_display_in": null,
+    "ip": "IP68",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Cobalt Violet",
+        "hex": "#5b4a8a"
+      },
+      {
+        "name": "White",
+        "hex": "#eeeeec"
+      },
+      {
+        "name": "Black",
+        "hex": "#2a2a2c"
+      },
+      {
+        "name": "Sky Blue",
+        "hex": "#a9c4e0"
+      },
+      {
+        "name": "Pink Gold (online exklusiv)",
+        "hex": "#e6c3b4"
+      },
+      {
+        "name": "Silver Shadow (online exklusiv)",
+        "hex": "#b8b9bd"
+      }
+    ],
+    "id": "samsung-galaxy-s26-plus",
+    "name": "Galaxy S26+",
+    "uvp": 1249,
+    "uvp_by_storage": {
+      "256": 1249,
+      "512": 1449
+    },
+    "display": {
+      "size_in": 6.7,
+      "type": "Dynamic LTPO AMOLED 2X",
+      "resolution": "3120 x 1440",
+      "hz": 120,
+      "peak_nits": 2600
+    },
+    "chip": "Samsung Exynos 2600",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": 10,
+      "tele_zoom": "3x optisch",
+      "front_mp": 12,
+      "summary": "50-MP-Triple-Kamera mit 3x Tele"
+    },
+    "battery_mah": 4900,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": 20,
+      "note": "Qi2.2-kompatibel, Wireless PowerShare"
+    },
+    "weight_g": 190,
+    "dimensions_mm": "158.4 x 75.8 x 7.3",
+    "highlights": [
+      "Großes 6,7-Zoll-QHD+-Display",
+      "4.900 mAh Akku, 45 W Laden",
+      "7 Jahre Updates"
+    ],
+    "pitch": "Du willst ein großes, scharfes Display und lange Akkulaufzeit ohne Ultra-Preis? Dann passt das S26+ gut zu dir.",
+    "tags": [
+      "everyday",
+      "battery",
+      "video",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-s26-plus-1.webp",
+      "img/phones/samsung-galaxy-s26-plus-2.webp"
+    ],
+    "image_colors": [
+      "Cobalt Violet",
+      "Black"
+    ],
+    "uncertain": [
+      "esim",
+      "peak_nits",
+      "colors.hex"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/samsung-galaxy-s26-serie-das-bisher-intuitivste-galaxy-ai-smartphone",
+      "https://www.inside-digital.de/news/samsung-galaxy-s26-reihe-ist-offiziell-neue-features-und-preis-im-ueberblick",
+      "https://www.computerbase.de/artikel/smartphones/samsung-galaxy-s26-plus-ultra-hands-on.96146/",
+      "https://www.gsmarena.com/samsung_galaxy_s26+_5g-14457.php",
+      "https://www.samsung.com/de/smartphones/galaxy-s26/"
+    ]
+  },
+  {
+    "brand": "Samsung",
+    "release": "2026-03",
+    "os": "Android",
+    "os_launch": "Android 16 (One UI 8.5)",
+    "updates_years": 7,
+    "updates_note": "7 Jahre OS- und Sicherheitsupdates (ab globalem Marktstart)",
+    "foldable": false,
+    "cover_display_in": null,
+    "ip": "IP68",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Cobalt Violet",
+        "hex": "#5b4a8a"
+      },
+      {
+        "name": "White",
+        "hex": "#eeeeec"
+      },
+      {
+        "name": "Black",
+        "hex": "#2a2a2c"
+      },
+      {
+        "name": "Sky Blue",
+        "hex": "#a9c4e0"
+      },
+      {
+        "name": "Pink Gold (online exklusiv)",
+        "hex": "#e6c3b4"
+      },
+      {
+        "name": "Silver Shadow (online exklusiv)",
+        "hex": "#b8b9bd"
+      }
+    ],
+    "id": "samsung-galaxy-s26",
+    "name": "Galaxy S26",
+    "uvp": 999,
+    "uvp_by_storage": {
+      "256": 999,
+      "512": 1199
+    },
+    "display": {
+      "size_in": 6.3,
+      "type": "Dynamic LTPO AMOLED 2X",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": 2600
+    },
+    "chip": "Samsung Exynos 2600",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": 10,
+      "tele_zoom": "3x optisch",
+      "front_mp": 12,
+      "summary": "50-MP-Triple-Kamera mit 3x Tele"
+    },
+    "battery_mah": 4300,
+    "charging": {
+      "wired_w": 25,
+      "wireless_w": 15,
+      "note": "Qi / Qi2 Ready, Wireless PowerShare"
+    },
+    "weight_g": 167,
+    "dimensions_mm": "149.6 x 71.7 x 7.2",
+    "highlights": [
+      "Kompaktes 6,3-Zoll-Display",
+      "Exynos 2600 im 2-nm-Verfahren",
+      "7 Jahre Updates"
+    ],
+    "pitch": "Wenn du ein kompaktes Top-Smartphone mit starker Kamera und 7 Jahren Updates suchst, ist das S26 eine sichere Wahl.",
+    "tags": [
+      "compact",
+      "everyday",
+      "camera",
+      "business"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-s26-1.webp",
+      "img/phones/samsung-galaxy-s26-2.webp"
+    ],
+    "image_colors": [
+      "Cobalt Violet",
+      "White"
+    ],
+    "uncertain": [
+      "esim",
+      "peak_nits",
+      "colors.hex"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/samsung-galaxy-s26-serie-das-bisher-intuitivste-galaxy-ai-smartphone",
+      "https://www.inside-digital.de/news/samsung-galaxy-s26-reihe-ist-offiziell-neue-features-und-preis-im-ueberblick",
+      "https://www.computerbase.de/artikel/smartphones/samsung-galaxy-s26-plus-ultra-hands-on.96146/",
+      "https://www.gsmarena.com/samsung_galaxy_s26_5g-14456.php",
+      "https://www.samsung.com/de/smartphones/galaxy-s26/"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s26-fe",
+    "brand": "Samsung",
+    "name": "Galaxy S26 FE",
+    "release": "2026-09",
+    "uvp": 799,
+    "uvp_by_storage": {
+      "128": 799,
+      "256": 899,
+      "512": 1099
+    },
+    "os": "Android",
+    "os_launch": "Android 17 (One UI 9)",
+    "updates_years": 7,
+    "updates_note": "7 Android-Generationen und 7 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.7,
+      "type": "Dynamic AMOLED 2X",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": 1900
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Samsung Exynos 2500",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128,
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": 8,
+      "tele_zoom": "3x optisch",
+      "front_mp": 12,
+      "summary": "50-MP-Triple-Kamera mit 3x-Tele und OIS"
+    },
+    "battery_mah": 4900,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": 15,
+      "note": "Qi-kompatibel, Wireless PowerShare"
+    },
+    "ip": "IP68",
+    "weight_g": 193,
+    "dimensions_mm": "161.6 x 76.9 x 7.4",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Blueberry",
+        "hex": "#3d4f7c"
+      },
+      {
+        "name": "Graphite",
+        "hex": "#3a3b3d"
+      },
+      {
+        "name": "Pistachio",
+        "hex": "#bfe0d0"
+      }
+    ],
+    "highlights": [
+      "7 Jahre Updates",
+      "4.900-mAh-Akku, 45 W",
+      "3x-Telezoom, IP68"
+    ],
+    "pitch": "Wenn du Flaggschiff-Funktionen und lange Updates willst, aber nicht Ultra-Preise zahlen möchtest, ist das S26 FE ein solider Allrounder.",
+    "tags": [
+      "everyday",
+      "value",
+      "battery",
+      "camera"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-s26-fe-1.webp",
+      "img/phones/samsung-galaxy-s26-fe-2.webp",
+      "img/phones/samsung-galaxy-s26-fe-3.webp"
+    ],
+    "image_colors": [
+      "Pistachio",
+      "Graphite",
+      "Blueberry"
+    ],
+    "uncertain": [
+      "esim",
+      "colors.hex",
+      "display.resolution"
+    ],
+    "sources": [
+      "https://news.samsung.com/global/samsung-galaxy-s26-fe-delivering-the-latest-flagship-experience-focused-on-what-matters-most",
+      "https://news.samsung.com/de/fokus-auf-das-wesentliche-samsung-prasentiert-das-galaxy-s26-fe",
+      "https://www.smartzone.de/samsung-galaxy-s26-fe/"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a57",
+    "brand": "Samsung",
+    "name": "Galaxy A57",
+    "release": "2026-04",
+    "uvp": 529,
+    "uvp_by_storage": {
+      "128": 529,
+      "256": 589
+    },
+    "os": "Android",
+    "os_launch": "Android 16 / One UI 8.5",
+    "updates_years": 6,
+    "updates_note": "6 Jahre Betriebssystem- und Sicherheitsupdates",
+    "display": {
+      "size_in": 6.7,
+      "type": "Super AMOLED+",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": 1900
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Samsung Exynos 1680",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 12,
+      "summary": "50-MP-Hauptkamera mit OIS, 12-MP-Ultraweitwinkel, Makro"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": null,
+      "note": "kein kabelloses Laden"
+    },
+    "ip": "IP68",
+    "weight_g": 179,
+    "dimensions_mm": "161.5 x 76.8 x 6.9",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Awesome Navy",
+        "hex": "#2b3550"
+      },
+      {
+        "name": "Awesome Gray",
+        "hex": "#8a8d91"
+      },
+      {
+        "name": "Awesome Icyblue",
+        "hex": "#bcd3e6"
+      },
+      {
+        "name": "Awesome Lilac",
+        "hex": "#c9b8dc"
+      }
+    ],
+    "highlights": [
+      "Nur 6,9 mm dünn und 179 g leicht",
+      "IP68 und 6 Jahre Updates",
+      "45-W-Schnellladen"
+    ],
+    "pitch": "Die schicke Mittelklasse von Samsung: dünn, wasserdicht und lange mit Updates versorgt – ideal, wenn es kein Flaggschiff sein muss.",
+    "tags": [
+      "everyday",
+      "value",
+      "camera",
+      "battery"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-a57-1.webp",
+      "img/phones/samsung-galaxy-a57-2.webp",
+      "img/phones/samsung-galaxy-a57-3.webp"
+    ],
+    "uncertain": [
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/samsung-galaxy-a57-5g-und-samsung-galaxy-a37-5g-sind-ab-sofort-im-handel-erhaltlich",
+      "https://www.gsmarena.com/samsung_galaxy_a57_5g-14379.php"
+    ],
+    "image_colors": [
+      "Awesome Navy",
+      "Awesome Gray",
+      "Awesome Icyblue"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a37",
+    "brand": "Samsung",
+    "name": "Galaxy A37",
+    "release": "2026-04",
+    "uvp": 429,
+    "uvp_by_storage": {
+      "128": 429,
+      "256": 519
+    },
+    "os": "Android",
+    "os_launch": "Android 16 / One UI 8.5",
+    "updates_years": 6,
+    "updates_note": "6 Jahre Betriebssystem- und Sicherheitsupdates",
+    "display": {
+      "size_in": 6.7,
+      "type": "Super AMOLED",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": 1900
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Samsung Exynos 1480",
+    "ram_gb": [
+      6,
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 12,
+      "summary": "50-MP-Hauptkamera mit OIS, 8-MP-Ultraweitwinkel, Makro"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": null,
+      "note": "kein kabelloses Laden"
+    },
+    "ip": "IP68",
+    "weight_g": 196,
+    "dimensions_mm": "162.9 x 78.2 x 7.4",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Awesome Lavender",
+        "hex": "#c7b9e0"
+      },
+      {
+        "name": "Awesome Charcoal",
+        "hex": "#3a3b3d"
+      },
+      {
+        "name": "Awesome Graygreen",
+        "hex": "#9fa99a"
+      },
+      {
+        "name": "Awesome White",
+        "hex": "#eeeeea"
+      }
+    ],
+    "highlights": [
+      "IP68 wasserdicht",
+      "6 Jahre Updates",
+      "Großes 6,7\"-AMOLED mit 120 Hz"
+    ],
+    "pitch": "Solides Samsung-Handy für den Alltag mit großem Display, IP68 und langer Update-Garantie zum fairen Preis.",
+    "tags": [
+      "everyday",
+      "value",
+      "battery",
+      "senior"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-a37-1.webp",
+      "img/phones/samsung-galaxy-a37-2.webp",
+      "img/phones/samsung-galaxy-a37-3.webp"
+    ],
+    "uncertain": [
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/samsung-galaxy-a57-5g-und-samsung-galaxy-a37-5g-sind-ab-sofort-im-handel-erhaltlich",
+      "https://www.gsmarena.com/samsung_galaxy_a37_5g-14378.php"
+    ],
+    "image_colors": [
+      "Awesome Lavender",
+      "Awesome Charcoal",
+      "Awesome Graygreen"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a27",
+    "brand": "Samsung",
+    "name": "Galaxy A27",
+    "release": "2026-07",
+    "uvp": 349,
+    "uvp_by_storage": {
+      "128": 349,
+      "256": 439
+    },
+    "os": "Android",
+    "os_launch": "Android 16 / One UI 8.5",
+    "updates_years": 6,
+    "updates_note": "6 Jahre Betriebssystem- und Sicherheitsupdates",
+    "display": {
+      "size_in": 6.7,
+      "type": "Super AMOLED",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": null
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 6 Gen 3",
+    "ram_gb": [
+      6,
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 5,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 12,
+      "summary": "50-MP-Hauptkamera mit OIS, 5-MP-Ultraweitwinkel, Makro"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 25,
+      "wireless_w": null,
+      "note": "kein kabelloses Laden"
+    },
+    "ip": "IP64",
+    "weight_g": 200,
+    "dimensions_mm": "162.4 x 78.2 x 7.8",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#222326"
+      },
+      {
+        "name": "Blue",
+        "hex": "#5f7fa8"
+      },
+      {
+        "name": "Light Pink",
+        "hex": "#efcfd4"
+      }
+    ],
+    "highlights": [
+      "microSD-Slot bis 2 TB",
+      "6 Jahre Updates",
+      "120-Hz-AMOLED"
+    ],
+    "pitch": "Günstiges Samsung mit großem AMOLED-Display, erweiterbarem Speicher und 6 Jahren Updates.",
+    "tags": [
+      "value",
+      "everyday",
+      "battery",
+      "senior"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-a27-1.webp",
+      "img/phones/samsung-galaxy-a27-2.webp"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/das-neue-samsung-galaxy-a27-5g-vereint-ein-beeindruckendes-display-und-intelligente-funktionen",
+      "https://www.gsmarena.com/samsung_galaxy_a27_5g-14606.php",
+      "https://www.connect.de/news/samsung-galaxy-a27-5g-smartphone-ausstattung-preis-3212769.html"
+    ],
+    "image_colors": [
+      "Black",
+      "Blue"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a17",
+    "brand": "Samsung",
+    "name": "Galaxy A17 5G",
+    "release": "2025-08",
+    "uvp": 229,
+    "uvp_by_storage": {
+      "128": 229,
+      "256": 309
+    },
+    "os": "Android",
+    "os_launch": "Android 15 / One UI 7",
+    "updates_years": 6,
+    "updates_note": "6 Jahre Betriebssystem- und Sicherheitsupdates",
+    "display": {
+      "size_in": 6.7,
+      "type": "Super AMOLED",
+      "resolution": "2340 x 1080",
+      "hz": 90,
+      "peak_nits": 800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Samsung Exynos 1330",
+    "ram_gb": [
+      4,
+      6,
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 5,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 13,
+      "summary": "50-MP-Hauptkamera mit OIS, 5-MP-Ultraweitwinkel, Makro"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 25,
+      "wireless_w": null,
+      "note": "kein kabelloses Laden"
+    },
+    "ip": "IP54",
+    "weight_g": 192,
+    "dimensions_mm": "164.4 x 77.9 x 7.5",
+    "five_g": true,
+    "esim": "eSIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1f2023"
+      },
+      {
+        "name": "Gray",
+        "hex": "#8d9094"
+      },
+      {
+        "name": "Blue",
+        "hex": "#4f6f9c"
+      }
+    ],
+    "highlights": [
+      "Einstiegspreis unter 250 €",
+      "6 Jahre Updates",
+      "microSD-Slot"
+    ],
+    "pitch": "Das preiswerte Samsung für Einsteiger: großes AMOLED, 5G und eine Update-Zusage, die in der Preisklasse selten ist.",
+    "tags": [
+      "value",
+      "everyday",
+      "senior"
+    ],
+    "images": [
+      "img/phones/samsung-galaxy-a17-1.webp",
+      "img/phones/samsung-galaxy-a17-2.webp"
+    ],
+    "uncertain": [
+      "ram_gb"
+    ],
+    "sources": [
+      "https://news.samsung.com/de/smart-verlasslich-elegant-das-neue-samsung-galaxy-a17-5g",
+      "https://www.gsmarena.com/samsung_galaxy_a17_5g-14041.php"
+    ],
+    "image_colors": [
+      "Black",
+      "Gray"
+    ]
+  },
+  {
+    "id": "google-pixel-11-pro-fold",
+    "brand": "Google",
+    "name": "Pixel 11 Pro Fold",
+    "release": "2026-08",
+    "uvp": 1999,
+    "uvp_by_storage": {
+      "256": 1999,
+      "512": 2129,
+      "1024": 2389
+    },
+    "os": "Android",
+    "os_launch": "Android 17",
+    "updates_years": 7,
+    "updates_note": "7 Jahre Betriebssystem- und Sicherheitsupdates sowie Pixel Drops (Herstellerangabe)",
+    "display": {
+      "size_in": 8,
+      "type": "Faltbares OLED (Super Actua Flex), 1–120 Hz",
+      "resolution": "2152 x 2076",
+      "hz": 120,
+      "peak_nits": 3600
+    },
+    "foldable": true,
+    "cover_display_in": 6.5,
+    "chip": "Google Tensor G6",
+    "ram_gb": [
+      16
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 10.5,
+      "tele_mp": 10.8,
+      "tele_zoom": "5x optisch",
+      "front_mp": 10,
+      "summary": "48 MP + 10,5 MP Ultraweitwinkel + 10,8 MP Tele (5x), je 10 MP Front- und Innenkamera"
+    },
+    "battery_mah": 4806,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 25,
+      "note": "Bis zu 50 % in ca. 30 Min. mit 30-W-PPS-Netzteil (separat), Pixelsnap Qi2.2 bis 25 W kabellos"
+    },
+    "ip": "IP68",
+    "weight_g": 239,
+    "dimensions_mm": "155.2 x 76.0 x 10.1 (aufgeklappt 155.2 x 150.4 x 5.0)",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Obsidian",
+        "hex": "#2b2d2e"
+      },
+      {
+        "name": "Olive",
+        "hex": "#7d8466"
+      }
+    ],
+    "highlights": [
+      "8″-Innendisplay + 6,5″-Außendisplay",
+      "Als erstes Foldable nach IP68 geschützt",
+      "16 GB RAM in allen Varianten"
+    ],
+    "pitch": "Smartphone und Tablet in einem: großes Innendisplay für Multitasking, vollwertiges Außendisplay und Pixel-KI-Funktionen.",
+    "tags": [
+      "business",
+      "video",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/google-pixel-11-pro-fold-1.webp",
+      "img/phones/google-pixel-11-pro-fold-2.webp"
+    ],
+    "image_colors": [
+      "Obsidian",
+      "Olive"
+    ],
+    "uncertain": [
+      "display.hz"
+    ],
+    "sources": [
+      "https://store.google.com/de/product/pixel_11_pro_fold_specs?hl=de",
+      "https://store.google.com/de/magazine/compare_pixel?hl=de",
+      "https://gagadget.de/721832-google-pixel-11-pro-fold-das-teuerste-pixel-aller-zeiten-kommt-fur-eur1999/"
+    ]
+  },
+  {
+    "id": "google-pixel-11-pro-xl",
+    "brand": "Google",
+    "name": "Pixel 11 Pro XL",
+    "release": "2026-08",
+    "uvp": 1399,
+    "uvp_by_storage": {
+      "256": 1399,
+      "512": 1529,
+      "1024": 1789
+    },
+    "os": "Android",
+    "os_launch": "Android 17",
+    "updates_years": 7,
+    "updates_note": "7 Jahre Betriebssystem- und Sicherheitsupdates sowie Pixel Drops (Herstellerangabe)",
+    "display": {
+      "size_in": 6.8,
+      "type": "LTPO OLED (Super Actua), 1–120 Hz",
+      "resolution": "2992 x 1344",
+      "hz": 120,
+      "peak_nits": 3600
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Google Tensor G6",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "5x optisch (Periskop)",
+      "front_mp": 42,
+      "summary": "50 MP + 48 MP Ultraweitwinkel + 48 MP Periskop-Tele (5x, größerer Sensor), 8K-Video"
+    },
+    "battery_mah": 5115,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": 25,
+      "note": "Bis zu 75 % in ca. 30 Min. mit 45-W-PPS-Netzteil (separat), Pixelsnap Qi2.2 bis 25 W kabellos"
+    },
+    "ip": "IP68",
+    "weight_g": 226,
+    "dimensions_mm": "162.7 x 76.5 x 8.5",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Obsidian (Matt)",
+        "hex": "#2d2f2e"
+      },
+      {
+        "name": "Olive",
+        "hex": "#7d8466"
+      },
+      {
+        "name": "Canyon",
+        "hex": "#e59a86"
+      },
+      {
+        "name": "Fog",
+        "hex": "#dfe5e2"
+      }
+    ],
+    "highlights": [
+      "Großes 6,8″-Display mit 3600 nits",
+      "45 W kabelgebunden, 25 W Pixelsnap",
+      "Größter Akku der Pixel-11-Reihe"
+    ],
+    "pitch": "Das große Pixel-Flaggschiff: riesiges, superhelles Display, starke Akkulaufzeit, schnelles Laden und die beste Pixel-Kamera.",
+    "tags": [
+      "camera",
+      "video",
+      "battery",
+      "business",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/google-pixel-11-pro-xl-1.webp",
+      "img/phones/google-pixel-11-pro-xl-2.webp",
+      "img/phones/google-pixel-11-pro-xl-3.webp"
+    ],
+    "image_colors": [
+      "Obsidian (Matt)",
+      "Fog",
+      "Olive"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "uvp_by_storage.1024"
+    ],
+    "sources": [
+      "https://store.google.com/de/product/pixel_11_pro_specs?hl=de",
+      "https://www.gsmarena.com/google_pixel_11_pro_xl_5g-14800.php",
+      "https://blog.google/intl/de-de/produkte/hardware/google-pixel-11-pro-xl/"
+    ]
+  },
+  {
+    "id": "google-pixel-11-pro",
+    "brand": "Google",
+    "name": "Pixel 11 Pro",
+    "release": "2026-08",
+    "uvp": 1199,
+    "uvp_by_storage": {
+      "256": 1199,
+      "512": 1329,
+      "1024": 1589
+    },
+    "os": "Android",
+    "os_launch": "Android 17",
+    "updates_years": 7,
+    "updates_note": "7 Jahre Betriebssystem- und Sicherheitsupdates sowie Pixel Drops (Herstellerangabe)",
+    "display": {
+      "size_in": 6.3,
+      "type": "LTPO OLED (Super Actua), 1–120 Hz",
+      "resolution": "2856 x 1280",
+      "hz": 120,
+      "peak_nits": 3600
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Google Tensor G6",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "5x optisch (Periskop)",
+      "front_mp": 42,
+      "summary": "50 MP + 48 MP Ultraweitwinkel + 48 MP Periskop-Tele (5x), bis 120x Pro-Zoom, 8K-Video"
+    },
+    "battery_mah": 4850,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 25,
+      "note": "Bis zu 55 % in ca. 30 Min. mit 30-W-PPS-Netzteil (separat), Pixelsnap Qi2.2 bis 25 W kabellos; 16 GB RAM nur bei 512 GB/1 TB"
+    },
+    "ip": "IP68",
+    "weight_g": 204,
+    "dimensions_mm": "152.7 x 71.9 x 8.4",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Obsidian (Matt)",
+        "hex": "#2d2f2e"
+      },
+      {
+        "name": "Olive",
+        "hex": "#7d8466"
+      },
+      {
+        "name": "Canyon",
+        "hex": "#e59a86"
+      },
+      {
+        "name": "Fog",
+        "hex": "#dfe5e2"
+      }
+    ],
+    "highlights": [
+      "Kompaktes Profi-Pixel mit 6,3″",
+      "42-MP-Selfiekamera mit Autofokus",
+      "HiLight-Benachrichtigungslicht"
+    ],
+    "pitch": "Die Pro-Kamera im handlichen Format: drei hochauflösende Kameras, 8K-Video, superhelles Display und Gemini-KI.",
+    "tags": [
+      "camera",
+      "video",
+      "business",
+      "compact"
+    ],
+    "images": [
+      "img/phones/google-pixel-11-pro-1.webp",
+      "img/phones/google-pixel-11-pro-2.webp",
+      "img/phones/google-pixel-11-pro-3.webp"
+    ],
+    "image_colors": [
+      "Obsidian (Matt)",
+      "Olive",
+      "Canyon"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "uvp_by_storage.1024",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://store.google.com/de/product/pixel_11_pro_specs?hl=de",
+      "https://store.google.com/de/magazine/compare_pixel?hl=de",
+      "https://blog.google/intl/de-de/produkte/hardware/google-pixel-11-pro-xl/",
+      "https://www.notebookcheck.net/Google-New-Pixel-11-release-prices-and-configurations-revealed-for-European-and-UK-markets.1336704.0.html"
+    ]
+  },
+  {
+    "id": "google-pixel-11",
+    "brand": "Google",
+    "name": "Pixel 11",
+    "release": "2026-08",
+    "uvp": 999,
+    "uvp_by_storage": {
+      "256": 999,
+      "512": 1129
+    },
+    "os": "Android",
+    "os_launch": "Android 17",
+    "updates_years": 7,
+    "updates_note": "7 Jahre Betriebssystem- und Sicherheitsupdates sowie Pixel Drops (Herstellerangabe)",
+    "display": {
+      "size_in": 6.3,
+      "type": "OLED (Actua), 60–120 Hz",
+      "resolution": "2424 x 1080",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Google Tensor G6",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 13,
+      "tele_mp": 10.8,
+      "tele_zoom": "5x optisch",
+      "front_mp": 10.5,
+      "summary": "48-MP-Hauptkamera + 13-MP-Ultraweitwinkel + 10,8-MP-Tele (5x), bis 30x Super-Zoom"
+    },
+    "battery_mah": 4985,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 25,
+      "note": "Bis zu 55 % in ca. 30 Min. mit 30-W-PPS-Netzteil (separat), Pixelsnap Qi2.2 bis 25 W kabellos"
+    },
+    "ip": "IP68",
+    "weight_g": 197,
+    "dimensions_mm": "152.8 x 72.0 x 8.6",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Obsidian",
+        "hex": "#2b2d2e"
+      },
+      {
+        "name": "Pistachio",
+        "hex": "#c9d7a8"
+      },
+      {
+        "name": "Hibiscus",
+        "hex": "#c2185b"
+      },
+      {
+        "name": "Frost",
+        "hex": "#c9d3e6"
+      }
+    ],
+    "highlights": [
+      "Tensor G6 mit Gemini-KI an Bord",
+      "5x-Telekamera schon im Basismodell",
+      "7 Jahre Updates"
+    ],
+    "pitch": "Das Pixel für alle: hervorragende KI-Funktionen, sehr gute Kamera mit 5x-Tele und sieben Jahre Updates – direkt von Google.",
+    "tags": [
+      "camera",
+      "everyday",
+      "business"
+    ],
+    "images": [
+      "img/phones/google-pixel-11-1.webp",
+      "img/phones/google-pixel-11-2.webp",
+      "img/phones/google-pixel-11-3.webp",
+      "img/phones/google-pixel-11-4.webp"
+    ],
+    "image_colors": [
+      "Obsidian",
+      "Pistachio",
+      "Hibiscus",
+      "Frost"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://store.google.com/de/product/pixel_11_specs?hl=de",
+      "https://store.google.com/de/magazine/compare_pixel?hl=de",
+      "https://blog.google/intl/de-de/produkte/hardware/google-pixel-11-pro-xl/",
+      "https://en.wikipedia.org/wiki/Pixel_11"
+    ]
+  },
+  {
+    "id": "google-pixel-10a",
+    "brand": "Google",
+    "name": "Pixel 10a",
+    "release": "2026-03",
+    "uvp": 649,
+    "uvp_by_storage": {
+      "128": 649,
+      "256": 749
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": 7,
+    "updates_note": "7 Jahre Betriebssystem- und Sicherheitsupdates sowie Pixel Drops (Herstellerangabe)",
+    "display": {
+      "size_in": 6.3,
+      "type": "pOLED (Actua), 60–120 Hz",
+      "resolution": "2424 x 1080",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Google Tensor G4",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 13,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 13,
+      "summary": "48-MP-Hauptkamera (OIS) + 13-MP-Ultraweitwinkel, bis 8x Super-Res-Zoom"
+    },
+    "battery_mah": 5100,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 10,
+      "note": "Bis zu 50 % in ca. 30 Min. mit 45-W-PPS-Netzteil (separat), Qi kabellos. Startpreis war 549 €, Google hat die UVP im Oktober 2026 auf 649 € angehoben"
+    },
+    "ip": "IP68",
+    "weight_g": 183,
+    "dimensions_mm": "153.9 x 73.0 x 9.0",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Obsidian",
+        "hex": "#2b2d2e"
+      },
+      {
+        "name": "Lavender",
+        "hex": "#b9b6e6"
+      },
+      {
+        "name": "Berry",
+        "hex": "#c2477a"
+      },
+      {
+        "name": "Fog",
+        "hex": "#dfe5e2"
+      }
+    ],
+    "highlights": [
+      "Pixel-Kamera & Gemini zum Mittelklassepreis",
+      "5100-mAh-Akku",
+      "7 Jahre Updates"
+    ],
+    "pitch": "Das günstigste aktuelle Pixel: tolle Fotos, sehr lange Update-Garantie und flaches Kamera-Design – ideal als Einstieg.",
+    "tags": [
+      "value",
+      "everyday",
+      "senior",
+      "camera"
+    ],
+    "images": [
+      "img/phones/google-pixel-10a-1.webp",
+      "img/phones/google-pixel-10a-2.webp"
+    ],
+    "image_colors": [
+      "Obsidian",
+      "Lavender"
+    ],
+    "uncertain": [
+      "charging.wired_w",
+      "charging.wireless_w",
+      "uvp"
+    ],
+    "sources": [
+      "https://store.google.com/de/product/pixel_10a_specs?hl=de",
+      "https://www.heise.de/news/Google-erhoeht-Preis-fuer-Pixel-10a-um-100-Euro-11475569.html",
+      "https://en.wikipedia.org/wiki/Pixel_10a"
+    ]
+  },
+  {
+    "id": "xiaomi-17-ultra",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 17 Ultra",
+    "release": "2026-03",
+    "uvp": 1499.9,
+    "uvp_by_storage": {
+      "512": 1499.9,
+      "1024": 1699.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Xiaomi HyperOS 3)",
+    "updates_years": 6,
+    "updates_note": "Laut Xiaomi mehrjährige OS- und Sicherheitsupdates (Dauer für DE nicht offiziell bestätigt)",
+    "display": {
+      "size_in": 6.9,
+      "type": "HyperRGB OLED, LTPO 1–120 Hz, HDR10+, Dolby Vision",
+      "resolution": "2608 x 1200",
+      "hz": 120,
+      "peak_nits": 3500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5",
+    "ram_gb": [
+      16
+    ],
+    "storage_gb": [
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 200,
+      "tele_zoom": "75–100 mm optisch (stufenlos, Periskop)",
+      "front_mp": 50,
+      "summary": "Leica-Triple: 50 MP 1″-Sensor, 200-MP-Periskop-Tele 75–100 mm, 50-MP-Ultraweitwinkel; 8K-Video"
+    },
+    "battery_mah": 6000,
+    "charging": {
+      "wired_w": 90,
+      "wireless_w": 50,
+      "note": "90 W HyperCharge Kabel, 50 W kabellos; Netzteil nicht im Lieferumfang"
+    },
+    "ip": "IP68",
+    "weight_g": 218.4,
+    "dimensions_mm": "162.9 x 77.6 x 8.29",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "White",
+        "hex": "#ececea"
+      },
+      {
+        "name": "Starlit Green",
+        "hex": "#2f5d50"
+      }
+    ],
+    "highlights": [
+      "1-Zoll-Hauptsensor mit Leica-Optik",
+      "200-MP-Zoom mit 75–100 mm",
+      "6000 mAh, 90 W + 50 W kabellos"
+    ],
+    "pitch": "Kamera-Flaggschiff für Foto-Enthusiasten: Leica-Optik, riesiger 1-Zoll-Sensor und stufenloser 200-MP-Zoom.",
+    "tags": [
+      "camera",
+      "video",
+      "business",
+      "gaming",
+      "battery"
+    ],
+    "images": [
+      "img/phones/xiaomi-17-ultra-1.webp"
+    ],
+    "image_colors": [
+      "Starlit Green"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/xiaomi-17-ultra/specs/",
+      "https://www.hartware.de/2026/03/02/xiaomi-17-und-17-ultra-zwei-neue-smartphone-flaggschiffe/",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  },
+  {
+    "id": "xiaomi-17t-pro",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 17T Pro",
+    "release": "2026-05",
+    "uvp": 899.9,
+    "uvp_by_storage": {
+      "256": 899.9,
+      "512": 999.9,
+      "1024": 1099.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Xiaomi HyperOS 3)",
+    "updates_years": 6,
+    "updates_note": "Xiaomi nennt für die T-Serie i. d. R. 6 Jahre Sicherheitsupdates (nicht separat bestätigt)",
+    "display": {
+      "size_in": 6.83,
+      "type": "AMOLED, bis 144 Hz, HDR10+, Dolby Vision",
+      "resolution": "2772 x 1280",
+      "hz": 144,
+      "peak_nits": 3500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 9500",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": 50,
+      "tele_zoom": "5x optisch (115 mm, Periskop)",
+      "front_mp": 32,
+      "summary": "Leica-Triple: 50 MP Light Fusion 950, 50-MP-Periskop (115 mm), 12-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 7000,
+    "charging": {
+      "wired_w": 100,
+      "wireless_w": 50,
+      "note": "100 W HyperCharge Kabel, 50 W kabellos"
+    },
+    "ip": "IP68",
+    "weight_g": 219,
+    "dimensions_mm": "162.2 x 77.5 x 8.25",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Violet",
+        "hex": "#6d5a8e"
+      },
+      {
+        "name": "Deep Blue",
+        "hex": "#284a86"
+      }
+    ],
+    "highlights": [
+      "Riesiger 7000-mAh-Akku",
+      "5x-Leica-Periskop",
+      "144-Hz-Display mit 3500 nits"
+    ],
+    "pitch": "Ausdauer-Flaggschiff mit 7000 mAh, 100-W-Laden und Leica-Periskop – viel Oberklasse unter 1000 €.",
+    "tags": [
+      "battery",
+      "camera",
+      "gaming",
+      "value"
+    ],
+    "images": [
+      "img/phones/xiaomi-17t-pro-1.webp"
+    ],
+    "image_colors": [
+      "Deep Blue"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/xiaomi-17t-pro/specs/",
+      "https://www.vodafone.de/featured/article/xiaomi-17t-pro-preise-der-modelle-im-ueberblick-253795",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  },
+  {
+    "id": "poco-f8-pro",
+    "brand": "Xiaomi",
+    "name": "POCO F8 Pro",
+    "release": "2025-11",
+    "uvp": 649.9,
+    "uvp_by_storage": {
+      "256": 649.9,
+      "512": 699.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Xiaomi HyperOS 3)",
+    "updates_years": 6,
+    "updates_note": "Herstellerangabe lt. Presse; nicht separat bestätigt",
+    "display": {
+      "size_in": 6.59,
+      "type": "AMOLED, bis 120 Hz, HDR10+, Dolby Vision",
+      "resolution": "2510 x 1156",
+      "hz": 120,
+      "peak_nits": 3500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": 50,
+      "tele_zoom": "ca. 2,5x optisch (60 mm)",
+      "front_mp": 20,
+      "summary": "50 MP (OIS) + 50-MP-Tele 60 mm + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6210,
+    "charging": {
+      "wired_w": 100,
+      "wireless_w": 0,
+      "note": "100 W HyperCharge Kabel, 22,5 W Reverse kabelgebunden"
+    },
+    "ip": "IP68",
+    "weight_g": 199,
+    "dimensions_mm": "157.49 x 75.25 x 8.0",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Titanium Silver",
+        "hex": "#c9c9c6"
+      },
+      {
+        "name": "Blue",
+        "hex": "#8fc5c7"
+      }
+    ],
+    "highlights": [
+      "Snapdragon 8 Elite zum Mittelklassepreis",
+      "Kompakte 6,59″ mit 6210 mAh",
+      "Tele-Kamera mit 50 MP"
+    ],
+    "pitch": "Gaming- und Performance-Tipp: Top-Chip, großer Akku und 100-W-Laden in handlichem Format.",
+    "tags": [
+      "gaming",
+      "value",
+      "battery",
+      "compact"
+    ],
+    "images": [
+      "img/phones/xiaomi-poco-f8-pro-1.webp"
+    ],
+    "image_colors": [
+      "Titanium Silver"
+    ],
+    "uncertain": [
+      "charging.wireless_w",
+      "updates_years",
+      "camera.tele_zoom"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/poco-f8-pro/specs/",
+      "https://www.handyhase.de/xiaomi/poco-f8-pro/",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  },
+  {
+    "id": "redmi-note-15-pro-plus",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 15 Pro+ 5G",
+    "release": "2026-01",
+    "uvp": 499.9,
+    "uvp_by_storage": {
+      "256": 499.9,
+      "512": 529.9
+    },
+    "os": "Android",
+    "os_launch": "Android 15 (Xiaomi HyperOS 2)",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.83,
+      "type": "CrystalRes AMOLED 1,5K, 120 Hz, HDR10+, Dolby Vision",
+      "resolution": "2772 x 1280",
+      "hz": 120,
+      "peak_nits": 3200
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 7s Gen 4",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 32,
+      "summary": "200-MP-Hauptkamera (OIS, 1/1,4″) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6500,
+    "charging": {
+      "wired_w": 100,
+      "wireless_w": 0,
+      "note": "100 W HyperCharge Kabel; Netzteil nicht im Lieferumfang"
+    },
+    "ip": "IP68",
+    "weight_g": 207.1,
+    "dimensions_mm": "163.34 x 78.31 x 8.19",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Glacier Blue",
+        "hex": "#a9c6dc"
+      },
+      {
+        "name": "Mocha Brown",
+        "hex": "#6b4f3f"
+      }
+    ],
+    "highlights": [
+      "200-MP-Kamera",
+      "Gorilla Glass Victus 2 & IP68",
+      "6500 mAh, 100 W"
+    ],
+    "pitch": "Robuste Mittelklasse mit 200-MP-Kamera, IP68, sehr hellem Display und Schnellladen – solide für den Alltag.",
+    "tags": [
+      "camera",
+      "battery",
+      "everyday",
+      "value"
+    ],
+    "images": [
+      "img/phones/xiaomi-redmi-note-15-pro-plus-1.webp"
+    ],
+    "image_colors": [
+      "Mocha Brown"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/redmi-note-15-pro-plus-5g/specs/",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  },
+  {
+    "id": "poco-x8-pro",
+    "brand": "Xiaomi",
+    "name": "POCO X8 Pro",
+    "release": "2026-03",
+    "uvp": 399.9,
+    "uvp_by_storage": {
+      "256": 399.9,
+      "512": 449.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Xiaomi HyperOS 3)",
+    "updates_years": 6,
+    "updates_note": "Herstellerangabe lt. Presse; nicht separat bestätigt",
+    "display": {
+      "size_in": 6.59,
+      "type": "AMOLED 1,5K, bis 120 Hz",
+      "resolution": "2756 x 1268",
+      "hz": 120,
+      "peak_nits": 3500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 8500-Ultra",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 20,
+      "summary": "50 MP Sony IMX882 (OIS) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6500,
+    "charging": {
+      "wired_w": 100,
+      "wireless_w": 0,
+      "note": "100 W HyperCharge Kabel, 27 W Reverse kabelgebunden; 12/512 GB 479,90 €"
+    },
+    "ip": "IP68",
+    "weight_g": 201.5,
+    "dimensions_mm": "157.53 x 75.19 x 8.38",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Mint Green",
+        "hex": "#bfe3d0"
+      },
+      {
+        "name": "White",
+        "hex": "#ececea"
+      },
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      }
+    ],
+    "highlights": [
+      "Starker Dimensity-8500-Chip",
+      "6500 mAh mit 100 W",
+      "IP68 unter 400 €"
+    ],
+    "pitch": "Preis-Leistungs-Kracher für Gamer: flottes Display, starker Chip und riesiger Akku zum Mittelklassepreis.",
+    "tags": [
+      "value",
+      "gaming",
+      "battery"
+    ],
+    "images": [
+      "img/phones/xiaomi-poco-x8-pro-1.webp"
+    ],
+    "image_colors": [
+      "Mint Green"
+    ],
+    "uncertain": [
+      "updates_years",
+      "esim"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/poco-x8-pro/specs/",
+      "https://www.handyhase.de/xiaomi/poco-x8-pro/",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  },
+  {
+    "id": "redmi-note-15-pro",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 15 Pro 5G",
+    "release": "2026-01",
+    "uvp": 399.9,
+    "uvp_by_storage": {
+      "256": 399.9,
+      "512": 449.9
+    },
+    "os": "Android",
+    "os_launch": "Android 15 (Xiaomi HyperOS 2)",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.83,
+      "type": "AMOLED 1,5K, 120 Hz, HDR10+, Dolby Vision",
+      "resolution": "2772 x 1280",
+      "hz": 120,
+      "peak_nits": 3200
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 7400-Ultra",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 20,
+      "summary": "200-MP-Hauptkamera (OIS) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6580,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": 0,
+      "note": "45 W TurboCharge Kabel; Netzteil nicht im Lieferumfang"
+    },
+    "ip": "IP68",
+    "weight_g": 210,
+    "dimensions_mm": "163.61 x 78.09 x 7.96",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Glacier Blue",
+        "hex": "#a9c6dc"
+      },
+      {
+        "name": "Titanium",
+        "hex": "#b9aa95"
+      }
+    ],
+    "highlights": [
+      "200-MP-Kamera unter 400 €",
+      "6580-mAh-Akku",
+      "IP68-Schutz"
+    ],
+    "pitch": "Günstiger Allrounder mit 200-MP-Kamera, großem Display und riesigem Akku – ideal fürs Preisbewusste.",
+    "tags": [
+      "value",
+      "battery",
+      "everyday",
+      "senior"
+    ],
+    "images": [
+      "img/phones/xiaomi-redmi-note-15-pro-1.webp"
+    ],
+    "image_colors": [
+      "Titanium"
+    ],
+    "uncertain": [
+      "updates_years",
+      "uvp_by_storage.512"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/redmi-note-15-pro-5g/specs/",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  },
+  {
+    "id": "oneplus-15",
+    "brand": "OnePlus",
+    "name": "OnePlus 15",
+    "release": "2025-11",
+    "uvp": 949,
+    "uvp_by_storage": {
+      "256": 949,
+      "512": 1099
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (OxygenOS 16)",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.78,
+      "type": "LTPO AMOLED, 1–120 Hz, bis 165 Hz in Spielen",
+      "resolution": "2772 x 1272",
+      "hz": 165,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch (Periskop)",
+      "front_mp": 32,
+      "summary": "Drei 50-MP-Kameras: Sony IMX906 (OIS), 3,5x-Periskop-Tele, 116°-Ultraweitwinkel; 8K-Video"
+    },
+    "battery_mah": 7300,
+    "charging": {
+      "wired_w": 120,
+      "wireless_w": 50,
+      "note": "120 W SUPERVOOC Kabel (100 % in ca. 39 Min.), 50 W AIRVOOC kabellos"
+    },
+    "ip": "IP68/IP69K",
+    "weight_g": 215,
+    "dimensions_mm": "161.4 x 76.7 x 8.2",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Infinite Black",
+        "hex": "#1b1b1d"
+      },
+      {
+        "name": "Sand Storm",
+        "hex": "#cdbfa6"
+      },
+      {
+        "name": "Ultra Violet",
+        "hex": "#b8a6d6"
+      }
+    ],
+    "highlights": [
+      "Riesiger 7300-mAh-Akku",
+      "120 W Kabel + 50 W kabellos",
+      "165-Hz-Gaming-Display"
+    ],
+    "pitch": "Ausdauer- und Gaming-Flaggschiff: 7300 mAh, extrem schnelles Laden und Snapdragon 8 Elite Gen 5 – zu einem fairen Preis.",
+    "tags": [
+      "gaming",
+      "battery",
+      "camera",
+      "business"
+    ],
+    "images": [
+      "img/phones/oneplus-15-1.webp",
+      "img/phones/oneplus-15-2.webp",
+      "img/phones/oneplus-15-3.webp"
+    ],
+    "image_colors": [
+      "Infinite Black",
+      "Sand Storm",
+      "Ultra Violet"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "updates_years",
+      "display.peak_nits",
+      "esim"
+    ],
+    "sources": [
+      "https://www.oneplus.com/de/15/specs",
+      "https://www.oneplus.com/de/15",
+      "https://handyswap.com/de-de/products/oneplus-15-256gb-black/"
+    ]
+  },
+  {
+    "id": "oneplus-15r",
+    "brand": "OnePlus",
+    "name": "OnePlus 15R",
+    "release": "2025-12",
+    "uvp": 699,
+    "uvp_by_storage": {
+      "256": 699,
+      "512": 799
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (OxygenOS 16)",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.83,
+      "type": "AMOLED, bis 165 Hz",
+      "resolution": "2800 x 1272",
+      "hz": 165,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Gen 5",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 32,
+      "summary": "50 MP Sony IMX906 (OIS) + 8-MP-Ultraweitwinkel, 4K/120 fps"
+    },
+    "battery_mah": 7400,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 0,
+      "note": "80 W SUPERVOOC Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP68/IP69K",
+    "weight_g": 214,
+    "dimensions_mm": "163.4 x 77.0 x 8.3",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Charcoal Black",
+        "hex": "#2a2b2d"
+      },
+      {
+        "name": "Mint Breeze",
+        "hex": "#bfe0c4"
+      }
+    ],
+    "highlights": [
+      "7400 mAh – größter OnePlus-Akku",
+      "Snapdragon 8 Gen 5",
+      "IP68/IP69K-Schutz"
+    ],
+    "pitch": "Performance-Tipp unter 700 €: Top-Chip, 165-Hz-Display und ein 7400-mAh-Akku für zwei Tage.",
+    "tags": [
+      "gaming",
+      "battery",
+      "value"
+    ],
+    "images": [
+      "img/phones/oneplus-15r-1.webp",
+      "img/phones/oneplus-15r-2.webp"
+    ],
+    "image_colors": [
+      "Charcoal Black",
+      "Mint Breeze"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "updates_years",
+      "esim"
+    ],
+    "sources": [
+      "https://www.oneplus.com/de/15r/specs",
+      "https://www.oneplus.com/de/15r",
+      "https://www.nextpit.de/handys/oneplus-15r"
+    ]
+  },
+  {
+    "id": "oneplus-nord-5",
+    "brand": "OnePlus",
+    "name": "OnePlus Nord 5",
+    "release": "2025-07",
+    "uvp": 449,
+    "uvp_by_storage": {
+      "256": 449,
+      "512": 549
+    },
+    "os": "Android",
+    "os_launch": "Android 15 (OxygenOS 15)",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.83,
+      "type": "AMOLED, bis 144 Hz, HDR10+",
+      "resolution": "2800 x 1272",
+      "hz": 144,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8s Gen 3",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 50,
+      "summary": "50 MP Sony LYT-700 (OIS) + 8-MP-Ultraweitwinkel; 50-MP-Selfie mit Autofokus & 4K"
+    },
+    "battery_mah": 5200,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 0,
+      "note": "80 W SUPERVOOC Kabel, 5 W Reverse kabelgebunden"
+    },
+    "ip": "IP65",
+    "weight_g": 211,
+    "dimensions_mm": "163.41 x 77.04 x 8.1",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Phantom Grey",
+        "hex": "#2b2c30"
+      },
+      {
+        "name": "Dry Ice",
+        "hex": "#bcd3e6"
+      },
+      {
+        "name": "Marble Sands",
+        "hex": "#e7e3dc"
+      }
+    ],
+    "highlights": [
+      "50-MP-Selfie mit Autofokus",
+      "144-Hz-Display",
+      "80-W-Schnellladen"
+    ],
+    "pitch": "Flotte Mittelklasse mit Gaming-Display, starker Selfie-Kamera und 80-W-Laden.",
+    "tags": [
+      "value",
+      "gaming",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/oneplus-nord-5-1.webp",
+      "img/phones/oneplus-nord-5-2.webp",
+      "img/phones/oneplus-nord-5-3.webp"
+    ],
+    "image_colors": [
+      "Phantom Grey",
+      "Dry Ice",
+      "Marble Sands"
+    ],
+    "uncertain": [],
+    "sources": [
+      "https://www.oneplus.com/de/nord-5/specs",
+      "https://appdated.de/154673/oneplus-nord-5-startschuss-fur-deutschland-am-8-juli/",
+      "https://wannkaufen.de/smartphones/oneplus-nord-5/"
+    ]
+  },
+  {
+    "id": "motorola-razr-70-ultra",
+    "brand": "Motorola",
+    "name": "razr 70 ultra",
+    "release": "2026-04",
+    "uvp": 1399,
+    "uvp_by_storage": {
+      "512": 1399
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": 5,
+    "updates_note": "3 Android-Upgrades, 5 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.96,
+      "type": "LTPO Extreme AMOLED (faltbar), 165 Hz, Dolby Vision",
+      "resolution": "2992 x 1224",
+      "hz": 165,
+      "peak_nits": 5000
+    },
+    "foldable": true,
+    "cover_display_in": 4,
+    "chip": "Qualcomm Snapdragon 8 Elite",
+    "ram_gb": [
+      16
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 50,
+      "summary": "50 MP (OIS, 1/1,56″) + 50-MP-Ultraweitwinkel, 8K-Video; 50-MP-Selfie"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 68,
+      "wireless_w": 30,
+      "note": "68 W TurboPower Kabel, 30 W kabellos, 5 W Reverse Wireless"
+    },
+    "ip": "IP48",
+    "weight_g": 199,
+    "dimensions_mm": "171.48 x 73.99 x 7.19 (zugeklappt 88.12 x 73.99 x 15.69)",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Cocoa (Holz)",
+        "hex": "#614f43"
+      },
+      {
+        "name": "Orient Blue (Alcantara)",
+        "hex": "#3d4161"
+      }
+    ],
+    "highlights": [
+      "4″-Außendisplay mit 165 Hz",
+      "Echtholz- bzw. Alcantara-Rückseite",
+      "30 W kabelloses Laden"
+    ],
+    "pitch": "Edles Klapp-Smartphone mit großem 4-Zoll-Außendisplay, Top-Chip und hochwertigen Materialien wie Holz und Alcantara.",
+    "tags": [
+      "camera",
+      "business",
+      "compact"
+    ],
+    "images": [
+      "img/phones/motorola-razr-70-ultra-1.webp",
+      "img/phones/motorola-razr-70-ultra-2.webp"
+    ],
+    "image_colors": [
+      "Cocoa (Holz)",
+      "Orient Blue (Alcantara)"
+    ],
+    "uncertain": [],
+    "sources": [
+      "https://www.motorola.com/de/de/p/phones/razr/razr-70-ultra/pmipmjk44m2",
+      "https://www.computerbase.de/news/smartphones/motorola-razr-70-70-plus-und-70-ultra-neue-flip-phones-variieren-preis-und-leistung.97049/",
+      "https://www.handyhase.de/motorola/razr-70-ultra/"
+    ]
+  },
+  {
+    "id": "motorola-edge-70",
+    "brand": "Motorola",
+    "name": "edge 70",
+    "release": "2025-11",
+    "uvp": 799.99,
+    "uvp_by_storage": {
+      "512": 799.99
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": null,
+    "updates_note": "Update-Zusage lt. Hersteller (Dauer bitte im Markt erfragen)",
+    "display": {
+      "size_in": 6.67,
+      "type": "pOLED, bis 120 Hz, HDR10+",
+      "resolution": "2712 x 1220",
+      "hz": 120,
+      "peak_nits": 4500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 7 Gen 4",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 50,
+      "summary": "50 MP (OIS) + 50-MP-Ultraweitwinkel mit Makro; 50-MP-Selfie mit 4K"
+    },
+    "battery_mah": 4800,
+    "charging": {
+      "wired_w": 68,
+      "wireless_w": 15,
+      "note": "68 W TurboPower Kabel, 15 W kabellos; Silizium-Kohlenstoff-Akku"
+    },
+    "ip": "IP68/IP69, MIL-STD-810H",
+    "weight_g": 159,
+    "dimensions_mm": "159 x 74 x 5.99",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Gadget Grey",
+        "hex": "#454a4c"
+      },
+      {
+        "name": "Bronze Green",
+        "hex": "#56644e"
+      },
+      {
+        "name": "Lily Pad",
+        "hex": "#7e8f84"
+      },
+      {
+        "name": "Cloud Dancer",
+        "hex": "#f0eee9"
+      }
+    ],
+    "highlights": [
+      "Nur 5,99 mm dünn und 159 g leicht",
+      "IP68/IP69 trotz Ultra-Slim-Design",
+      "Kabelloses Laden"
+    ],
+    "pitch": "Ultradünnes Design-Smartphone mit drei 50-MP-Kameras, robustem IP69-Schutz und kabellosem Laden – die Android-Alternative zum iPhone Air.",
+    "tags": [
+      "everyday",
+      "camera",
+      "business",
+      "compact"
+    ],
+    "images": [
+      "img/phones/motorola-edge-70-1.webp",
+      "img/phones/motorola-edge-70-2.webp",
+      "img/phones/motorola-edge-70-3.webp",
+      "img/phones/motorola-edge-70-4.webp"
+    ],
+    "image_colors": [
+      "Gadget Grey",
+      "Bronze Green",
+      "Lily Pad",
+      "Cloud Dancer"
+    ],
+    "uncertain": [
+      "uvp_by_storage.256",
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.motorola.com/de/de/p/phones/motorola-edge/motorola-edge-70/pmipmjc43m9",
+      "https://www.notebookcheck.com/Motorola-Edge-70-startet-in-Deutschland-mit-300-Euro-Launch-Rabatt-und-drei-50-MP-Kameras-im-5-99-mm-duennen-Gehaeuse.1150269.0.html",
+      "https://www.computerbild.de/artikel/Tests-Handy-Motorola-Edge-70-Superduenn-iphone-00490-40507759.html"
+    ]
+  },
+  {
+    "id": "moto-g87",
+    "brand": "Motorola",
+    "name": "moto g87",
+    "release": "2026-04",
+    "uvp": 399,
+    "uvp_by_storage": {
+      "256": 399
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": null,
+    "updates_note": "Update-Zusage lt. Hersteller (Dauer bitte im Markt erfragen)",
+    "display": {
+      "size_in": 6.78,
+      "type": "Extreme AMOLED, 120 Hz",
+      "resolution": "2772 x 1272",
+      "hz": 120,
+      "peak_nits": 5000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 6400",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      256
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 32,
+      "summary": "200-MP-Hauptkamera (OIS, 2x verlustfreier Zoom) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 5200,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 0,
+      "note": "30 W TurboPower Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP66/IP68/IP69, MIL-STD-810H",
+    "weight_g": 183,
+    "dimensions_mm": "164.58 x 77.37 x 7.38",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (+ microSD bis 2 TB)",
+    "colors": [
+      {
+        "name": "Overture",
+        "hex": "#3f4251"
+      },
+      {
+        "name": "Blue Atoll",
+        "hex": "#00b5d7"
+      }
+    ],
+    "highlights": [
+      "200-MP-Kamera mit OIS",
+      "Sehr helles 5000-nits-AMOLED",
+      "microSD-Slot bis 2 TB"
+    ],
+    "pitch": "Robuste Mittelklasse mit 200-MP-Kamera, hellem AMOLED-Display und Speicherkarten-Slot zum fairen Preis.",
+    "tags": [
+      "value",
+      "camera",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/moto-g87-1.webp",
+      "img/phones/moto-g87-2.webp"
+    ],
+    "image_colors": [
+      "Overture",
+      "Blue Atoll"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.motorola.com/de/de/p/phones/moto-g/87/pmipmjh44mo",
+      "https://www.nextpit.de/handys/motorola-moto-g87",
+      "https://www.notebookcheck.com/Motorola-Moto-G87-5G-startet-mit-200-MP-und-5-000-Nits-in-die-Mittelklasse.1284819.0.html"
+    ]
+  },
+  {
+    "id": "moto-g57-power",
+    "brand": "Motorola",
+    "name": "moto g57 power",
+    "release": "2025-11",
+    "uvp": 249,
+    "uvp_by_storage": {
+      "256": 249
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": null,
+    "updates_note": "Update-Zusage lt. Hersteller (Dauer bitte im Markt erfragen)",
+    "display": {
+      "size_in": 6.72,
+      "type": "LCD, 120 Hz",
+      "resolution": "2400 x 1080",
+      "hz": 120,
+      "peak_nits": 1050
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 6s Gen 4",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 8,
+      "summary": "50 MP Sony LYTIA 600 + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 7000,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 0,
+      "note": "30 W TurboPower Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP64, MIL-STD-810H",
+    "weight_g": 210.6,
+    "dimensions_mm": "166.23 x 76.50 x 8.60",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Corsair",
+        "hex": "#2d5f74"
+      },
+      {
+        "name": "Pink Lemonade",
+        "hex": "#fa7b95"
+      },
+      {
+        "name": "Fluidity",
+        "hex": "#62b4b8"
+      }
+    ],
+    "highlights": [
+      "Riesiger 7000-mAh-Akku (bis 60 Std.)",
+      "3,5-mm-Klinke & UKW-Radio",
+      "5G unter 250 €"
+    ],
+    "pitch": "Akku-Monster für Sparfüchse: 7000 mAh, Klinkenbuchse und 5G für rund 250 €.",
+    "tags": [
+      "battery",
+      "value",
+      "senior",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/moto-g57-power-1.webp",
+      "img/phones/moto-g57-power-2.webp",
+      "img/phones/moto-g57-power-3.webp"
+    ],
+    "image_colors": [
+      "Corsair",
+      "Pink Lemonade",
+      "Fluidity"
+    ],
+    "uncertain": [
+      "uvp",
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.motorola.com/de/de/p/phones/moto-g/57-power/pmipmjf43ml",
+      "https://www.notebookcheck.com/Motorola-Moto-G57-Power-startet-in-Deutschland-fuer-250-Euro-mit-7-000-mAh-Akku-und-AUX.1155901.0.html"
+    ]
+  },
+  {
+    "id": "nothing-phone-3",
+    "brand": "Nothing",
+    "name": "Phone (3)",
+    "release": "2025-07",
+    "uvp": 799,
+    "uvp_by_storage": {
+      "256": 799,
+      "512": 899
+    },
+    "os": "Android",
+    "os_launch": "Android 15 (Nothing OS 3.5)",
+    "updates_years": 7,
+    "updates_note": "5 Android-Upgrades, 7 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.67,
+      "type": "OLED, 1–120 Hz, HDR10+",
+      "resolution": "2800 x 1260",
+      "hz": 120,
+      "peak_nits": 4500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8s Gen 4",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 50,
+      "tele_zoom": "3x optisch (Periskop)",
+      "front_mp": 50,
+      "summary": "Drei 50-MP-Kameras inkl. 3x-Periskop-Tele, 50-MP-Selfie"
+    },
+    "battery_mah": 5150,
+    "charging": {
+      "wired_w": 65,
+      "wireless_w": 15,
+      "note": "65 W Kabel, 15 W kabellos, 5 W Reverse Wireless"
+    },
+    "ip": "IP68",
+    "weight_g": 218,
+    "dimensions_mm": "160.6 x 75.6 x 9.0",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Weiß",
+        "hex": "#e9e9e7"
+      },
+      {
+        "name": "Schwarz",
+        "hex": "#1f1f21"
+      }
+    ],
+    "highlights": [
+      "Glyph Matrix (LED-Display auf der Rückseite)",
+      "3x-Periskop-Tele mit 50 MP",
+      "5 Jahre Android-Upgrades"
+    ],
+    "pitch": "Nothings Flaggschiff mit markantem transparentem Design, Glyph-Matrix-Rückseite, starker Triple-Kamera und kabellosem Laden.",
+    "tags": [
+      "camera",
+      "everyday",
+      "business",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/nothing-phone-3-1.webp",
+      "img/phones/nothing-phone-3-2.webp"
+    ],
+    "image_colors": [
+      "Schwarz",
+      "Weiß"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/nothing_phone_(3)_5g-13969.php",
+      "https://at.nothing.tech/products/phone-3"
+    ]
+  },
+  {
+    "id": "nothing-phone-4a-pro",
+    "brand": "Nothing",
+    "name": "Phone (4a) Pro",
+    "release": "2026-03",
+    "uvp": 479,
+    "uvp_by_storage": {
+      "128": 479,
+      "256": 549
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Nothing OS 4.1)",
+    "updates_years": 6,
+    "updates_note": "3 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.83,
+      "type": "AMOLED, 144 Hz, HDR10+",
+      "resolution": "2800 x 1260",
+      "hz": 144,
+      "peak_nits": 5000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 7 Gen 4",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch (Periskop)",
+      "front_mp": 32,
+      "summary": "50-MP-Hauptkamera + 50-MP-Periskop (3,5x) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 5080,
+    "charging": {
+      "wired_w": 50,
+      "wireless_w": 0,
+      "note": "50 W Kabel (50 % in ca. 22 Min.), 7,5 W Reverse kabelgebunden; kein kabelloses Laden"
+    },
+    "ip": "IP65",
+    "weight_g": 210,
+    "dimensions_mm": "163.7 x 76.6 x 8.0",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#1d1d1f"
+      },
+      {
+        "name": "Silber",
+        "hex": "#d9dadc"
+      },
+      {
+        "name": "Pink",
+        "hex": "#efc9d3"
+      }
+    ],
+    "highlights": [
+      "Aluminium-Unibody, 8 mm dünn",
+      "3,5x-Periskop-Tele",
+      "144-Hz-Display mit 5000 nits Spitzenhelligkeit"
+    ],
+    "pitch": "Edles Mittelklasse-Gerät im Alu-Unibody mit Periskop-Zoom und sehr hellem 144-Hz-Display – viel Ausstattung unter 550 €.",
+    "tags": [
+      "camera",
+      "value",
+      "everyday",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/nothing-phone-4a-pro-1.webp",
+      "img/phones/nothing-phone-4a-pro-2.webp",
+      "img/phones/nothing-phone-4a-pro-3.webp"
+    ],
+    "image_colors": [
+      "Schwarz",
+      "Silber",
+      "Pink"
+    ],
+    "uncertain": [
+      "updates_years",
+      "esim"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/nothing_phone_(4a)_pro_5g-14529.php",
+      "https://at.nothing.tech/products/phone-4a-pro",
+      "https://www.ots.at/presseaussendung/OTS_20260327_OTS0057/nothing-phone-4a-pro-ab-sofort-erhaeltlich",
+      "https://www.connect.de/news/nothing-phone-4a-pro-preis-specs-release-3212020.html"
+    ]
+  },
+  {
+    "id": "nothing-phone-4a",
+    "brand": "Nothing",
+    "name": "Phone (4a)",
+    "release": "2026-03",
+    "uvp": 349,
+    "uvp_by_storage": {
+      "128": 349,
+      "256": 429
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Nothing OS 4.1)",
+    "updates_years": 6,
+    "updates_note": "3 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.78,
+      "type": "AMOLED, 30–120 Hz, HDR10+",
+      "resolution": "2720 x 1224",
+      "hz": 120,
+      "peak_nits": 4500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 7s Gen 4",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch (Periskop)",
+      "front_mp": 32,
+      "summary": "50-MP-Hauptkamera + 50-MP-Periskop (3,5x) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 5080,
+    "charging": {
+      "wired_w": 50,
+      "wireless_w": 0,
+      "note": "50 W Kabel; kein kabelloses Laden. 8/256 GB (389 €) nur bei Amazon"
+    },
+    "ip": "IP64",
+    "weight_g": 204.5,
+    "dimensions_mm": "164.0 x 77.6 x 8.6",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM (kein eSIM in DE)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#1d1d1f"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#eeeeec"
+      },
+      {
+        "name": "Pink",
+        "hex": "#efc9d3"
+      },
+      {
+        "name": "Blau",
+        "hex": "#1f7fae"
+      }
+    ],
+    "highlights": [
+      "Periskop-Tele schon ab 349 €",
+      "Glyph Bar mit 63 LEDs",
+      "5080-mAh-Akku, 50 W"
+    ],
+    "pitch": "Preis-Leistungs-Tipp mit auffälligem Transparent-Design, 3,5x-Periskop-Zoom und großem 120-Hz-Display.",
+    "tags": [
+      "value",
+      "camera",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/nothing-phone-4a-1.webp",
+      "img/phones/nothing-phone-4a-2.webp",
+      "img/phones/nothing-phone-4a-3.webp",
+      "img/phones/nothing-phone-4a-4.webp"
+    ],
+    "image_colors": [
+      "Weiß",
+      "Schwarz",
+      "Blau",
+      "Pink"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/nothing_phone_(4a)_5g-14503.php",
+      "https://at.nothing.tech/products/phone-4a",
+      "https://www.ots.at/presseaussendung/OTS_20260313_OTS0063/nothing-phone-4a-und-headphone-a-jetzt-erhaeltlich-ueber-200-eur-preisvorteil-bei-community-drop-events",
+      "https://www.notebookcheck.com/Nothing-Phone-4a-Smartphone-mit-Snapdragon-SoC-und-Glyph-Bar-startet-ab-349-Euro.1243177.0.html"
+    ]
+  },
+  {
+    "id": "cmf-phone-2-pro",
+    "brand": "Nothing",
+    "name": "CMF Phone 2 Pro",
+    "release": "2025-05",
+    "uvp": 249,
+    "uvp_by_storage": {
+      "128": 249,
+      "256": 279
+    },
+    "os": "Android",
+    "os_launch": "Android 15 (Nothing OS 3.2)",
+    "updates_years": 6,
+    "updates_note": "3 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.77,
+      "type": "AMOLED, 120 Hz, HDR10+",
+      "resolution": "2392 x 1080",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 7300 Pro",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": 50,
+      "tele_zoom": "2x optisch",
+      "front_mp": 16,
+      "summary": "50-MP-Hauptkamera + 50-MP-Tele (2x) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 33,
+      "wireless_w": 0,
+      "note": "33 W Kabel, 5 W Reverse kabelgebunden"
+    },
+    "ip": "IP54",
+    "weight_g": 185,
+    "dimensions_mm": "164.0 x 78.0 x 7.8",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Orange",
+        "hex": "#f25a1d"
+      },
+      {
+        "name": "Hellgrün",
+        "hex": "#c9d9a8"
+      },
+      {
+        "name": "Schwarz",
+        "hex": "#222222"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#ececec"
+      }
+    ],
+    "highlights": [
+      "Tele-Kamera unter 300 €",
+      "Wechselbare Rückseite & Zubehör",
+      "Leicht: nur 185 g"
+    ],
+    "pitch": "Günstiges, leichtes Einsteiger-Smartphone von Nothings Zweitmarke CMF – mit Tele-Kamera und modularem Zubehör.",
+    "tags": [
+      "value",
+      "everyday",
+      "battery"
+    ],
+    "images": [
+      "img/phones/nothing-cmf-phone-2-pro-1.webp"
+    ],
+    "image_colors": [
+      "Orange"
+    ],
+    "uncertain": [
+      "uvp_by_storage.256",
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/nothing_cmf_phone_2_pro_5g-13821.php",
+      "https://at.nothing.tech/products/cmf-phone-2-pro"
+    ]
+  },
+  {
+    "id": "sony-xperia-1-viii",
+    "brand": "Sony",
+    "name": "Xperia 1 VIII",
+    "release": "2026-06",
+    "uvp": 1499,
+    "uvp_by_storage": {
+      "256": 1499,
+      "1024": 1999
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.5,
+      "type": "LTPO OLED, 1–120 Hz",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": null
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      1024
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "2,9x optisch (70 mm, Periskop)",
+      "front_mp": 12,
+      "summary": "Drei 48-MP-Kameras, neue Tele mit großem 1/1,56″-Sensor"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 15,
+      "note": "30 W Kabel (50 % in ca. 30 Min.), 15 W kabellos, Reverse Wireless"
+    },
+    "ip": "IP65/IP68",
+    "weight_g": 200,
+    "dimensions_mm": "162.0 x 74.0 x 8.3",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Graphitschwarz",
+        "hex": "#2a2a2c"
+      },
+      {
+        "name": "Granatrot",
+        "hex": "#6e1f2c"
+      },
+      {
+        "name": "Iolith-Silber",
+        "hex": "#c9c8d2"
+      },
+      {
+        "name": "Natives Gold",
+        "hex": "#c8a96a"
+      }
+    ],
+    "highlights": [
+      "3,5-mm-Klinke und microSD bis 2 TB",
+      "Kamera-Auslösetaste & KI-Kameraassistent",
+      "Bis zu 2 Tage Akkulaufzeit (Herstellerangabe)"
+    ],
+    "pitch": "Sonys Flaggschiff für Foto-, Video- und Audio-Fans: Kamerataste, Klinkenbuchse, microSD und ein Profi-Teleobjektiv.",
+    "tags": [
+      "camera",
+      "video",
+      "business",
+      "battery"
+    ],
+    "images": [
+      "img/phones/sony-xperia-1-viii-1.webp",
+      "img/phones/sony-xperia-1-viii-2.webp",
+      "img/phones/sony-xperia-1-viii-3.webp"
+    ],
+    "image_colors": [
+      "Graphitschwarz",
+      "Granatrot",
+      "Iolith-Silber"
+    ],
+    "uncertain": [
+      "uvp",
+      "uvp_by_storage.1024",
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/sony_xperia_1_viii_5g-14660.php",
+      "https://www.sony.de/smartphones/products/xperia-1m8",
+      "https://www.vodafone.de/featured/article/sony-xperia-1-viii-release-preis-ausstattung-245883"
+    ]
+  },
+  {
+    "id": "sony-xperia-10-viii",
+    "brand": "Sony",
+    "name": "Xperia 10 VIII",
+    "release": "2026-09",
+    "uvp": 599,
+    "uvp_by_storage": {
+      "128": 599
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": 6,
+    "updates_note": "bis zu 4 Android-Upgrades, bis zu 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.1,
+      "type": "OLED, 120 Hz",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": null
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 6 Gen 3",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 13,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 8,
+      "summary": "50-MP-Hauptkamera (1/1,56″) + 13-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": null,
+      "wireless_w": 0,
+      "note": "Laden per USB-C PD (Leistung nicht angegeben), kein kabelloses Laden"
+    },
+    "ip": "IP65/IP68",
+    "weight_g": 168,
+    "dimensions_mm": "153.0 x 72.0 x 8.3",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Frozen White",
+        "hex": "#e3ece8"
+      },
+      {
+        "name": "Frosted Grey",
+        "hex": "#a9adb1"
+      },
+      {
+        "name": "Misty Lilac",
+        "hex": "#d9cfe3"
+      }
+    ],
+    "highlights": [
+      "Kompakt & leicht (168 g)",
+      "3,5-mm-Klinke, microSD, Kamera-Auslöser",
+      "IP68 und 5000 mAh"
+    ],
+    "pitch": "Handliches Mittelklasse-Gerät mit langer Akkulaufzeit, Klinke und microSD – ideal für alle, die es kompakt mögen.",
+    "tags": [
+      "compact",
+      "battery",
+      "everyday",
+      "senior"
+    ],
+    "images": [
+      "img/phones/sony-xperia-10-viii-1.webp",
+      "img/phones/sony-xperia-10-viii-2.webp"
+    ],
+    "image_colors": [
+      "Frozen White",
+      "Misty Lilac"
+    ],
+    "uncertain": [
+      "charging.wired_w",
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/sony_xperia_10_viii_5g-14894.php",
+      "https://www.sony.de/smartphones/products/xperia-10m8",
+      "https://www.notebookcheck.com/Sony-Xperia-10-VIII-startet-mit-zwei-Upgrades-und-neuen-Farben-zum-deutlich-hoeheren-Preis.1377771.0.html"
+    ]
+  },
+  {
+    "id": "honor-magic-v6",
+    "brand": "Honor",
+    "name": "Magic V6",
+    "release": "2026-07",
+    "uvp": 2299.9,
+    "uvp_by_storage": {
+      "512": 2299.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (MagicOS 10)",
+    "updates_years": null,
+    "updates_note": "Update-Zusage lt. Hersteller (Dauer bitte im Markt erfragen)",
+    "display": {
+      "size_in": 7.95,
+      "type": "Faltbares OLED innen, 1–120 Hz; außen 6,52 Zoll (bis 6000 Nits)",
+      "resolution": null,
+      "hz": 120,
+      "peak_nits": 5000
+    },
+    "foldable": true,
+    "cover_display_in": 6.52,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5",
+    "ram_gb": [
+      16
+    ],
+    "storage_gb": [
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 64,
+      "tele_zoom": "Periskop-Tele (OIS)",
+      "front_mp": null,
+      "summary": "50 MP Haupt + 64-MP-Periskop-Tele + 50-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6660,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 66,
+      "note": "80 W Kabel, 66 W kabellos, Reverse Wireless"
+    },
+    "ip": "IP68/IP69",
+    "weight_g": 219,
+    "dimensions_mm": "gefaltet 8,75 mm / offen 4,0 mm dick",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Rot",
+        "hex": "#9c2a24"
+      },
+      {
+        "name": "Schwarz",
+        "hex": "#1d1d1f"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#eeeeee"
+      },
+      {
+        "name": "Gold",
+        "hex": "#d9c7a2"
+      }
+    ],
+    "highlights": [
+      "Erstes Foldable mit IP68 + IP69",
+      "6660 mAh – größter Foldable-Akku",
+      "Nur 8,75 mm gefaltet"
+    ],
+    "pitch": "Ultradünnes Foldable mit Tablet-Display, riesigem Akku und Wasserschutz IP68/IP69 – für Business und Multitasking.",
+    "tags": [
+      "business",
+      "battery",
+      "video"
+    ],
+    "images": [
+      "img/phones/honor-magic-v6-1.webp",
+      "img/phones/honor-magic-v6-2.webp",
+      "img/phones/honor-magic-v6-3.webp"
+    ],
+    "image_colors": [
+      "Rot",
+      "Schwarz",
+      "Weiß"
+    ],
+    "uncertain": [
+      "uvp_by_storage.1024",
+      "updates_years",
+      "camera.front_mp",
+      "display.resolution",
+      "dims"
+    ],
+    "sources": [
+      "https://www.honor.com/de/phones/honor-magic-v6/buy/",
+      "https://basic-tutorials.de/news/honor-magic-v6-deutschland-preis-specs/",
+      "https://www.connect.de/news/honor-magic-v6-ip68-69-schutzklasse-robustes-design-3211937.html"
+    ]
+  },
+  {
+    "id": "honor-magic8-pro",
+    "brand": "Honor",
+    "name": "Magic8 Pro",
+    "release": "2026-01",
+    "uvp": 1299.9,
+    "uvp_by_storage": {
+      "512": 1299.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (MagicOS 10)",
+    "updates_years": 7,
+    "updates_note": "Bis zu 7 Jahre Updates lt. Honor (Umfang bitte prüfen)",
+    "display": {
+      "size_in": 6.71,
+      "type": "LTPO OLED, 1–120 Hz",
+      "resolution": "2808 x 1256",
+      "hz": 120,
+      "peak_nits": null
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 200,
+      "tele_zoom": "3,7x optisch (Periskop)",
+      "front_mp": 50,
+      "summary": "50 MP Haupt + 50-MP-Ultraweitwinkel + 200-MP-Periskop-Tele, 50-MP-Selfie"
+    },
+    "battery_mah": 6270,
+    "charging": {
+      "wired_w": 100,
+      "wireless_w": 80,
+      "note": "100 W Kabel, kabelloses Laden (bis 80 W lt. Hersteller)"
+    },
+    "ip": "IP68/IP69K",
+    "weight_g": 213,
+    "dimensions_mm": "161.15 x 75.0 x 8.4",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Gold",
+        "hex": "#e9dcc7"
+      },
+      {
+        "name": "Türkis",
+        "hex": "#bcd6dd"
+      }
+    ],
+    "highlights": [
+      "200-MP-Periskop-Tele",
+      "6270 mAh, 100 W Kabel",
+      "IP68/IP69K"
+    ],
+    "pitch": "Honors Flaggschiff: 200-MP-Tele, großer Akku und Top-Chip zum Kampfpreis gegenüber Ultra-Modellen.",
+    "tags": [
+      "camera",
+      "battery",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/honor-magic8-pro-1.webp",
+      "img/phones/honor-magic8-pro-2.webp",
+      "img/phones/honor-magic8-pro-3.webp"
+    ],
+    "image_colors": [
+      "Schwarz",
+      "Gold",
+      "Türkis"
+    ],
+    "uncertain": [
+      "camera",
+      "wireless_w",
+      "display.peak_nits",
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.honor.com/de/phones/honor-magic8-pro/",
+      "https://www.nextpit.de/handys/honor-magic8-pro"
+    ]
+  },
+  {
+    "id": "honor-600-pro",
+    "brand": "Honor",
+    "name": "Honor 600 Pro",
+    "release": "2026-05",
+    "uvp": 999.9,
+    "uvp_by_storage": {
+      "512": 999.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (MagicOS 10)",
+    "updates_years": null,
+    "updates_note": "Update-Zusage lt. Hersteller (Dauer bitte im Markt erfragen)",
+    "display": {
+      "size_in": 6.57,
+      "type": "AMOLED, 120 Hz",
+      "resolution": "2728 x 1264",
+      "hz": 120,
+      "peak_nits": 8000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 12,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch (Periskop)",
+      "front_mp": 50,
+      "summary": "200 MP Haupt + 50-MP-Periskop-Tele 3,5x + 12-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6400,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 50,
+      "note": "80 W Kabel, 50 W kabellos, 27 W Reverse"
+    },
+    "ip": "IP68/IP69/IP69K",
+    "weight_g": 195,
+    "dimensions_mm": "156.0 x 74.7 x 7.8",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Orange",
+        "hex": "#e8873a"
+      },
+      {
+        "name": "Schwarz",
+        "hex": "#2a2a2c"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#efece6"
+      }
+    ],
+    "highlights": [
+      "200 MP + 3,5x-Periskop",
+      "8000-Nits-Display",
+      "Kabellos 50 W"
+    ],
+    "pitch": "Schlankes Oberklasse-Modell mit 200-MP-Kamera, Periskop-Tele und sehr hellem Display.",
+    "tags": [
+      "camera",
+      "everyday",
+      "battery"
+    ],
+    "images": [
+      "img/phones/honor-600-pro-1.webp",
+      "img/phones/honor-600-pro-2.webp",
+      "img/phones/honor-600-pro-3.webp"
+    ],
+    "image_colors": [
+      "Orange",
+      "Schwarz",
+      "Weiß"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.honor.com/de/phones/honor-600-pro/",
+      "https://www.nextpit.de/handys/honor-600-pro"
+    ]
+  },
+  {
+    "id": "oppo-find-x9-pro",
+    "brand": "Oppo",
+    "name": "Find X9 Pro",
+    "release": "2026-01",
+    "uvp": 1299,
+    "uvp_by_storage": {
+      "512": 1299
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (ColorOS 16)",
+    "updates_years": 6,
+    "updates_note": "5 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.78,
+      "type": "AMOLED, 1–120 Hz",
+      "resolution": "2772 x 1272",
+      "hz": 120,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 9500",
+    "ram_gb": [
+      16
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 200,
+      "tele_zoom": "3x optisch (Periskop)",
+      "front_mp": 50,
+      "summary": "Hasselblad-Kamera: 50 MP Haupt (OIS), 50-MP-Ultraweitwinkel, 200-MP-Periskop-Tele 3x"
+    },
+    "battery_mah": 7500,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 50,
+      "note": "80 W SUPERVOOC Kabel, 50 W AIRVOOC kabellos"
+    },
+    "ip": "IP66/IP68/IP69",
+    "weight_g": 224,
+    "dimensions_mm": "161.26 x 76.46 x 8.25",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Titanium Charcoal",
+        "hex": "#4a4b4d"
+      },
+      {
+        "name": "Silk White",
+        "hex": "#eeeae4"
+      }
+    ],
+    "highlights": [
+      "200-MP-Periskop-Tele (Hasselblad)",
+      "7500-mAh-Akku",
+      "IP66/68/69-Schutz"
+    ],
+    "pitch": "Kamera-Flaggschiff mit 200-MP-Tele und riesigem 7500-mAh-Akku – für Foto-Fans, die zwei Tage durchhalten wollen.",
+    "tags": [
+      "camera",
+      "battery",
+      "business"
+    ],
+    "images": [
+      "img/phones/oppo-find-x9-pro-1.webp",
+      "img/phones/oppo-find-x9-pro-2.webp"
+    ],
+    "image_colors": [
+      "Titanium Charcoal",
+      "Silk White"
+    ],
+    "uncertain": [],
+    "sources": [
+      "https://www.oppo.com/de/smartphones/series-find-x/find-x9-pro/specs/",
+      "https://www.connect.de/testbericht/oppo-find-x9-pro-test-3211862.html"
+    ]
+  },
+  {
+    "id": "oppo-reno16-pro",
+    "brand": "Oppo",
+    "name": "Reno16 Pro 5G",
+    "release": "2026-07",
+    "uvp": 1099,
+    "uvp_by_storage": {
+      "512": 1099
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (ColorOS 16)",
+    "updates_years": 6,
+    "updates_note": "5 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.32,
+      "type": "AMOLED, bis 144 Hz (Spiele)",
+      "resolution": "2640 x 1216",
+      "hz": 144,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 8550 Super",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 50,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch",
+      "front_mp": 50,
+      "summary": "200 MP Haupt (OIS) + 50 MP Tele 3,5x (OIS) + 50 MP Ultraweitwinkel; 50-MP-Selfie mit AF, 4K/60"
+    },
+    "battery_mah": 6000,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 0,
+      "note": "80 W SUPERVOOC Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP68 (lt. Oppo zusätzlich IP69/IP69K)",
+    "weight_g": 188,
+    "dimensions_mm": "151.21 x 72.42 x 8.36",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM / eSIM",
+    "colors": [
+      {
+        "name": "Starlight Black",
+        "hex": "#1d1e22"
+      },
+      {
+        "name": "Pop White",
+        "hex": "#f1f1f3"
+      }
+    ],
+    "highlights": [
+      "Kompakt: 6,32 Zoll",
+      "200 MP + 3,5x-Tele",
+      "6000 mAh in 188 g"
+    ],
+    "pitch": "Kompaktes Vlogging-Handy mit 200-MP-Kamera, Tele und großem Akku in handlichem Format.",
+    "tags": [
+      "compact",
+      "camera",
+      "video"
+    ],
+    "images": [
+      "img/phones/oppo-reno16-pro-1.webp",
+      "img/phones/oppo-reno16-pro-2.webp"
+    ],
+    "image_colors": [
+      "Pop White",
+      "Starlight Black"
+    ],
+    "uncertain": [],
+    "sources": [
+      "https://www.oppo.com/de/smartphones/series-reno/reno16-pro/specs/",
+      "https://www.computerbild.de/artikel/News-Handy-oppo-reno-16-pro-marktstart-preise-deutschland-41017631.html"
+    ]
+  },
+  {
+    "id": "oppo-reno15-pro",
+    "brand": "Oppo",
+    "name": "Reno15 Pro 5G",
+    "release": "2026-01",
+    "uvp": 799,
+    "uvp_by_storage": {
+      "512": 799
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (ColorOS 16)",
+    "updates_years": 6,
+    "updates_note": "5 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.32,
+      "type": "AMOLED, 120 Hz",
+      "resolution": "2640 x 1216",
+      "hz": 120,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 8450",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 50,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch",
+      "front_mp": 50,
+      "summary": "200 MP Haupt (OIS) + 50 MP Tele 3,5x + 50 MP Ultraweitwinkel; 50-MP-Selfie"
+    },
+    "battery_mah": 6200,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 0,
+      "note": "80 W SUPERVOOC Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP68/IP69",
+    "weight_g": 187,
+    "dimensions_mm": "151.21 x 72.42 x 7.99",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM / eSIM",
+    "colors": [
+      {
+        "name": "Dusk Black",
+        "hex": "#232327"
+      },
+      {
+        "name": "Aurora Blue",
+        "hex": "#9fc3e0"
+      }
+    ],
+    "highlights": [
+      "Kompakt mit 6200 mAh",
+      "200-MP-Hauptkamera",
+      "IP68/IP69"
+    ],
+    "pitch": "Der Vorgänger des Reno16 Pro – kompakt, kamerastark und inzwischen oft günstiger zu haben.",
+    "tags": [
+      "compact",
+      "camera",
+      "value"
+    ],
+    "images": [
+      "img/phones/oppo-reno15-pro-1.webp"
+    ],
+    "image_colors": [
+      "Dusk Black / Aurora Blue"
+    ],
+    "uncertain": [
+      "uvp",
+      "uvp_by_storage.512"
+    ],
+    "sources": [
+      "https://www.oppo.com/de/smartphones/series-reno/reno15-pro/specs/",
+      "https://www.notebookcheck.com/Das-kompakte-Reno15-Pro-5G-startet-in-Europa.1210884.0.html"
+    ]
+  },
+  {
+    "id": "fairphone-gen-6",
+    "brand": "Fairphone",
+    "name": "Fairphone (Gen. 6)",
+    "release": "2025-06",
+    "uvp": 599,
+    "uvp_by_storage": {
+      "256": 599
+    },
+    "os": "Android",
+    "os_launch": "Android 15",
+    "updates_years": 8,
+    "updates_note": "8 Android-Versionen, Software-Support bis 2033 (Herstellerangabe)",
+    "display": {
+      "size_in": 6.31,
+      "type": "LTPO OLED, 10–120 Hz",
+      "resolution": "2484 x 1116",
+      "hz": 120,
+      "peak_nits": 1400
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 7s Gen 3",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 13,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 32,
+      "summary": "50-MP-Hauptkamera (Sony, OIS) + 13-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 4415,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 0,
+      "note": "30 W Kabel (50 % in ca. 25 Min.); Akku vom Nutzer wechselbar"
+    },
+    "ip": "IP55",
+    "weight_g": 193,
+    "dimensions_mm": "156.5 x 73.3 x 9.6",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Forest Green",
+        "hex": "#24493c"
+      },
+      {
+        "name": "Horizon Black",
+        "hex": "#2a2a2a"
+      },
+      {
+        "name": "Cloud White",
+        "hex": "#ececea"
+      }
+    ],
+    "highlights": [
+      "Selbst reparierbar: 12 Ersatzteil-Module",
+      "Wechselbarer Akku",
+      "8 Android-Versionen / Support bis 2033"
+    ],
+    "pitch": "Das nachhaltige Smartphone: fair produziert, modular aufgebaut und mit bis zu 8 Jahren Updates außergewöhnlich langlebig.",
+    "tags": [
+      "sustainable",
+      "everyday",
+      "business",
+      "senior"
+    ],
+    "images": [
+      "img/phones/fairphone-gen-6-1.webp",
+      "img/phones/fairphone-gen-6-2.webp",
+      "img/phones/fairphone-gen-6-3.webp"
+    ],
+    "image_colors": [
+      "Forest Green",
+      "Horizon Black",
+      "Cloud White"
+    ],
+    "uncertain": [
+      "uvp",
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/fairphone_6-13955.php",
+      "https://www.fairphone.com/the-fairphone-gen-6",
+      "https://support.fairphone.com/hc/en-us/articles/38143804162578-Release-date-model-comparison-and-availability-for-The-Fairphone-Gen-6"
+    ]
+  },
+  {
+    "id": "hmd-arc",
+    "brand": "HMD",
+    "name": "HMD Arc",
+    "release": "2025-02",
+    "uvp": 99,
+    "uvp_by_storage": {
+      "64": 99
+    },
+    "os": "Android",
+    "os_launch": "Android 14 (Go Edition)",
+    "updates_years": 2,
+    "updates_note": "2 Jahre Sicherheitsupdates (Quartalsweise)",
+    "display": {
+      "size_in": 6.52,
+      "type": "IPS LCD, HD+",
+      "resolution": "1600 x 720",
+      "hz": 60,
+      "peak_nits": null
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Unisoc 9863A",
+    "ram_gb": [
+      4
+    ],
+    "storage_gb": [
+      64
+    ],
+    "camera": {
+      "main_mp": 13,
+      "ultrawide_mp": null,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 5,
+      "summary": "13-MP-Hauptkamera, 5-MP-Selfie – für Alltagsfotos"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 10,
+      "wireless_w": 0,
+      "note": "10 W Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP54",
+    "weight_g": 185.4,
+    "dimensions_mm": "166.4 x 76.9 x 8.95",
+    "five_g": false,
+    "esim": "Dual-Nano-SIM",
+    "colors": [
+      {
+        "name": "Shadow Black",
+        "hex": "#222326"
+      }
+    ],
+    "highlights": [
+      "Unter 100 €",
+      "Reparierbar (Gen 2)",
+      "5000-mAh-Akku"
+    ],
+    "pitch": "Einfaches, robustes Einsteiger-Handy mit großem Akku – ideal als Zweit-, Kinder- oder Senioren-Handy.",
+    "tags": [
+      "senior",
+      "value",
+      "battery"
+    ],
+    "images": [
+      "img/phones/hmd-arc-1.webp",
+      "img/phones/hmd-arc-2.webp"
+    ],
+    "image_colors": [
+      "Shadow Black",
+      "Shadow Black"
+    ],
+    "uncertain": [
+      "uvp",
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://www.hmd.com/en_int/hmd-arc/specs",
+      "https://www.hmd.com/de_de/hmd-arc"
+    ]
+  }
+]

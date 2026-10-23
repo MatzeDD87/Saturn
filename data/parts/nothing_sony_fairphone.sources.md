@@ -1,0 +1,22 @@
+# Bildquellen Nothing / CMF, Sony, Fairphone
+
+| file | device | source URL (page) | direct image URL | licence / rights holder |
+|---|---|---|---|---|
+| public/img/phones/nothing-phone-3-1.webp | Phone (3) | https://at.nothing.tech/products/phone-3 | https://cdn.shopify.com/s/files/1/0584/0932/0622/files/0000s_0012_Phone-3-black.png | Produktbild © Nothing Technology Ltd. |
+| public/img/phones/nothing-phone-3-2.webp | Phone (3) | https://at.nothing.tech/products/phone-3 | https://cdn.shopify.com/s/files/1/0584/0932/0622/files/0000s_0011_Phone-3-white.png | Produktbild © Nothing Technology Ltd. |
+| public/img/phones/nothing-phone-4a-pro-1.webp | Phone (4a) Pro | https://at.nothing.tech/products/phone-4a-pro | https://cdn.shopify.com/s/files/1/0584/0932/0622/files/Phone-4a-Pro-Black.png | Produktbild © Nothing Technology Ltd. |
+| public/img/phones/nothing-phone-4a-pro-2.webp | Phone (4a) Pro | https://at.nothing.tech/products/phone-4a-pro | https://cdn.shopify.com/s/files/1/0584/0932/0622/files/Phone-4a-Pro-White.png | Produktbild © Nothing Technology Ltd. |
+| public/img/phones/nothing-phone-4a-pro-3.webp | Phone (4a) Pro | https://at.nothing.tech/products/phone-4a-pro | https://cdn.shopify.com/s/files/1/0584/0932/0622/files/Phone-4a-Pro-Pink.png | Produktbild © Nothing Technology Ltd. |
+| public/img/phones/nothing-phone-4a-1.webp | Phone (4a) | https://at.nothing.tech/products/phone-4a | https://cdn.shopify.com/s/files/1/0584/0932/0622/files/Phone-4a-White.png | Produktbild © Nothing Technology Ltd. |
+| public/img/phones/nothing-phone-4a-2.webp | Phone (4a) | https://at.nothing.tech/products/phone-4a | https://cdn.shopify.com/s/files/1/0584/0932/0622/files/Phone-4a-Black.png | Produktbild © Nothing Technology Ltd. |
+| public/img/phones/nothing-phone-4a-3.webp | Phone (4a) | https://at.nothing.tech/products/phone-4a | https://cdn.shopify.com/s/files/1/0584/0932/0622/files/Phone-4a-Blue.png | Produktbild © Nothing Technology Ltd. |
+| public/img/phones/nothing-phone-4a-4.webp | Phone (4a) | https://at.nothing.tech/products/phone-4a | https://cdn.shopify.com/s/files/1/0584/0932/0622/files/Phone-4a-Pink.png | Produktbild © Nothing Technology Ltd. |
+| public/img/phones/nothing-cmf-phone-2-pro-1.webp | CMF Phone 2 Pro | https://at.nothing.tech/products/cmf-phone-2-pro | https://cdn.shopify.com/s/files/1/0584/0932/0622/files/0000s_0054_CMF-Phone-2-Pro-Orange.png | Produktbild © Nothing Technology Ltd. |
+| public/img/phones/sony-xperia-1-viii-1.webp | Xperia 1 VIII | https://www.sony.de/smartphones/products/xperia-1m8 | https://sony.scene7.com/is/image/sonyglobalsolutions/7085_Primary_image_Black?wid=1200&fmt=png-alpha | Produktbild © Sony Group Corporation |
+| public/img/phones/sony-xperia-1-viii-2.webp | Xperia 1 VIII | https://www.sony.de/smartphones/products/xperia-1m8 | https://sony.scene7.com/is/image/sonyglobalsolutions/7085_Primary_image_Red?wid=1200&fmt=png-alpha | Produktbild © Sony Group Corporation |
+| public/img/phones/sony-xperia-1-viii-3.webp | Xperia 1 VIII | https://www.sony.de/smartphones/products/xperia-1m8 | https://sony.scene7.com/is/image/sonyglobalsolutions/7085_Primary_image_Silver?wid=1200&fmt=png-alpha | Produktbild © Sony Group Corporation |
+| public/img/phones/sony-xperia-10-viii-1.webp | Xperia 10 VIII | https://www.sony.de/smartphones/products/xperia-10m8 | https://sony.scene7.com/is/image/sonyglobalsolutions/7759_primary-image_frozen-white?wid=1200&fmt=png-alpha | Produktbild © Sony Group Corporation |
+| public/img/phones/sony-xperia-10-viii-2.webp | Xperia 10 VIII | https://www.sony.de/smartphones/products/xperia-10m8 | https://sony.scene7.com/is/image/sonyglobalsolutions/7759_primary-image_misty-lilac?wid=1200&fmt=png-alpha | Produktbild © Sony Group Corporation |
+| public/img/phones/fairphone-gen-6-1.webp | Fairphone (Gen. 6) | https://www.fairphone.com/the-fairphone-gen-6 | https://www.fairphone.com/theme_fairphone/static/src/img/image_ds/hero_green.webp | Produktbild © Fairphone B.V. |
+| public/img/phones/fairphone-gen-6-2.webp | Fairphone (Gen. 6) | https://www.fairphone.com/the-fairphone-gen-6 | https://www.fairphone.com/theme_fairphone/static/src/img/image_ds/hero_black.webp | Produktbild © Fairphone B.V. |
+| public/img/phones/fairphone-gen-6-3.webp | Fairphone (Gen. 6) | https://www.fairphone.com/the-fairphone-gen-6 | https://www.fairphone.com/theme_fairphone/static/src/img/image_ds/hero_white.webp | Produktbild © Fairphone B.V. |

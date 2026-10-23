@@ -1,0 +1,13 @@
+# Bildquellen Honor
+
+| file | device | source URL (page) | direct image URL | licence / rights holder |
+|---|---|---|---|---|
+| public/img/phones/honor-600-pro-1.webp | Honor 600 Pro Orange | https://www.honor.com/de/phones/honor-600-pro/ | https://www-file.honor.com/content/dam/honor/common/product-list/product-series/honor-600-pro/honor-600-pro-id-orange-back.png | Produktbild © HONOR (honor.com/de) |
+| public/img/phones/honor-600-pro-2.webp | Honor 600 Pro Schwarz | https://www.honor.com/de/phones/honor-600-pro/ | https://www-file.honor.com/content/dam/honor/common/product-list/product-series/honor-600-pro/honor-600-pro-id-black-back.png | Produktbild © HONOR (honor.com/de) |
+| public/img/phones/honor-600-pro-3.webp | Honor 600 Pro Weiß | https://www.honor.com/de/phones/honor-600-pro/ | https://www-file.honor.com/content/dam/honor/common/product-list/product-series/honor-600-pro/honor-600-pro-id-white-back.png | Produktbild © HONOR (honor.com/de) |
+| public/img/phones/honor-magic8-pro-1.webp | Magic8 Pro Schwarz | https://www.honor.com/de/phones/honor-magic8-pro/ | https://www-file.honor.com/content/dam/honor/common/product-list/product-series/honor-magic8-pro/magic8-pro-id-black-back.png | Produktbild © HONOR (honor.com/de) |
+| public/img/phones/honor-magic8-pro-2.webp | Magic8 Pro Gold | https://www.honor.com/de/phones/honor-magic8-pro/ | https://www-file.honor.com/content/dam/honor/common/product-list/product-series/honor-magic8-pro/magic8-pro-id-gold-back.png | Produktbild © HONOR (honor.com/de) |
+| public/img/phones/honor-magic8-pro-3.webp | Magic8 Pro Türkis | https://www.honor.com/de/phones/honor-magic8-pro/ | https://www-file.honor.com/content/dam/honor/common/product-list/product-series/honor-magic8-pro/cn/magic8-pro-id-green-back-new.png | Produktbild © HONOR (honor.com/de) |
+| public/img/phones/honor-magic-v6-1.webp | Magic V6 Rot | https://www.honor.com/de/phones/honor-magic-v6/buy/ | https://www-file.honor.com/content/dam/honor/common/product-list/product-series/honor-magic-v6/honor-magic-v5-id-red.png | Produktbild © HONOR (honor.com/de) |
+| public/img/phones/honor-magic-v6-2.webp | Magic V6 Schwarz | https://www.honor.com/de/phones/honor-magic-v6/buy/ | https://www-file.honor.com/content/dam/honor/common/product-list/product-series/honor-magic-v6/honor-magic-v5-id-black.png | Produktbild © HONOR (honor.com/de) |
+| public/img/phones/honor-magic-v6-3.webp | Magic V6 Weiß | https://www.honor.com/de/phones/honor-magic-v6/buy/ | https://www-file.honor.com/content/dam/honor/common/product-list/product-series/honor-magic-v6/honor-magic-v5-id-white.png | Produktbild © HONOR (honor.com/de) |

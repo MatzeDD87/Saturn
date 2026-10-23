@@ -1,0 +1,826 @@
+[
+  {
+    "id": "iphone-18-pro",
+    "brand": "Apple",
+    "name": "iPhone 18 Pro",
+    "release": "2026-09",
+    "uvp": 1449,
+    "uvp_by_storage": {
+      "256": 1449,
+      "512": 1699,
+      "1024": 2199,
+      "2048": 2949
+    },
+    "os": "iOS",
+    "os_launch": "iOS 27",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.3,
+      "type": "LTPO OLED (ProMotion)",
+      "resolution": "2622 x 1206",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A20 Pro",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "4x optisch (8x in optischer Qualität)",
+      "front_mp": 18,
+      "summary": "48-MP-Triple-Kamera mit variabler Blende und 4x Tele"
+    },
+    "battery_mah": 4056,
+    "charging": {
+      "wired_w": 50,
+      "wireless_w": 25,
+      "note": "50 % in ca. 15 Min. (60-W-Netzteil); MagSafe / Qi2 25 W"
+    },
+    "ip": "IP68",
+    "weight_g": 211,
+    "dimensions_mm": "150.0 x 71.9 x 8.75",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#2b2b2d"
+      },
+      {
+        "name": "Silber",
+        "hex": "#e3e4e6"
+      },
+      {
+        "name": "Polar",
+        "hex": "#b9cbe0"
+      },
+      {
+        "name": "Burgunder",
+        "hex": "#6b1f2e"
+      }
+    ],
+    "highlights": [
+      "A20 Pro Chip (2 nm)",
+      "Hauptkamera mit variabler Blende",
+      "4x Tele, bis 2 TB Speicher"
+    ],
+    "pitch": "Das aktuelle Pro-Modell im handlichen 6,3-Zoll-Format: Top-Kamera mit variabler Blende, 4x Tele und sehr schnelles Laden.",
+    "tags": [
+      "camera",
+      "video",
+      "gaming",
+      "business"
+    ],
+    "images": [
+      "img/phones/iphone-18-pro-1.webp",
+      "img/phones/iphone-18-pro-2.webp"
+    ],
+    "image_colors": [
+      "Schwarz",
+      "Polar"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-18-pro/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-18-pro",
+      "https://www.gsmarena.com/apple_iphone_18_pro-14934.php",
+      "https://www.gsmarena.com/iphone_18_pro_max_charging-news-74652.php",
+      "https://www.vodafone.de/featured/article/apple-iphone-18-preis-244085"
+    ]
+  },
+  {
+    "id": "iphone-18-pro-max",
+    "brand": "Apple",
+    "name": "iPhone 18 Pro Max",
+    "release": "2026-09",
+    "uvp": 1599,
+    "uvp_by_storage": {
+      "256": 1599,
+      "512": 1849,
+      "1024": 2349,
+      "2048": 3099
+    },
+    "os": "iOS",
+    "os_launch": "iOS 27",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.9,
+      "type": "LTPO OLED (ProMotion)",
+      "resolution": "2868 x 1320",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A20 Pro",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "4x optisch (8x in optischer Qualität)",
+      "front_mp": 18,
+      "summary": "48-MP-Triple-Kamera mit variabler Blende und 4x Tele"
+    },
+    "battery_mah": 5391,
+    "charging": {
+      "wired_w": 50,
+      "wireless_w": 25,
+      "note": "50 % in ca. 15 Min. (60-W-Netzteil, gemessen bis ca. 52 W); MagSafe / Qi2 25 W"
+    },
+    "ip": "IP68",
+    "weight_g": 249,
+    "dimensions_mm": "163.4 x 78.0 x 8.75",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#2b2b2d"
+      },
+      {
+        "name": "Silber",
+        "hex": "#e3e4e6"
+      },
+      {
+        "name": "Polar",
+        "hex": "#b9cbe0"
+      },
+      {
+        "name": "Burgunder",
+        "hex": "#6b1f2e"
+      }
+    ],
+    "highlights": [
+      "Längste Akkulaufzeit aller iPhones",
+      "Großes 6,9\"-Display, 3000 Nits",
+      "A20 Pro, Tele mit 4x/8x"
+    ],
+    "pitch": "Für alle, die das Maximum wollen: größtes Display, längste Akkulaufzeit und die beste iPhone-Kamera – dafür groß und schwer.",
+    "tags": [
+      "camera",
+      "video",
+      "battery",
+      "gaming",
+      "business"
+    ],
+    "images": [
+      "img/phones/iphone-18-pro-max-1.webp",
+      "img/phones/iphone-18-pro-max-2.webp"
+    ],
+    "image_colors": [
+      "Burgunder",
+      "Schwarz"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-18-pro/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-18-pro",
+      "https://www.gsmarena.com/apple_iphone_18_pro_max-14716.php",
+      "https://www.gsmarena.com/iphone_18_pro_max_charging-news-74652.php",
+      "https://www.vodafone.de/featured/article/apple-iphone-18-preis-244085"
+    ]
+  },
+  {
+    "id": "iphone-duo",
+    "brand": "Apple",
+    "name": "iPhone Duo",
+    "release": "2026-10",
+    "uvp": 2299,
+    "uvp_by_storage": {
+      "256": 2299,
+      "512": 2549,
+      "1024": 3049,
+      "2048": 3799
+    },
+    "os": "iOS",
+    "os_launch": "iOS 27",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 7.6,
+      "type": "Faltbares LTPO OLED (ProMotion)",
+      "resolution": "2670 x 1878",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": true,
+    "cover_display_in": 5.4,
+    "chip": "Apple A20 Pro",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": null,
+      "tele_zoom": "2x in optischer Qualität (Sensor-Crop)",
+      "front_mp": 12,
+      "summary": "48-MP-Dual-Kamera (Haupt + Ultraweit), 12-MP-Frontkamera außen"
+    },
+    "battery_mah": 4883,
+    "charging": {
+      "wired_w": 40,
+      "wireless_w": 25,
+      "note": "50 % in ca. 20 Min. (60-W-Netzteil); MagSafe / Qi2 25 W; zwei Akkuzellen"
+    },
+    "ip": "IP68",
+    "weight_g": 254,
+    "dimensions_mm": "aufgeklappt 164.6 x 117.8 x 5.2 / zugeklappt 84.1 x 117.8 x 11.3",
+    "five_g": true,
+    "esim": "nur eSIM (Dual eSIM)",
+    "colors": [
+      {
+        "name": "Nachthimmel",
+        "hex": "#1f2433"
+      },
+      {
+        "name": "Sternenweiß",
+        "hex": "#ecebe6"
+      }
+    ],
+    "highlights": [
+      "Erstes faltbares iPhone",
+      "7,6\"-Innen- + 5,4\"-Außendisplay",
+      "Touch ID, Apple Pencil Support"
+    ],
+    "pitch": "Apples erstes Falt-iPhone: aufgeklappt fast ein iPad mini, zugeklappt kompakt. Ideal für Multitasking – aber teuer und ohne Tele.",
+    "tags": [
+      "business",
+      "video",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/iphone-duo-1.webp",
+      "img/phones/iphone-duo-2.webp"
+    ],
+    "image_colors": [
+      "Sternenweiß",
+      null
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah",
+      "ram_gb",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-duo/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-duo",
+      "https://www.gsmarena.com/apple_iphone_duo_fold-13804.php",
+      "https://www.gsmarena.com/iphone_18_pro_and_duo_pricing_overview-news-74546.php",
+      "https://www.vodafone.de/featured/article/apple-iphone-18-preis-244085"
+    ]
+  },
+  {
+    "id": "iphone-air",
+    "brand": "Apple",
+    "name": "iPhone Air",
+    "release": "2025-09",
+    "uvp": 1199,
+    "uvp_by_storage": {
+      "256": 1199,
+      "512": 1449,
+      "1024": 1699
+    },
+    "uvp_current": {
+      "256": 1299,
+      "512": 1549,
+      "1024": 2049
+    },
+    "os": "iOS",
+    "os_launch": "iOS 26",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.5,
+      "type": "LTPO OLED (ProMotion)",
+      "resolution": "2736 x 1260",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A19 Pro",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": null,
+      "tele_mp": null,
+      "tele_zoom": "2x in optischer Qualität (Sensor-Crop)",
+      "front_mp": 18,
+      "summary": "Eine 48-MP-Fusion-Kamera mit 2x-Crop, 18-MP-Frontkamera"
+    },
+    "battery_mah": 3149,
+    "charging": {
+      "wired_w": 20,
+      "wireless_w": 20,
+      "note": "50 % in 30 Min. (20-W-Netzteil); MagSafe / Qi2 20 W"
+    },
+    "ip": "IP68",
+    "weight_g": 165,
+    "dimensions_mm": "156.2 x 74.7 x 5.64",
+    "five_g": true,
+    "esim": "nur eSIM (Dual eSIM)",
+    "colors": [
+      {
+        "name": "Space Schwarz",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Wolkenweiß",
+        "hex": "#f2f2ef"
+      },
+      {
+        "name": "Lichtgold",
+        "hex": "#e9dcc3"
+      },
+      {
+        "name": "Himmelblau",
+        "hex": "#cfdde9"
+      }
+    ],
+    "highlights": [
+      "Nur 5,64 mm dünn, 165 g",
+      "Titanrahmen, 120-Hz-Display",
+      "A19 Pro Chip"
+    ],
+    "pitch": "Das dünnste iPhone: extrem leicht und edel, mit großem 120-Hz-Display. Abstriche bei Akku und Kamera (nur eine Linse).",
+    "tags": [
+      "everyday",
+      "business"
+    ],
+    "images": [
+      "img/phones/iphone-air-1.webp",
+      "img/phones/iphone-air-2.webp"
+    ],
+    "image_colors": [
+      "Space Schwarz",
+      "Himmelblau"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-air/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-air",
+      "https://www.gsmarena.com/apple_iphone_17_air-13502.php",
+      "https://www.pcgameshardware.de/iPhone-Serie-Smartphone-216880/News/Neue-iPhone-17-Modelle-kosten-bis-zu-2449-Euro-1481769/"
+    ]
+  },
+  {
+    "id": "iphone-17",
+    "brand": "Apple",
+    "name": "iPhone 17",
+    "release": "2025-09",
+    "uvp": 949,
+    "uvp_by_storage": {
+      "256": 949,
+      "512": 1199
+    },
+    "uvp_current": {
+      "256": 1099,
+      "512": 1349
+    },
+    "os": "iOS",
+    "os_launch": "iOS 26",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.3,
+      "type": "LTPO OLED (ProMotion)",
+      "resolution": "2622 x 1206",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A19",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": null,
+      "tele_zoom": "2x in optischer Qualität (Sensor-Crop)",
+      "front_mp": 18,
+      "summary": "48-MP-Dual-Kamera (Haupt + Ultraweit), 18-MP-Center-Stage-Front"
+    },
+    "battery_mah": 3692,
+    "charging": {
+      "wired_w": 40,
+      "wireless_w": 25,
+      "note": "50 % in 20 Min. (40-W-Netzteil); MagSafe / Qi2 25 W"
+    },
+    "ip": "IP68",
+    "weight_g": 177,
+    "dimensions_mm": "149.6 x 71.5 x 7.95",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#232323"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#f5f5f5"
+      },
+      {
+        "name": "Nebelblau",
+        "hex": "#9db4cc"
+      },
+      {
+        "name": "Salbei",
+        "hex": "#a7b59c"
+      },
+      {
+        "name": "Lavendel",
+        "hex": "#d9cbe5"
+      }
+    ],
+    "highlights": [
+      "120 Hz ProMotion & Always-On",
+      "256 GB Basisspeicher",
+      "48-MP-Haupt- und Ultraweitwinkel"
+    ],
+    "pitch": "Das aktuelle Standard-iPhone mit 120-Hz-Display, 256 GB Speicher und guter Dual-Kamera – das rundeste Gesamtpaket.",
+    "tags": [
+      "everyday",
+      "camera",
+      "value"
+    ],
+    "images": [
+      "img/phones/iphone-17-1.webp",
+      "img/phones/iphone-17-2.webp"
+    ],
+    "image_colors": [
+      "Nebelblau",
+      "Salbei"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-17/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-17",
+      "https://www.gsmarena.com/apple_iphone_17-14050.php",
+      "https://www.vodafone.de/featured/article/apple-iphone-18-preis-244085",
+      "https://www.handyhase.de/magazin/iphone-preisentwicklung/"
+    ]
+  },
+  {
+    "id": "iphone-17e",
+    "brand": "Apple",
+    "name": "iPhone 17e",
+    "release": "2026-03",
+    "uvp": 699,
+    "uvp_by_storage": {
+      "256": 699,
+      "512": 949
+    },
+    "uvp_current": {
+      "256": 849,
+      "512": 1099
+    },
+    "os": "iOS",
+    "os_launch": "iOS 26",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.1,
+      "type": "OLED",
+      "resolution": "2532 x 1170",
+      "hz": 60,
+      "peak_nits": 1200
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A19",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": null,
+      "tele_mp": null,
+      "tele_zoom": "2x (Sensor-Crop)",
+      "front_mp": 12,
+      "summary": "Eine 48-MP-Fusion-Kamera mit 2x-Crop"
+    },
+    "battery_mah": 4005,
+    "charging": {
+      "wired_w": 20,
+      "wireless_w": 15,
+      "note": "50 % in 30 Min. (20-W-Netzteil); MagSafe / Qi2 15 W"
+    },
+    "ip": "IP68",
+    "weight_g": 170,
+    "dimensions_mm": "146.7 x 71.5 x 7.80",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#1f1f1f"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#f4f4f4"
+      },
+      {
+        "name": "Hellrosa",
+        "hex": "#f1d8d6"
+      }
+    ],
+    "highlights": [
+      "Günstigster Einstieg ins iPhone",
+      "A19 Chip, 256 GB Basisspeicher",
+      "Gute Akkulaufzeit, MagSafe"
+    ],
+    "pitch": "Der günstigste Weg zum aktuellen iPhone: schneller A19, viel Speicher und gute Laufzeit – dafür 60-Hz-Display und nur eine Kamera.",
+    "tags": [
+      "value",
+      "everyday",
+      "senior",
+      "battery"
+    ],
+    "images": [
+      "img/phones/iphone-17e-1.webp",
+      "img/phones/iphone-17e-2.webp"
+    ],
+    "image_colors": [
+      "Hellrosa",
+      "Hellrosa"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-17e/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-17e",
+      "https://www.gsmarena.com/apple_iphone_17e-14487.php",
+      "https://www.nextpit.de/handys/apple-iphone-17e",
+      "https://www.vodafone.de/featured/article/apple-iphone-18-preis-244085"
+    ]
+  },
+  {
+    "id": "iphone-17-pro",
+    "brand": "Apple",
+    "name": "iPhone 17 Pro",
+    "release": "2025-09",
+    "uvp": 1299,
+    "uvp_by_storage": {
+      "256": 1299,
+      "512": 1549,
+      "1024": 1799
+    },
+    "os": "iOS",
+    "os_launch": "iOS 26",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.3,
+      "type": "LTPO OLED (ProMotion)",
+      "resolution": "2622 x 1206",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A19 Pro",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "4x optisch (8x in optischer Qualität)",
+      "front_mp": 18,
+      "summary": "48-MP-Triple-Kamera mit 4x Tele"
+    },
+    "battery_mah": 3998,
+    "charging": {
+      "wired_w": 40,
+      "wireless_w": 25,
+      "note": "50 % in 20 Min. (40-W-Netzteil); MagSafe / Qi2 25 W"
+    },
+    "ip": "IP68",
+    "weight_g": 206,
+    "dimensions_mm": "150.0 x 71.9 x 8.75",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Silber",
+        "hex": "#e3e3e1"
+      },
+      {
+        "name": "Cosmic Orange",
+        "hex": "#e0742f"
+      },
+      {
+        "name": "Tiefblau",
+        "hex": "#2f3f5f"
+      }
+    ],
+    "highlights": [
+      "Pro-Kamera mit 4x Tele",
+      "A19 Pro, Aluminium-Unibody",
+      "Im Handel oft deutlich reduziert"
+    ],
+    "pitch": "Vorjahres-Pro mit fast gleicher Kamera wie das 18 Pro – bei Apple ausgelaufen, im Handel als Restposten oft ein Preistipp.",
+    "tags": [
+      "camera",
+      "video",
+      "gaming",
+      "value"
+    ],
+    "images": [
+      "img/phones/iphone-17-pro-1.webp",
+      "img/phones/iphone-17-pro-2.webp"
+    ],
+    "image_colors": [
+      "Cosmic Orange",
+      "Tiefblau"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/apple_iphone_17_pro-14049.php",
+      "https://www.smartweb.de/iphone-17-pro",
+      "https://www.pcgameshardware.de/iPhone-Serie-Smartphone-216880/News/Neue-iPhone-17-Modelle-kosten-bis-zu-2449-Euro-1481769/",
+      "https://www.giga.de/tech/iphone-17-pro-ist-geschichte-apple-setzt-auf-die-neue-generation--01M25AV6PXPRXCAE71MKXEC9PK"
+    ]
+  },
+  {
+    "id": "iphone-16",
+    "brand": "Apple",
+    "name": "iPhone 16",
+    "release": "2024-09",
+    "uvp": 949,
+    "uvp_by_storage": {
+      "128": 949,
+      "256": 1069,
+      "512": 1319
+    },
+    "uvp_current": {
+      "128": 999
+    },
+    "os": "iOS",
+    "os_launch": "iOS 18",
+    "updates_years": 6,
+    "updates_note": "Apple garantiert keine Frist; erfahrungsgemäß ca. 6+ Jahre iOS-Updates",
+    "display": {
+      "size_in": 6.1,
+      "type": "OLED",
+      "resolution": "2556 x 1179",
+      "hz": 60,
+      "peak_nits": 2000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Apple A18",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128,
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 12,
+      "tele_mp": null,
+      "tele_zoom": "2x in optischer Qualität (Sensor-Crop)",
+      "front_mp": 12,
+      "summary": "48-MP-Dual-Kamera mit Kamerasteuerung-Taste"
+    },
+    "battery_mah": 3561,
+    "charging": {
+      "wired_w": 20,
+      "wireless_w": 25,
+      "note": "50 % in ca. 30 Min. (20-W-Netzteil); MagSafe / Qi2 25 W"
+    },
+    "ip": "IP68",
+    "weight_g": 170,
+    "dimensions_mm": "147.6 x 71.6 x 7.80",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual eSIM möglich)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#2c2c2e"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#f2f2f2"
+      },
+      {
+        "name": "Pink",
+        "hex": "#f4b8d0"
+      },
+      {
+        "name": "Blaugrün",
+        "hex": "#a8d1cb"
+      },
+      {
+        "name": "Ultramarin",
+        "hex": "#7d8ff0"
+      }
+    ],
+    "highlights": [
+      "Apple Intelligence mit A18",
+      "Dynamic Island, Kamerasteuerung",
+      "Handliche 6,1 Zoll, 170 g"
+    ],
+    "pitch": "Bewährtes Vorvorjahresmodell mit Dynamic Island und Apple Intelligence – handlich und solide, aber nur 60 Hz und 128 GB bei Apple.",
+    "tags": [
+      "everyday",
+      "compact",
+      "senior"
+    ],
+    "images": [
+      "img/phones/iphone-16-1.webp",
+      "img/phones/iphone-16-2.webp"
+    ],
+    "image_colors": [
+      "Ultramarin",
+      "Ultramarin"
+    ],
+    "uncertain": [
+      "updates_years",
+      "battery_mah",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://www.apple.com/de/iphone-16/specs/",
+      "https://www.apple.com/de/shop/buy-iphone/iphone-16",
+      "https://www.gsmarena.com/apple_iphone_16-13317.php"
+    ]
+  }
+]

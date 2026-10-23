@@ -1,0 +1,502 @@
+[
+  {
+    "id": "google-pixel-11",
+    "brand": "Google",
+    "name": "Pixel 11",
+    "release": "2026-08",
+    "uvp": 999,
+    "uvp_by_storage": {
+      "256": 999,
+      "512": 1129
+    },
+    "os": "Android",
+    "os_launch": "Android 17",
+    "updates_years": 7,
+    "updates_note": "7 Jahre Betriebssystem- und Sicherheitsupdates sowie Pixel Drops (Herstellerangabe)",
+    "display": {
+      "size_in": 6.3,
+      "type": "OLED (Actua), 60–120 Hz",
+      "resolution": "2424 x 1080",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Google Tensor G6",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 13,
+      "tele_mp": 10.8,
+      "tele_zoom": "5x optisch",
+      "front_mp": 10.5,
+      "summary": "48-MP-Hauptkamera + 13-MP-Ultraweitwinkel + 10,8-MP-Tele (5x), bis 30x Super-Zoom"
+    },
+    "battery_mah": 4985,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 25,
+      "note": "Bis zu 55 % in ca. 30 Min. mit 30-W-PPS-Netzteil (separat), Pixelsnap Qi2.2 bis 25 W kabellos"
+    },
+    "ip": "IP68",
+    "weight_g": 197,
+    "dimensions_mm": "152.8 x 72.0 x 8.6",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Obsidian",
+        "hex": "#2b2d2e"
+      },
+      {
+        "name": "Pistachio",
+        "hex": "#c9d7a8"
+      },
+      {
+        "name": "Hibiscus",
+        "hex": "#c2185b"
+      },
+      {
+        "name": "Frost",
+        "hex": "#c9d3e6"
+      }
+    ],
+    "highlights": [
+      "Tensor G6 mit Gemini-KI an Bord",
+      "5x-Telekamera schon im Basismodell",
+      "7 Jahre Updates"
+    ],
+    "pitch": "Das Pixel für alle: hervorragende KI-Funktionen, sehr gute Kamera mit 5x-Tele und sieben Jahre Updates – direkt von Google.",
+    "tags": [
+      "camera",
+      "everyday",
+      "business"
+    ],
+    "images": [
+      "img/phones/google-pixel-11-1.webp",
+      "img/phones/google-pixel-11-2.webp",
+      "img/phones/google-pixel-11-3.webp",
+      "img/phones/google-pixel-11-4.webp"
+    ],
+    "image_colors": [
+      "Obsidian",
+      "Pistachio",
+      "Hibiscus",
+      "Frost"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://store.google.com/de/product/pixel_11_specs?hl=de",
+      "https://store.google.com/de/magazine/compare_pixel?hl=de",
+      "https://blog.google/intl/de-de/produkte/hardware/google-pixel-11-pro-xl/",
+      "https://en.wikipedia.org/wiki/Pixel_11"
+    ]
+  },
+  {
+    "id": "google-pixel-11-pro",
+    "brand": "Google",
+    "name": "Pixel 11 Pro",
+    "release": "2026-08",
+    "uvp": 1199,
+    "uvp_by_storage": {
+      "256": 1199,
+      "512": 1329,
+      "1024": 1589
+    },
+    "os": "Android",
+    "os_launch": "Android 17",
+    "updates_years": 7,
+    "updates_note": "7 Jahre Betriebssystem- und Sicherheitsupdates sowie Pixel Drops (Herstellerangabe)",
+    "display": {
+      "size_in": 6.3,
+      "type": "LTPO OLED (Super Actua), 1–120 Hz",
+      "resolution": "2856 x 1280",
+      "hz": 120,
+      "peak_nits": 3600
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Google Tensor G6",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "5x optisch (Periskop)",
+      "front_mp": 42,
+      "summary": "50 MP + 48 MP Ultraweitwinkel + 48 MP Periskop-Tele (5x), bis 120x Pro-Zoom, 8K-Video"
+    },
+    "battery_mah": 4850,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 25,
+      "note": "Bis zu 55 % in ca. 30 Min. mit 30-W-PPS-Netzteil (separat), Pixelsnap Qi2.2 bis 25 W kabellos; 16 GB RAM nur bei 512 GB/1 TB"
+    },
+    "ip": "IP68",
+    "weight_g": 204,
+    "dimensions_mm": "152.7 x 71.9 x 8.4",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Obsidian (Matt)",
+        "hex": "#2d2f2e"
+      },
+      {
+        "name": "Olive",
+        "hex": "#7d8466"
+      },
+      {
+        "name": "Canyon",
+        "hex": "#e59a86"
+      },
+      {
+        "name": "Fog",
+        "hex": "#dfe5e2"
+      }
+    ],
+    "highlights": [
+      "Kompaktes Profi-Pixel mit 6,3″",
+      "42-MP-Selfiekamera mit Autofokus",
+      "HiLight-Benachrichtigungslicht"
+    ],
+    "pitch": "Die Pro-Kamera im handlichen Format: drei hochauflösende Kameras, 8K-Video, superhelles Display und Gemini-KI.",
+    "tags": [
+      "camera",
+      "video",
+      "business",
+      "compact"
+    ],
+    "images": [
+      "img/phones/google-pixel-11-pro-1.webp",
+      "img/phones/google-pixel-11-pro-2.webp",
+      "img/phones/google-pixel-11-pro-3.webp"
+    ],
+    "image_colors": [
+      "Obsidian (Matt)",
+      "Olive",
+      "Canyon"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "uvp_by_storage.1024",
+      "charging.wired_w"
+    ],
+    "sources": [
+      "https://store.google.com/de/product/pixel_11_pro_specs?hl=de",
+      "https://store.google.com/de/magazine/compare_pixel?hl=de",
+      "https://blog.google/intl/de-de/produkte/hardware/google-pixel-11-pro-xl/",
+      "https://www.notebookcheck.net/Google-New-Pixel-11-release-prices-and-configurations-revealed-for-European-and-UK-markets.1336704.0.html"
+    ]
+  },
+  {
+    "id": "google-pixel-11-pro-xl",
+    "brand": "Google",
+    "name": "Pixel 11 Pro XL",
+    "release": "2026-08",
+    "uvp": 1399,
+    "uvp_by_storage": {
+      "256": 1399,
+      "512": 1529,
+      "1024": 1789
+    },
+    "os": "Android",
+    "os_launch": "Android 17",
+    "updates_years": 7,
+    "updates_note": "7 Jahre Betriebssystem- und Sicherheitsupdates sowie Pixel Drops (Herstellerangabe)",
+    "display": {
+      "size_in": 6.8,
+      "type": "LTPO OLED (Super Actua), 1–120 Hz",
+      "resolution": "2992 x 1344",
+      "hz": 120,
+      "peak_nits": 3600
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Google Tensor G6",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "5x optisch (Periskop)",
+      "front_mp": 42,
+      "summary": "50 MP + 48 MP Ultraweitwinkel + 48 MP Periskop-Tele (5x, größerer Sensor), 8K-Video"
+    },
+    "battery_mah": 5115,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": 25,
+      "note": "Bis zu 75 % in ca. 30 Min. mit 45-W-PPS-Netzteil (separat), Pixelsnap Qi2.2 bis 25 W kabellos"
+    },
+    "ip": "IP68",
+    "weight_g": 226,
+    "dimensions_mm": "162.7 x 76.5 x 8.5",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Obsidian (Matt)",
+        "hex": "#2d2f2e"
+      },
+      {
+        "name": "Olive",
+        "hex": "#7d8466"
+      },
+      {
+        "name": "Canyon",
+        "hex": "#e59a86"
+      },
+      {
+        "name": "Fog",
+        "hex": "#dfe5e2"
+      }
+    ],
+    "highlights": [
+      "Großes 6,8″-Display mit 3600 nits",
+      "45 W kabelgebunden, 25 W Pixelsnap",
+      "Größter Akku der Pixel-11-Reihe"
+    ],
+    "pitch": "Das große Pixel-Flaggschiff: riesiges, superhelles Display, starke Akkulaufzeit, schnelles Laden und die beste Pixel-Kamera.",
+    "tags": [
+      "camera",
+      "video",
+      "battery",
+      "business",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/google-pixel-11-pro-xl-1.webp",
+      "img/phones/google-pixel-11-pro-xl-2.webp",
+      "img/phones/google-pixel-11-pro-xl-3.webp"
+    ],
+    "image_colors": [
+      "Obsidian (Matt)",
+      "Fog",
+      "Olive"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "uvp_by_storage.1024"
+    ],
+    "sources": [
+      "https://store.google.com/de/product/pixel_11_pro_specs?hl=de",
+      "https://www.gsmarena.com/google_pixel_11_pro_xl_5g-14800.php",
+      "https://blog.google/intl/de-de/produkte/hardware/google-pixel-11-pro-xl/"
+    ]
+  },
+  {
+    "id": "google-pixel-11-pro-fold",
+    "brand": "Google",
+    "name": "Pixel 11 Pro Fold",
+    "release": "2026-08",
+    "uvp": 1999,
+    "uvp_by_storage": {
+      "256": 1999,
+      "512": 2129,
+      "1024": 2389
+    },
+    "os": "Android",
+    "os_launch": "Android 17",
+    "updates_years": 7,
+    "updates_note": "7 Jahre Betriebssystem- und Sicherheitsupdates sowie Pixel Drops (Herstellerangabe)",
+    "display": {
+      "size_in": 8.0,
+      "type": "Faltbares OLED (Super Actua Flex), 1–120 Hz",
+      "resolution": "2152 x 2076",
+      "hz": 120,
+      "peak_nits": 3600
+    },
+    "foldable": true,
+    "cover_display_in": 6.5,
+    "chip": "Google Tensor G6",
+    "ram_gb": [
+      16
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 10.5,
+      "tele_mp": 10.8,
+      "tele_zoom": "5x optisch",
+      "front_mp": 10,
+      "summary": "48 MP + 10,5 MP Ultraweitwinkel + 10,8 MP Tele (5x), je 10 MP Front- und Innenkamera"
+    },
+    "battery_mah": 4806,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 25,
+      "note": "Bis zu 50 % in ca. 30 Min. mit 30-W-PPS-Netzteil (separat), Pixelsnap Qi2.2 bis 25 W kabellos"
+    },
+    "ip": "IP68",
+    "weight_g": 239,
+    "dimensions_mm": "155.2 x 76.0 x 10.1 (aufgeklappt 155.2 x 150.4 x 5.0)",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Obsidian",
+        "hex": "#2b2d2e"
+      },
+      {
+        "name": "Olive",
+        "hex": "#7d8466"
+      }
+    ],
+    "highlights": [
+      "8″-Innendisplay + 6,5″-Außendisplay",
+      "Als erstes Foldable nach IP68 geschützt",
+      "16 GB RAM in allen Varianten"
+    ],
+    "pitch": "Smartphone und Tablet in einem: großes Innendisplay für Multitasking, vollwertiges Außendisplay und Pixel-KI-Funktionen.",
+    "tags": [
+      "business",
+      "video",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/google-pixel-11-pro-fold-1.webp",
+      "img/phones/google-pixel-11-pro-fold-2.webp"
+    ],
+    "image_colors": [
+      "Obsidian",
+      "Olive"
+    ],
+    "uncertain": [
+      "display.hz"
+    ],
+    "sources": [
+      "https://store.google.com/de/product/pixel_11_pro_fold_specs?hl=de",
+      "https://store.google.com/de/magazine/compare_pixel?hl=de",
+      "https://gagadget.de/721832-google-pixel-11-pro-fold-das-teuerste-pixel-aller-zeiten-kommt-fur-eur1999/"
+    ]
+  },
+  {
+    "id": "google-pixel-10a",
+    "brand": "Google",
+    "name": "Pixel 10a",
+    "release": "2026-03",
+    "uvp": 649,
+    "uvp_by_storage": {
+      "128": 649,
+      "256": 749
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": 7,
+    "updates_note": "7 Jahre Betriebssystem- und Sicherheitsupdates sowie Pixel Drops (Herstellerangabe)",
+    "display": {
+      "size_in": 6.3,
+      "type": "pOLED (Actua), 60–120 Hz",
+      "resolution": "2424 x 1080",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Google Tensor G4",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 13,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 13,
+      "summary": "48-MP-Hauptkamera (OIS) + 13-MP-Ultraweitwinkel, bis 8x Super-Res-Zoom"
+    },
+    "battery_mah": 5100,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 10,
+      "note": "Bis zu 50 % in ca. 30 Min. mit 45-W-PPS-Netzteil (separat), Qi kabellos. Startpreis war 549 €, Google hat die UVP im Oktober 2026 auf 649 € angehoben"
+    },
+    "ip": "IP68",
+    "weight_g": 183,
+    "dimensions_mm": "153.9 x 73.0 x 9.0",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Obsidian",
+        "hex": "#2b2d2e"
+      },
+      {
+        "name": "Lavender",
+        "hex": "#b9b6e6"
+      },
+      {
+        "name": "Berry",
+        "hex": "#c2477a"
+      },
+      {
+        "name": "Fog",
+        "hex": "#dfe5e2"
+      }
+    ],
+    "highlights": [
+      "Pixel-Kamera & Gemini zum Mittelklassepreis",
+      "5100-mAh-Akku",
+      "7 Jahre Updates"
+    ],
+    "pitch": "Das günstigste aktuelle Pixel: tolle Fotos, sehr lange Update-Garantie und flaches Kamera-Design – ideal als Einstieg.",
+    "tags": [
+      "value",
+      "everyday",
+      "senior",
+      "camera"
+    ],
+    "images": [
+      "img/phones/google-pixel-10a-1.webp",
+      "img/phones/google-pixel-10a-2.webp"
+    ],
+    "image_colors": [
+      "Obsidian",
+      "Lavender"
+    ],
+    "uncertain": [
+      "charging.wired_w",
+      "charging.wireless_w",
+      "uvp"
+    ],
+    "sources": [
+      "https://store.google.com/de/product/pixel_10a_specs?hl=de",
+      "https://www.heise.de/news/Google-erhoeht-Preis-fuer-Pixel-10a-um-100-Euro-11475569.html",
+      "https://en.wikipedia.org/wiki/Pixel_10a"
+    ]
+  }
+]

@@ -1,0 +1,555 @@
+[
+  {
+    "id": "xiaomi-17-ultra",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 17 Ultra",
+    "release": "2026-03",
+    "uvp": 1499.9,
+    "uvp_by_storage": {
+      "512": 1499.9,
+      "1024": 1699.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Xiaomi HyperOS 3)",
+    "updates_years": 6,
+    "updates_note": "Laut Xiaomi mehrjährige OS- und Sicherheitsupdates (Dauer für DE nicht offiziell bestätigt)",
+    "display": {
+      "size_in": 6.9,
+      "type": "HyperRGB OLED, LTPO 1–120 Hz, HDR10+, Dolby Vision",
+      "resolution": "2608 x 1200",
+      "hz": 120,
+      "peak_nits": 3500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5",
+    "ram_gb": [
+      16
+    ],
+    "storage_gb": [
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 200,
+      "tele_zoom": "75–100 mm optisch (stufenlos, Periskop)",
+      "front_mp": 50,
+      "summary": "Leica-Triple: 50 MP 1″-Sensor, 200-MP-Periskop-Tele 75–100 mm, 50-MP-Ultraweitwinkel; 8K-Video"
+    },
+    "battery_mah": 6000,
+    "charging": {
+      "wired_w": 90,
+      "wireless_w": 50,
+      "note": "90 W HyperCharge Kabel, 50 W kabellos; Netzteil nicht im Lieferumfang"
+    },
+    "ip": "IP68",
+    "weight_g": 218.4,
+    "dimensions_mm": "162.9 x 77.6 x 8.29",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "White",
+        "hex": "#ececea"
+      },
+      {
+        "name": "Starlit Green",
+        "hex": "#2f5d50"
+      }
+    ],
+    "highlights": [
+      "1-Zoll-Hauptsensor mit Leica-Optik",
+      "200-MP-Zoom mit 75–100 mm",
+      "6000 mAh, 90 W + 50 W kabellos"
+    ],
+    "pitch": "Kamera-Flaggschiff für Foto-Enthusiasten: Leica-Optik, riesiger 1-Zoll-Sensor und stufenloser 200-MP-Zoom.",
+    "tags": [
+      "camera",
+      "video",
+      "business",
+      "gaming",
+      "battery"
+    ],
+    "images": [
+      "img/phones/xiaomi-17-ultra-1.webp"
+    ],
+    "image_colors": [
+      "Starlit Green"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/xiaomi-17-ultra/specs/",
+      "https://www.hartware.de/2026/03/02/xiaomi-17-und-17-ultra-zwei-neue-smartphone-flaggschiffe/",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  },
+  {
+    "id": "xiaomi-17t-pro",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 17T Pro",
+    "release": "2026-05",
+    "uvp": 899.9,
+    "uvp_by_storage": {
+      "256": 899.9,
+      "512": 999.9,
+      "1024": 1099.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Xiaomi HyperOS 3)",
+    "updates_years": 6,
+    "updates_note": "Xiaomi nennt für die T-Serie i. d. R. 6 Jahre Sicherheitsupdates (nicht separat bestätigt)",
+    "display": {
+      "size_in": 6.83,
+      "type": "AMOLED, bis 144 Hz, HDR10+, Dolby Vision",
+      "resolution": "2772 x 1280",
+      "hz": 144,
+      "peak_nits": 3500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 9500",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512,
+      1024
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 12,
+      "tele_mp": 50,
+      "tele_zoom": "5x optisch (115 mm, Periskop)",
+      "front_mp": 32,
+      "summary": "Leica-Triple: 50 MP Light Fusion 950, 50-MP-Periskop (115 mm), 12-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 7000,
+    "charging": {
+      "wired_w": 100,
+      "wireless_w": 50,
+      "note": "100 W HyperCharge Kabel, 50 W kabellos"
+    },
+    "ip": "IP68",
+    "weight_g": 219,
+    "dimensions_mm": "162.2 x 77.5 x 8.25",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Violet",
+        "hex": "#6d5a8e"
+      },
+      {
+        "name": "Deep Blue",
+        "hex": "#284a86"
+      }
+    ],
+    "highlights": [
+      "Riesiger 7000-mAh-Akku",
+      "5x-Leica-Periskop",
+      "144-Hz-Display mit 3500 nits"
+    ],
+    "pitch": "Ausdauer-Flaggschiff mit 7000 mAh, 100-W-Laden und Leica-Periskop – viel Oberklasse unter 1000 €.",
+    "tags": [
+      "battery",
+      "camera",
+      "gaming",
+      "value"
+    ],
+    "images": [
+      "img/phones/xiaomi-17t-pro-1.webp"
+    ],
+    "image_colors": [
+      "Deep Blue"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/xiaomi-17t-pro/specs/",
+      "https://www.vodafone.de/featured/article/xiaomi-17t-pro-preise-der-modelle-im-ueberblick-253795",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  },
+  {
+    "id": "poco-f8-pro",
+    "brand": "Xiaomi",
+    "name": "POCO F8 Pro",
+    "release": "2025-11",
+    "uvp": 649.9,
+    "uvp_by_storage": {
+      "256": 649.9,
+      "512": 699.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Xiaomi HyperOS 3)",
+    "updates_years": 6,
+    "updates_note": "Herstellerangabe lt. Presse; nicht separat bestätigt",
+    "display": {
+      "size_in": 6.59,
+      "type": "AMOLED, bis 120 Hz, HDR10+, Dolby Vision",
+      "resolution": "2510 x 1156",
+      "hz": 120,
+      "peak_nits": 3500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": 50,
+      "tele_zoom": "ca. 2,5x optisch (60 mm)",
+      "front_mp": 20,
+      "summary": "50 MP (OIS) + 50-MP-Tele 60 mm + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6210,
+    "charging": {
+      "wired_w": 100,
+      "wireless_w": 0,
+      "note": "100 W HyperCharge Kabel, 22,5 W Reverse kabelgebunden"
+    },
+    "ip": "IP68",
+    "weight_g": 199,
+    "dimensions_mm": "157.49 x 75.25 x 8.0",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Titanium Silver",
+        "hex": "#c9c9c6"
+      },
+      {
+        "name": "Blue",
+        "hex": "#8fc5c7"
+      }
+    ],
+    "highlights": [
+      "Snapdragon 8 Elite zum Mittelklassepreis",
+      "Kompakte 6,59″ mit 6210 mAh",
+      "Tele-Kamera mit 50 MP"
+    ],
+    "pitch": "Gaming- und Performance-Tipp: Top-Chip, großer Akku und 100-W-Laden in handlichem Format.",
+    "tags": [
+      "gaming",
+      "value",
+      "battery",
+      "compact"
+    ],
+    "images": [
+      "img/phones/xiaomi-poco-f8-pro-1.webp"
+    ],
+    "image_colors": [
+      "Titanium Silver"
+    ],
+    "uncertain": [
+      "charging.wireless_w",
+      "updates_years",
+      "camera.tele_zoom"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/poco-f8-pro/specs/",
+      "https://www.handyhase.de/xiaomi/poco-f8-pro/",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  },
+  {
+    "id": "poco-x8-pro",
+    "brand": "Xiaomi",
+    "name": "POCO X8 Pro",
+    "release": "2026-03",
+    "uvp": 399.9,
+    "uvp_by_storage": {
+      "256": 399.9,
+      "512": 449.9
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Xiaomi HyperOS 3)",
+    "updates_years": 6,
+    "updates_note": "Herstellerangabe lt. Presse; nicht separat bestätigt",
+    "display": {
+      "size_in": 6.59,
+      "type": "AMOLED 1,5K, bis 120 Hz",
+      "resolution": "2756 x 1268",
+      "hz": 120,
+      "peak_nits": 3500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 8500-Ultra",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 20,
+      "summary": "50 MP Sony IMX882 (OIS) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6500,
+    "charging": {
+      "wired_w": 100,
+      "wireless_w": 0,
+      "note": "100 W HyperCharge Kabel, 27 W Reverse kabelgebunden; 12/512 GB 479,90 €"
+    },
+    "ip": "IP68",
+    "weight_g": 201.5,
+    "dimensions_mm": "157.53 x 75.19 x 8.38",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Mint Green",
+        "hex": "#bfe3d0"
+      },
+      {
+        "name": "White",
+        "hex": "#ececea"
+      },
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      }
+    ],
+    "highlights": [
+      "Starker Dimensity-8500-Chip",
+      "6500 mAh mit 100 W",
+      "IP68 unter 400 €"
+    ],
+    "pitch": "Preis-Leistungs-Kracher für Gamer: flottes Display, starker Chip und riesiger Akku zum Mittelklassepreis.",
+    "tags": [
+      "value",
+      "gaming",
+      "battery"
+    ],
+    "images": [
+      "img/phones/xiaomi-poco-x8-pro-1.webp"
+    ],
+    "image_colors": [
+      "Mint Green"
+    ],
+    "uncertain": [
+      "updates_years",
+      "esim"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/poco-x8-pro/specs/",
+      "https://www.handyhase.de/xiaomi/poco-x8-pro/",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  },
+  {
+    "id": "redmi-note-15-pro-plus",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 15 Pro+ 5G",
+    "release": "2026-01",
+    "uvp": 499.9,
+    "uvp_by_storage": {
+      "256": 499.9,
+      "512": 529.9
+    },
+    "os": "Android",
+    "os_launch": "Android 15 (Xiaomi HyperOS 2)",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.83,
+      "type": "CrystalRes AMOLED 1,5K, 120 Hz, HDR10+, Dolby Vision",
+      "resolution": "2772 x 1280",
+      "hz": 120,
+      "peak_nits": 3200
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 7s Gen 4",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 32,
+      "summary": "200-MP-Hauptkamera (OIS, 1/1,4″) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6500,
+    "charging": {
+      "wired_w": 100,
+      "wireless_w": 0,
+      "note": "100 W HyperCharge Kabel; Netzteil nicht im Lieferumfang"
+    },
+    "ip": "IP68",
+    "weight_g": 207.1,
+    "dimensions_mm": "163.34 x 78.31 x 8.19",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Glacier Blue",
+        "hex": "#a9c6dc"
+      },
+      {
+        "name": "Mocha Brown",
+        "hex": "#6b4f3f"
+      }
+    ],
+    "highlights": [
+      "200-MP-Kamera",
+      "Gorilla Glass Victus 2 & IP68",
+      "6500 mAh, 100 W"
+    ],
+    "pitch": "Robuste Mittelklasse mit 200-MP-Kamera, IP68, sehr hellem Display und Schnellladen – solide für den Alltag.",
+    "tags": [
+      "camera",
+      "battery",
+      "everyday",
+      "value"
+    ],
+    "images": [
+      "img/phones/xiaomi-redmi-note-15-pro-plus-1.webp"
+    ],
+    "image_colors": [
+      "Mocha Brown"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/redmi-note-15-pro-plus-5g/specs/",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  },
+  {
+    "id": "redmi-note-15-pro",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 15 Pro 5G",
+    "release": "2026-01",
+    "uvp": 399.9,
+    "uvp_by_storage": {
+      "256": 399.9,
+      "512": 449.9
+    },
+    "os": "Android",
+    "os_launch": "Android 15 (Xiaomi HyperOS 2)",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.83,
+      "type": "AMOLED 1,5K, 120 Hz, HDR10+, Dolby Vision",
+      "resolution": "2772 x 1280",
+      "hz": 120,
+      "peak_nits": 3200
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 7400-Ultra",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 20,
+      "summary": "200-MP-Hauptkamera (OIS) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 6580,
+    "charging": {
+      "wired_w": 45,
+      "wireless_w": 0,
+      "note": "45 W TurboCharge Kabel; Netzteil nicht im Lieferumfang"
+    },
+    "ip": "IP68",
+    "weight_g": 210,
+    "dimensions_mm": "163.61 x 78.09 x 7.96",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1c1c1e"
+      },
+      {
+        "name": "Glacier Blue",
+        "hex": "#a9c6dc"
+      },
+      {
+        "name": "Titanium",
+        "hex": "#b9aa95"
+      }
+    ],
+    "highlights": [
+      "200-MP-Kamera unter 400 €",
+      "6580-mAh-Akku",
+      "IP68-Schutz"
+    ],
+    "pitch": "Günstiger Allrounder mit 200-MP-Kamera, großem Display und riesigem Akku – ideal fürs Preisbewusste.",
+    "tags": [
+      "value",
+      "battery",
+      "everyday",
+      "senior"
+    ],
+    "images": [
+      "img/phones/xiaomi-redmi-note-15-pro-1.webp"
+    ],
+    "image_colors": [
+      "Titanium"
+    ],
+    "uncertain": [
+      "updates_years",
+      "uvp_by_storage.512"
+    ],
+    "sources": [
+      "https://www.mi.com/de/product/redmi-note-15-pro-5g/specs/",
+      "https://www.mi.com/de/support/terms/modelsandprice/"
+    ]
+  }
+]

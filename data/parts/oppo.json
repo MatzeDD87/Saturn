@@ -1,0 +1,252 @@
+[
+  {
+    "id": "oppo-find-x9-pro",
+    "brand": "Oppo",
+    "name": "Find X9 Pro",
+    "release": "2026-01",
+    "uvp": 1299,
+    "uvp_by_storage": {
+      "512": 1299
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (ColorOS 16)",
+    "updates_years": 6,
+    "updates_note": "5 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.78,
+      "type": "AMOLED, 1–120 Hz",
+      "resolution": "2772 x 1272",
+      "hz": 120,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 9500",
+    "ram_gb": [
+      16
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 200,
+      "tele_zoom": "3x optisch (Periskop)",
+      "front_mp": 50,
+      "summary": "Hasselblad-Kamera: 50 MP Haupt (OIS), 50-MP-Ultraweitwinkel, 200-MP-Periskop-Tele 3x"
+    },
+    "battery_mah": 7500,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 50,
+      "note": "80 W SUPERVOOC Kabel, 50 W AIRVOOC kabellos"
+    },
+    "ip": "IP66/IP68/IP69",
+    "weight_g": 224,
+    "dimensions_mm": "161.26 x 76.46 x 8.25",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Titanium Charcoal",
+        "hex": "#4a4b4d"
+      },
+      {
+        "name": "Silk White",
+        "hex": "#eeeae4"
+      }
+    ],
+    "highlights": [
+      "200-MP-Periskop-Tele (Hasselblad)",
+      "7500-mAh-Akku",
+      "IP66/68/69-Schutz"
+    ],
+    "pitch": "Kamera-Flaggschiff mit 200-MP-Tele und riesigem 7500-mAh-Akku – für Foto-Fans, die zwei Tage durchhalten wollen.",
+    "tags": [
+      "camera",
+      "battery",
+      "business"
+    ],
+    "images": [
+      "img/phones/oppo-find-x9-pro-1.webp",
+      "img/phones/oppo-find-x9-pro-2.webp"
+    ],
+    "image_colors": [
+      "Titanium Charcoal",
+      "Silk White"
+    ],
+    "uncertain": [],
+    "sources": [
+      "https://www.oppo.com/de/smartphones/series-find-x/find-x9-pro/specs/",
+      "https://www.connect.de/testbericht/oppo-find-x9-pro-test-3211862.html"
+    ]
+  },
+  {
+    "id": "oppo-reno16-pro",
+    "brand": "Oppo",
+    "name": "Reno16 Pro 5G",
+    "release": "2026-07",
+    "uvp": 1099,
+    "uvp_by_storage": {
+      "512": 1099
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (ColorOS 16)",
+    "updates_years": 6,
+    "updates_note": "5 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.32,
+      "type": "AMOLED, bis 144 Hz (Spiele)",
+      "resolution": "2640 x 1216",
+      "hz": 144,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 8550 Super",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 50,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch",
+      "front_mp": 50,
+      "summary": "200 MP Haupt (OIS) + 50 MP Tele 3,5x (OIS) + 50 MP Ultraweitwinkel; 50-MP-Selfie mit AF, 4K/60"
+    },
+    "battery_mah": 6000,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 0,
+      "note": "80 W SUPERVOOC Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP68 (lt. Oppo zusätzlich IP69/IP69K)",
+    "weight_g": 188,
+    "dimensions_mm": "151.21 x 72.42 x 8.36",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM / eSIM",
+    "colors": [
+      {
+        "name": "Starlight Black",
+        "hex": "#1d1e22"
+      },
+      {
+        "name": "Pop White",
+        "hex": "#f1f1f3"
+      }
+    ],
+    "highlights": [
+      "Kompakt: 6,32 Zoll",
+      "200 MP + 3,5x-Tele",
+      "6000 mAh in 188 g"
+    ],
+    "pitch": "Kompaktes Vlogging-Handy mit 200-MP-Kamera, Tele und großem Akku in handlichem Format.",
+    "tags": [
+      "compact",
+      "camera",
+      "video"
+    ],
+    "images": [
+      "img/phones/oppo-reno16-pro-1.webp",
+      "img/phones/oppo-reno16-pro-2.webp"
+    ],
+    "image_colors": [
+      "Pop White",
+      "Starlight Black"
+    ],
+    "uncertain": [],
+    "sources": [
+      "https://www.oppo.com/de/smartphones/series-reno/reno16-pro/specs/",
+      "https://www.computerbild.de/artikel/News-Handy-oppo-reno-16-pro-marktstart-preise-deutschland-41017631.html"
+    ]
+  },
+  {
+    "id": "oppo-reno15-pro",
+    "brand": "Oppo",
+    "name": "Reno15 Pro 5G",
+    "release": "2026-01",
+    "uvp": 799,
+    "uvp_by_storage": {
+      "512": 799
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (ColorOS 16)",
+    "updates_years": 6,
+    "updates_note": "5 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.32,
+      "type": "AMOLED, 120 Hz",
+      "resolution": "2640 x 1216",
+      "hz": 120,
+      "peak_nits": 1800
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 8450",
+    "ram_gb": [
+      12
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 50,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch",
+      "front_mp": 50,
+      "summary": "200 MP Haupt (OIS) + 50 MP Tele 3,5x + 50 MP Ultraweitwinkel; 50-MP-Selfie"
+    },
+    "battery_mah": 6200,
+    "charging": {
+      "wired_w": 80,
+      "wireless_w": 0,
+      "note": "80 W SUPERVOOC Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP68/IP69",
+    "weight_g": 187,
+    "dimensions_mm": "151.21 x 72.42 x 7.99",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM / eSIM",
+    "colors": [
+      {
+        "name": "Dusk Black",
+        "hex": "#232327"
+      },
+      {
+        "name": "Aurora Blue",
+        "hex": "#9fc3e0"
+      }
+    ],
+    "highlights": [
+      "Kompakt mit 6200 mAh",
+      "200-MP-Hauptkamera",
+      "IP68/IP69"
+    ],
+    "pitch": "Der Vorgänger des Reno16 Pro – kompakt, kamerastark und inzwischen oft günstiger zu haben.",
+    "tags": [
+      "compact",
+      "camera",
+      "value"
+    ],
+    "images": [
+      "img/phones/oppo-reno15-pro-1.webp"
+    ],
+    "image_colors": [
+      "Dusk Black / Aurora Blue"
+    ],
+    "uncertain": [
+      "uvp",
+      "uvp_by_storage.512"
+    ],
+    "sources": [
+      "https://www.oppo.com/de/smartphones/series-reno/reno15-pro/specs/",
+      "https://www.notebookcheck.com/Das-kompakte-Reno15-Pro-5G-startet-in-Europa.1210884.0.html"
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Smartphone Berater · Saturn Dresden</title>
+  <meta name="description" content="Smartphone-Beratung für Saturn Dresden Altmarkt-Galerie: aktuelle Modelle vergleichen, filtern und passende Empfehlungen finden.">
+  <meta name="theme-color" content="#df0000">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/app.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="hdr">
+    <div class="wrap hdr-in">
+      <a class="brand" href="#/start" aria-label="Smartphone Berater – Startseite">
+        <span class="brand-mark" aria-hidden="true">SB</span>
+        <span class="brand-txt"><b>Smartphone Berater</b><span>Dresden Altmarkt-Galerie</span></span>
+      </a>
+      <form class="hdr-search" role="search">
+        <label class="sr-only" for="q-d">Smartphones suchen</label>
+        <input id="q-d" type="search" placeholder="Modell, Marke oder Chip suchen …" autocomplete="off">
+        <button type="submit" aria-label="Suchen"><span data-ico="search" data-size="18"></span></button>
+      </form>
+      <div class="hdr-actions">
+        <a class="hdr-btn" href="#/vergleich" aria-label="Vergleich"><span data-ico="compare"></span>Vergleich<span class="cnt" id="cnt-cmp" hidden>0</span></a>
+        <a class="hdr-btn" href="#/merkliste" aria-label="Merkliste"><span data-ico="heart"></span>Merkliste<span class="cnt" id="cnt-saved" hidden>0</span></a>
+      </div>
+    </div>
+    <div class="m-search"><div class="wrap">
+      <form class="hdr-search" role="search">
+        <label class="sr-only" for="q-m">Smartphones suchen</label>
+        <input id="q-m" type="search" placeholder="Modell oder Marke suchen …" autocomplete="off">
+        <button type="submit" aria-label="Suchen"><span data-ico="search" data-size="18"></span></button>
+      </form>
+    </div></div>
+  </header>
+  <nav class="nav" aria-label="Hauptnavigation"><div class="wrap nav-in" id="nav"></div></nav>
+
+  <main id="main" tabindex="-1"><div id="view"></div></main>
+
+  <div class="tray" id="tray" hidden aria-live="polite"></div>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <footer class="ftr">
+    <div class="wrap ftr-in">
+      <div><b>Smartphone Berater · Dresden Altmarkt-Galerie</b>
+        <p>Unabhängiges Beratungstool für den Markt vor Ort. Alle Preise sind unverbindliche Preisempfehlungen (UVP) der Hersteller, ohne Gewähr. Technische Daten nach Herstellerangaben; mit * markierte Werte sind nicht vollständig bestätigt. Marken und Produktnamen gehören den jeweiligen Inhabern.</p>
+        <p id="ftr-count"></p></div>
+      <div><b>Entdecken</b><ul><li><a href="#/geraete">Alle Smartphones</a></li><li><a href="#/berater">Smartphone-Berater</a></li><li><a href="#/vergleich">Vergleich</a></li><li><a href="#/chat">Chat</a></li></ul></div>
+      <div><b>Info</b><ul><li><a href="#/hilfe">Hilfe & FAQ</a></li><li><a href="#/bildquellen">Bildquellen</a></li><li><a href="#/merkliste">Merkliste</a></li></ul></div>
+    </div>
+  </footer>
+  <noscript><p style="padding:16px">Bitte aktiviere JavaScript, um den Smartphone Berater zu nutzen.</p></noscript>
+</body>
+</html>

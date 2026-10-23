@@ -1,0 +1,22 @@
+# Bildquellen Apple
+
+| file | device | source URL (page) | direct image URL | licence / rights holder |
+|---|---|---|---|---|
+| public/img/phones/iphone-18-pro-1.webp | iPhone 18 Pro | https://commons.wikimedia.org/wiki/File:IPhone_18_Pro_-_black_01.jpg | https://upload.wikimedia.org/wikipedia/commons/f/f4/IPhone_18_Pro_-_black_01.jpg | CC BY-SA 4.0, Farragutful (Wikimedia Commons) |
+| public/img/phones/iphone-18-pro-2.webp | iPhone 18 Pro | https://commons.wikimedia.org/wiki/File:IPhone_18_Pro_rear.jpg | https://upload.wikimedia.org/wikipedia/commons/8/8a/IPhone_18_Pro_rear.jpg | CC BY-SA 4.0, 茅野ふたば (Wikimedia Commons) |
+| public/img/phones/iphone-18-pro-max-1.webp | iPhone 18 Pro Max | https://commons.wikimedia.org/wiki/File:IPhone_18_Pro_Max_rear.jpg | https://upload.wikimedia.org/wikipedia/commons/3/34/IPhone_18_Pro_Max_rear.jpg | CC BY-SA 4.0, 茅野ふたば (Wikimedia Commons) |
+| public/img/phones/iphone-18-pro-max-2.webp | iPhone 18 Pro Max | https://commons.wikimedia.org/wiki/File:IPhone_18_Pro_Max_black_rear.jpg | https://upload.wikimedia.org/wikipedia/commons/e/eb/IPhone_18_Pro_Max_black_rear.jpg | CC BY-SA 4.0, 茅野ふたば (Wikimedia Commons) |
+| public/img/phones/iphone-duo-1.webp | iPhone Duo | https://commons.wikimedia.org/wiki/File:IPhone_Duo_fold_rear.jpg | https://upload.wikimedia.org/wikipedia/commons/6/6e/IPhone_Duo_fold_rear.jpg | CC BY-SA 4.0, 茅野ふたば (Wikimedia Commons) |
+| public/img/phones/iphone-duo-2.webp | iPhone Duo | https://commons.wikimedia.org/wiki/File:IPhone_Duo_launching_at_Apple_Store_TRX_10.jpg | https://upload.wikimedia.org/wikipedia/commons/d/df/IPhone_Duo_launching_at_Apple_Store_TRX_10.jpg | CC0, Ahmad Ali Karim (Wikimedia Commons) |
+| public/img/phones/iphone-air-1.webp | iPhone Air | https://commons.wikimedia.org/wiki/File:Space_Black_iPhone_Air.jpg | https://upload.wikimedia.org/wikipedia/commons/0/0e/Space_Black_iPhone_Air.jpg | CC0, Ahmad Ali Karim (Wikimedia Commons) |
+| public/img/phones/iphone-air-2.webp | iPhone Air | https://commons.wikimedia.org/wiki/File:Sky_Blue_iPhone_Air.jpg | https://upload.wikimedia.org/wikipedia/commons/4/49/Sky_Blue_iPhone_Air.jpg | CC0, Ahmad Ali Karim (Wikimedia Commons) |
+| public/img/phones/iphone-17-1.webp | iPhone 17 | https://commons.wikimedia.org/wiki/File:Mist_Blue_iPhone_17.jpg | https://upload.wikimedia.org/wikipedia/commons/6/6b/Mist_Blue_iPhone_17.jpg | CC0, Ahmad Ali Karim (Wikimedia Commons) |
+| public/img/phones/iphone-17-2.webp | iPhone 17 | https://commons.wikimedia.org/wiki/File:Sage_iPhone_17.jpg | https://upload.wikimedia.org/wikipedia/commons/b/b2/Sage_iPhone_17.jpg | CC0, Ahmad Ali Karim (Wikimedia Commons) |
+| public/img/phones/iphone-17e-1.webp | iPhone 17e | https://commons.wikimedia.org/wiki/File:IPhone_17e_backside.jpg | https://upload.wikimedia.org/wikipedia/commons/3/39/IPhone_17e_backside.jpg | CC BY-SA 4.0, 茅野ふたば (Wikimedia Commons) |
+| public/img/phones/iphone-17e-2.webp | iPhone 17e | https://commons.wikimedia.org/wiki/File:IPhone_17e_Soft_Pink_Model_-_1.jpg | https://upload.wikimedia.org/wikipedia/commons/b/b1/IPhone_17e_Soft_Pink_Model_-_1.jpg | CC BY-SA 4.0, Kyu3a (Wikimedia Commons) |
+| public/img/phones/iphone-17-pro-1.webp | iPhone 17 Pro | https://commons.wikimedia.org/wiki/File:IPhone_17_Pro_backside_(Cosmic_Orange)_(Oct_1,_2025).jpg | https://upload.wikimedia.org/wikipedia/commons/3/38/IPhone_17_Pro_backside_%28Cosmic_Orange%29_%28Oct_1%2C_2025%29.jpg | CC BY-SA 4.0, 茅野ふたば (Wikimedia Commons) |
+| public/img/phones/iphone-17-pro-2.webp | iPhone 17 Pro | https://commons.wikimedia.org/wiki/File:IPhone_17_Pro_backside_(Deep_Blue)_(Oct_1,_2025).jpg | https://upload.wikimedia.org/wikipedia/commons/a/a5/IPhone_17_Pro_backside_%28Deep_Blue%29_%28Oct_1%2C_2025%29.jpg | CC BY-SA 4.0, 茅野ふたば (Wikimedia Commons) |
+| public/img/phones/iphone-16-1.webp | iPhone 16 | https://commons.wikimedia.org/wiki/File:IPhone_16_Ultramarine_Rear.png | https://upload.wikimedia.org/wikipedia/commons/a/a0/IPhone_16_Ultramarine_Rear.png | CC BY 4.0, Padgriffin (Wikimedia Commons) |
+| public/img/phones/iphone-16-2.webp | iPhone 16 | https://commons.wikimedia.org/wiki/File:Back_view_of_iPhone_16_Ultramarine.jpg | https://upload.wikimedia.org/wikipedia/commons/b/bf/Back_view_of_iPhone_16_Ultramarine.jpg | CC BY-SA 4.0, メイド理世 (Wikimedia Commons) |
+
+Alle Bilder: Thumbnails von upload.wikimedia.org, ggf. zugeschnitten und auf max. 600 px als WEBP konvertiert. CC BY / CC BY-SA erfordern Namensnennung (Autor + Lizenz); bei CC BY-SA gilt Weitergabe unter gleichen Bedingungen für die bearbeiteten Dateien.

@@ -1,0 +1,674 @@
+[
+  {
+    "id": "nothing-phone-3",
+    "brand": "Nothing",
+    "name": "Phone (3)",
+    "release": "2025-07",
+    "uvp": 799,
+    "uvp_by_storage": {
+      "256": 799,
+      "512": 899
+    },
+    "os": "Android",
+    "os_launch": "Android 15 (Nothing OS 3.5)",
+    "updates_years": 7,
+    "updates_note": "5 Android-Upgrades, 7 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.67,
+      "type": "OLED, 1–120 Hz, HDR10+",
+      "resolution": "2800 x 1260",
+      "hz": 120,
+      "peak_nits": 4500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8s Gen 4",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": 50,
+      "tele_zoom": "3x optisch (Periskop)",
+      "front_mp": 50,
+      "summary": "Drei 50-MP-Kameras inkl. 3x-Periskop-Tele, 50-MP-Selfie"
+    },
+    "battery_mah": 5150,
+    "charging": {
+      "wired_w": 65,
+      "wireless_w": 15,
+      "note": "65 W Kabel, 15 W kabellos, 5 W Reverse Wireless"
+    },
+    "ip": "IP68",
+    "weight_g": 218,
+    "dimensions_mm": "160.6 x 75.6 x 9.0",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Weiß",
+        "hex": "#e9e9e7"
+      },
+      {
+        "name": "Schwarz",
+        "hex": "#1f1f21"
+      }
+    ],
+    "highlights": [
+      "Glyph Matrix (LED-Display auf der Rückseite)",
+      "3x-Periskop-Tele mit 50 MP",
+      "5 Jahre Android-Upgrades"
+    ],
+    "pitch": "Nothings Flaggschiff mit markantem transparentem Design, Glyph-Matrix-Rückseite, starker Triple-Kamera und kabellosem Laden.",
+    "tags": [
+      "camera",
+      "everyday",
+      "business",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/nothing-phone-3-1.webp",
+      "img/phones/nothing-phone-3-2.webp"
+    ],
+    "image_colors": [
+      "Schwarz",
+      "Weiß"
+    ],
+    "uncertain": [
+      "uvp_by_storage.512",
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/nothing_phone_(3)_5g-13969.php",
+      "https://at.nothing.tech/products/phone-3"
+    ]
+  },
+  {
+    "id": "nothing-phone-4a-pro",
+    "brand": "Nothing",
+    "name": "Phone (4a) Pro",
+    "release": "2026-03",
+    "uvp": 479,
+    "uvp_by_storage": {
+      "128": 479,
+      "256": 549
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Nothing OS 4.1)",
+    "updates_years": 6,
+    "updates_note": "3 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.83,
+      "type": "AMOLED, 144 Hz, HDR10+",
+      "resolution": "2800 x 1260",
+      "hz": 144,
+      "peak_nits": 5000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 7 Gen 4",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch (Periskop)",
+      "front_mp": 32,
+      "summary": "50-MP-Hauptkamera + 50-MP-Periskop (3,5x) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 5080,
+    "charging": {
+      "wired_w": 50,
+      "wireless_w": 0,
+      "note": "50 W Kabel (50 % in ca. 22 Min.), 7,5 W Reverse kabelgebunden; kein kabelloses Laden"
+    },
+    "ip": "IP65",
+    "weight_g": 210,
+    "dimensions_mm": "163.7 x 76.6 x 8.0",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (Dual-SIM)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#1d1d1f"
+      },
+      {
+        "name": "Silber",
+        "hex": "#d9dadc"
+      },
+      {
+        "name": "Pink",
+        "hex": "#efc9d3"
+      }
+    ],
+    "highlights": [
+      "Aluminium-Unibody, 8 mm dünn",
+      "3,5x-Periskop-Tele",
+      "144-Hz-Display mit 5000 nits Spitzenhelligkeit"
+    ],
+    "pitch": "Edles Mittelklasse-Gerät im Alu-Unibody mit Periskop-Zoom und sehr hellem 144-Hz-Display – viel Ausstattung unter 550 €.",
+    "tags": [
+      "camera",
+      "value",
+      "everyday",
+      "gaming"
+    ],
+    "images": [
+      "img/phones/nothing-phone-4a-pro-1.webp",
+      "img/phones/nothing-phone-4a-pro-2.webp",
+      "img/phones/nothing-phone-4a-pro-3.webp"
+    ],
+    "image_colors": [
+      "Schwarz",
+      "Silber",
+      "Pink"
+    ],
+    "uncertain": [
+      "updates_years",
+      "esim"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/nothing_phone_(4a)_pro_5g-14529.php",
+      "https://at.nothing.tech/products/phone-4a-pro",
+      "https://www.ots.at/presseaussendung/OTS_20260327_OTS0057/nothing-phone-4a-pro-ab-sofort-erhaeltlich",
+      "https://www.connect.de/news/nothing-phone-4a-pro-preis-specs-release-3212020.html"
+    ]
+  },
+  {
+    "id": "nothing-phone-4a",
+    "brand": "Nothing",
+    "name": "Phone (4a)",
+    "release": "2026-03",
+    "uvp": 349,
+    "uvp_by_storage": {
+      "128": 349,
+      "256": 429
+    },
+    "os": "Android",
+    "os_launch": "Android 16 (Nothing OS 4.1)",
+    "updates_years": 6,
+    "updates_note": "3 Android-Upgrades, 6 Jahre Sicherheitsupdates (Herstellerangabe lt. Presse)",
+    "display": {
+      "size_in": 6.78,
+      "type": "AMOLED, 30–120 Hz, HDR10+",
+      "resolution": "2720 x 1224",
+      "hz": 120,
+      "peak_nits": 4500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 7s Gen 4",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": 50,
+      "tele_zoom": "3,5x optisch (Periskop)",
+      "front_mp": 32,
+      "summary": "50-MP-Hauptkamera + 50-MP-Periskop (3,5x) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 5080,
+    "charging": {
+      "wired_w": 50,
+      "wireless_w": 0,
+      "note": "50 W Kabel; kein kabelloses Laden. 8/256 GB (389 €) nur bei Amazon"
+    },
+    "ip": "IP64",
+    "weight_g": 204.5,
+    "dimensions_mm": "164.0 x 77.6 x 8.6",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM (kein eSIM in DE)",
+    "colors": [
+      {
+        "name": "Schwarz",
+        "hex": "#1d1d1f"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#eeeeec"
+      },
+      {
+        "name": "Pink",
+        "hex": "#efc9d3"
+      },
+      {
+        "name": "Blau",
+        "hex": "#1f7fae"
+      }
+    ],
+    "highlights": [
+      "Periskop-Tele schon ab 349 €",
+      "Glyph Bar mit 63 LEDs",
+      "5080-mAh-Akku, 50 W"
+    ],
+    "pitch": "Preis-Leistungs-Tipp mit auffälligem Transparent-Design, 3,5x-Periskop-Zoom und großem 120-Hz-Display.",
+    "tags": [
+      "value",
+      "camera",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/nothing-phone-4a-1.webp",
+      "img/phones/nothing-phone-4a-2.webp",
+      "img/phones/nothing-phone-4a-3.webp",
+      "img/phones/nothing-phone-4a-4.webp"
+    ],
+    "image_colors": [
+      "Weiß",
+      "Schwarz",
+      "Blau",
+      "Pink"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/nothing_phone_(4a)_5g-14503.php",
+      "https://at.nothing.tech/products/phone-4a",
+      "https://www.ots.at/presseaussendung/OTS_20260313_OTS0063/nothing-phone-4a-und-headphone-a-jetzt-erhaeltlich-ueber-200-eur-preisvorteil-bei-community-drop-events",
+      "https://www.notebookcheck.com/Nothing-Phone-4a-Smartphone-mit-Snapdragon-SoC-und-Glyph-Bar-startet-ab-349-Euro.1243177.0.html"
+    ]
+  },
+  {
+    "id": "cmf-phone-2-pro",
+    "brand": "Nothing",
+    "name": "CMF Phone 2 Pro",
+    "release": "2025-05",
+    "uvp": 249,
+    "uvp_by_storage": {
+      "128": 249,
+      "256": 279
+    },
+    "os": "Android",
+    "os_launch": "Android 15 (Nothing OS 3.2)",
+    "updates_years": 6,
+    "updates_note": "3 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.77,
+      "type": "AMOLED, 120 Hz, HDR10+",
+      "resolution": "2392 x 1080",
+      "hz": 120,
+      "peak_nits": 3000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 7300 Pro",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": 50,
+      "tele_zoom": "2x optisch",
+      "front_mp": 16,
+      "summary": "50-MP-Hauptkamera + 50-MP-Tele (2x) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 33,
+      "wireless_w": 0,
+      "note": "33 W Kabel, 5 W Reverse kabelgebunden"
+    },
+    "ip": "IP54",
+    "weight_g": 185,
+    "dimensions_mm": "164.0 x 78.0 x 7.8",
+    "five_g": true,
+    "esim": "Nano-SIM + Nano-SIM",
+    "colors": [
+      {
+        "name": "Orange",
+        "hex": "#f25a1d"
+      },
+      {
+        "name": "Hellgrün",
+        "hex": "#c9d9a8"
+      },
+      {
+        "name": "Schwarz",
+        "hex": "#222222"
+      },
+      {
+        "name": "Weiß",
+        "hex": "#ececec"
+      }
+    ],
+    "highlights": [
+      "Tele-Kamera unter 300 €",
+      "Wechselbare Rückseite & Zubehör",
+      "Leicht: nur 185 g"
+    ],
+    "pitch": "Günstiges, leichtes Einsteiger-Smartphone von Nothings Zweitmarke CMF – mit Tele-Kamera und modularem Zubehör.",
+    "tags": [
+      "value",
+      "everyday",
+      "battery"
+    ],
+    "images": [
+      "img/phones/nothing-cmf-phone-2-pro-1.webp"
+    ],
+    "image_colors": [
+      "Orange"
+    ],
+    "uncertain": [
+      "uvp_by_storage.256",
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/nothing_cmf_phone_2_pro_5g-13821.php",
+      "https://at.nothing.tech/products/cmf-phone-2-pro"
+    ]
+  },
+  {
+    "id": "sony-xperia-1-viii",
+    "brand": "Sony",
+    "name": "Xperia 1 VIII",
+    "release": "2026-06",
+    "uvp": 1499,
+    "uvp_by_storage": {
+      "256": 1499,
+      "1024": 1999
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": 6,
+    "updates_note": "4 Android-Upgrades, 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.5,
+      "type": "LTPO OLED, 1–120 Hz",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": null
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 8 Elite Gen 5",
+    "ram_gb": [
+      12,
+      16
+    ],
+    "storage_gb": [
+      256,
+      1024
+    ],
+    "camera": {
+      "main_mp": 48,
+      "ultrawide_mp": 48,
+      "tele_mp": 48,
+      "tele_zoom": "2,9x optisch (70 mm, Periskop)",
+      "front_mp": 12,
+      "summary": "Drei 48-MP-Kameras, neue Tele mit großem 1/1,56″-Sensor"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 15,
+      "note": "30 W Kabel (50 % in ca. 30 Min.), 15 W kabellos, Reverse Wireless"
+    },
+    "ip": "IP65/IP68",
+    "weight_g": 200,
+    "dimensions_mm": "162.0 x 74.0 x 8.3",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Graphitschwarz",
+        "hex": "#2a2a2c"
+      },
+      {
+        "name": "Granatrot",
+        "hex": "#6e1f2c"
+      },
+      {
+        "name": "Iolith-Silber",
+        "hex": "#c9c8d2"
+      },
+      {
+        "name": "Natives Gold",
+        "hex": "#c8a96a"
+      }
+    ],
+    "highlights": [
+      "3,5-mm-Klinke und microSD bis 2 TB",
+      "Kamera-Auslösetaste & KI-Kameraassistent",
+      "Bis zu 2 Tage Akkulaufzeit (Herstellerangabe)"
+    ],
+    "pitch": "Sonys Flaggschiff für Foto-, Video- und Audio-Fans: Kamerataste, Klinkenbuchse, microSD und ein Profi-Teleobjektiv.",
+    "tags": [
+      "camera",
+      "video",
+      "business",
+      "battery"
+    ],
+    "images": [
+      "img/phones/sony-xperia-1-viii-1.webp",
+      "img/phones/sony-xperia-1-viii-2.webp",
+      "img/phones/sony-xperia-1-viii-3.webp"
+    ],
+    "image_colors": [
+      "Graphitschwarz",
+      "Granatrot",
+      "Iolith-Silber"
+    ],
+    "uncertain": [
+      "uvp",
+      "uvp_by_storage.1024",
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/sony_xperia_1_viii_5g-14660.php",
+      "https://www.sony.de/smartphones/products/xperia-1m8",
+      "https://www.vodafone.de/featured/article/sony-xperia-1-viii-release-preis-ausstattung-245883"
+    ]
+  },
+  {
+    "id": "sony-xperia-10-viii",
+    "brand": "Sony",
+    "name": "Xperia 10 VIII",
+    "release": "2026-09",
+    "uvp": 599,
+    "uvp_by_storage": {
+      "128": 599
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": 6,
+    "updates_note": "bis zu 4 Android-Upgrades, bis zu 6 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.1,
+      "type": "OLED, 120 Hz",
+      "resolution": "2340 x 1080",
+      "hz": 120,
+      "peak_nits": null
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 6 Gen 3",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      128
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 13,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 8,
+      "summary": "50-MP-Hauptkamera (1/1,56″) + 13-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": null,
+      "wireless_w": 0,
+      "note": "Laden per USB-C PD (Leistung nicht angegeben), kein kabelloses Laden"
+    },
+    "ip": "IP65/IP68",
+    "weight_g": 168,
+    "dimensions_mm": "153.0 x 72.0 x 8.3",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Frozen White",
+        "hex": "#e3ece8"
+      },
+      {
+        "name": "Frosted Grey",
+        "hex": "#a9adb1"
+      },
+      {
+        "name": "Misty Lilac",
+        "hex": "#d9cfe3"
+      }
+    ],
+    "highlights": [
+      "Kompakt & leicht (168 g)",
+      "3,5-mm-Klinke, microSD, Kamera-Auslöser",
+      "IP68 und 5000 mAh"
+    ],
+    "pitch": "Handliches Mittelklasse-Gerät mit langer Akkulaufzeit, Klinke und microSD – ideal für alle, die es kompakt mögen.",
+    "tags": [
+      "compact",
+      "battery",
+      "everyday",
+      "senior"
+    ],
+    "images": [
+      "img/phones/sony-xperia-10-viii-1.webp",
+      "img/phones/sony-xperia-10-viii-2.webp"
+    ],
+    "image_colors": [
+      "Frozen White",
+      "Misty Lilac"
+    ],
+    "uncertain": [
+      "charging.wired_w",
+      "display.peak_nits"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/sony_xperia_10_viii_5g-14894.php",
+      "https://www.sony.de/smartphones/products/xperia-10m8",
+      "https://www.notebookcheck.com/Sony-Xperia-10-VIII-startet-mit-zwei-Upgrades-und-neuen-Farben-zum-deutlich-hoeheren-Preis.1377771.0.html"
+    ]
+  },
+  {
+    "id": "fairphone-gen-6",
+    "brand": "Fairphone",
+    "name": "Fairphone (Gen. 6)",
+    "release": "2025-06",
+    "uvp": 599,
+    "uvp_by_storage": {
+      "256": 599
+    },
+    "os": "Android",
+    "os_launch": "Android 15",
+    "updates_years": 8,
+    "updates_note": "8 Android-Versionen, Software-Support bis 2033 (Herstellerangabe)",
+    "display": {
+      "size_in": 6.31,
+      "type": "LTPO OLED, 10–120 Hz",
+      "resolution": "2484 x 1116",
+      "hz": 120,
+      "peak_nits": 1400
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 7s Gen 3",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 13,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 32,
+      "summary": "50-MP-Hauptkamera (Sony, OIS) + 13-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 4415,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 0,
+      "note": "30 W Kabel (50 % in ca. 25 Min.); Akku vom Nutzer wechselbar"
+    },
+    "ip": "IP55",
+    "weight_g": 193,
+    "dimensions_mm": "156.5 x 73.3 x 9.6",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Forest Green",
+        "hex": "#24493c"
+      },
+      {
+        "name": "Horizon Black",
+        "hex": "#2a2a2a"
+      },
+      {
+        "name": "Cloud White",
+        "hex": "#ececea"
+      }
+    ],
+    "highlights": [
+      "Selbst reparierbar: 12 Ersatzteil-Module",
+      "Wechselbarer Akku",
+      "8 Android-Versionen / Support bis 2033"
+    ],
+    "pitch": "Das nachhaltige Smartphone: fair produziert, modular aufgebaut und mit bis zu 8 Jahren Updates außergewöhnlich langlebig.",
+    "tags": [
+      "sustainable",
+      "everyday",
+      "business",
+      "senior"
+    ],
+    "images": [
+      "img/phones/fairphone-gen-6-1.webp",
+      "img/phones/fairphone-gen-6-2.webp",
+      "img/phones/fairphone-gen-6-3.webp"
+    ],
+    "image_colors": [
+      "Forest Green",
+      "Horizon Black",
+      "Cloud White"
+    ],
+    "uncertain": [
+      "uvp",
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.gsmarena.com/fairphone_6-13955.php",
+      "https://www.fairphone.com/the-fairphone-gen-6",
+      "https://support.fairphone.com/hc/en-us/articles/38143804162578-Release-date-model-comparison-and-availability-for-The-Fairphone-Gen-6"
+    ]
+  }
+]

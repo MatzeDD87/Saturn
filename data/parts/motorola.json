@@ -1,0 +1,367 @@
+[
+  {
+    "id": "motorola-razr-70-ultra",
+    "brand": "Motorola",
+    "name": "razr 70 ultra",
+    "release": "2026-04",
+    "uvp": 1399,
+    "uvp_by_storage": {
+      "512": 1399
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": 5,
+    "updates_note": "3 Android-Upgrades, 5 Jahre Sicherheitsupdates",
+    "display": {
+      "size_in": 6.96,
+      "type": "LTPO Extreme AMOLED (faltbar), 165 Hz, Dolby Vision",
+      "resolution": "2992 x 1224",
+      "hz": 165,
+      "peak_nits": 5000
+    },
+    "foldable": true,
+    "cover_display_in": 4.0,
+    "chip": "Qualcomm Snapdragon 8 Elite",
+    "ram_gb": [
+      16
+    ],
+    "storage_gb": [
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 50,
+      "summary": "50 MP (OIS, 1/1,56″) + 50-MP-Ultraweitwinkel, 8K-Video; 50-MP-Selfie"
+    },
+    "battery_mah": 5000,
+    "charging": {
+      "wired_w": 68,
+      "wireless_w": 30,
+      "note": "68 W TurboPower Kabel, 30 W kabellos, 5 W Reverse Wireless"
+    },
+    "ip": "IP48",
+    "weight_g": 199,
+    "dimensions_mm": "171.48 x 73.99 x 7.19 (zugeklappt 88.12 x 73.99 x 15.69)",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Cocoa (Holz)",
+        "hex": "#614f43"
+      },
+      {
+        "name": "Orient Blue (Alcantara)",
+        "hex": "#3d4161"
+      }
+    ],
+    "highlights": [
+      "4″-Außendisplay mit 165 Hz",
+      "Echtholz- bzw. Alcantara-Rückseite",
+      "30 W kabelloses Laden"
+    ],
+    "pitch": "Edles Klapp-Smartphone mit großem 4-Zoll-Außendisplay, Top-Chip und hochwertigen Materialien wie Holz und Alcantara.",
+    "tags": [
+      "camera",
+      "business",
+      "compact"
+    ],
+    "images": [
+      "img/phones/motorola-razr-70-ultra-1.webp",
+      "img/phones/motorola-razr-70-ultra-2.webp"
+    ],
+    "image_colors": [
+      "Cocoa (Holz)",
+      "Orient Blue (Alcantara)"
+    ],
+    "uncertain": [],
+    "sources": [
+      "https://www.motorola.com/de/de/p/phones/razr/razr-70-ultra/pmipmjk44m2",
+      "https://www.computerbase.de/news/smartphones/motorola-razr-70-70-plus-und-70-ultra-neue-flip-phones-variieren-preis-und-leistung.97049/",
+      "https://www.handyhase.de/motorola/razr-70-ultra/"
+    ]
+  },
+  {
+    "id": "motorola-edge-70",
+    "brand": "Motorola",
+    "name": "edge 70",
+    "release": "2025-11",
+    "uvp": 799.99,
+    "uvp_by_storage": {
+      "512": 799.99
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": null,
+    "updates_note": "Update-Zusage lt. Hersteller (Dauer bitte im Markt erfragen)",
+    "display": {
+      "size_in": 6.67,
+      "type": "pOLED, bis 120 Hz, HDR10+",
+      "resolution": "2712 x 1220",
+      "hz": 120,
+      "peak_nits": 4500
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 7 Gen 4",
+    "ram_gb": [
+      8,
+      12
+    ],
+    "storage_gb": [
+      256,
+      512
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 50,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 50,
+      "summary": "50 MP (OIS) + 50-MP-Ultraweitwinkel mit Makro; 50-MP-Selfie mit 4K"
+    },
+    "battery_mah": 4800,
+    "charging": {
+      "wired_w": 68,
+      "wireless_w": 15,
+      "note": "68 W TurboPower Kabel, 15 W kabellos; Silizium-Kohlenstoff-Akku"
+    },
+    "ip": "IP68/IP69, MIL-STD-810H",
+    "weight_g": 159,
+    "dimensions_mm": "159 x 74 x 5.99",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Gadget Grey",
+        "hex": "#454a4c"
+      },
+      {
+        "name": "Bronze Green",
+        "hex": "#56644e"
+      },
+      {
+        "name": "Lily Pad",
+        "hex": "#7e8f84"
+      },
+      {
+        "name": "Cloud Dancer",
+        "hex": "#f0eee9"
+      }
+    ],
+    "highlights": [
+      "Nur 5,99 mm dünn und 159 g leicht",
+      "IP68/IP69 trotz Ultra-Slim-Design",
+      "Kabelloses Laden"
+    ],
+    "pitch": "Ultradünnes Design-Smartphone mit drei 50-MP-Kameras, robustem IP69-Schutz und kabellosem Laden – die Android-Alternative zum iPhone Air.",
+    "tags": [
+      "everyday",
+      "camera",
+      "business",
+      "compact"
+    ],
+    "images": [
+      "img/phones/motorola-edge-70-1.webp",
+      "img/phones/motorola-edge-70-2.webp",
+      "img/phones/motorola-edge-70-3.webp",
+      "img/phones/motorola-edge-70-4.webp"
+    ],
+    "image_colors": [
+      "Gadget Grey",
+      "Bronze Green",
+      "Lily Pad",
+      "Cloud Dancer"
+    ],
+    "uncertain": [
+      "uvp_by_storage.256",
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.motorola.com/de/de/p/phones/motorola-edge/motorola-edge-70/pmipmjc43m9",
+      "https://www.notebookcheck.com/Motorola-Edge-70-startet-in-Deutschland-mit-300-Euro-Launch-Rabatt-und-drei-50-MP-Kameras-im-5-99-mm-duennen-Gehaeuse.1150269.0.html",
+      "https://www.computerbild.de/artikel/Tests-Handy-Motorola-Edge-70-Superduenn-iphone-00490-40507759.html"
+    ]
+  },
+  {
+    "id": "moto-g87",
+    "brand": "Motorola",
+    "name": "moto g87",
+    "release": "2026-04",
+    "uvp": 399,
+    "uvp_by_storage": {
+      "256": 399
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": null,
+    "updates_note": "Update-Zusage lt. Hersteller (Dauer bitte im Markt erfragen)",
+    "display": {
+      "size_in": 6.78,
+      "type": "Extreme AMOLED, 120 Hz",
+      "resolution": "2772 x 1272",
+      "hz": 120,
+      "peak_nits": 5000
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "MediaTek Dimensity 6400",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      256
+    ],
+    "camera": {
+      "main_mp": 200,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 32,
+      "summary": "200-MP-Hauptkamera (OIS, 2x verlustfreier Zoom) + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 5200,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 0,
+      "note": "30 W TurboPower Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP66/IP68/IP69, MIL-STD-810H",
+    "weight_g": 183,
+    "dimensions_mm": "164.58 x 77.37 x 7.38",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM (+ microSD bis 2 TB)",
+    "colors": [
+      {
+        "name": "Overture",
+        "hex": "#3f4251"
+      },
+      {
+        "name": "Blue Atoll",
+        "hex": "#00b5d7"
+      }
+    ],
+    "highlights": [
+      "200-MP-Kamera mit OIS",
+      "Sehr helles 5000-nits-AMOLED",
+      "microSD-Slot bis 2 TB"
+    ],
+    "pitch": "Robuste Mittelklasse mit 200-MP-Kamera, hellem AMOLED-Display und Speicherkarten-Slot zum fairen Preis.",
+    "tags": [
+      "value",
+      "camera",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/moto-g87-1.webp",
+      "img/phones/moto-g87-2.webp"
+    ],
+    "image_colors": [
+      "Overture",
+      "Blue Atoll"
+    ],
+    "uncertain": [
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.motorola.com/de/de/p/phones/moto-g/87/pmipmjh44mo",
+      "https://www.nextpit.de/handys/motorola-moto-g87",
+      "https://www.notebookcheck.com/Motorola-Moto-G87-5G-startet-mit-200-MP-und-5-000-Nits-in-die-Mittelklasse.1284819.0.html"
+    ]
+  },
+  {
+    "id": "moto-g57-power",
+    "brand": "Motorola",
+    "name": "moto g57 power",
+    "release": "2025-11",
+    "uvp": 249,
+    "uvp_by_storage": {
+      "256": 249
+    },
+    "os": "Android",
+    "os_launch": "Android 16",
+    "updates_years": null,
+    "updates_note": "Update-Zusage lt. Hersteller (Dauer bitte im Markt erfragen)",
+    "display": {
+      "size_in": 6.72,
+      "type": "LCD, 120 Hz",
+      "resolution": "2400 x 1080",
+      "hz": 120,
+      "peak_nits": 1050
+    },
+    "foldable": false,
+    "cover_display_in": null,
+    "chip": "Qualcomm Snapdragon 6s Gen 4",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      256
+    ],
+    "camera": {
+      "main_mp": 50,
+      "ultrawide_mp": 8,
+      "tele_mp": null,
+      "tele_zoom": null,
+      "front_mp": 8,
+      "summary": "50 MP Sony LYTIA 600 + 8-MP-Ultraweitwinkel"
+    },
+    "battery_mah": 7000,
+    "charging": {
+      "wired_w": 30,
+      "wireless_w": 0,
+      "note": "30 W TurboPower Kabel; kein kabelloses Laden"
+    },
+    "ip": "IP64, MIL-STD-810H",
+    "weight_g": 210.6,
+    "dimensions_mm": "166.23 x 76.50 x 8.60",
+    "five_g": true,
+    "esim": "Nano-SIM + eSIM",
+    "colors": [
+      {
+        "name": "Corsair",
+        "hex": "#2d5f74"
+      },
+      {
+        "name": "Pink Lemonade",
+        "hex": "#fa7b95"
+      },
+      {
+        "name": "Fluidity",
+        "hex": "#62b4b8"
+      }
+    ],
+    "highlights": [
+      "Riesiger 7000-mAh-Akku (bis 60 Std.)",
+      "3,5-mm-Klinke & UKW-Radio",
+      "5G unter 250 €"
+    ],
+    "pitch": "Akku-Monster für Sparfüchse: 7000 mAh, Klinkenbuchse und 5G für rund 250 €.",
+    "tags": [
+      "battery",
+      "value",
+      "senior",
+      "everyday"
+    ],
+    "images": [
+      "img/phones/moto-g57-power-1.webp",
+      "img/phones/moto-g57-power-2.webp",
+      "img/phones/moto-g57-power-3.webp"
+    ],
+    "image_colors": [
+      "Corsair",
+      "Pink Lemonade",
+      "Fluidity"
+    ],
+    "uncertain": [
+      "uvp",
+      "updates_years"
+    ],
+    "sources": [
+      "https://www.motorola.com/de/de/p/phones/moto-g/57-power/pmipmjf43ml",
+      "https://www.notebookcheck.com/Motorola-Moto-G57-Power-startet-in-Deutschland-fuer-250-Euro-mit-7-000-mAh-Akku-und-AUX.1155901.0.html"
+    ]
+  }
+]

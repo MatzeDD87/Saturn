@@ -1,0 +1,5 @@
+{
+  "_hinweis": "Optional: feste Produkt-URLs je Shop und Geräte-ID. Haben Vorrang vor der Suche. Beispiel: \"s25u\": \"https://www.saturn.de/de/product/_samsung-galaxy-s25-ultra-....html\"",
+  "saturn": {},
+  "mediamarkt": {}
+}

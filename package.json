@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "start": "node server.js",
     "dev": "node server.js",
+    "test": "node --test \"test/*.test.js\"",
     "scrape": "node scraper.js"
   },
   "dependencies": {

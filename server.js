@@ -12,7 +12,7 @@ const GU = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:gen
 const PHONES_FILE = new URL('./public/data/phones.json', import.meta.url);
 const SOURCES_FILE = new URL('./data/image_sources.md', import.meta.url);
 
-const SYSTEM_BASE = 'Du bist Smartphone-Berater im Saturn Altmarkt-Galerie Dresden. Deutsch, per Du, kompetent. Max 3-4 Sätze. ' +
+const SYSTEM_BASE = 'Du bist MAX, der KI-Smartphone-Berater in einer Demo-App für MediaMarkt und Saturn. Du sprichst Deutsch, duzt, bist freundlich, ehrlich und kompetent wie ein erfahrener Fachverkäufer. Antworte in höchstens 3-4 Sätzen und frag nach, wenn Budget oder Einsatzzweck fehlen. ' +
   'Preise sind UVP bzw. Richtpreise ohne Gewähr, keine Lagerbestände oder Aktionen erfinden. ' +
   'Empfiehl vorrangig Geräte aus dem SORTIMENT; für Verfügbarkeit verweise auf die Kolleginnen und Kollegen im Markt.\n';
 const SYSTEM_MAX = 6000;
@@ -20,7 +20,7 @@ const SYSTEM_MAX = 6000;
 // --- Sortiment für den Chat-Prompt aus public/data/phones.json (wird bei Dateiänderung neu gebaut) ---
 const num = (n) => (Number.isFinite(n) ? n.toLocaleString('de-DE') : null);
 function phoneLine(p, detail) {
-  const parts = [`${p.brand} ${p.name}`, p.uvp ? `${num(p.uvp)}€` : 'Preis k.A.', p.os];
+  const parts = [String(p.name).toLowerCase().startsWith(String(p.brand).toLowerCase()) ? p.name : `${p.brand} ${p.name}`, p.uvp ? `${num(p.uvp)}€` : 'Preis k.A.', p.os];
   if (detail >= 1) {
     if (p.display?.size_in) parts.push(`${num(p.display.size_in)}"${p.foldable ? ' faltbar' : ''}`);
     if (p.camera?.main_mp) parts.push(`${p.camera.main_mp}MP${p.camera.tele_mp ? '+Tele' + (p.camera.tele_zoom ? ' ' + String(p.camera.tele_zoom).replace(/\s*optisch/i, '') : '') : ''}`);
@@ -59,6 +59,7 @@ app.disable('x-powered-by');
 app.use(express.json({ limit: '20kb' }));
 app.use('/img', express.static('public/img', { maxAge: '7d', fallthrough: false }));
 app.use(express.static('public', { maxAge: 0 }));
+app.get('/data/image_sources.md', (req, res) => res.redirect('/api/image-sources'));
 
 const aiLimit = rateLimit({ windowMs: 60_000, limit: 20, standardHeaders: true, legacyHeaders: false,
   message: { error: 'Zu viele Anfragen, bitte kurz warten.' } });
@@ -105,7 +106,7 @@ app.post('/api/price', async (req, res) => {
   if (typeof name !== 'string' || !/^[\p{L}\p{N} .+\-()]{2,80}$/u.test(name)) return res.status(400).json({ error: 'Ungültiger Produktname.' });
   try {
     const t = await gemini({ contents: [{ role: 'user', parts: [{ text:
-      `Aktueller Preis "${name}" bei Saturn Deutschland. Antworte NUR als JSON: {"preis":"XXX €","quelle":"saturn.de","hinweis":"kurz","gefunden":true}` }] }],
+      `Aktueller Preis "${name}" bei MediaMarkt oder Saturn in Deutschland (mediamarkt.de, saturn.de). Antworte NUR als JSON: {"preis":"XXX €","quelle":"mediamarkt.de oder saturn.de","hinweis":"kurz","gefunden":true}` }] }],
       tools: [{ google_search: {} }], generationConfig: { temperature: 0.1, maxOutputTokens: 300 } });
     let p;
     try { p = JSON.parse(t.replace(/```json|```/g, '').trim()); }

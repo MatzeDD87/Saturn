@@ -4,7 +4,7 @@ let checked = false;
 
 export async function checkStatus() {
   try {
-    const r = await fetch('/api/status', { cache: 'no-store' });
+    const r = await fetch('api/status', { cache: 'no-store' });
     ai = r.ok && (await r.json()).ai === true;
   } catch { ai = false; }
   checked = true;
@@ -27,5 +27,5 @@ async function post(url, body, timeoutMs = 30000) {
   } finally { clearTimeout(t); }
 }
 
-export const chat = (history) => post('/api/chat', { history });
-export const checkPrice = (name) => post('/api/price', { name: name.replace(/[^\p{L}\p{N} .+\-()]/gu, ' ').replace(/\s+/g, ' ').trim().slice(0, 80) });
+export const chat = (history) => post('api/chat', { history });
+export const checkPrice = (name) => post('api/price', { name: name.replace(/[^\p{L}\p{N} .+\-()]/gu, ' ').replace(/\s+/g, ' ').trim().slice(0, 80) });

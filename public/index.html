@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Smartphone Berater · Saturn Dresden</title>
-  <meta name="description" content="Smartphone-Beratung für Saturn Dresden Altmarkt-Galerie: aktuelle Modelle vergleichen, filtern und passende Empfehlungen finden.">
+  <title>Smartphone Berater · MediaMarkt Saturn</title>
+  <meta name="description" content="Smartphone-Berater mit KI-Berater MAX: aktuelle Modelle vergleichen, filtern und die passende Empfehlung finden. Inoffizielle Demo für MediaMarkt Saturn.">
   <meta name="theme-color" content="#df0000">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/app.css">
   <script type="module" src="js/main.js"></script>
 </head>
@@ -16,7 +17,7 @@
     <div class="wrap hdr-in">
       <a class="brand" href="#/start" aria-label="Smartphone Berater – Startseite">
         <span class="brand-mark" aria-hidden="true">SB</span>
-        <span class="brand-txt"><b>Smartphone Berater</b><span>Dresden Altmarkt-Galerie</span></span>
+        <span class="brand-txt"><b>Smartphone Berater</b><span>MediaMarkt · Saturn</span></span>
       </a>
       <form class="hdr-search" role="search">
         <label class="sr-only" for="q-d">Smartphones suchen</label>
@@ -40,15 +41,16 @@
 
   <main id="main" tabindex="-1"><div id="view"></div></main>
 
+  <a class="max-fab" id="max-fab" href="#/chat" aria-label="MAX fragen"><span data-ico="sparkles" data-size="20"></span><span>Frag MAX</span></a>
   <div class="tray" id="tray" hidden aria-live="polite"></div>
   <div class="toast" id="toast" role="status" hidden></div>
 
   <footer class="ftr">
     <div class="wrap ftr-in">
-      <div><b>Smartphone Berater · Dresden Altmarkt-Galerie</b>
-        <p>Unabhängiges Beratungstool für den Markt vor Ort. Alle Preise sind unverbindliche Preisempfehlungen (UVP) der Hersteller, ohne Gewähr. Technische Daten nach Herstellerangaben; mit * markierte Werte sind nicht vollständig bestätigt. Marken und Produktnamen gehören den jeweiligen Inhabern.</p>
+      <div><b>Smartphone Berater · MediaMarkt Saturn</b>
+        <p>Inoffizielle Demo-App und Portfolio-Projekt – kein Angebot und keine offizielle Anwendung von MediaMarkt oder Saturn. Alle Preise sind unverbindliche Preisempfehlungen (UVP) der Hersteller, ohne Gewähr. Technische Daten nach Herstellerangaben; mit * markierte Werte sind nicht vollständig bestätigt. Marken und Produktnamen gehören den jeweiligen Inhabern.</p>
         <p id="ftr-count"></p></div>
-      <div><b>Entdecken</b><ul><li><a href="#/geraete">Alle Smartphones</a></li><li><a href="#/berater">Smartphone-Berater</a></li><li><a href="#/vergleich">Vergleich</a></li><li><a href="#/chat">Chat</a></li></ul></div>
+      <div><b>Entdecken</b><ul><li><a href="#/geraete">Alle Smartphones</a></li><li><a href="#/berater">Smartphone-Berater</a></li><li><a href="#/vergleich">Vergleich</a></li><li><a href="#/chat">MAX fragen</a></li></ul></div>
       <div><b>Info</b><ul><li><a href="#/hilfe">Hilfe & FAQ</a></li><li><a href="#/bildquellen">Bildquellen</a></li><li><a href="#/merkliste">Merkliste</a></li></ul></div>
     </div>
   </footer>

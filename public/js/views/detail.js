@@ -12,7 +12,7 @@ export function render(el, { params }) {
     el.innerHTML = `<div class="wrap">${emptyState('Gerät nicht gefunden', 'Dieses Modell gibt es (nicht mehr) im Katalog.', '<a class="btn red" href="#/geraete">Zum Katalog</a>')}</div>`;
     return;
   }
-  document.title = `${p.fullName} · Smartphone Berater`;
+  document.title = `${p.fullName} · Smartphone Berater · MediaMarkt Saturn`;
   const sizes = D.storagePrices(p);
   let gi = 0, ci = Math.max(0, p.colors.findIndex((c) => c.name === p.image_colors[0])), si = 0;
 
@@ -95,7 +95,7 @@ export function render(el, { params }) {
   drawGallery(); drawOpts();
 
   const pbtn = $('#price-btn', el);
-  if (!aiAvailable()) { pbtn.disabled = true; $('#price-res', el).textContent = 'Live-Preisabfrage ist gerade nicht verfügbar (keine KI-Verbindung). Nutze die Links zu saturn.de oder frag im Markt.'; }
+  if (!aiAvailable()) { pbtn.disabled = true; $('#price-res', el).textContent = 'Live-Preisabfrage ist gerade nicht verfügbar (keine KI-Verbindung). Nutze die Links zu MediaMarkt und Saturn oder frag im Markt.'; }
 
   el.addEventListener('click', async (e) => {
     const b = e.target.closest('button');
@@ -110,12 +110,12 @@ export function render(el, { params }) {
     } else if (b.dataset.si) { si = Number(b.dataset.si); drawOpts(); }
     else if (b.id === 'price-btn') {
       const res = $('#price-res', el);
-      b.disabled = true; res.innerHTML = `${icon('spinner', { cls: 'spin', size: 16 })} Suche aktuellen Preis bei Saturn …`;
+      b.disabled = true; res.innerHTML = `${icon('spinner', { cls: 'spin', size: 16 })} Suche aktuellen Preis bei MediaMarkt und Saturn …`;
       try {
-        const r = await checkPrice(`${p.brand} ${p.name}`);
+        const r = await checkPrice(p.fullName);
         res.innerHTML = r.gefunden && r.preis
-          ? `<b style="font-size:18px">${esc(r.preis)}</b> <span class="muted">· ${esc(r.quelle)}</span>${r.hinweis ? `<br><span class="muted">${esc(r.hinweis)}</span>` : ''}<br><span class="muted">KI-Recherche ohne Gewähr – maßgeblich ist der Preis im Markt bzw. auf saturn.de.</span>`
-          : 'Kein aktueller Preis gefunden. Schau direkt auf saturn.de oder frag im Markt.';
+          ? `<b style="font-size:18px">${esc(r.preis)}</b> <span class="muted">· ${esc(r.quelle)}</span>${r.hinweis ? `<br><span class="muted">${esc(r.hinweis)}</span>` : ''}<br><span class="muted">KI-Recherche ohne Gewähr – maßgeblich ist der Preis im Markt bzw. im Onlineshop.</span>`
+          : 'Kein aktueller Preis gefunden. Schau direkt auf mediamarkt.de oder saturn.de oder frag im Markt.';
       } catch (err) { res.textContent = `Preisabfrage fehlgeschlagen: ${err.message}`; toast('Preisabfrage fehlgeschlagen'); }
       b.disabled = false;
     }

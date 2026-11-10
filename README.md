@@ -1,8 +1,21 @@
-# Smartphone Berater · Saturn Dresden (v6)
+# Smartphone Berater · MediaMarkt Saturn (v7)
 
-Smartphone-Berater für den Markt in der Altmarkt-Galerie Dresden, optisch an Elektronikmärkte angelehnt (rot/weiß). Enthalten sind ein Katalog mit **50 aktuellen Smartphones (2025/2026) von 12 Marken**, echte Produktbilder, Filter und Sortierung, ein Vergleich von bis zu 3 Geräten, Detailseiten mit Galerie und Farbwahl, ein Berater-Quiz, eine Merkliste, ein KI-Chat und ein KI-Preis-Check.
+Smartphone-Berater als Demo für MediaMarkt und Saturn, optisch an Elektronikmärkte angelehnt (rot/weiß). Enthalten sind ein Katalog mit **50 aktuellen Smartphones (2025/2026) von 12 Marken**, echte Produktbilder, Filter und Sortierung, ein Vergleich von bis zu 3 Geräten, Detailseiten mit Galerie und Farbwahl, ein Berater-Quiz, eine Merkliste, der **KI-Berater MAX** und ein KI-Preis-Check.
+
+> **Inoffizielles Portfolio-Projekt.** Die App ist kein Angebot und keine offizielle Anwendung von MediaMarkt oder Saturn; Logos oder Inhalte der Unternehmen werden nicht verwendet.
 
 > Die Preise sind **UVP zum Marktstart** (Herstellerangaben bzw. Presse). Die Live-Preise sind KI-Schätzungen ohne Gewähr; bei jedem Gerät gibt es Links zur Händlersuche. Unsichere Datenfelder sind im Datensatz (`uncertain`) und in der Detailansicht markiert.
+
+## MAX, der Berater
+
+MAX hat zwei Betriebsarten, der Status steht oben im Chat:
+
+* **KI aktiv** (mit `GEMINI_API_KEY`): Google Gemini antwortet über `server.js`, das Sortiment aus `phones.json` ist die Wissensbasis.
+* **Katalog-Modus** (ohne Schlüssel, z. B. in der GitHub-Pages-Vorschau): `public/js/max.js` antwortet mit festen Regeln direkt aus den Gerätedaten. MAX merkt sich dabei Budget, Marke, System und Wunsch über das Gespräch („Kamera bis 800 €“ → „und von Samsung?“ → „etwas günstiger“), vergleicht zwei genannte Geräte, beantwortet Detailfragen (Akku, Kamera, Preis je Speicher …) und Servicefragen (Tarif, Trade-in, Datenumzug).
+
+Dazu kommen Vorschlags-Buttons, Spracheingabe und Vorlesen (sofern der Browser es unterstützt) und der Button „Frag MAX“ auf jeder Seite. Ein Link wie `#/chat?q=Bestes%20Kamera-Handy` startet direkt mit einer Frage.
+
+Lagerbestände und Aktionspreise kennt MAX nicht und erfindet sie auch nicht.
 
 ## Starten
 
@@ -12,10 +25,12 @@ Voraussetzung: Node.js 18 oder neuer.
 npm install
 cp .env.example .env      # optional: GEMINI_API_KEY eintragen
 npm start                 # http://localhost:3000
+npm test                  # Tests für den Katalog-Berater MAX
 ```
 
 * `GEMINI_API_KEY` wird **nur** aus der Umgebung bzw. `.env` gelesen und nie ausgeliefert. `.env` steht in `.gitignore`.
-* Ohne Schlüssel läuft die App vollständig, also Katalog, Quiz, Vergleich und Merkliste. Chat und Preis-Check melden dann freundlich, dass die KI nicht verfügbar ist (`GET /api/status`).
+* Ohne Schlüssel läuft die App vollständig, also Katalog, Quiz, Vergleich, Merkliste und MAX im Katalog-Modus. Nur der Live-Preis-Check braucht die KI (`GET /api/status`).
+* Den Schlüssel niemals in HTML oder JavaScript im Browser eintragen – dort kann ihn jeder auslesen.
 * Optional lassen sich `PORT` und `GEMINI_MODEL` setzen (Standard: `gemini-2.5-flash`).
 
 ## Struktur
@@ -29,6 +44,8 @@ public/js/main.js         Router und Bootstrapping
 public/js/data.js         Laden, Normalisieren und Formatieren der Gerätedaten
 public/js/specs.js        Spec-Tabellen, Hinweise auf unsichere Felder
 public/js/store.js        Merkliste und Vergleich (localStorage)
+public/js/max.js          MAX im Katalog-Modus (Regeln, Gesprächsgedächtnis)
+test/max.test.mjs         Tests für MAX
 public/js/views/*.js      Start, Katalog, Detail, Vergleich, Quiz, Chat, Infoseiten
 public/img/phones/        Produktbilder (WebP, ca. 600 px, lokal, kein Hotlinking)
 public/img/ui/            Hero-, Kachel- und Kategoriegrafiken (in Canva erstellt)
@@ -53,6 +70,7 @@ Die Grafiken in `public/img/ui/` (Hero, Aktionskacheln, Kategorien) wurden in Ca
 
 ## Versionen
 
+* **v7:** allgemein auf MediaMarkt Saturn umgestellt, KI-Berater MAX (KI- und Katalog-Modus mit Gedächtnis, Spracheingabe, Vorlesen), Tests, doppelte Markennamen behoben.
 * **v6:** komplettes Redesign (rot/weiß, Karten, Galerie, Farbwahl), 50 Geräte mit echten Bildern, datengetriebene Pipeline, Canva-Grafiken, Vergleich bis 3 Geräte, neues Quiz.
 * **v5:** ChatGPT- und Gemini-Version zusammengeführt, Merkliste, Vergleich, lokale Hilfe.
 * **v4:** Backend-Proxy, saubere Struktur, datengetriebenes Quiz.

@@ -342,3 +342,28 @@ h3{font-size:17px;font-weight:700}
 .ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
 .toast{position:fixed;left:50%;bottom:80px;transform:translateX(-50%);background:#fff;color:var(--ink);border-radius:10px;padding:10px 16px;box-shadow:var(--sh-h);z-index:70;font-weight:600;font-size:14px;max-width:calc(100vw - 32px)}
 .toast[hidden]{display:none}
+
+/* MAX – Berater */
+[hidden]{display:none!important}
+.max-id{display:flex;align-items:center;gap:10px;min-width:0}
+.max-av{width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;flex:none}
+.chat-tools{display:flex;align-items:center;gap:6px;flex:none}
+.chat-tools .icon-btn[aria-pressed="true"]{background:var(--red);color:#fff;border-color:var(--red)}
+.chat-in .btn.ghost{width:46px;padding:0;flex:none}
+.chat-in .btn.rec{background:var(--red);color:#fff;border-color:var(--red);animation:rec 1.2s ease-in-out infinite}
+@keyframes rec{50%{box-shadow:0 0 0 6px rgba(223,0,0,.18)}}
+.msg b{font-weight:700}
+.sugg{max-height:92px;overflow:auto}
+.max-fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:35;display:flex;align-items:center;gap:8px;height:52px;padding:0 18px 0 14px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;box-shadow:var(--sh-h)}
+.max-fab:hover{background:#000}
+body:has(.tray:not([hidden])) .max-fab{bottom:calc(84px + env(safe-area-inset-bottom))}
+@media(max-width:640px){
+  .chat{height:calc(100dvh - 215px);min-height:420px;border-radius:var(--r-s)}
+  .chat-top{padding:10px 12px}
+  .chat-top .status{display:none}
+  .max-id .small{display:none}
+  .sugg{flex-wrap:nowrap;overflow-x:auto;padding:0 12px 8px;scrollbar-width:none}
+  .sugg::-webkit-scrollbar{display:none}
+  .sugg .chip{white-space:nowrap;flex:none}
+}
+@media print{.max-fab{display:none}}

@@ -18,12 +18,12 @@ const ROUTES = {
   geraet: [detail.render, null],
   vergleich: [compare.render, 'Vergleich'],
   berater: [quiz.render, 'Berater'],
-  chat: [chatView.render, 'Chat'],
+  chat: [chatView.render, 'MAX'],
   merkliste: [pages.saved, 'Merkliste'],
   hilfe: [pages.help, 'Hilfe'],
   bildquellen: [pages.sources, 'Bildquellen'],
 };
-const NAV = [['start', 'home', 'Start'], ['geraete', 'grid', 'Smartphones'], ['berater', 'sparkles', 'Berater'], ['vergleich', 'compare', 'Vergleich'], ['chat', 'chat', 'Chat'], ['merkliste', 'heart', 'Merkliste'], ['hilfe', 'help', 'Hilfe']];
+const NAV = [['start', 'home', 'Start'], ['geraete', 'grid', 'Smartphones'], ['chat', 'chat', 'MAX'], ['berater', 'sparkles', 'Berater'], ['vergleich', 'compare', 'Vergleich'], ['merkliste', 'heart', 'Merkliste'], ['hilfe', 'help', 'Hilfe']];
 
 let cleanup = null;
 let lastRoute = '';
@@ -47,7 +47,8 @@ function route() {
     fresh.innerHTML = `<div class="wrap">${emptyState('Seite nicht gefunden', 'Diese Adresse gibt es nicht.', '<a class="btn red" href="#/start">Zur Startseite</a>')}</div>`;
   } else {
     const [fn, title] = ROUTES[r.name];
-    document.title = `${title ? title + ' · ' : ''}Smartphone Berater · Saturn Dresden`;
+    document.title = `${title ? title + ' · ' : ''}Smartphone Berater · MediaMarkt Saturn`;
+  const fab = $('#max-fab'); if (fab) fab.hidden = r.name === 'chat' || r.name === 'berater';
     cleanup = fn(fresh, r) || null;
     if (r.name === 'geraete') $$('.hdr-search input').forEach((i) => { i.value = new URLSearchParams(r.query).get('q') || ''; });
   }

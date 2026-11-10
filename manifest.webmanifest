@@ -1,0 +1,12 @@
+{
+  "name": "Smartphone Berater · MediaMarkt Saturn (Demo)",
+  "short_name": "Smartphone Berater",
+  "description": "Smartphones vergleichen und mit KI-Berater MAX das passende Gerät finden. Inoffizielle Demo.",
+  "start_url": "./#/start",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#df0000",
+  "lang": "de",
+  "icons": [{ "src": "img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

@@ -13,7 +13,7 @@ export function saved(el) {
       <nav class="crumbs" aria-label="Brotkrumen"><a href="#/start">Start</a> › Merkliste</nav>
       <div class="cat-head"><h1 style="margin:0">Merkliste <span class="muted" style="font-size:.6em">${list.length}</span></h1>
       ${list.length ? `<div style="display:flex;gap:8px;flex-wrap:wrap">${list.length >= 2 ? `<button class="btn red sm" id="s-cmp">${icon('compare', { size: 14 })} ${Math.min(list.length, S.MAX_COMPARE)} vergleichen</button>` : ''}<button class="btn ghost sm" id="s-print">Drucken / als PDF</button></div>` : ''}</div>
-      ${list.length ? `<p class="muted small">Deine Merkliste wird nur lokal auf diesem Gerät gespeichert. Zeig sie im Markt einfach vor – wir beraten dich gern. Summe der UVPs: ${esc(D.price(sum))}</p><div class="grid">${list.map(card).join('')}</div>`
+      ${list.length ? `<p class="muted small">Deine Merkliste wird nur lokal auf diesem Gerät gespeichert. Zeig sie im Markt einfach vor. Summe der UVPs: ${esc(D.price(sum))}</p><div class="grid">${list.map(card).join('')}</div>`
         : emptyState('Deine Merkliste ist leer', `Tippe bei einem Gerät auf ${icon('heart', { size: 16 })}, um es dir zu merken. Die Liste bleibt auf diesem Gerät gespeichert.`, '<a class="btn red" href="#/geraete">Geräte ansehen</a>', 'heart')}
     </div>`;
   }
@@ -28,12 +28,14 @@ export function saved(el) {
 }
 
 const FAQ = [
-  ['Was bedeutet „UVP“?', 'Die unverbindliche Preisempfehlung des Herstellers zum Marktstart in Deutschland. Im Markt und auf saturn.de ist der tatsächliche Preis oft niedriger – nutze dafür „Live-Preis prüfen“ in der Detailansicht oder frag unser Team.'],
+  ['Was bedeutet „UVP“?', 'Die unverbindliche Preisempfehlung des Herstellers zum Marktstart in Deutschland. Im Markt sowie auf mediamarkt.de und saturn.de ist der tatsächliche Preis oft niedriger – nutze dafür „Live-Preis prüfen“ in der Detailansicht oder frag im Markt.'],
   ['Woher stammen die technischen Daten?', 'Aus den offiziellen Datenblättern der Hersteller, ergänzt um Datenbanken wie GSMArena. Werte, die nicht vollständig bestätigt sind, sind mit * markiert. Die Quellen stehen in jeder Detailansicht unter „Datenquellen“.'],
   ['Wie funktioniert der Berater?', 'Du beantwortest sechs kurze Fragen. Daraus berechnen wir mit festen Regeln eine Rangliste und zeigen, warum ein Gerät passt – und wo es Abstriche gibt. Es werden keine persönlichen Daten gespeichert oder übertragen.'],
-  ['Was passiert mit meinen Chat-Nachrichten?', 'Ist die KI aktiv, werden deine Nachrichten zur Beantwortung an Google Gemini gesendet. Gib bitte keine persönlichen Daten ein. Ohne KI-Verbindung antwortet der Chat lokal aus dem Katalog.'],
+  ['Wer ist MAX?', 'MAX ist der Berater in dieser App. Ist eine KI-Verbindung aktiv, antwortet Google Gemini mit dem Katalog als Wissensbasis. Ohne KI-Verbindung antwortet MAX im Katalog-Modus: mit festen Regeln direkt aus den Gerätedaten, dafür merkt er sich Budget, Marke und Wunsch über das Gespräch. Lagerbestände und Aktionspreise kennt MAX in keinem Fall.'],
+  ['Was passiert mit meinen Chat-Nachrichten?', 'Ist die KI aktiv, werden deine Nachrichten zur Beantwortung an Google Gemini gesendet. Gib bitte keine persönlichen Daten ein. Im Katalog-Modus bleibt alles in deinem Browser. Spracheingabe und Vorlesen nutzen die Funktionen deines Browsers.'],
+  ['Ist das eine offizielle App?', 'Nein. Der Smartphone Berater ist eine inoffizielle Demo und ein Portfolio-Projekt. Er zeigt, wie eine KI-gestützte Beratung für MediaMarkt und Saturn aussehen könnte, ist aber kein Angebot dieser Unternehmen.'],
   ['Wo werden Merkliste und Vergleich gespeichert?', 'Nur im Browser auf deinem Gerät (localStorage). Du kannst sie jederzeit leeren, indem du die Einträge entfernst oder die Website-Daten löschst.'],
-  ['Kann ich die Geräte ausprobieren?', 'Ja – die meisten Modelle findest du bei Saturn in der Altmarkt-Galerie Dresden. Die Verfügbarkeit einzelner Farben und Speichergrößen kann variieren.'],
+  ['Kann ich die Geräte ausprobieren?', 'Ja – die meisten Modelle findest du in den Märkten von MediaMarkt und Saturn. Die Verfügbarkeit einzelner Farben und Speichergrößen kann variieren.'],
 ];
 
 export function help(el) {
@@ -50,16 +52,16 @@ export function help(el) {
           <li><b>Details:</b> Wähle Farbe und Speicher, sieh dir alle technischen Daten an und prüfe den aktuellen Preis.</li>
           <li><b>Vergleich:</b> Stelle bis zu ${S.MAX_COMPARE} Geräte nebeneinander – die besten Werte sind grün markiert.</li>
           <li><b>Berater:</b> Sechs Fragen, danach bekommst du deine persönliche Rangliste mit Begründung.</li>
-          <li><b>Chat:</b> Stell freie Fragen ${ai ? 'an die KI' : '(derzeit im Offline-Modus mit Antworten aus dem Katalog)'}.</li>
+          <li><b>MAX:</b> Stell dem Berater freie Fragen ${ai ? '– es antwortet die KI' : '(derzeit im Katalog-Modus mit Antworten aus den Gerätedaten)'}.</li>
         </ol>
         <h2>Häufige Fragen</h2>
         <div class="faq">${FAQ.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</div>
       </article>
       <aside class="side" aria-label="Gut zu wissen">
         <h3>${icon('info', { size: 18 })} Gut zu wissen</h3>
-        <p style="margin:0"><b>KI-Status:</b> <span class="status ${ai ? 'on' : 'off'}">${ai ? 'KI aktiv' : 'Offline'}</span></p>
-        <p style="margin:0">${ai ? 'Chat und Live-Preis nutzen Google Gemini. KI-Antworten können Fehler enthalten.' : 'Ohne KI-Verbindung funktionieren Katalog, Vergleich, Berater und Merkliste vollständig. Der Chat antwortet dann mit festen Regeln aus dem Katalog.'}</p>
-        <p style="margin:0"><b>Preise:</b> Alle Angaben sind UVPs der Hersteller ohne Gewähr. Verbindlich ist der Preis im Markt bzw. auf saturn.de.</p>
+        <p style="margin:0"><b>KI-Status:</b> <span class="status ${ai ? 'on' : 'off'}">${ai ? 'KI aktiv' : 'Katalog-Modus'}</span></p>
+        <p style="margin:0">${ai ? 'Chat und Live-Preis nutzen Google Gemini. KI-Antworten können Fehler enthalten.' : 'Ohne KI-Verbindung funktionieren Katalog, Vergleich, Berater und Merkliste vollständig. MAX antwortet dann mit festen Regeln aus dem Katalog.'}</p>
+        <p style="margin:0"><b>Preise:</b> Alle Angaben sind UVPs der Hersteller ohne Gewähr. Verbindlich ist der Preis im Markt bzw. auf mediamarkt.de und saturn.de.</p>
         <p style="margin:0"><b>Bilder:</b> Herstellerbilder und Wikimedia Commons – <a href="#/bildquellen">alle Bildquellen</a>.</p>
         <a class="btn red sm" href="#/berater">${icon('sparkles', { size: 14 })} Berater starten</a>
       </aside>
@@ -85,7 +87,8 @@ export async function sources(el) {
     <div id="src-body">${icon('spinner', { cls: 'spin' })} Lade Bildquellen …</div></article></div>`;
   const body = $('#src-body', el);
   try {
-    const r = await fetch('/api/image-sources');
+    let r = await fetch('api/image-sources').catch(() => null);
+    if (!r?.ok) r = await fetch('data/image_sources.md');
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const rows = parseSources(await r.text());
     if (!rows.length) { body.innerHTML = '<p class="muted">Noch keine Bildquellen erfasst.</p>'; return; }

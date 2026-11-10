@@ -1,102 +1,126 @@
-// KI-Chat (Gemini über server.js). Ohne KI: regelbasierte Antworten direkt aus dem Katalog.
+// Chat mit MAX. Mit KI-Schlüssel antwortet Gemini über server.js, sonst der Katalog-Berater aus max.js.
 import { icon } from '../icons.js';
 import * as D from '../data.js';
-import { esc, $ } from '../ui.js';
+import * as MAX from '../max.js';
+import { esc, $, toast } from '../ui.js';
 import { aiAvailable, chat } from '../api.js';
 
 const msgs = [];
-const SUGG = ['Bestes Kamera-Handy bis 800 €?', 'Welches hat den größten Akku?', 'iPhone 17 oder Galaxy S26?', 'Gutes Handy für meine Oma', 'Welche Foldables gibt es?'];
+let chips = MAX.START_CHIPS;
+let speak = false;
 
-function linkify(t) {
-  let h = esc(t).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
-  const names = D.all().map((p) => [p, p.name]).sort((a, b) => b[1].length - a[1].length);
-  const used = new Set();
-  for (const [p, n] of names) {
-    if (used.size > 8) break;
-    const re = new RegExp(`(^|[^\\w>])(${esc(n).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})(?![\\w<+])`, 'i');
-    if (re.test(h) && !used.has(p.id)) { h = h.replace(re, `$1<a href="#/geraet/${p.id}">$2</a>`); used.add(p.id); }
+// Antworttext -> HTML: interne Links [Text](#/route), **fett**, bei KI-Antworten zusätzlich Gerätenamen verlinken.
+export function toHtml(text, auto = false) {
+  const links = [];
+  let h = esc(text).replace(/\[([^\]\n]+)\]\((#\/[\w/?=,&%.\-]*)\)/g, (m, label, href) => { links.push(`<a href="${href}">${label}</a>`); return `\u0000${links.length - 1}\u0000`; });
+  if (auto) {
+    const names = D.all().map((p) => [p, p.name]).sort((a, b) => b[1].length - a[1].length);
+    const used = new Set();
+    for (const [p, n] of names) {
+      if (used.size > 8) break;
+      const re = new RegExp(`(^|[^\\w>\u0000])(${esc(n).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})(?![\\w<+])`, 'i');
+      if (!re.test(h)) continue;
+      h = h.replace(re, (m, pre, name) => { links.push(`<a href="#/geraet/${p.id}">${name}</a>`); return `${pre}\u0000${links.length - 1}\u0000`; });
+      used.add(p.id);
+    }
   }
-  return h;
+  h = h.replace(/\u0000(\d+)\u0000/g, (m, i) => links[Number(i)]);
+  return h.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+}
+const plain = (text) => text.replace(/\[([^\]\n]+)\]\(#\/[^)]*\)/g, '$1').replace(/\*\*/g, '').replace(/^[•\d.]+\s/gm, '');
+
+function say(text) {
+  if (!speak || !('speechSynthesis' in window)) return;
+  try {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(plain(text));
+    u.lang = 'de-DE';
+    window.speechSynthesis.speak(u);
+  } catch { /* Sprachausgabe nicht verfügbar */ }
 }
 
-const fmt = (p) => `• ${p.fullName} – ${D.price(p.uvp)}${p.display.size_in ? `, ${D.inch(p.display.size_in)}` : ''}${p.battery_mah ? `, ${D.num(p.battery_mah)} mAh` : ''}${D.hasTele(p) ? `, ${D.teleFactor(p)}x Tele` : ''}`;
-
-export function localAnswer(q) {
-  const t = q.toLowerCase();
-  const all = D.all();
-  const m = t.match(/(?:bis|unter|max\.?|höchstens|<)\s*(\d{2,4})/);
-  let pool = m ? all.filter((p) => p.uvp && p.uvp <= Number(m[1])) : all;
-  const brand = D.brands().find((b) => t.includes(b.toLowerCase()));
-  if (brand) pool = pool.filter((p) => p.brand === brand);
-  if (/iphone|ios|apple/.test(t) && !/android/.test(t)) pool = pool.filter((p) => p.os === 'iOS');
-  if (/android/.test(t) && !/iphone/.test(t)) pool = pool.filter((p) => p.os === 'Android');
-
-  const found = all.filter((p) => t.includes(p.name.toLowerCase())).sort((a, b) => b.name.length - a.name.length)
-    .filter((p, i, arr) => !arr.slice(0, i).some((o) => o.name.toLowerCase().includes(p.name.toLowerCase())));
-  if (found.length >= 2) {
-    const [a, b] = found;
-    return `Kurzvergleich:\n${fmt(a)}\n${fmt(b)}\n\nDen kompletten Vergleich siehst du hier: [Vergleich öffnen]\n` + `#/vergleich?ids=${a.id},${b.id}`;
-  }
-  if (found.length === 1) {
-    const p = found[0];
-    return `${p.fullName}: ${p.pitch || ''}\n${fmt(p)}\nHighlights: ${p.highlights.join(', ') || '–'}\nUpdates: ${p.updates_years ? p.updates_years + ' Jahre' : 'k. A.'}`;
-  }
-  if (!pool.length) return 'Dazu habe ich im Katalog leider kein passendes Gerät gefunden. Versuch es mit einem höheren Budget oder einer anderen Marke.';
-  const top = (arr, n = 3) => arr.slice(0, n).map(fmt).join('\n');
-  if (/kamera|foto|zoom|tele/.test(t)) return `Für Fotos würde ich mir diese ansehen:\n${top([...pool].sort((a, b) => D.cameraScore(b) - D.cameraScore(a)))}`;
-  if (/akku|laufzeit|batterie/.test(t)) return `Die größten Akkus${m ? ` bis ${m[1]} €` : ''}:\n${top([...pool].sort((a, b) => (b.battery_mah || 0) - (a.battery_mah || 0)))}`;
-  if (/fold|falt|klapp|flip/.test(t)) { const f = pool.filter((p) => p.foldable); return f.length ? `Faltbare Modelle:\n${top(f, 6)}` : 'Aktuell kein Foldable in dieser Auswahl.'; }
-  if (/oma|opa|senior|eltern|einfach/.test(t)) return `Für einfache Bedienung mit großem Display und langen Updates:\n${top([...pool].sort((a, b) => (b.tags.includes('senior') - a.tags.includes('senior')) || (b.updates_years || 0) - (a.updates_years || 0) || (a.uvp || 0) - (b.uvp || 0)))}`;
-  if (/kind|schul|teen|jugend/.test(t)) return `Gut für Kinder & Jugendliche (robust, nicht zu teuer):\n${top([...pool].filter((p) => p.uvp && p.uvp <= 500).sort((a, b) => D.recommendScore(b) - D.recommendScore(a)))}`;
-  if (/gam|spiel|leistung/.test(t)) return `Für Gaming (schneller Chip, hohe Bildrate):\n${top([...pool].sort((a, b) => (b.tags.includes('gaming') - a.tags.includes('gaming')) || (b.display.hz || 0) - (a.display.hz || 0)))}`;
-  if (/kompakt|klein|handlich/.test(t)) return `Kompakte Modelle:\n${top([...pool].filter((p) => !p.foldable).sort((a, b) => (a.display.size_in || 9) - (b.display.size_in || 9)))}`;
-  if (/update|lange|nachhaltig/.test(t)) return `Mit den längsten Updates:\n${top([...pool].sort((a, b) => (b.updates_years || 0) - (a.updates_years || 0)))}`;
-  if (/günstig|billig|preiswert|preis-leistung/.test(t) || m) return `Gute Wahl${m ? ` bis ${m[1]} €` : ''}:\n${top([...pool].sort((a, b) => D.recommendScore(b) - D.recommendScore(a)))}`;
-  if (/markt|filiale|adresse|öffnung|wo /.test(t)) return 'Du findest uns im Saturn in der Altmarkt-Galerie Dresden. Aktuelle Öffnungszeiten stehen auf saturn.de – dort kannst du die Geräte auch direkt ausprobieren.';
-  return `Ich helfe dir gern bei der Auswahl! Frag z. B. nach „Kamera bis 600 €“, „größter Akku“, „Samsung“ oder „iPhone 17 vs. Pixel 11“.\nDerzeit beliebt:\n${top([...pool].sort((a, b) => D.recommendScore(b) - D.recommendScore(a)))}`;
-}
-
-export function render(el) {
+export function render(el, r) {
   const ai = aiAvailable();
-  if (!msgs.length) msgs.push({ role: 'model', text: ai
-    ? `Hallo! Ich bin der Smartphone-Berater für Saturn in der Altmarkt-Galerie. Ich kenne alle ${D.all().length} Geräte im Katalog. Wofür brauchst du dein neues Handy?`
-    : `Hallo! Die KI-Verbindung ist gerade nicht aktiv – ich antworte deshalb mit festen Regeln direkt aus dem Katalog (${D.all().length} Geräte). Frag z. B. nach Budget, Kamera, Akku oder einer Marke.` });
+  if (!msgs.length) msgs.push({ role: 'model', text: MAX.greeting(ai) });
+  const Rec = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const canSpeak = 'speechSynthesis' in window;
 
   el.innerHTML = `<div class="wrap">
-    <nav class="crumbs" aria-label="Brotkrumen"><a href="#/start">Start</a> › Chat</nav>
-    <section class="chat" aria-label="Beratungs-Chat">
-      <div class="chat-top"><div><b>Smartphone-Chat</b><div class="small muted">${ai ? 'KI-Antworten können Fehler enthalten – Preise bitte im Markt prüfen.' : 'Offline-Modus: regelbasierte Antworten aus dem Katalog'}</div></div>
-        <span class="status ${ai ? 'on' : 'off'}">${ai ? 'KI aktiv' : 'Offline'}</span></div>
+    <nav class="crumbs" aria-label="Brotkrumen"><a href="#/start">Start</a> › ${MAX.NAME}</nav>
+    <section class="chat" aria-label="Beratung mit ${MAX.NAME}">
+      <div class="chat-top">
+        <div class="max-id"><span class="max-av" aria-hidden="true">${icon('sparkles', { size: 20 })}</span>
+          <div><b>${MAX.NAME} · dein Smartphone-Berater</b><div class="small muted">${ai ? 'KI-Antworten können Fehler enthalten – Preise bitte im Markt prüfen.' : 'Katalog-Modus: Antworten direkt aus den Gerätedaten'}</div></div></div>
+        <div class="chat-tools">
+          <span class="status ${ai ? 'on' : 'off'}">${ai ? 'KI aktiv' : 'Katalog-Modus'}</span>
+          ${canSpeak ? `<button class="icon-btn" id="chat-speak" aria-pressed="${speak}" aria-label="Antworten vorlesen" title="Antworten vorlesen">${icon('volume', { size: 18 })}</button>` : ''}
+          <button class="icon-btn" id="chat-reset" aria-label="Gespräch neu beginnen" title="Neu beginnen">${icon('refresh', { size: 18 })}</button>
+        </div></div>
       <div class="msgs" id="msgs" aria-live="polite"></div>
-      <div class="sugg" id="sugg">${SUGG.map((s) => `<button class="chip" data-s="${esc(s)}">${esc(s)}</button>`).join('')}</div>
-      <form class="chat-in" id="chat-f"><label class="sr-only" for="chat-i">Nachricht</label>
-        <input id="chat-i" maxlength="1000" autocomplete="off" placeholder="Frag etwas zu Smartphones …">
+      <div class="sugg" id="sugg"></div>
+      <form class="chat-in" id="chat-f"><label class="sr-only" for="chat-i">Nachricht an ${MAX.NAME}</label>
+        ${Rec ? `<button type="button" class="btn ghost" id="chat-mic" aria-label="Frage einsprechen" title="Einsprechen">${icon('mic', { size: 18 })}</button>` : ''}
+        <input id="chat-i" maxlength="1000" autocomplete="off" placeholder="Frag ${MAX.NAME} etwas zu Smartphones …">
         <button class="btn red" aria-label="Senden">${icon('send', { size: 18 })}</button></form>
     </section></div>`;
-  const box = $('#msgs', el), input = $('#chat-i', el);
+  const box = $('#msgs', el), input = $('#chat-i', el), sugg = $('#sugg', el);
   let busy = false;
 
   function draw(typing) {
-    box.innerHTML = msgs.map((m) => {
-      let h = linkify(m.text).replace(/\[Vergleich öffnen\]\n#\/vergleich\?ids=([\w,-]+)/, '<a href="#/vergleich?ids=$1">Vergleich öffnen</a>');
-      return `<div class="msg ${m.role === 'user' ? 'me' : 'bot'}">${h}</div>`;
-    }).join('') + (typing ? `<div class="msg bot">${icon('spinner', { cls: 'spin', size: 16 })} schreibt …</div>` : '');
+    box.innerHTML = msgs.map((m) => (m.role === 'user'
+      ? `<div class="msg me">${esc(m.text)}</div>`
+      : `<div class="msg bot">${toHtml(m.text, !!m.ai)}</div>`)).join('')
+      + (typing ? `<div class="msg bot">${icon('spinner', { cls: 'spin', size: 16 })} ${MAX.NAME} schreibt …</div>` : '');
+    sugg.innerHTML = chips.map((s) => `<button class="chip" data-s="${esc(s)}">${esc(s)}</button>`).join('');
     box.scrollTop = box.scrollHeight;
   }
   async function send(text) {
-    text = text.trim().slice(0, 1000);
+    text = String(text || '').trim().slice(0, 1000);
     if (!text || busy) return;
     busy = true; msgs.push({ role: 'user', text }); input.value = ''; draw(true);
-    let answer;
+    const local = MAX.reply(text); // hält das Gesprächsgedächtnis auch im KI-Modus aktuell
+    let answer = local.text, fromAi = false;
     if (aiAvailable()) {
       try {
-        const hist = msgs.slice(-12).filter((m, i, a) => !(i === 0 && m.role === 'model'));
-        answer = (await chat(hist)).text;
-      } catch (e) { answer = `${localAnswer(text)}\n\n(KI gerade nicht erreichbar – Antwort aus dem Katalog. ${e.message})`; }
-    } else answer = localAnswer(text);
-    msgs.push({ role: 'model', text: answer }); busy = false; draw(false); input.focus();
+        const hist = msgs.slice(-12).filter((m, i) => !(i === 0 && m.role === 'model')).map((m) => ({ role: m.role, text: plain(m.text).slice(0, 1000) }));
+        answer = (await chat(hist)).text; fromAi = true;
+      } catch (e) { answer = `${local.text}\n\n(Die KI ist gerade nicht erreichbar, deshalb kommt diese Antwort aus dem Katalog. ${e.message})`; }
+    }
+    chips = local.chips?.length ? local.chips : MAX.START_CHIPS;
+    msgs.push({ role: 'model', text: answer, ai: fromAi });
+    busy = false; draw(false); say(answer);
+    if (matchMedia('(pointer:fine)').matches) input.focus();
   }
+
   $('#chat-f', el).addEventListener('submit', (e) => { e.preventDefault(); send(input.value); });
-  $('#sugg', el).addEventListener('click', (e) => { const b = e.target.closest('[data-s]'); if (b) send(b.dataset.s); });
+  sugg.addEventListener('click', (e) => { const b = e.target.closest('[data-s]'); if (b) send(b.dataset.s); });
+  $('#chat-reset', el).addEventListener('click', () => {
+    if (busy) return;
+    MAX.reset(); msgs.length = 0; chips = MAX.START_CHIPS;
+    msgs.push({ role: 'model', text: MAX.greeting(aiAvailable()) });
+    if (canSpeak) window.speechSynthesis.cancel();
+    draw(false);
+  });
+  $('#chat-speak', el)?.addEventListener('click', (e) => {
+    speak = !speak; e.currentTarget.setAttribute('aria-pressed', speak);
+    if (!speak) window.speechSynthesis.cancel();
+    toast(speak ? `${MAX.NAME} liest Antworten jetzt vor` : 'Vorlesen ausgeschaltet');
+  });
+  let rec = null;
+  $('#chat-mic', el)?.addEventListener('click', (e) => {
+    const btn = e.currentTarget;
+    if (rec) { rec.stop(); return; }
+    try {
+      rec = new Rec(); rec.lang = 'de-DE'; rec.interimResults = false; rec.maxAlternatives = 1;
+      rec.onresult = (ev) => { const said = ev.results?.[0]?.[0]?.transcript; if (said) send(said); };
+      rec.onerror = (ev) => { toast(ev.error === 'not-allowed' ? 'Mikrofon ist nicht freigegeben' : 'Das habe ich nicht verstanden'); };
+      rec.onend = () => { rec = null; btn.classList.remove('rec'); };
+      btn.classList.add('rec'); rec.start();
+    } catch { rec = null; btn.classList.remove('rec'); toast('Spracheingabe ist hier nicht verfügbar'); }
+  });
+
   draw(false);
+  const q = new URLSearchParams(r?.query || '').get('q');
+  if (q) { history.replaceState(null, '', '#/chat'); send(q); }
+  return () => { if (rec) rec.stop(); if (canSpeak) window.speechSynthesis.cancel(); };
 }

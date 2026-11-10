@@ -6,7 +6,7 @@ import { esc, card } from '../ui.js';
 const PROMO = [
   ['finden', 'Finde dein Smartphone – in 60 Sekunden zur passenden Empfehlung', '#/berater'],
   ['vergleichen', 'Vergleichen – bis zu 3 Geräte nebeneinander', '#/vergleich'],
-  ['beratung', 'Beratung im Markt – Altmarkt-Galerie Dresden', '#/start', 'im-markt'],
+  ['beratung', 'Beratung im Markt – MediaMarkt & Saturn', '#/start', 'im-markt'],
   ['tarif', 'Tarif & Trade-in – Altgerät eintauschen, Tarif finden', '#/start', 'im-markt'],
 ];
 const CATS = [
@@ -31,7 +31,7 @@ export function render(el) {
 
   el.innerHTML = `<div class="wrap">
     <section class="hero-banner">
-      <h1 class="sr-only">Dein neues Smartphone – Smartphone-Beratung Saturn Dresden Altmarkt-Galerie</h1>
+      <h1 class="sr-only">Dein neues Smartphone – Smartphone-Berater für MediaMarkt Saturn mit KI-Berater MAX</h1>
       <a href="#/berater" class="hero-pic" aria-label="Berater starten">
         <picture>
           <source media="(max-width:640px)" srcset="img/ui/hero-mobile.webp" width="810" height="1080">
@@ -42,6 +42,7 @@ export function render(el) {
         <p><b>${phones.length} aktuelle Modelle</b> von ${D.brands().length} Marken${Number.isFinite(minP) ? ` ab ${esc(D.price(minP))}` : ''} – vergleichen, merken und im Markt persönlich beraten lassen.</p>
         <div class="hero-cta">
           <a class="btn red" href="#/berater">${icon('sparkles', { size: 18 })} Berater starten</a>
+          <a class="btn ghost" href="#/chat">${icon('chat', { size: 18 })} MAX fragen</a>
           <a class="btn ghost" href="#/geraete">Alle Smartphones</a>
         </div>
       </div>
@@ -52,7 +53,7 @@ export function render(el) {
     <div class="usp">
       <div>${icon('check')} Echte Herstellerdaten</div>
       <div>${icon('compare')} Bis zu 3 Geräte vergleichen</div>
-      <div>${icon('chat')} KI-Beratung im Chat</div>
+      <div>${icon('sparkles')} KI-Berater MAX</div>
       <div>${icon('store')} Vor Ort ausprobieren</div>
     </div>
 
@@ -79,15 +80,15 @@ export function render(el) {
 
     <section class="in-store" id="im-markt" tabindex="-1">
       <div>
-        <h2 style="margin:0 0 6px">${icon('store', { size: 22 })} Im Markt: Saturn Dresden Altmarkt-Galerie</h2>
-        <p class="muted" style="margin:0 0 10px">Merkliste speichern, im Markt vorzeigen und die Favoriten direkt in die Hand nehmen. Unser Team hilft dir bei der Auswahl, beim Datenumzug und bei der Einrichtung.</p>
+        <h2 style="margin:0 0 6px">${icon('store', { size: 22 })} Im Markt: MediaMarkt & Saturn</h2>
+        <p class="muted" style="margin:0 0 10px">Merkliste speichern, im Markt vorzeigen und die Favoriten direkt in die Hand nehmen. Das Team vor Ort hilft dir bei der Auswahl, beim Datenumzug und bei der Einrichtung.</p>
       </div>
       <div class="in-store-grid">
         <div><b>${icon('chat', { size: 18 })} Persönliche Beratung</b><span>Geräte live vergleichen, Fragen klären, Zubehör finden.</span></div>
-        <div><b>${icon('euro', { size: 18 })} Tarif & Vertrag</b><span>Smartphone mit oder ohne Vertrag – wir zeigen dir passende Tarife.</span></div>
+        <div><b>${icon('euro', { size: 18 })} Tarif & Vertrag</b><span>Smartphone mit oder ohne Vertrag – passende Tarife gibt es im Markt.</span></div>
         <div><b>${icon('compare', { size: 18 })} Trade-in</b><span>Altgerät mitbringen, Restwert prüfen lassen und beim Neukauf anrechnen (Konditionen im Markt erfragen).</span></div>
       </div>
-      <div class="hero-cta"><a class="btn red" href="#/merkliste">${icon('heart', { size: 18 })} Zur Merkliste</a><a class="btn ghost" href="#/chat">Frage stellen</a></div>
+      <div class="hero-cta"><a class="btn red" href="#/merkliste">${icon('heart', { size: 18 })} Zur Merkliste</a><a class="btn ghost" href="#/chat">MAX fragen</a></div>
     </section>
   </div>`;
   el.querySelectorAll('[data-scroll]').forEach((a) => a.addEventListener('click', (e) => {

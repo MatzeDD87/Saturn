@@ -48,7 +48,7 @@ function normalize(raw) {
   p.uncertain = arr(raw.uncertain);
   p.uvp = numOrNull(raw.uvp);
   p.uvp_by_storage = obj(raw.uvp_by_storage);
-  p.fullName = `${p.brand} ${p.name}`;
+  p.fullName = String(p.name).toLowerCase().startsWith(String(p.brand).toLowerCase()) ? p.name : `${p.brand} ${p.name}`;
   p.searchText = [p.brand, p.name, p.chip, p.os, ...p.tags, p.camera.summary].filter(Boolean).join(' ').toLowerCase();
   return p;
 }

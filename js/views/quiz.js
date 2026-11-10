@@ -149,9 +149,9 @@ export function render(el) {
       <div class="hero-cta" style="margin-top:18px">
         <button class="btn red" data-nav="compare">${icon('compare', { size: 16 })} Top 3 vergleichen</button>
         <button class="btn ghost" data-nav="restart">${icon('refresh', { size: 16 })} Neu starten</button>
-        <a class="btn ghost" href="#/chat">${icon('chat', { size: 16 })} Fragen im Chat</a>
+        <a class="btn ghost" href="#/chat">${icon('sparkles', { size: 16 })} MAX fragen</a>
       </div>
-      <p class="small muted" style="margin-top:14px">Die Empfehlung basiert auf Herstellerdaten und festen Regeln, nicht auf Tests. Lass dich im Markt in der Altmarkt-Galerie gern persönlich beraten.</p>
+      <p class="small muted" style="margin-top:14px">Die Empfehlung basiert auf Herstellerdaten und festen Regeln, nicht auf Tests. Lass dich bei MediaMarkt oder Saturn gern persönlich beraten.</p>
     </div>`;
     el.dataset.top = r.slice(0, 3).map((x) => x.p.id).join(',');
     $('#r-t', el).focus({ preventScroll: true });
